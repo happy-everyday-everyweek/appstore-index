@@ -17,7 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          # PR 合并后事件：切到合并 commit（main 上），落盘直接提交回 main
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -43,4 +44,5 @@ jobs:
           git config user.email "appstore-ci@users.noreply.github.com"
           git add apps/
           git commit -m "chore: 采集落盘 app-info.json 与 README.md（工作流 2）" || echo "无变更"
-          git push
+          # 显式推回 main（合并落盘模式）
+          git push origin HEAD:main
