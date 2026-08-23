@@ -21,7 +21,7 @@ import urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import (
     gh_api, load_json, save_json, validate_app_json,
-    next_app_id, grade_for, APPS_DIR, log,
+    next_app_id, grade_for, APPS_DIR, TOKEN_ENV, log,
 )
 
 
@@ -54,11 +54,25 @@ def get_latest_release(repo_name):
 
 
 def get_readme_raw(repo_name):
-    """拉取 README 原文（?raw=1 拿原始内容）。"""
-    status, data = gh_api(f"/repos/{repo_name}/readme?raw=1")
-    if status == 200 and isinstance(data, (str, bytes)):
-        return data if isinstance(data, str) else data.decode("utf-8", errors="replace")
-    return None
+    """拉取 README 原文（Accept: application/vnd.github.raw 得原始内容）。"""
+    import urllib.request
+    import urllib.error
+    import os as _os
+    token = _os.environ.get(TOKEN_ENV, "")
+    headers = {"Accept": "application/vnd.github.raw"}
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{repo_name}/readme",
+        headers=headers,
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError:
+        return None
+    except Exception:
+        return None
 
 
 def license_valid(license_info):
@@ -143,48 +157,53 @@ def main():
     ap.add_argument("--close", action="store_true", help="核验失败时实际关闭 PR")
     args = ap.parse_args()
 
-    target = None
+    # 收集 PR 修改的应用（apps/<owner>/<repo>/app.json，repo 字段与目录一致）
+    targets = []
     apps_root = os.path.join(".", APPS_DIR)
-    for owner in sorted(os.listdir(apps_root)):
-        owner_dir = os.path.join(apps_root, owner)
-        if not os.path.isdir(owner_dir):
-            continue
-        for repo in sorted(os.listdir(owner_dir)):
-            app_json_path = os.path.join(owner_dir, repo, "app.json")
-            if not os.path.isfile(app_json_path):
+    if os.path.isdir(apps_root):
+        for owner in sorted(os.listdir(apps_root)):
+            owner_dir = os.path.join(apps_root, owner)
+            if not os.path.isdir(owner_dir):
                 continue
-            obj = load_json(app_json_path)
-            if obj.get("repo") == f"{owner}/{repo}":
-                target = (app_json_path, owner, repo, obj)
-    if not target:
+            for repo in sorted(os.listdir(owner_dir)):
+                app_json_path = os.path.join(owner_dir, repo, "app.json")
+                if not os.path.isfile(app_json_path):
+                    continue
+                obj = load_json(app_json_path)
+                if obj.get("repo") == f"{owner}/{repo}":
+                    targets.append((app_json_path, owner, repo, obj))
+    if not targets:
         log("未找到待核验的 app.json（目录与 repo 字段不一致？）")
         sys.exit(1)
-    app_json_path, owner, repo, app_json = target
-    repo_name = app_json["repo"]
 
-    ok, reason, verified = verify(repo_name, app_json["openSource"])
-    if not ok:
-        log(f"核验失败: {reason}")
-        if args.close:
-            close_pr(args.repo, args.pr, reason)
-        sys.exit(1)
-    log(f"核验通过: {repo_name} · stars={verified['stars']} · license={verified['license']}")
-
+    # 逐个核验：任一失败关闭 PR 并聚合列出
+    failures = []
     infos = collect_existing_infos()
-    new_id = next_app_id(infos)
-    info = collect_app_info(app_json, verified)
-    info["id"] = str(new_id)
-    info["uploader"] = args.author
-    info["generatedAt"] = verified["release"].get("published_at") or "now"
+    for app_json_path, owner, repo, app_json in targets:
+        ok, reason, verified = verify(app_json["repo"], app_json["openSource"])
+        if not ok:
+            failures.append(f"{app_json['repo']}: {reason}")
+            continue
+        new_id = next_app_id(infos)
+        info = collect_app_info(app_json, verified)
+        info["id"] = str(new_id)
+        info["uploader"] = args.author
+        info["generatedAt"] = verified["release"].get("published_at") or "now"
+        infos.append(info)
+        log(f"核验通过: {app_json['repo']} · stars={verified['stars']} · "
+            f"license={verified['license']} · tag={verified['release'].get('tag_name')} · "
+            f"apk={verified['apk_asset'].get('name')} · 分配 ID={new_id} · 评级 {info['grade']}")
 
-    dir_path = os.path.join(APPS_DIR, owner, repo)
-    save_json(os.path.join(dir_path, "app-info.json"), info)
-    readme_path = os.path.join(dir_path, "README.md")
-    with open(readme_path, "w", encoding="utf-8") as f:
-        f.write(verified["readme"])
-    log(f"app-info.json 与 README.md 已写入 {dir_path}（分配系统 ID={new_id}，评级 {info['grade']}）")
-    print(f"APP_ID={new_id}")
-    print(f"APP_GRADE={info['grade']}")
+    if failures:
+        log("核验未通过:\n" + "\n".join(f"- {f}" for f in failures))
+        if args.close:
+            close_pr(args.repo, args.pr, "\n".join(f"- {f}" for f in failures))
+        sys.exit(1)
+
+    log(f"全部 {len(targets)} 个应用核验通过（合并时将采集落盘 app-info.json 与 README.md）")
+    for info in infos:
+        if info.get("uploader") == args.author and info.get("id"):
+            print(f"APP_OK id={info['id']} repo={info['source']['repo']} grade={info['grade']}")
 
 
 if __name__ == "__main__":
