@@ -1,26 +1,9 @@
 {
-  "id": "1008",
-  "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
-  "version": {
-    "versionName": "v1.12.1",
-    "versionCode": 0,
-    "releaseTag": "v1.12.1"
-  },
-  "source": {
-    "repo": "AAswordman/Operit",
-    "openSourceVerified": true,
-    "license": "LGPL-3.0",
-    "apkUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.1/app-release.apk",
-    "sha256": "待采集",
-    "stars": 7203
-  },
-  "readme": "included",
-  "uploader": "happy-everyday-everyweek",
-  "grade": "D",
-  "generatedAt": "2026-08-08T20:33:14Z",
-  "generatedBy": "workflow-2"
+  "sha": "925a6a8945b50376dc85e0c0d83475e25e735eec",
+  "node_id": "B_kwDOUAlmANoAKDkyNWE2YTg5NDViNTAzNzZkYzg1ZTBjMGQ4MzQ3NWUyNWU3MzVlZWM",
+  "size": 642,
+  "url": "https://api.github.com/repos/happy-everyday-everyweek/appstore-index/git/blobs/925a6a8945b50376dc85e0c0d83475e25e735eec",
+  "content": "ewogICJpZCI6ICIxMDA4IiwKICAidXBzdHJlYW0iOiBudWxsLAogICJwYWNr\nYWdlTmFtZSI6ICLlvoXph4fpm4YiLAogICJuYW1lIjogIuW+hemHh+mbhiIs\nCiAgImljb24iOiAi5b6F6YeH6ZuGIiwKICAicGVybWlzc2lvbnMiOiBbXSwK\nICAidmVyc2lvbiI6IHsKICAgICJ2ZXJzaW9uTmFtZSI6ICJ2MS4xMi4xIiwK\nICAgICJ2ZXJzaW9uQ29kZSI6IDAsCiAgICAicmVsZWFzZVRhZyI6ICJ2MS4x\nMi4xIgogIH0sCiAgInNvdXJjZSI6IHsKICAgICJyZXBvIjogIkFBc3dvcmRt\nYW4vT3Blcml0IiwKICAgICJvcGVuU291cmNlVmVyaWZpZWQiOiB0cnVlLAog\nICAgImxpY2Vuc2UiOiAiTEdQTC0zLjAiLAogICAgImFwa1VybCI6ICJodHRw\nczovL2dpdGh1Yi5jb20vQUFzd29yZG1hbi9PcGVyaXQvcmVsZWFzZXMvZG93\nbmxvYWQvdjEuMTIuMS9hcHAtcmVsZWFzZS5hcGsiLAogICAgInNoYTI1NiI6\nICLlvoXph4fpm4YiLAogICAgInN0YXJzIjogNzIwMwogIH0sCiAgInJlYWRt\nZSI6ICJpbmNsdWRlZCIsCiAgInVwbG9hZGVyIjogImhhcHB5LWV2ZXJ5ZGF5\nLWV2ZXJ5d2VlayIsCiAgImdyYWRlIjogIkQiLAogICJnZW5lcmF0ZWRBdCI6\nICIyMDI2LTA4LTA4VDIwOjMzOjE0WiIsCiAgImdlbmVyYXRlZEJ5IjogIndv\ncmtmbG93LTIiCn0K\n",
+  "encoding": "base64",
+  "id": "1001"
 }
