@@ -1,0 +1,5 @@
+{
+  "repo": "tinode/chat",
+  "openSource": true,
+  "summary": "Instant messaging platform. Backend in Go. Clients: Swift iOS, Java Android, JS"
+}
