@@ -1,0 +1,26 @@
+{
+  "id": "1004",
+  "upstream": null,
+  "packageName": "待采集",
+  "name": "待采集",
+  "icon": "待采集",
+  "permissions": [],
+  "version": {
+    "versionName": "v1.5.6",
+    "versionCode": 0,
+    "releaseTag": "v1.5.6"
+  },
+  "source": {
+    "repo": "RANH-F/Smartisan-original-launcher",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://github.com/RANH-F/Smartisan-original-launcher/releases/download/v1.5.6/SmartisanLauncher-1.5.6.apk",
+    "sha256": "待采集",
+    "stars": 230
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "2026-08-22T01:42:13Z",
+  "generatedBy": "workflow-2"
+}
