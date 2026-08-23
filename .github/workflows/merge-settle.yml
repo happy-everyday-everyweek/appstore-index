@@ -1,0 +1,36 @@
+name: Merge-Settle 合并落盘
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/**/app.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 为缺失 app-info 的应用执行采集落盘并提交
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/verify_scan.py \
+            --repo "${{ github.repository }}" \
+            --pr 0 \
+            --author "${{ github.actor }}" \
+            --commit
+          git config user.name "appstore-ci"
+          git config user.email "appstore-ci@users.noreply.github.com"
+          git add apps/
+          git commit -m "chore: 采集落盘 app-info.json 与 README.md（merge-settle）" || echo "无变更"
+          git push
