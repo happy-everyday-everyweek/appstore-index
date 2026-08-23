@@ -1,0 +1,5 @@
+{
+  "repo": "sxyazi/yazi",
+  "openSource": true,
+  "summary": "💥 Blazing fast terminal file manager written in Rust, based on async I/O."
+}
