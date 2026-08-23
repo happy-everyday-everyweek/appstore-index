@@ -21,12 +21,9 @@ GitHub 驱动的开源应用市场——唯一的应用分发索引源头。
 
 工作流 4 每日 5 次定时检查变更，以 Release 三件套分发聚合包（全量包 + 增量包 + patch.json）；工作流 5 定期扫描收录应用的新版本并自动更新元数据。APK 二进制始终留在开发者自己的 Release 中，本仓库不存放任何 APK。
 
-## 首个合集
+## 收录状态
 
-- [Operit](apps/AAswordman/Operit/)（1001）
-- [柠檬音乐 SPICaMusic](apps/yangSpica27/SPICaMusic_Android/)（1002）
-- [CovertComm](apps/ylh440104/CovertComm/)（1003）
-- [Smartisan-original-launcher](apps/RANH-F/Smartisan-original-launcher/)（1004）
+当前为空：未有任何收录应用。首个合集将通过标准 PR 流程收录。
 
 ## 相关仓库
 
