@@ -208,7 +208,9 @@ def main():
     # 落盘模式：--commit（PR 合并后执行）时写 app-info.json 与 README.md 到工作区；
     # 已存在 app-info 的应用复用原 id（幂等重跑不漂移）
     if args.commit:
-        by_repo = {i.get("source", {}).get("repo"): i for i in infos if i.get("id")}
+        # 复用 id 必须以磁盘上已落盘的 app-info 为准（第一轮预分配值不参与复用，防 id 漂移）
+        disk_infos = collect_existing_infos()
+        by_repo = {i.get("source", {}).get("repo"): i for i in disk_infos if i.get("id")}
         for (app_json_path, owner, repo, app_json) in targets:
             ok, reason, verified = verify(app_json["repo"], app_json["openSource"])
             if not ok:
