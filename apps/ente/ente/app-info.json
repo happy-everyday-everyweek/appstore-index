@@ -1,26 +1,26 @@
 {
-  "id": "1005",
+  "id": "1009",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "v1.12.1",
+    "versionName": "photos-v1.3.61",
     "versionCode": 0,
-    "releaseTag": "v1.12.1"
+    "releaseTag": "photos-v1.3.61"
   },
   "source": {
-    "repo": "AAswordman/Operit",
+    "repo": "ente/ente",
     "openSourceVerified": true,
-    "license": "LGPL-3.0",
-    "apkUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.1/app-release.apk",
+    "license": "AGPL-3.0",
+    "apkUrl": "https://github.com/ente/ente/releases/download/photos-v1.3.61/ente-photos-v1.3.61.apk",
     "sha256": "待采集",
-    "stars": 7213
+    "stars": 28467
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
-  "grade": "D",
-  "generatedAt": "2026-08-08T20:33:14Z",
+  "grade": "C",
+  "generatedAt": "2026-08-11T06:05:46Z",
   "generatedBy": "workflow-2"
 }

@@ -1,26 +1,26 @@
 {
-  "id": "1005",
+  "id": "1008",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "v1.12.1",
+    "versionName": "v0.29.1",
     "versionCode": 0,
-    "releaseTag": "v1.12.1"
+    "releaseTag": "v0.29.1"
   },
   "source": {
-    "repo": "AAswordman/Operit",
+    "repo": "TeamNewPipe/NewPipe",
     "openSourceVerified": true,
-    "license": "LGPL-3.0",
-    "apkUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.1/app-release.apk",
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
     "sha256": "待采集",
-    "stars": 7213
+    "stars": 39459
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
-  "grade": "D",
-  "generatedAt": "2026-08-08T20:33:14Z",
+  "grade": "C",
+  "generatedAt": "2026-08-15T22:05:38Z",
   "generatedBy": "workflow-2"
 }

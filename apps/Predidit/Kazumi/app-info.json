@@ -1,26 +1,26 @@
 {
-  "id": "1005",
+  "id": "1006",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "v1.12.1",
+    "versionName": "2.2.9",
     "versionCode": 0,
-    "releaseTag": "v1.12.1"
+    "releaseTag": "2.2.9"
   },
   "source": {
-    "repo": "AAswordman/Operit",
+    "repo": "Predidit/Kazumi",
     "openSourceVerified": true,
-    "license": "LGPL-3.0",
-    "apkUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.1/app-release.apk",
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/Predidit/Kazumi/releases/download/2.2.9/Kazumi_android_2.2.9.apk",
     "sha256": "待采集",
-    "stars": 7213
+    "stars": 29146
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
-  "grade": "D",
-  "generatedAt": "2026-08-08T20:33:14Z",
+  "grade": "C",
+  "generatedAt": "2026-08-21T06:53:25Z",
   "generatedBy": "workflow-2"
 }

@@ -1,26 +1,26 @@
 {
-  "id": "1005",
+  "id": "1004",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "v1.12.1",
+    "versionName": "2.2.6",
     "versionCode": 0,
-    "releaseTag": "v1.12.1"
+    "releaseTag": "2.2.6"
   },
   "source": {
-    "repo": "AAswordman/Operit",
+    "repo": "2dust/v2rayNG",
     "openSourceVerified": true,
-    "license": "LGPL-3.0",
-    "apkUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.1/app-release.apk",
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_arm64-v8a.apk",
     "sha256": "待采集",
-    "stars": 7213
+    "stars": 61502
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
-  "grade": "D",
-  "generatedAt": "2026-08-08T20:33:14Z",
+  "grade": "C",
+  "generatedAt": "2026-07-05T10:17:21Z",
   "generatedBy": "workflow-2"
 }

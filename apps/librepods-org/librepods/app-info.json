@@ -1,0 +1,26 @@
+{
+  "id": "1012",
+  "upstream": null,
+  "packageName": "待采集",
+  "name": "待采集",
+  "icon": "待采集",
+  "permissions": [],
+  "version": {
+    "versionName": "v1.0.0-rc1",
+    "versionCode": 0,
+    "releaseTag": "v1.0.0-rc1"
+  },
+  "source": {
+    "repo": "librepods-org/librepods",
+    "openSourceVerified": true,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/librepods-org/librepods/releases/download/v1.0.0-rc1/LibrePods-FOSS-v1.0.0-rc1-debug.apk",
+    "sha256": "待采集",
+    "stars": 29552
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2026-06-20T15:03:17Z",
+  "generatedBy": "workflow-2"
+}
