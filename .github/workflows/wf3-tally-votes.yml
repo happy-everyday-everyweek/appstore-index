@@ -1,0 +1,25 @@
+name: WF3 月度推荐票计票
+
+on:
+  schedule:
+    - cron: "0 2 1 * *"   # 每月 1 日 02:00（统计上月）
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  tally:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 计票并输出前 3 名
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAINTAINER: ${{ vars.MAINTAINER }}
+        run: |
+          python3 scripts/tally_votes.py \
+            --repo "${{ github.repository }}"
