@@ -196,12 +196,15 @@ def main():
             f"apk={verified['apk_asset'].get('name')} · 分配 ID={new_id} · 评级 {info['grade']}")
 
     if failures:
-        log("核验未通过:\n" + "\n".join(f"- {f}" for f in failures))
+        msg = "核验未通过（已跳过采集，不影响其余应用收录）:\n\n" + "\n".join(f"- {f}" for f in failures) + \
+              "\n\n通过的应用将在合并后正常采集落盘；失败应用可在修正后通过新 PR 重新提交。"
         if args.close:
             close_pr(args.repo, args.pr, "\n".join(f"- {f}" for f in failures))
-        sys.exit(1)
+        else:
+            gh_api(f"/repos/{args.repo}/issues/{args.pr}/comments", method="POST", body={"body": msg})
+            log("已留言说明跳过项（未关闭 PR）")
 
-    log(f"全部 {len(targets)} 个应用核验通过（合并时将采集落盘 app-info.json 与 README.md）")
+    log(f"{len(targets) - len(failures)}/{len(targets)} 个应用核验通过（合并时将采集落盘 app-info.json 与 README.md）")
     # 落盘模式：--commit（PR 合并后执行）时写 app-info.json 与 README.md 到工作区；
     # 已存在 app-info 的应用复用原 id（幂等重跑不漂移）
     if args.commit:
