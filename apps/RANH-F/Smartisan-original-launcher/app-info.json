@@ -1,0 +1,26 @@
+{
+  "id": "1004",
+  "upstream": null,
+  "packageName": "com.smartisanos.launcher",
+  "name": "Smartisan-original-launcher",
+  "icon": "待采集",
+  "permissions": [],
+  "version": {
+    "versionName": "待采集",
+    "versionCode": 0,
+    "releaseTag": "待采集"
+  },
+  "source": {
+    "repo": "RANH-F/Smartisan-original-launcher",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "待采集",
+    "sha256": "待采集",
+    "stars": 227
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "2026-08-23T00:00:00Z",
+  "generatedBy": "workflow-2"
+}
