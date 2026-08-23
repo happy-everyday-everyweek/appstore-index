@@ -16,10 +16,10 @@
     "license": "MIT",
     "apkUrl": "https://github.com/super-productivity/super-productivity/releases/download/v18.19.0/app-play-release.apk",
     "sha256": "待采集",
-    "stars": 21533
+    "stars": 21532
   },
   "readme": "included",
-  "uploader": "happy-everyday-everyweek",
+  "uploader": "appstore-ci",
   "grade": "C",
   "generatedAt": "2026-08-07T21:07:47Z",
   "generatedBy": "workflow-2"

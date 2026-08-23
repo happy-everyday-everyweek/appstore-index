@@ -16,10 +16,10 @@
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/kurikomi-labs/komi-store/releases/download/v1.9.2/Komi-Store-1.9.2.apk",
     "sha256": "待采集",
-    "stars": 17880
+    "stars": 17882
   },
   "readme": "included",
-  "uploader": "happy-everyday-everyweek",
+  "uploader": "appstore-ci",
   "grade": "C",
   "generatedAt": "2026-06-26T06:04:58Z",
   "generatedBy": "workflow-2"

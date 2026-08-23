@@ -16,10 +16,10 @@
     "license": "MIT",
     "apkUrl": "https://github.com/yuliskov/SmartTube/releases/download/32.10s/SmartTube_stable_32.10_arm64-v8a.apk",
     "sha256": "待采集",
-    "stars": 32241
+    "stars": 32242
   },
   "readme": "included",
-  "uploader": "happy-everyday-everyweek",
+  "uploader": "appstore-ci",
   "grade": "C",
   "generatedAt": "2026-08-07T16:20:26Z",
   "generatedBy": "workflow-2"

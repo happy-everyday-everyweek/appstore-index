@@ -16,10 +16,10 @@
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/T8RIN/ImageToolbox/releases/download/4.1.0/image-toolbox-4.1.0-arm64-v8a.apk",
     "sha256": "待采集",
-    "stars": 14324
+    "stars": 14325
   },
   "readme": "included",
-  "uploader": "happy-everyday-everyweek",
+  "uploader": "appstore-ci",
   "grade": "C",
   "generatedAt": "2026-07-05T20:15:20Z",
   "generatedBy": "workflow-2"
