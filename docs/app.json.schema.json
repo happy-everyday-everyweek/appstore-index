@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "app.json.schema.json",
+  "title": "AppStore app.json",
+  "description": "开发者提交的应用收录申请文件。id 由系统自动分配，切勿填写。",
+  "type": "object",
+  "required": ["repo", "openSource", "summary"],
+  "properties": {
+    "repo": {
+      "type": "string",
+      "description": "GitHub 仓库全名 owner/repo，必须与所在目录 apps/<owner>/<repo>/ 一致",
+      "pattern": "^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$"
+    },
+    "openSource": {
+      "type": "boolean",
+      "description": "是否开源（将由工作流 2 独立核验真开源，声明与实际不符将拒绝）"
+    },
+    "specialPermissions": {
+      "type": "array",
+      "description": "应用运行所需的最低特殊权限，可多选，缺省为 none",
+      "items": {
+        "type": "string",
+        "enum": ["none", "adb", "root"]
+      },
+      "default": ["none"]
+    },
+    "summary": {
+      "type": "string",
+      "description": "一句话简介（列表页展示用）",
+      "minLength": 4,
+      "maxLength": 120
+    },
+    "upstream": {
+      "type": "integer",
+      "description": "可选：上游应用系统 ID（当本应用是某个已收录开源项目的分支/Fork 时填写）"
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "repo": "yourname/your-repo",
+      "openSource": true,
+      "specialPermissions": ["adb"],
+      "summary": "一句话简介",
+      "upstream": 1001
+    },
+    {
+      "repo": "yangSpica27/SPICaMusic_Android",
+      "openSource": true,
+      "summary": "现代化 Android 音乐播放器：Jetpack Compose + Media3 + Koin"
+    }
+  ]
+}
