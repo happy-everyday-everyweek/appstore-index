@@ -1,5 +1,5 @@
 {
-  "id": "1042",
+  "id": "1073",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_22_0/thunderbird-22.0.apk",
     "sha256": "待采集",
-    "stars": 13896
+    "stars": 13897
   },
   "readme": "included",
   "uploader": "appstore-ci",

@@ -1,5 +1,5 @@
 {
-  "id": "1036",
+  "id": "1067",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/mihonapp/mihon/releases/download/v0.20.4/mihon-arm64-v8a-v0.20.4.apk",
     "sha256": "待采集",
-    "stars": 23066
+    "stars": 23067
   },
   "readme": "included",
   "uploader": "appstore-ci",

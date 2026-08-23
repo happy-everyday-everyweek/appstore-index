@@ -1,5 +1,5 @@
 {
-  "id": "1031",
+  "id": "1062",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/koreader/koreader/releases/download/v2026.07.1/koreader-android-arm-v2026.07.1.apk",
     "sha256": "待采集",
-    "stars": 29215
+    "stars": 29216
   },
   "readme": "included",
   "uploader": "appstore-ci",

@@ -1,5 +1,5 @@
 {
-  "id": "1039",
+  "id": "1070",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
     "sha256": "待采集",
-    "stars": 121570
+    "stars": 121576
   },
   "readme": "included",
   "uploader": "appstore-ci",

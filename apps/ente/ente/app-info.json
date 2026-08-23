@@ -1,5 +1,5 @@
 {
-  "id": "1028",
+  "id": "1059",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/ente/ente/releases/download/photos-v1.3.61/ente-photos-v1.3.61.apk",
     "sha256": "待采集",
-    "stars": 28467
+    "stars": 28468
   },
   "readme": "included",
   "uploader": "appstore-ci",

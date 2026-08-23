@@ -1,5 +1,5 @@
 {
-  "id": "1038",
+  "id": "1069",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/recloudstream/cloudstream/releases/download/v4.8.0/4.8.0.apk",
     "sha256": "待采集",
-    "stars": 10497
+    "stars": 10496
   },
   "readme": "included",
   "uploader": "appstore-ci",

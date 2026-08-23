@@ -1,5 +1,5 @@
 {
-  "id": "1018",
+  "id": "1049",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.11/app-arm64-v8a-fdroid-release.apk",
     "sha256": "待采集",
-    "stars": 19175
+    "stars": 19176
   },
   "readme": "included",
   "uploader": "appstore-ci",

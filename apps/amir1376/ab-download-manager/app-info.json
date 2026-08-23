@@ -1,5 +1,5 @@
 {
-  "id": "1025",
+  "id": "1056",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/amir1376/ab-download-manager/releases/download/v1.10.2/ABDownloadManager_1.10.2_android_universal.apk",
     "sha256": "待采集",
-    "stars": 17418
+    "stars": 17420
   },
   "readme": "included",
   "uploader": "appstore-ci",

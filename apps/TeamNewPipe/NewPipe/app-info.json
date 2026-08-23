@@ -1,5 +1,5 @@
 {
-  "id": "1024",
+  "id": "1055",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
     "sha256": "待采集",
-    "stars": 39459
+    "stars": 39461
   },
   "readme": "included",
   "uploader": "appstore-ci",

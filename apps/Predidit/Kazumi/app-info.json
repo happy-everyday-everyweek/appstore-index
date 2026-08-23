@@ -1,5 +1,5 @@
 {
-  "id": "1021",
+  "id": "1052",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/Predidit/Kazumi/releases/download/2.2.9/Kazumi_android_2.2.9.apk",
     "sha256": "待采集",
-    "stars": 29146
+    "stars": 29148
   },
   "readme": "included",
   "uploader": "appstore-ci",
