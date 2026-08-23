@@ -1,9 +1,26 @@
 {
-  "sha": "8a40e7632ca331634a1e0d1a47ebffd5f484b40e",
-  "node_id": "B_kwDOUAlmANoAKDhhNDBlNzYzMmNhMzMxNjM0YTFlMGQxYTQ3ZWJmZmQ1ZjQ4NGI0MGU",
-  "size": 671,
-  "url": "https://api.github.com/repos/happy-everyday-everyweek/appstore-index/git/blobs/8a40e7632ca331634a1e0d1a47ebffd5f484b40e",
-  "content": "ewogICJpZCI6ICIxMDA4IiwKICAidXBzdHJlYW0iOiBudWxsLAogICJwYWNr\nYWdlTmFtZSI6ICLlvoXph4fpm4YiLAogICJuYW1lIjogIuW+hemHh+mbhiIs\nCiAgImljb24iOiAi5b6F6YeH6ZuGIiwKICAicGVybWlzc2lvbnMiOiBbXSwK\nICAidmVyc2lvbiI6IHsKICAgICJ2ZXJzaW9uTmFtZSI6ICJWMy42LjAtUFJF\nIiwKICAgICJ2ZXJzaW9uQ29kZSI6IDAsCiAgICAicmVsZWFzZVRhZyI6ICJW\nMy42LjAtUFJFIgogIH0sCiAgInNvdXJjZSI6IHsKICAgICJyZXBvIjogInlh\nbmdTcGljYTI3L1NQSUNhTXVzaWNfQW5kcm9pZCIsCiAgICAib3BlblNvdXJj\nZVZlcmlmaWVkIjogdHJ1ZSwKICAgICJsaWNlbnNlIjogIk1JVCIsCiAgICAi\nYXBrVXJsIjogImh0dHBzOi8vZ2l0aHViLmNvbS95YW5nU3BpY2EyNy9TUElD\nYU11c2ljX0FuZHJvaWQvcmVsZWFzZXMvZG93bmxvYWQvVjMuNi4wLVBSRS9h\ncHAtcmVsZWFzZS5hcGsiLAogICAgInNoYTI1NiI6ICLlvoXph4fpm4YiLAog\nICAgInN0YXJzIjogMTU3CiAgfSwKICAicmVhZG1lIjogImluY2x1ZGVkIiwK\nICAidXBsb2FkZXIiOiAiaGFwcHktZXZlcnlkYXktZXZlcnl3ZWVrIiwKICAi\nZ3JhZGUiOiAiRCIsCiAgImdlbmVyYXRlZEF0IjogIjIwMjYtMDgtMjNUMDc6\nMzA6MzFaIiwKICAiZ2VuZXJhdGVkQnkiOiAid29ya2Zsb3ctMiIKfQo=\n",
-  "encoding": "base64",
-  "id": "1003"
+  "id": "1003",
+  "upstream": null,
+  "packageName": "待采集",
+  "name": "待采集",
+  "icon": "待采集",
+  "permissions": [],
+  "version": {
+    "versionName": "V3.6.0-PRE",
+    "versionCode": 0,
+    "releaseTag": "V3.6.0-PRE"
+  },
+  "source": {
+    "repo": "yangSpica27/SPICaMusic_Android",
+    "openSourceVerified": true,
+    "license": "MIT",
+    "apkUrl": "https://github.com/yangSpica27/SPICaMusic_Android/releases/download/V3.6.0-PRE/app-release.apk",
+    "sha256": "待采集",
+    "stars": 157
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-23T07:30:31Z",
+  "generatedBy": "workflow-2"
 }
