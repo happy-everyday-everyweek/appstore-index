@@ -21,6 +21,8 @@ import io
 import json
 import os
 import sys
+import time
+import urllib.request
 import zipfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -98,13 +100,14 @@ def create_release(repo, tag, name, assets, token):
         sys.exit(2)
     release_id = rel["id"]
     upload_url = f"https://uploads.github.com/repos/{repo}/releases/{release_id}/assets"
-    import urllib.request
     for fname, data in assets.items():
         url = f"{upload_url}?name={fname}"
-        req = urllib.request.Request(url, data=data, method="POST")
+        req = __import__("urllib.request", fromlist=["Request"]).Request(
+            url, data=data, method="POST")
         req.add_header("Authorization", f"Bearer {token}")
         req.add_header("Content-Type", "application/octet-stream")
         req.add_header("Accept", "application/vnd.github+json")
+        import urllib.request
         try:
             with urllib.request.urlopen(req, timeout=120) as resp:
                 log(f"上传 {fname}: HTTP {resp.status}")
@@ -133,19 +136,24 @@ def main():
         log("聚合包为空（无任何已收录应用），不发布")
         sys.exit(0)
 
-    # 取上一期全量包（最近一次聚合 Release 内的 full.zip）
+    # 取上一期全量包（最近一次聚合 Release 内的 full.zip，browser_download_url 直下；带重试）
     prev = {}
     status, releases = gh_api(f"/repos/{args.repo}/releases?per_page=10")
     if status == 200:
         for rel in releases:
             full_asset = next((a for a in rel.get("assets", []) if a["name"] == "full.zip"), None)
             if full_asset:
-                status2, data = gh_api(full_asset["url"])
-                if status2 == 200 and isinstance(data, dict):
-                    import base64
-                    raw = base64.b64decode(data["content"])
-                    with zipfile.ZipFile(io.BytesIO(raw)) as z:
-                        prev = json.loads(z.read("index.json"))
+                for attempt in range(3):
+                    try:
+                        with urllib.request.urlopen(full_asset["browser_download_url"], timeout=120) as resp:
+                            raw = resp.read()
+                            with zipfile.ZipFile(io.BytesIO(raw)) as z:
+                                prev = json.loads(z.read("index.json"))
+                        break
+                    except Exception:
+                        if attempt == 2:
+                            raise
+                        time.sleep(3)
                 break
 
     is_first_run = args.run_index <= 1
@@ -155,7 +163,11 @@ def main():
     if prev == cur:
         log("无变更，不发布")
         sys.exit(0)
+    if not is_first_run and changes < 1:
+        log("非首次运行且变更量不达标（增量需新增 1 或变更 2+），不发布")
+        sys.exit(0)
     if not is_first_run:
+        # 增量判定：新增 1 即触发；变更（含移除）>= 2 才触发
         new_count = len([k for k in added_changed if k not in prev])
         if new_count >= 1 or changes >= 2:
             pass

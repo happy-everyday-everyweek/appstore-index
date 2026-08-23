@@ -9,6 +9,7 @@ import json
 import os
 import hashlib
 import sys
+import time
 import urllib.request
 import urllib.error
 
@@ -20,27 +21,33 @@ MAINTAINER_ENV = "MAINTAINER"    # 维护者账号（推荐票 @ 用）
 
 
 def gh_api(path, method="GET", body=None, token=None):
-    """GitHub REST API 薄封装，返回 (status, json_or_bytes)。"""
+    """GitHub REST API 薄封装，返回 (status, json_or_bytes)。网络瞬时故障自动重试 3 次。"""
     token = token or os.environ.get(TOKEN_ENV)
-    url = f"https://api.github.com{path}"
-    req = urllib.request.Request(url, method=method)
-    req.add_header("Accept", "application/vnd.github+json")
-    if token:
-        req.add_header("Authorization", f"Bearer {token}")
-    data = json.dumps(body).encode() if body is not None else None
-    if data:
-        req.add_header("Content-Type", "application/json")
-    try:
-        with urllib.request.urlopen(req, data=data, timeout=30) as resp:
-            raw = resp.read()
-            ctype = resp.headers.get("Content-Type", "")
-            return resp.status, (json.loads(raw) if "json" in ctype else raw)
-    except urllib.error.HTTPError as e:
-        raw = e.read()
+    last_err = None
+    for attempt in range(3):
         try:
-            return e.code, json.loads(raw)
-        except Exception:
-            return e.code, raw.decode(errors="replace")
+            url = f"https://api.github.com{path}"
+            req = urllib.request.Request(url, method=method)
+            req.add_header("Accept", "application/vnd.github+json")
+            if token:
+                req.add_header("Authorization", f"Bearer {token}")
+            data = json.dumps(body).encode() if body is not None else None
+            if data:
+                req.add_header("Content-Type", "application/json")
+            with urllib.request.urlopen(req, data=data, timeout=60) as resp:
+                raw = resp.read()
+                ctype = resp.headers.get("Content-Type", "")
+                return resp.status, (json.loads(raw) if "json" in ctype else raw)
+        except urllib.error.HTTPError as e:
+            raw = e.read()
+            try:
+                return e.code, json.loads(raw)
+            except Exception:
+                return e.code, raw.decode(errors="replace")
+        except Exception as e:
+            last_err = e
+            time.sleep(2 * (attempt + 1))
+    raise last_err
 
 
 def find_app_dirs(root="."):
