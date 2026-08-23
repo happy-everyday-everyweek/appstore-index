@@ -28,8 +28,7 @@ jobs:
           python3 scripts/verify_scan.py \
             --repo "${{ github.repository }}" \
             --pr "${{ github.event.pull_request.number }}" \
-            --author "${{ github.event.pull_request.user.login }}" \
-            --close
+            --author "${{ github.event.pull_request.user.login }}"
       - name: 合并后采集落盘（app-info.json / README.md）
         if: github.event.pull_request.merged == 'true'
         env:
