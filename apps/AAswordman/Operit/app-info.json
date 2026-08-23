@@ -1,5 +1,5 @@
 {
-  "id": "1005",
+  "id": "1017",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
@@ -16,7 +16,7 @@
     "license": "LGPL-3.0",
     "apkUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.1/app-release.apk",
     "sha256": "待采集",
-    "stars": 7213
+    "stars": 7215
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",

@@ -1,26 +1,26 @@
 {
-  "id": "1039",
+  "id": "1037",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "1.4.9",
+    "versionName": "v6.0.0",
     "versionCode": 0,
-    "releaseTag": "1.4.9"
+    "releaseTag": "v6.0.0"
   },
   "source": {
-    "repo": "rustdesk/rustdesk",
+    "repo": "open-ani/animeko",
     "openSourceVerified": true,
     "license": "AGPL-3.0",
-    "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
+    "apkUrl": "https://github.com/open-ani/animeko/releases/download/v6.0.0/ani-6.0.0-arm64-v8a.apk",
     "sha256": "待采集",
-    "stars": 121570
+    "stars": 19730
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-07-06T10:02:30Z",
+  "generatedAt": "2026-08-01T18:38:19Z",
   "generatedBy": "workflow-2"
 }

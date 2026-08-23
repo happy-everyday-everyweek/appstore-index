@@ -1,26 +1,26 @@
 {
-  "id": "1039",
+  "id": "1025",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "1.4.9",
+    "versionName": "v1.10.2",
     "versionCode": 0,
-    "releaseTag": "1.4.9"
+    "releaseTag": "v1.10.2"
   },
   "source": {
-    "repo": "rustdesk/rustdesk",
+    "repo": "amir1376/ab-download-manager",
     "openSourceVerified": true,
-    "license": "AGPL-3.0",
-    "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/amir1376/ab-download-manager/releases/download/v1.10.2/ABDownloadManager_1.10.2_android_universal.apk",
     "sha256": "待采集",
-    "stars": 121570
+    "stars": 17418
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-07-06T10:02:30Z",
+  "generatedAt": "2026-08-22T20:26:24Z",
   "generatedBy": "workflow-2"
 }

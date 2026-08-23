@@ -1,26 +1,26 @@
 {
-  "id": "1039",
+  "id": "1023",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "1.4.9",
+    "versionName": "4.1.0",
     "versionCode": 0,
-    "releaseTag": "1.4.9"
+    "releaseTag": "4.1.0"
   },
   "source": {
-    "repo": "rustdesk/rustdesk",
+    "repo": "T8RIN/ImageToolbox",
     "openSourceVerified": true,
-    "license": "AGPL-3.0",
-    "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/T8RIN/ImageToolbox/releases/download/4.1.0/image-toolbox-4.1.0-arm64-v8a.apk",
     "sha256": "待采集",
-    "stars": 121570
+    "stars": 14324
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-07-06T10:02:30Z",
+  "generatedAt": "2026-07-05T20:15:20Z",
   "generatedBy": "workflow-2"
 }

@@ -1,26 +1,26 @@
 {
-  "id": "1039",
+  "id": "1040",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "1.4.9",
+    "versionName": "v7.0.1",
     "versionCode": 0,
-    "releaseTag": "1.4.9"
+    "releaseTag": "v7.0.1"
   },
   "source": {
-    "repo": "rustdesk/rustdesk",
+    "repo": "simplex-chat/simplex-chat",
     "openSourceVerified": true,
     "license": "AGPL-3.0",
-    "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
+    "apkUrl": "https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.1/simplex-aarch64.apk",
     "sha256": "待采集",
-    "stars": 121570
+    "stars": 19297
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-07-06T10:02:30Z",
+  "generatedAt": "2026-08-18T12:46:36Z",
   "generatedBy": "workflow-2"
 }

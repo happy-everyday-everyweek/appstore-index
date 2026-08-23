@@ -1,26 +1,26 @@
 {
-  "id": "1039",
+  "id": "1020",
   "upstream": null,
   "packageName": "待采集",
   "name": "待采集",
   "icon": "待采集",
   "permissions": [],
   "version": {
-    "versionName": "1.4.9",
+    "versionName": "0.9.108",
     "versionCode": 0,
-    "releaseTag": "1.4.9"
+    "releaseTag": "0.9.108"
   },
   "source": {
-    "repo": "rustdesk/rustdesk",
+    "repo": "Notsfsssf/pixez-flutter",
     "openSourceVerified": true,
-    "license": "AGPL-3.0",
-    "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/Notsfsssf/pixez-flutter/releases/download/0.9.108/app-arm64-v8a-release.apk",
     "sha256": "待采集",
-    "stars": 121570
+    "stars": 12654
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-07-06T10:02:30Z",
+  "generatedAt": "2026-08-23T14:47:29Z",
   "generatedBy": "workflow-2"
 }
