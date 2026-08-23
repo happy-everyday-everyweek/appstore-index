@@ -155,6 +155,7 @@ def main():
     ap.add_argument("--pr", required=True, type=int, help="PR 编号")
     ap.add_argument("--author", required=True, help="PR 作者（uploader）")
     ap.add_argument("--close", action="store_true", help="核验失败时实际关闭 PR")
+    ap.add_argument("--commit", action="store_true", help="核验通过后把 app-info.json/README.md 写入工作区（合并落盘模式）")
     args = ap.parse_args()
 
     # 收集 PR 修改的应用（apps/<owner>/<repo>/app.json，repo 字段与目录一致）
@@ -201,6 +202,22 @@ def main():
         sys.exit(1)
 
     log(f"全部 {len(targets)} 个应用核验通过（合并时将采集落盘 app-info.json 与 README.md）")
+    # 落盘模式：--commit（PR 合并后执行）时写 app-info.json 与 README.md 到工作区
+    if args.commit:
+        for (app_json_path, owner, repo, app_json) in targets:
+            ok, reason, verified = verify(app_json["repo"], app_json["openSource"])
+            if not ok:
+                continue
+            new_id = next_app_id(infos)
+            info = collect_app_info(app_json, verified)
+            info["id"] = str(new_id)
+            info["uploader"] = args.author
+            info["generatedAt"] = verified["release"].get("published_at") or "now"
+            dir_path = os.path.join(APPS_DIR, owner, repo)
+            save_json(os.path.join(dir_path, "app-info.json"), info)
+            with open(os.path.join(dir_path, "README.md"), "w", encoding="utf-8") as f:
+                f.write(verified["readme"])
+            log(f"已落盘 {dir_path}（ID={new_id}，评级 {info['grade']}）")
     for info in infos:
         if info.get("uploader") == args.author and info.get("id"):
             print(f"APP_OK id={info['id']} repo={info['source']['repo']} grade={info['grade']}")

@@ -2,7 +2,7 @@ name: WF2 应用核验与信息采集
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, closed]
     paths:
       - "apps/**/app.json"
 
@@ -30,12 +30,18 @@ jobs:
             --pr "${{ github.event.pull_request.number }}" \
             --author "${{ github.event.pull_request.user.login }}" \
             --close
-          echo "VERIFY_OK=1" >> "$GITHUB_ENV"
-      - name: 合并后提交生成文件（app-info.json / README.md）
-        if: env.VERIFY_OK == '1' && github.event.pull_request.merged == 'true'
+      - name: 合并后采集落盘（app-info.json / README.md）
+        if: github.event.pull_request.merged == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python3 scripts/verify_scan.py \
+            --repo "${{ github.repository }}" \
+            --pr "${{ github.event.pull_request.number }}" \
+            --author "${{ github.event.pull_request.user.login }}" \
+            --commit
           git config user.name "appstore-ci"
           git config user.email "appstore-ci@users.noreply.github.com"
           git add apps/
-          git commit -m "chore: 核验采集落盘（工作流 2）" || echo "无变更"
+          git commit -m "chore: 采集落盘 app-info.json 与 README.md（工作流 2）" || echo "无变更"
           git push
