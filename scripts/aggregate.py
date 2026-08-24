@@ -157,7 +157,7 @@ def main():
     args = ap.parse_args()
     token = os.environ.get("GH_TOKEN", "")
 
-    cur = build_full_index()
+    cur, assets = build_full_index()
     if not cur:
         log("聚合包为空（无任何已收录应用），不发布")
         sys.exit(0)
