@@ -41,4 +41,7 @@ jobs:
           git add apps/
           git commit -m "chore: 采集落盘 app-info.json 与 README.md（merge-settle）" || echo "无变更"
           # 重试推送（最多 3 次）
-          for i in 1 2 3; do git push origin HEAD:main && break || sleep 5; done
+          # 重试推送：远端被并发推进时 pull --rebase 后重推（最多 5 次）
+          for i in 1 2 3 4 5; do
+            git push origin HEAD:main && break || { git pull --rebase origin main 2>/dev/null || true; sleep 4; }
+          done
