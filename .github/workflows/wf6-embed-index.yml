@@ -1,0 +1,33 @@
+name: WF6 应用向量生成
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # 每日一次
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/embed_index.py"
+
+permissions:
+  contents: write
+
+jobs:
+  embed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装向量模型运行环境（sentence-transformers + torch CPU）
+        run: |
+          pip install --break-system-packages -q sentence-transformers
+
+      - name: 生成向量数据并发布（模型在 CI 运行时自动下载部署）
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/embed_index.py --repo "${{ github.repository }}"
