@@ -1,5 +1,0 @@
-{
-  "repo": "square/leakcanary",
-  "openSource": true,
-  "summary": "A memory leak detection library for Android."
-}

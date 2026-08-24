@@ -1,5 +1,0 @@
-{
-  "repo": "gojue/ecapture",
-  "openSource": true,
-  "summary": "Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Li"
-}

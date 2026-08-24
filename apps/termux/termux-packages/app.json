@@ -1,5 +1,0 @@
-{
-  "repo": "termux/termux-packages",
-  "openSource": true,
-  "summary": "A package build system for Termux."
-}
