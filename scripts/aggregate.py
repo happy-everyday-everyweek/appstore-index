@@ -80,11 +80,13 @@ def build_full_index():
             "upstream": info.get("upstream"),
             "grade": info.get("grade", "E"),
             "version": info.get("version", {}),
+            "openSource": info.get("source", {}).get("openSourceVerified", True),
             "source": {
                 "repo": info.get("source", {}).get("repo"),
                 "license": info.get("source", {}).get("license"),
                 "apkUrl": info.get("source", {}).get("apkUrl"),
                 "sha256": info.get("source", {}).get("sha256"),
+                "openSourceVerified": info.get("source", {}).get("openSourceVerified", True),
             },
         }
     return index, assets
@@ -231,9 +233,7 @@ def main():
         return
 
     import datetime
-    ts = datetime.datetime.utcnow().strftime("%Y%m%d%H%M%S")
-    tag = f"aggregate-{ts}"
-    patch["target"] = tag
+    # tag 已在 patch 段统一生成（同一时间戳），此处复用
     create_release(args.repo, tag, f"聚合包 {ts}", {
         "full.zip": full_zip,
         "incremental.zip": inc_zip,
