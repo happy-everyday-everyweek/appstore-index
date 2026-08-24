@@ -25,21 +25,21 @@
     "moe.shizuku.manager.permission.API_V23"
   ],
   "version": {
-    "versionName": "1.6.12",
-    "versionCode": 23513,
-    "releaseTag": "v1.6.12"
+    "versionName": "1.6.13",
+    "versionCode": 23523,
+    "releaseTag": "v1.6.13"
   },
   "source": {
     "repo": "ImranR98/Obtainium",
     "openSourceVerified": false,
     "license": "GPL-3.0",
-    "apkUrl": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.12/app-arm64-v8a-fdroid-release.apk",
-    "sha256": "862d4b1b3d1d7d59f46e882d29835702d700204d5b0bd182da10626a28a4776c",
-    "stars": 19200
+    "apkUrl": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.13/app-arm64-v8a-fdroid-release.apk",
+    "sha256": "fae58cba2bd06994cc8b9be6810cd408ff31679f66b9821e940cd29f59b5a222",
+    "stars": 19203
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-08-23T21:45:45Z",
+  "generatedAt": "2026-08-24T05:33:48Z",
   "generatedBy": "workflow-2"
 }

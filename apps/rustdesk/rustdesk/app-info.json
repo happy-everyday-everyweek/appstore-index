@@ -31,7 +31,7 @@
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
     "sha256": "285b4f0735c000e5155b9a6f087b57744e46c960f4332963f51add1804982102",
-    "stars": 121620
+    "stars": 121642
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
