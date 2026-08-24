@@ -1,23 +1,19 @@
 name: WF2 应用核验与信息采集
-
 on:
   pull_request:
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, synchronize, reopened]
     paths:
       - "apps/**/app.json"
-
 permissions:
   contents: write
   issues: write
   pull-requests: write
-
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          # 核验作业基于 PR head；合并落盘统一由 Merge-Settle（push 事件）负责
           ref: ${{ github.event.pull_request.head.sha }}
       - uses: android-actions/setup-android@v3
       - name: 安装 build-tools（aapt2 解包 APK）
@@ -25,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 安装 APK 解析器\n        run: pip install --break-system-packages -q androguard\n      - name: 核验链 + 采集元数据 + 分配系统 ID
+      - name: 核验链 + 采集元数据（含 README 依赖）
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AAPT2: ${{ env.ANDROID_HOME }}/build-tools/34.0.0/aapt2
