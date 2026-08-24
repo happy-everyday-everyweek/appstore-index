@@ -17,12 +17,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - uses: android-actions/setup-android@v3
+      - name: 安装 build-tools（aapt2 解包 APK）
+        run: sdkmanager "build-tools;34.0.0"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: 为缺失 app-info 的应用执行采集落盘并提交
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AAPT2: ${{ env.ANDROID_HOME }}/build-tools/34.0.0/aapt2
         run: |
           # 先对齐远端 main（避免并发写入导致 push 被拒）
           git fetch origin main
