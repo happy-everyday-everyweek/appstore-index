@@ -1,25 +1,41 @@
 {
   "id": "1052",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.predidit.kazumi",
+  "name": "Kazumi",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.WAKE_LOCK",
+    "com.predidit.kazumi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
     "versionName": "2.2.9",
-    "versionCode": 0,
+    "versionCode": 202092,
     "releaseTag": "2.2.9"
   },
   "source": {
     "repo": "Predidit/Kazumi",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/Predidit/Kazumi/releases/download/2.2.9/Kazumi_android_2.2.9.apk",
-    "sha256": "待采集",
-    "stars": 29148
+    "sha256": "008bb3f1e84c9d2a9bde1ef0c4aa72a2bfd7aa5a7d7055cc5b7a22bccf397407",
+    "stars": 29151
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-21T06:53:25Z",
   "generatedBy": "workflow-2"

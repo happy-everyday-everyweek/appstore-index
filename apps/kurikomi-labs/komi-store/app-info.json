@@ -1,25 +1,40 @@
 {
   "id": "1063",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "zed.rainxch.githubstore",
+  "name": "Komi Store",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.WAKE_LOCK",
+    "com.rosan.dhizuku.permission.API",
+    "moe.shizuku.manager.permission.API_V23",
+    "zed.rainxch.githubstore.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "v1.9.2",
-    "versionCode": 0,
+    "versionName": "1.9.2",
+    "versionCode": 21,
     "releaseTag": "v1.9.2"
   },
   "source": {
     "repo": "kurikomi-labs/komi-store",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/kurikomi-labs/komi-store/releases/download/v1.9.2/Komi-Store-1.9.2.apk",
-    "sha256": "待采集",
-    "stars": 17884
+    "sha256": "ed23380dc11a5e97a666e2cdfaed455b529f69d65569d228655899e661c409aa",
+    "stars": 17889
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-06-26T06:04:58Z",
   "generatedBy": "workflow-2"

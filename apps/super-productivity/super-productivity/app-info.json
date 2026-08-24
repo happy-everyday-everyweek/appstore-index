@@ -1,25 +1,37 @@
 {
   "id": "1072",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.superproductivity.superproductivity",
+  "name": "Super Productivity",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.superproductivity.superproductivity.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "v18.19.0",
-    "versionCode": 0,
+    "versionName": "18.19.0",
+    "versionCode": 1819009000,
     "releaseTag": "v18.19.0"
   },
   "source": {
     "repo": "super-productivity/super-productivity",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "MIT",
     "apkUrl": "https://github.com/super-productivity/super-productivity/releases/download/v18.19.0/app-play-release.apk",
-    "sha256": "待采集",
-    "stars": 21532
+    "sha256": "a6548550aed0f7e99f783c531008766032007c485f166dbb886963604cef6e14",
+    "stars": 21541
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-07T21:07:47Z",
   "generatedBy": "workflow-2"

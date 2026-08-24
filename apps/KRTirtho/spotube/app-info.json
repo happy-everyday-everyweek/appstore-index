@@ -1,0 +1,40 @@
+{
+  "id": "1113",
+  "upstream": null,
+  "packageName": "oss.krtirtho.spotube",
+  "name": "Spotube",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "oppo.permission.OPPO_COMPONENT_SAFE",
+    "oss.krtirtho.spotube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "5.1.2",
+    "versionCode": 45,
+    "releaseTag": "v5.1.2"
+  },
+  "source": {
+    "repo": "KRTirtho/spotube",
+    "openSourceVerified": false,
+    "license": "NOASSERTION",
+    "apkUrl": "https://github.com/KRTirtho/spotube/releases/download/v5.1.2/Spotube-android-all-arch.apk",
+    "sha256": "20de38abd2eea0c0998174c8a34b324f4a9531665110f67176257e7ecc5bf0fe",
+    "stars": 48632
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2026-06-05T05:10:18Z",
+  "generatedBy": "workflow-2"
+}

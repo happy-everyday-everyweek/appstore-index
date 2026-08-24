@@ -1,25 +1,35 @@
 {
   "id": "1051",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.perol.pixez",
+  "name": "PixEz",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.perol.pixez.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "0.9.108",
-    "versionCode": 0,
+    "versionName": "0.9.108 strip",
+    "versionCode": 10010080,
     "releaseTag": "0.9.108"
   },
   "source": {
     "repo": "Notsfsssf/pixez-flutter",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/Notsfsssf/pixez-flutter/releases/download/0.9.108/app-arm64-v8a-release.apk",
-    "sha256": "待采集",
-    "stars": 12654
+    "sha256": "2b4a5aac3a5655b4cc8c3caef13382f90737e58263387e7c0c129a5a30054e61",
+    "stars": 12655
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-23T14:47:29Z",
   "generatedBy": "workflow-2"

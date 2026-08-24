@@ -1,25 +1,35 @@
 {
   "id": "1062",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "org.koreader.launcher",
+  "name": "KOReader",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS"
+  ],
   "version": {
     "versionName": "v2026.07.1",
-    "versionCode": 0,
+    "versionCode": 119461,
     "releaseTag": "v2026.07.1"
   },
   "source": {
     "repo": "koreader/koreader",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/koreader/koreader/releases/download/v2026.07.1/koreader-android-arm-v2026.07.1.apk",
-    "sha256": "待采集",
-    "stars": 29216
+    "sha256": "37c5b72202241ee8e85d186b9147534ffde28d39a98981e3e8f794274ee7df93",
+    "stars": 29228
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-01T11:10:30Z",
   "generatedBy": "workflow-2"

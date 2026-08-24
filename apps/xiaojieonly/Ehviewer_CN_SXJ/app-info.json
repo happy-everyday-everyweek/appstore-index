@@ -1,0 +1,47 @@
+{
+  "id": "1116",
+  "upstream": null,
+  "packageName": "com.xjs.ehviewer",
+  "name": "EhViewer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_DOWNLOAD_MANAGER",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.xjs.ehviewer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.0.2.3",
+    "versionCode": 111,
+    "releaseTag": "2.0.2.3"
+  },
+  "source": {
+    "repo": "xiaojieonly/Ehviewer_CN_SXJ",
+    "openSourceVerified": false,
+    "license": "NOASSERTION",
+    "apkUrl": "https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases/download/2.0.2.3/EhViewer-2.0.2.3.apk",
+    "sha256": "fa4ccdccd0b8603838083fddf7f4b3aa663f65fe328e2c7df5624d089e1420f0",
+    "stars": 26413
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2026-08-01T04:48:41Z",
+  "generatedBy": "workflow-2"
+}

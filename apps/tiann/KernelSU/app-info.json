@@ -1,25 +1,33 @@
 {
   "id": "1074",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "me.weishu.kernelsu",
+  "name": "KernelSU",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "me.weishu.kernelsu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
     "versionName": "v3.2.5",
-    "versionCode": 0,
+    "versionCode": 32525,
     "releaseTag": "v3.2.5"
   },
   "source": {
     "repo": "tiann/KernelSU",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/tiann/KernelSU/releases/download/v3.2.5/KernelSU_v3.2.5_32525-release.apk",
-    "sha256": "待采集",
-    "stars": 17969
+    "sha256": "1417081413bf7ab1de8e440ecbcb62685037c8f28f048f0f8b79e305b31ab916",
+    "stars": 17973
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-06-23T14:17:14Z",
   "generatedBy": "workflow-2"

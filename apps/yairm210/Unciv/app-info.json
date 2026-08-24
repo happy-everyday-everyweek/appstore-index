@@ -1,25 +1,33 @@
 {
   "id": "1075",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.unciv.app",
+  "name": "Unciv",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.unciv.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
     "versionName": "4.21.11",
-    "versionCode": 0,
+    "versionCode": 1252,
     "releaseTag": "4.21.11"
   },
   "source": {
     "repo": "yairm210/Unciv",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "MPL-2.0",
     "apkUrl": "https://github.com/yairm210/Unciv/releases/download/4.21.11/Unciv-signed.apk",
-    "sha256": "待采集",
-    "stars": 11120
+    "sha256": "4cbfd1197cd86edc0a015fd27ab113db89e7e73548ca8e2642dfcaa619b2157f",
+    "stars": 11119
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-22T21:11:23Z",
   "generatedBy": "workflow-2"

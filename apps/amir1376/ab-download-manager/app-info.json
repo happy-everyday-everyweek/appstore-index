@@ -1,25 +1,38 @@
 {
   "id": "1056",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.abdownloadmanager",
+  "name": "AB DM",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.abdownloadmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "v1.10.2",
-    "versionCode": 0,
+    "versionName": "1.10.2",
+    "versionCode": 529410,
     "releaseTag": "v1.10.2"
   },
   "source": {
     "repo": "amir1376/ab-download-manager",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/amir1376/ab-download-manager/releases/download/v1.10.2/ABDownloadManager_1.10.2_android_universal.apk",
-    "sha256": "待采集",
-    "stars": 17420
+    "sha256": "cbc54530c13de065809343a7cc647656d383a48bde49baac394f2982ab701541",
+    "stars": 17426
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-22T20:26:24Z",
   "generatedBy": "workflow-2"

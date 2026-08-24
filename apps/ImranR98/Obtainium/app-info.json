@@ -1,26 +1,45 @@
 {
   "id": "1049",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "dev.imranr.obtainium.fdroid",
+  "name": "Obtainium",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ENFORCE_UPDATE_OWNERSHIP",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SHORT_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.rosan.dhizuku.permission.API",
+    "dev.imranr.obtainium.fdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "moe.shizuku.manager.permission.API_V23"
+  ],
   "version": {
-    "versionName": "v1.6.11",
-    "versionCode": 0,
-    "releaseTag": "v1.6.11"
+    "versionName": "1.6.12",
+    "versionCode": 23513,
+    "releaseTag": "v1.6.12"
   },
   "source": {
     "repo": "ImranR98/Obtainium",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
-    "apkUrl": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.11/app-arm64-v8a-fdroid-release.apk",
-    "sha256": "待采集",
-    "stars": 19176
+    "apkUrl": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.12/app-arm64-v8a-fdroid-release.apk",
+    "sha256": "862d4b1b3d1d7d59f46e882d29835702d700204d5b0bd182da10626a28a4776c",
+    "stars": 19193
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-08-07T20:42:00Z",
+  "generatedAt": "2026-08-23T21:45:45Z",
   "generatedBy": "workflow-2"
 }

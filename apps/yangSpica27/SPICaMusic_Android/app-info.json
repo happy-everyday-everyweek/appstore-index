@@ -1,25 +1,37 @@
 {
   "id": "1076",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "me.spica27.spicamusic",
+  "name": "SPICaMusic",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "me.spica27.spicamusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "V3.6.0-PRE",
-    "versionCode": 0,
+    "versionName": "3.6.0 PRE",
+    "versionCode": 3060000,
     "releaseTag": "V3.6.0-PRE"
   },
   "source": {
     "repo": "yangSpica27/SPICaMusic_Android",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "MIT",
     "apkUrl": "https://github.com/yangSpica27/SPICaMusic_Android/releases/download/V3.6.0-PRE/app-release.apk",
-    "sha256": "待采集",
+    "sha256": "0abc4b25804fb46a14c2233d050c932b8a784d70053d722be89d05a7fc8b1e07",
     "stars": 157
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "D",
   "generatedAt": "2026-08-23T07:30:31Z",
   "generatedBy": "workflow-2"

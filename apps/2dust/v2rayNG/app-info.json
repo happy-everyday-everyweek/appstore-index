@@ -1,25 +1,38 @@
 {
   "id": "1047",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.v2ray.ang.fdroid",
+  "name": "v2rayNG (F-Droid)",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.v2ray.ang.fdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
     "versionName": "2.2.6",
-    "versionCode": 0,
+    "versionCode": 5073601,
     "releaseTag": "2.2.6"
   },
   "source": {
     "repo": "2dust/v2rayNG",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_arm64-v8a.apk",
-    "sha256": "待采集",
-    "stars": 61503
+    "sha256": "117400b0bc4431f512bb9a23eae6a8ce43f74a4977596a8ae635a2894ceb42d5",
+    "stars": 61510
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-07-05T10:17:21Z",
   "generatedBy": "workflow-2"

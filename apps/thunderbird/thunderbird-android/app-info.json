@@ -1,25 +1,42 @@
 {
   "id": "1073",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "net.thunderbird.android",
+  "name": "Thunderbird",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_SYNC_SETTINGS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "net.thunderbird.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "THUNDERBIRD_22_0",
-    "versionCode": 0,
+    "versionName": "22.0",
+    "versionCode": 30,
     "releaseTag": "THUNDERBIRD_22_0"
   },
   "source": {
     "repo": "thunderbird/thunderbird-android",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_22_0/thunderbird-22.0.apk",
-    "sha256": "待采集",
-    "stars": 13897
+    "sha256": "4a1875bb1cf4293c468048e56a91d16818653f7d6e646642dff7486dfbf0732d",
+    "stars": 13899
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-11T03:59:18Z",
   "generatedBy": "workflow-2"

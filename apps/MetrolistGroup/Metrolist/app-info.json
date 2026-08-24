@@ -1,25 +1,38 @@
 {
   "id": "1050",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.metrolist.music",
+  "name": "Metrolist",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.WAKE_LOCK",
+    "com.metrolist.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "v13.6.3",
-    "versionCode": 0,
+    "versionName": "13.6.3",
+    "versionCode": 152,
     "releaseTag": "v13.6.3"
   },
   "source": {
     "repo": "MetrolistGroup/Metrolist",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/MetrolistGroup/Metrolist/releases/download/v13.6.3/Metrolist-izzy.apk",
-    "sha256": "待采集",
-    "stars": 12153
+    "sha256": "288204c7e347f9333d909b37b111436e79bea833aa0988d7d0dae3ace1352c37",
+    "stars": 12161
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-07T22:42:21Z",
   "generatedBy": "workflow-2"

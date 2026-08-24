@@ -1,25 +1,44 @@
 {
   "id": "1054",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "ru.tech.imageresizershrinker",
+  "name": "Image Toolbox",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_MEDIA_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.PROJECT_MEDIA",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "ru.tech.imageresizershrinker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
     "versionName": "4.1.0",
-    "versionCode": 0,
+    "versionCode": 251,
     "releaseTag": "4.1.0"
   },
   "source": {
     "repo": "T8RIN/ImageToolbox",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/T8RIN/ImageToolbox/releases/download/4.1.0/image-toolbox-4.1.0-arm64-v8a.apk",
-    "sha256": "待采集",
-    "stars": 14325
+    "sha256": "eddbf96c8ef69eb37118ad6e2bed92f37ebfa389c60f269f32d4b2c461d0f89a",
+    "stars": 14330
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-07-05T20:15:20Z",
   "generatedBy": "workflow-2"

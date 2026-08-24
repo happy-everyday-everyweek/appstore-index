@@ -1,25 +1,35 @@
 {
   "id": "1064",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.github.libretube",
+  "name": "LibreTube",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.github.libretube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "v32.1",
-    "versionCode": 0,
+    "versionName": "32.1",
+    "versionCode": 72,
     "releaseTag": "v32.1"
   },
   "source": {
     "repo": "libre-tube/LibreTube",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/libre-tube/LibreTube/releases/download/v32.1/app-release.apk",
-    "sha256": "待采集",
-    "stars": 12533
+    "sha256": "437dbb55540ac573f864938fc3595f69fc13df5d568b237aded9935559fe1353",
+    "stars": 12538
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-20T20:14:35Z",
   "generatedBy": "workflow-2"

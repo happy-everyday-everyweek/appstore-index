@@ -1,25 +1,40 @@
 {
   "id": "1057",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.example.piliplus",
+  "name": "PiliPlus",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.example.piliplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
-    "versionName": "2.1.1.2",
-    "versionCode": 0,
+    "versionName": "2.1.1-edd60d635",
+    "versionCode": 5231,
     "releaseTag": "2.1.1.2"
   },
   "source": {
     "repo": "bggRGjQaUbCoE/PiliPlus",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.1.2/PiliPlus_android_2.1.1-edd60d635%2B5231_arm64-v8a.apk",
-    "sha256": "待采集",
-    "stars": 17541
+    "sha256": "8f59056173e3c9809ecd6cc4a28d85aa256c457721216a4ab2e87a42b808a9e2",
+    "stars": 17547
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-22T14:45:46Z",
   "generatedBy": "workflow-2"

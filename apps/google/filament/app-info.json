@@ -1,10 +1,12 @@
 {
   "id": "1060",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.google.android.filament.gltf",
+  "name": "gltf viewer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
   "version": {
     "versionName": "v1.75.0",
     "versionCode": 0,
@@ -12,14 +14,14 @@
   },
   "source": {
     "repo": "google/filament",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/google/filament/releases/download/v1.75.0/filament-gltf-viewer-v1.75.0-android.apk",
-    "sha256": "待采集",
+    "sha256": "81d9659d00ff865859cfd9593a7cd4b7f8a119fabb87aeb9e995089897a8d24b",
     "stars": 20389
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-04T04:54:52Z",
   "generatedBy": "workflow-2"

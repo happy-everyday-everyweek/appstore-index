@@ -1,25 +1,40 @@
 {
   "id": "1070",
   "upstream": null,
-  "packageName": "待采集",
-  "name": "待采集",
-  "icon": "待采集",
-  "permissions": [],
+  "packageName": "com.carriez.flutter_hbb",
+  "name": "RustDesk",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.carriez.flutter_hbb.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
   "version": {
     "versionName": "1.4.9",
-    "versionCode": 0,
+    "versionCode": 2067,
     "releaseTag": "1.4.9"
   },
   "source": {
     "repo": "rustdesk/rustdesk",
-    "openSourceVerified": true,
+    "openSourceVerified": false,
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64-signed.apk",
-    "sha256": "待采集",
-    "stars": 121576
+    "sha256": "285b4f0735c000e5155b9a6f087b57744e46c960f4332963f51add1804982102",
+    "stars": 121612
   },
   "readme": "included",
-  "uploader": "appstore-ci",
+  "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-07-06T10:02:30Z",
   "generatedBy": "workflow-2"
