@@ -205,10 +205,15 @@ def main():
     full_payload.update(assets)  # 图标/README 随包资源
     full_zip = pack_zip(full_payload)
     inc_data = {"addedOrChanged": added_changed, "removed": removed}
-    inc_zip = pack_zip({"incremental.json": json.dumps(inc_data, ensure_ascii=False, indent=2).encode()})
+    # 增量包同时携带全部图标/README 资产（客户端增量应用后资产即齐，无需依赖历史全量包）
+    inc_payload = {"incremental.json": json.dumps(inc_data, ensure_ascii=False, indent=2).encode()}
+    inc_payload.update(assets)
+    inc_zip = pack_zip(inc_payload)
+    ts = datetime.datetime.utcnow().strftime("%Y%m%d%H%M%S")
+    tag = f"aggregate-{ts}"
     patch = {
         "base": latest_release_tag(args.repo) or "none",
-        "target": None,
+        "target": tag,
         "algorithm": PATCH_ALGO,
         "incrementalSha256": hashlib.sha256(inc_zip).hexdigest(),
         "fullSha256": hashlib.sha256(full_zip).hexdigest(),
