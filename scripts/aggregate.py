@@ -32,8 +32,13 @@ PATCH_ALGO = "structured-json-v1"  # 增量包算法标识（与客户端 SyncEn
 
 
 def build_full_index():
-    """抽取全部应用的聚合元数据：id → 展示所需字段（不含 README/权限明细等重内容）。"""
+    """抽取全部应用的聚合元数据，并把图标/README 作为随包资源收集。
+
+    full.zip 结构：index.json + assets/icons/<id>.<ext> + assets/readmes/<id>.md。
+    返回 (index, assets) 其中 assets 为 {包内路径: 字节}。
+    """
     index = {}
+    assets = {}
     for app_json_path, owner, repo in find_app_dirs("."):
         dir_path = os.path.dirname(app_json_path)
         info_path = os.path.join(dir_path, "app-info.json")
@@ -42,15 +47,36 @@ def build_full_index():
             continue
         info = load_json(info_path)
         app = load_json(app_json_path)
-        index[str(info["id"])] = {
-            "id": str(info["id"]),
+        aid = str(info["id"])
+        # 图标资源：apps/<owner>/<repo>/icon.<ext> → assets/icons/<id>.<ext>
+        icon_ref = ""
+        import glob
+        icon_files = sorted(glob.glob(os.path.join(dir_path, "icon.*")))
+        if icon_files:
+            icon_path = icon_files[0]
+            ext = icon_path.rsplit(".", 1)[-1].lower()
+            asset_key = f"assets/icons/{aid}.{ext}"
+            with open(icon_path, "rb") as f:
+                assets[asset_key] = f.read()
+            icon_ref = asset_key
+        # README 资源：README.md → assets/readmes/<id>.md
+        readme_ref = ""
+        readme_path = os.path.join(dir_path, "README.md")
+        if os.path.isfile(readme_path):
+            with open(readme_path, "rb") as f:
+                assets[f"assets/readmes/{aid}.md"] = f.read()
+            readme_ref = f"assets/readmes/{aid}.md"
+        index[aid] = {
+            "id": aid,
             "repo": app["repo"],
             "name": info.get("name", ""),
             "packageName": info.get("packageName", ""),
-            "icon": info.get("icon"),
+            "icon": icon_ref,
             "summary": app.get("summary", ""),
             "openSource": bool(app.get("openSource", False)),
             "specialPermissions": app.get("specialPermissions", ["none"]),
+            "permissions": info.get("permissions", []),
+            "readme": readme_ref,
             "upstream": info.get("upstream"),
             "grade": info.get("grade", "E"),
             "version": info.get("version", {}),
@@ -61,7 +87,7 @@ def build_full_index():
                 "sha256": info.get("source", {}).get("sha256"),
             },
         }
-    return index
+    return index, assets
 
 
 def pack_zip(files):
@@ -175,7 +201,9 @@ def main():
             log(f"变更量不达标（新增 {new_count}，总变更 {changes}），不发布")
             sys.exit(0)
 
-    full_zip = pack_zip({"index.json": json.dumps(cur, ensure_ascii=False, indent=2).encode()})
+    full_payload = {"index.json": json.dumps(cur, ensure_ascii=False, indent=2).encode()}
+    full_payload.update(assets)  # 图标/README 随包资源
+    full_zip = pack_zip(full_payload)
     inc_data = {"addedOrChanged": added_changed, "removed": removed}
     inc_zip = pack_zip({"incremental.json": json.dumps(inc_data, ensure_ascii=False, indent=2).encode()})
     patch = {
