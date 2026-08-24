@@ -1,15 +1,12 @@
 name: Merge-Settle 合并落盘
-
 on:
   push:
     branches: [main]
     paths:
       - "apps/**/app.json"
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   settle:
     runs-on: ubuntu-latest
@@ -23,12 +20,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 为缺失 app-info 的应用执行采集落盘并提交
+      - name: 采集落盘并提交（含 README 依赖资源）
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AAPT2: ${{ env.ANDROID_HOME }}/build-tools/34.0.0/aapt2
         run: |
-          # 先对齐远端 main（避免并发写入导致 push 被拒）
           git fetch origin main
           git reset --hard origin/main
           python3 scripts/verify_scan.py \
@@ -40,7 +36,6 @@ jobs:
           git config user.email "appstore-ci@users.noreply.github.com"
           git add apps/
           git commit -m "chore: 采集落盘 app-info.json 与 README.md（merge-settle）" || echo "无变更"
-          # 重试推送（最多 3 次）
           # 重试推送：远端被并发推进时 pull --rebase 后重推（最多 5 次）
           for i in 1 2 3 4 5; do
             git push origin HEAD:main && break || { git pull --rebase origin main 2>/dev/null || true; sleep 4; }
