@@ -149,11 +149,24 @@ def verify(repo_name, declared_open):
     }
 
 
-def extract_apk(apk_url, apk_path):
-    """下载 APK 并用 androguard 解包：包名/应用名/图标/权限/版本/SHA-256。
+def find_aapt2():
+    """定位 aapt2：环境变量 AAPT2 > PATH > 仓库 tools/aapt2。"""
+    import shutil
+    env = os.environ.get("AAPT2") or shutil.which("aapt2")
+    if env and os.path.exists(env):
+        return env
+    local = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../tools/aapt2")
+    if os.path.exists(local):
+        return local
+    return "aapt2"
 
-    返回 dict 或 None（下载或解包失败，调用方跳过该应用、不做占位伪造）。
-    """
+
+def extract_apk(apk_url, apk_path, aapt2=None):
+    """下载 APK 并用 aapt2 解包（badging + 资源提取）：
+    包名/应用名/图标/权限/版本/SHA-256。失败返回 None（不写入占位数据）。"""
+    import subprocess, re, io, zipfile
+    if aapt2 is None:
+        aapt2 = find_aapt2()
     try:
         req = urllib.request.Request(apk_url)
         req.add_header("User-Agent", "appstore-ci/1.0")
@@ -161,30 +174,43 @@ def extract_apk(apk_url, apk_path):
             data = r.read()
         with open(apk_path, "wb") as f:
             f.write(data)
-        from androguard.core.apk import APK
-
-        apk = APK(apk_path)
-        label = apk.get_app_name()
-        if isinstance(label, dict):
-            label = label.get("en") or label.get("") or next(iter(label.values()), "")
-        icon_path = apk.get_icon_path()
+        proc = subprocess.run([aapt2, "dump", "badging", apk_path],
+                              capture_output=True, text=True, timeout=120)
+        if proc.returncode != 0:
+            raise RuntimeError(f"aapt2 badging 失败: {proc.stderr[:300]}")
+        out = proc.stdout
+        m = re.search(r"package: name='([^']*)' versionCode='(\d*)' versionName='([^']*)'", out)
+        package = m.group(1) if m else ""
+        version_code = int(m.group(2)) if m and m.group(2) else 0
+        version_name = m.group(3) if m else ""
+        label = ""
+        lm = re.search(r"application-label(?:-[A-Za-z0-9-]+)?:'([^']*)'", out)
+        if lm:
+            label = lm.group(1)
+        if not label:
+            lm = re.search(r"application-label:'([^']*)'", out)
+            label = lm.group(1) if lm else ""
+        icon_rel = ""
+        im = re.search(r"icon='([^']*)'", out)
+        icon_rel = im.group(1) if im else ""
+        perms = sorted(set(re.findall(r"uses-permission: name='([^']*)'", out)))
         icon_bytes = None
         icon_ext = "png"
-        if icon_path:
+        if icon_rel:
             try:
-                icon_bytes = apk.get_file(icon_path)
-                if icon_bytes:
-                    icon_ext = icon_path.rsplit(".", 1)[-1].lower()
+                with zipfile.ZipFile(apk_path) as z:
+                    icon_bytes = z.read(icon_rel)
+                    icon_ext = icon_rel.rsplit(".", 1)[-1].lower()
                     if icon_ext not in ("png", "webp", "jpg", "jpeg"):
                         icon_ext = "png"
             except Exception:
                 icon_bytes = None
         return {
-            "packageName": apk.get_package() or "",
-            "name": (label or "").strip(),
-            "permissions": sorted(set(apk.get_permissions() or [])),
-            "versionName": apk.get_androidversion_name() or "",
-            "versionCode": apk.get_androidversion_code() or 0,
+            "packageName": package,
+            "name": label.strip(),
+            "permissions": perms,
+            "versionName": version_name,
+            "versionCode": version_code,
             "iconBytes": icon_bytes,
             "iconExt": icon_ext,
             "sha256": sha256_file(apk_path),
