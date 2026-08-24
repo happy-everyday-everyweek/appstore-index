@@ -1,0 +1,33 @@
+{
+  "id": "1185",
+  "upstream": null,
+  "packageName": "moe.shizuku.privileged.api",
+  "name": "Shizuku",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WRITE_SECURE_SETTINGS",
+    "moe.shizuku.manager.permission.MANAGER"
+  ],
+  "version": {
+    "versionName": "13.6.0.r1086.2650830c",
+    "versionCode": 1086,
+    "releaseTag": "v13.6.0"
+  },
+  "source": {
+    "repo": "RikkaApps/Shizuku",
+    "openSourceVerified": false,
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk",
+    "sha256": "6e273ab0e991c4e79bc8b1bbb9b9dd739ccac1a8712a541a214078886b7b790f",
+    "stars": 29281
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2025-05-25T13:19:47Z",
+  "generatedBy": "workflow-2"
+}

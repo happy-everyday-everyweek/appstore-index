@@ -1,0 +1,41 @@
+{
+  "id": "1188",
+  "upstream": null,
+  "packageName": "com.x8bit.bitwarden",
+  "name": "Bitwarden",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.NFC",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_USER_DICTIONARY",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "horizons.permission.HEADSET_CAMERA"
+  ],
+  "version": {
+    "versionName": "2026.8.0",
+    "versionCode": 21819,
+    "releaseTag": "v2026.8.0-bwpm"
+  },
+  "source": {
+    "repo": "bitwarden/android",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/bitwarden/android/releases/download/v2026.8.0-bwpm/com.x8bit.bitwarden-fdroid.apk",
+    "sha256": "a6ca58fe9ea0c27981ae0e9ca75ddf5170a25f7348b22ca940c7ca0e91decbb4",
+    "stars": 9258
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-21T17:38:49Z",
+  "generatedBy": "workflow-2"
+}

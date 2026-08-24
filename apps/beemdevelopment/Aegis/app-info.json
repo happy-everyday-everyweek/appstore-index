@@ -1,0 +1,33 @@
+{
+  "id": "1187",
+  "upstream": null,
+  "packageName": "com.beemdevelopment.aegis",
+  "name": "Aegis",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.CAMERA",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "com.beemdevelopment.aegis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "3.4.2",
+    "versionCode": 81,
+    "releaseTag": "v3.4.2"
+  },
+  "source": {
+    "repo": "beemdevelopment/Aegis",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/beemdevelopment/Aegis/releases/download/v3.4.2/aegis-v3.4.2.apk",
+    "sha256": "5b9d496d21c5938bdd733b01583516d27cd556db0749357f58baa648ef8ef804",
+    "stars": 12961
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2026-02-24T20:02:52Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "1177",
+  "upstream": null,
+  "packageName": "com.duckduckgo.mobile.android",
+  "name": "DuckDuckGo",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CREDENTIAL_MANAGER_SET_ORIGIN",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.android.vending.BILLING",
+    "com.duckduckgo.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "5.292.1",
+    "versionCode": 52921000,
+    "releaseTag": "5.292.1"
+  },
+  "source": {
+    "repo": "DuckDuckGo/Android",
+    "openSourceVerified": false,
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/duckduckgo/Android/releases/download/5.292.1/duckduckgo-5.292.1-play-release.apk",
+    "sha256": "ce771c2de08b63bd8bab93b8a3ca4bc4e2203b777ddfa32a15551fcbf8406b35",
+    "stars": 4796
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-18T16:13:19Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "1193",
+  "upstream": null,
+  "packageName": "org.jellyfin.androidtv.debug",
+  "name": "Jellyfin Debug",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WAKE_LOCK",
+    "com.android.providers.tv.permission.READ_EPG_DATA",
+    "com.android.providers.tv.permission.WRITE_EPG_DATA",
+    "org.jellyfin.androidtv.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "0.19.10",
+    "versionCode": 191099,
+    "releaseTag": "v0.19.10"
+  },
+  "source": {
+    "repo": "jellyfin/jellyfin-androidtv",
+    "openSourceVerified": false,
+    "license": "GPL-2.0",
+    "apkUrl": "https://github.com/jellyfin/jellyfin-androidtv/releases/download/v0.19.10/jellyfin-androidtv-v0.19.10-debug.apk",
+    "sha256": "7831bf5400269bec49a00ebce4ba9f7499d4e470f7b1d88e778304068595456e",
+    "stars": 4483
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-16T08:04:36Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "1182",
+  "upstream": null,
+  "packageName": "eu.faircode.netguard",
+  "name": "NetGuard",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "eu.faircode.netguard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "eu.faircode.netguard.permission.ADMIN"
+  ],
+  "version": {
+    "versionName": "2.337",
+    "versionCode": 2026080101,
+    "releaseTag": "2.337"
+  },
+  "source": {
+    "repo": "M66B/NetGuard",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/M66B/NetGuard/releases/download/2.337/NetGuard-v2.337-release.apk",
+    "sha256": "150a0362f04408c2d3cc7fb38d7e126445019d523489c8d82df6fb456c4e6ad2",
+    "stars": 3844
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-01T21:29:40Z",
+  "generatedBy": "workflow-2"
+}

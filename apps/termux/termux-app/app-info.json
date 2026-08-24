@@ -1,0 +1,43 @@
+{
+  "id": "1200",
+  "upstream": null,
+  "packageName": "com.termux",
+  "name": "Termux",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.DUMP",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_LOGS",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SECURE_SETTINGS",
+    "com.android.alarm.permission.SET_ALARM"
+  ],
+  "version": {
+    "versionName": "0.118.3",
+    "versionCode": 1002,
+    "releaseTag": "v0.118.3"
+  },
+  "source": {
+    "repo": "termux/termux-app",
+    "openSourceVerified": false,
+    "license": "NOASSERTION",
+    "apkUrl": "https://github.com/termux/termux-app/releases/download/v0.118.3/termux-app_v0.118.3%2Bgithub-debug_arm64-v8a.apk",
+    "sha256": "72fdb596045116bf5ba1b5bdf5b26fddb9acc0bd074ad9f2da9eb0ae85e83a4e",
+    "stars": 59695
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2025-05-22T22:47:26Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "1192",
+  "upstream": null,
+  "packageName": "org.jellyfin.mobile.debug",
+  "name": "Jellyfin Debug",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "org.jellyfin.mobile.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.7.1",
+    "versionCode": 2070199,
+    "releaseTag": "v2.7.1"
+  },
+  "source": {
+    "repo": "jellyfin/jellyfin-android",
+    "openSourceVerified": false,
+    "license": "GPL-2.0",
+    "apkUrl": "https://github.com/jellyfin/jellyfin-android/releases/download/v2.7.1/jellyfin-android-v2.7.1-libre-debug.apk",
+    "sha256": "56e0abecf6c43922479af9845cdd30e21d34eb81ea24761b1f9f671ca107ded7",
+    "stars": 2710
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-11T14:33:46Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "1196",
+  "upstream": null,
+  "packageName": "com.github.shadowsocks",
+  "name": "Shadowsocks",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.github.shadowsocks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "5.3.5-nightly",
+    "versionCode": 5030550,
+    "releaseTag": "v5.3.5-nightly"
+  },
+  "source": {
+    "repo": "shadowsocks/shadowsocks-android",
+    "openSourceVerified": false,
+    "license": "NOASSERTION",
+    "apkUrl": "https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.3.5-nightly/shadowsocks-5.3.5-nightly.apk",
+    "sha256": "ac50e1eff125a853e298ed70434a9ba23e99d676d629e1065bb2e9c2eb294656",
+    "stars": 36767
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "C",
+  "generatedAt": "2026-02-10T06:47:17Z",
+  "generatedBy": "workflow-2"
+}

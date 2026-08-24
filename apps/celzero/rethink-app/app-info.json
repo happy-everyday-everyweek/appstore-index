@@ -1,0 +1,49 @@
+{
+  "id": "1189",
+  "upstream": null,
+  "packageName": "com.celzero.bravedns",
+  "name": "Rethink",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+    "android.permission.INTERACT_ACROSS_USERS",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.celzero.bravedns.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "v0.5.6",
+    "versionCode": 30000067,
+    "releaseTag": "v0.5.6"
+  },
+  "source": {
+    "repo": "celzero/rethink-app",
+    "openSourceVerified": false,
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/celzero/rethink-app/releases/download/v0.5.6/rethink-67-arm64-v8a.apk",
+    "sha256": "d68c7e3e57c3fd46e6928d2f9e4308bffc72104fbb930b85b0d082aa1207b143",
+    "stars": 5329
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-09T15:46:17Z",
+  "generatedBy": "workflow-2"
+}

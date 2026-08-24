@@ -1,0 +1,33 @@
+{
+  "id": "1195",
+  "upstream": null,
+  "packageName": "is.xyz.mpv",
+  "name": "mpv",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "is.xyz.mpv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2026-08-11-release-oldapi",
+    "versionCode": 8047,
+    "releaseTag": "2026-08-11"
+  },
+  "source": {
+    "repo": "mpv-android/mpv-android",
+    "openSourceVerified": false,
+    "license": "MIT",
+    "apkUrl": "https://github.com/mpv-android/mpv-android/releases/download/2026-08-11/app-api29-universal-debug.apk",
+    "sha256": "716ba853289db228785c7d89f561e561c104627bd894529dd1b89cd00a4d66f2",
+    "stars": 3490
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-11T22:01:45Z",
+  "generatedBy": "workflow-2"
+}

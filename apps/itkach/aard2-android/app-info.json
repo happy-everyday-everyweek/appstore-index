@@ -1,0 +1,29 @@
+{
+  "id": "1191",
+  "upstream": null,
+  "packageName": "itkach.aard2",
+  "name": "Aard 2",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET"
+  ],
+  "version": {
+    "versionName": "0.58",
+    "versionCode": 58,
+    "releaseTag": "0.58"
+  },
+  "source": {
+    "repo": "itkach/aard2-android",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/itkach/aard2-android/releases/download/0.58/aard2-android-0.58.apk",
+    "sha256": "93ec37f5ca717e03cf7c50482e82da7b6e0c43ebd7d74d1a427afae171f14fb9",
+    "stars": 554
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2024-07-16T20:44:11Z",
+  "generatedBy": "workflow-2"
+}

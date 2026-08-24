@@ -1,0 +1,40 @@
+{
+  "id": "1198",
+  "upstream": null,
+  "packageName": "com.tailscale.ipn",
+  "name": "Tailscale",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.tailscale.ipn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.102.3-t9329c3677-gaea8f60c0",
+    "versionCode": 297862600,
+    "releaseTag": "1.102.3-t9329c3677-gf19372863"
+  },
+  "source": {
+    "repo": "tailscale/tailscale-android",
+    "openSourceVerified": false,
+    "license": "BSD-3-Clause",
+    "apkUrl": "https://github.com/tailscale/tailscale-android/releases/download/1.102.3-t9329c3677-gf19372863/tailscale-android-universal-1.102.3.apk",
+    "sha256": "ce01f538379768144d7e3f31706a8eb6038fcaae6aa3c410a83bc56113ac0763",
+    "stars": 2448
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-21T14:25:51Z",
+  "generatedBy": "workflow-2"
+}

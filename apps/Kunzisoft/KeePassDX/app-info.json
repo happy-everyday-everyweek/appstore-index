@@ -1,0 +1,37 @@
+{
+  "id": "1180",
+  "upstream": null,
+  "packageName": "com.kunzisoft.keepass.free",
+  "name": "KeePassDX",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "com.kunzisoft.keepass.free.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "4.4.5",
+    "versionCode": 44500,
+    "releaseTag": "4.4.5"
+  },
+  "source": {
+    "repo": "Kunzisoft/KeePassDX",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/Kunzisoft/KeePassDX/releases/download/4.4.5/KeePassDX-4.4.5-free.apk",
+    "sha256": "803d779d76c62b81d2c0e2acee8938e55bc461a8a0238fcb256670b3279a1cf0",
+    "stars": 7172
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-06-15T15:57:38Z",
+  "generatedBy": "workflow-2"
+}

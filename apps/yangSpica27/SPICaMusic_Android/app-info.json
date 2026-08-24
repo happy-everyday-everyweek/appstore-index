@@ -18,21 +18,21 @@
     "me.spica27.spicamusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
   ],
   "version": {
-    "versionName": "3.6.0 PRE",
-    "versionCode": 3060000,
-    "releaseTag": "V3.6.0-PRE"
+    "versionName": "3.6.1 PRE",
+    "versionCode": 3060001,
+    "releaseTag": "V3.6.1-PRE"
   },
   "source": {
     "repo": "yangSpica27/SPICaMusic_Android",
     "openSourceVerified": false,
     "license": "MIT",
-    "apkUrl": "https://github.com/yangSpica27/SPICaMusic_Android/releases/download/V3.6.0-PRE/app-release.apk",
-    "sha256": "0abc4b25804fb46a14c2233d050c932b8a784d70053d722be89d05a7fc8b1e07",
+    "apkUrl": "https://github.com/yangSpica27/SPICaMusic_Android/releases/download/V3.6.1-PRE/app-release.apk",
+    "sha256": "8f7489910d15162a7a70d858f0022513849389a962b4cbca9ac4c9cb834144ef",
     "stars": 157
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "D",
-  "generatedAt": "2026-08-23T07:30:31Z",
+  "generatedAt": "2026-08-24T15:13:36Z",
   "generatedBy": "workflow-2"
 }
