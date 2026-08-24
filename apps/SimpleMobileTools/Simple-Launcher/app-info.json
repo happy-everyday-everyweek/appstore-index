@@ -1,0 +1,31 @@
+{
+  "id": "1414",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.launcher",
+  "name": "Launcher",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.BIND_APPWIDGET",
+    "android.permission.EXPAND_STATUS_BAR",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.REQUEST_DELETE_PACKAGES"
+  ],
+  "version": {
+    "versionName": "5.1.1",
+    "versionCode": 10,
+    "releaseTag": "5.1.1"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Launcher",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Launcher/releases/download/5.1.1/launcher-fdroid-release.apk",
+    "sha256": "45b894c0e0af11a588bc09e2398e6bc02145323896164c00607d10a312efce59",
+    "stars": 150
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-09-23T16:16:21Z",
+  "generatedBy": "workflow-2"
+}

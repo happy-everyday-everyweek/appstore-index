@@ -1,0 +1,45 @@
+{
+  "id": "1418",
+  "upstream": null,
+  "packageName": "com.amaze.filemanager",
+  "name": "Amaze",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.amaze.cloud.permission.ACCESS_PROVIDER",
+    "com.amaze.filemanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.android.launcher.permission.INSTALL_SHORTCUT"
+  ],
+  "version": {
+    "versionName": "3.11.3",
+    "versionCode": 125,
+    "releaseTag": "v3.11.3"
+  },
+  "source": {
+    "repo": "TeamAmaze/AmazeFileManager",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/TeamAmaze/AmazeFileManager/releases/download/v3.11.3/app-fdroid-release.apk",
+    "sha256": "864bcec7c1e69bd5a4a6f8613a4ac047e748a598e5a9948f28fba3f3e709d203",
+    "stars": 6347
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-07-30T06:04:09Z",
+  "generatedBy": "workflow-2"
+}

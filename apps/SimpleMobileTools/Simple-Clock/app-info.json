@@ -1,0 +1,38 @@
+{
+  "id": "1412",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.clock",
+  "name": "Clock",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.USE_EXACT_ALARM",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.alarm.permission.SET_ALARM"
+  ],
+  "version": {
+    "versionName": "5.11.2",
+    "versionCode": 42,
+    "releaseTag": "5.11.2"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Clock",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Clock/releases/download/5.11.2/clock-fdroid-release.apk",
+    "sha256": "1d553e67a3a4b3a4fdb044eeb473dcece163c9a0ce17879c9c8b9b816d126c51",
+    "stars": 623
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-09-23T16:06:27Z",
+  "generatedBy": "workflow-2"
+}

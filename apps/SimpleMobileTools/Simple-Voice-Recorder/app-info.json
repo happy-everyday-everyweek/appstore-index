@@ -1,0 +1,34 @@
+{
+  "id": "1417",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.voicerecorder",
+  "name": "Voice Recorder",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "5.12.3",
+    "versionCode": 41,
+    "releaseTag": "5.12.3"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Voice-Recorder",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Voice-Recorder/releases/download/5.12.3/voice-recorder-fdroid-release.apk",
+    "sha256": "42d0e60e2471d6781e0530a76ba4847699763704a8f39dce54ca510d0ca5cd16",
+    "stars": 532
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-10-09T09:21:05Z",
+  "generatedBy": "workflow-2"
+}

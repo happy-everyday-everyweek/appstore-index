@@ -1,0 +1,35 @@
+{
+  "id": "1415",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.musicplayer",
+  "name": "Music Player",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "5.18.3",
+    "versionCode": 119,
+    "releaseTag": "5.18.3"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Music-Player",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Music-Player/releases/download/5.18.3/music-player-fdroid-release.apk",
+    "sha256": "bcb757f23449031efb667f734fec1ef43028e8c42ab57f3212d7015dd09be1e3",
+    "stars": 1392
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-10-17T07:15:47Z",
+  "generatedBy": "workflow-2"
+}

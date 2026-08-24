@@ -1,0 +1,36 @@
+{
+  "id": "1410",
+  "upstream": null,
+  "packageName": "org.adaway",
+  "name": "AdAway",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.WAKE_LOCK",
+    "org.adaway.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "6.1.4",
+    "versionCode": 60104,
+    "releaseTag": "v6.1.4"
+  },
+  "source": {
+    "repo": "AdAway/AdAway",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/AdAway/AdAway/releases/download/v6.1.4/AdAway-6.1.4-20241027.apk",
+    "sha256": "09f8e1528a53e5ffad59e57a174e90d4e10c5092bf4f6a60ab6594f046614417",
+    "stars": 9363
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2024-10-27T14:19:54Z",
+  "generatedBy": "workflow-2"
+}

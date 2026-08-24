@@ -1,0 +1,36 @@
+{
+  "id": "1413",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.contacts.pro",
+  "name": "Contacts",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.CALL_PHONE",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_SYNC_SETTINGS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_CONTACTS",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "6.22.7",
+    "versionCode": 107,
+    "releaseTag": "6.22.7"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Contacts",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Contacts/releases/download/6.22.7/contacts-fdroid-release.apk",
+    "sha256": "be124c64970585034a85430789b647a179179a659fc20ea34de101accad8606e",
+    "stars": 829
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-09-05T07:54:43Z",
+  "generatedBy": "workflow-2"
+}
