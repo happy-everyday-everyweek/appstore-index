@@ -1,0 +1,35 @@
+name: WF5 版本扫描自动更新
+
+on:
+  schedule:
+    - cron: "23 3 * * *"   # 每日 03:23（独立于工作流 4）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 扫描全部收录应用的新 Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/scan_versions.py \
+            --repo "${{ github.repository }}"
+      - name: 有更新则提交
+        run: |
+          if git diff --quiet; then
+            echo "无版本更新，跳过提交"
+          else
+            git config user.name "appstore-ci"
+            git config user.email "appstore-ci@users.noreply.github.com"
+            git add apps/
+            git commit -m "chore: 版本扫描自动更新元数据（工作流 5）"
+            git push
+          fi
