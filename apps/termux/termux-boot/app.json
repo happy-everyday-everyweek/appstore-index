@@ -1,0 +1,5 @@
+{
+  "repo": "termux/termux-boot",
+  "openSource": true,
+  "summary": "Termux:Boot 开源启动插件：开机自动运行 Termux 脚本"
+}
