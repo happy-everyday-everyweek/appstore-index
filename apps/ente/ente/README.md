@@ -84,11 +84,11 @@ Ente Locker is free for up to 100 items. If you're subscribed to Ente Photos, yo
 
 ## Contributing
 
-Want to get aboard the Ente hype train? Welcome along! Don't hesitate if you're not a developer, there are many other important ways in which [you can contribute](CONTRIBUTING.md).
+Want to get aboard the Ente hype train? Welcome along! Don't hesitate if you're not a developer, there are many other important ways in which [you can contribute](CONTRIBUTING.mdreadme-assets/CONTRIBUTING.md.
 
 ## Support
 
-We are never more than an email away. For the various ways to ask for help, please see our [support guide](SUPPORT.md).
+We are never more than an email away. For the various ways to ask for help, please see our [support guide](SUPPORT.mdreadme-assets/SUPPORT.md.
 
 ## Community
 
@@ -106,4 +106,4 @@ Please visit the [community section](https://ente.com/about#community) for all t
 
 ## Security
 
-If you believe you have found a security vulnerability, please responsibly disclose it by emailing security@ente.com or [using this link](https://github.com/ente/ente/security/advisories/new) instead of opening a public issue. We will investigate all legitimate reports. To know more, please see our [security policy](SECURITY.md).
+If you believe you have found a security vulnerability, please responsibly disclose it by emailing security@ente.com or [using this link](https://github.com/ente/ente/security/advisories/new) instead of opening a public issue. We will investigate all legitimate reports. To know more, please see our [security policy](SECURITY.mdreadme-assets/SECURITY.md.

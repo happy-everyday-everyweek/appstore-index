@@ -6,7 +6,7 @@
 
 | 30/03/2023 | EN, [FR](/docs/lang/fr/README.md), [CZ](/docs/lang/cs/README.md), [PL](/docs/lang/pl/README.md) |
 
-<img src="images/github-banner.jpg" alt="SimpleX logo" width="100%">
+<img src="images/github-banner.jpgreadme-assets/images/github-banner.jpg alt="SimpleX logo" width="100%">
 
 Invest in SimpleX Chat. [Learn more on Wefunder](https://wefunder.com/simplexchat).
 

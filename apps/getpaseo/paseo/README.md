@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="packages/website/public/logo.svg" width="64" height="64" alt="Paseo logo">
+  <img src="packages/website/public/logo.svgreadme-assets/packages/website/public/logo.svg width="64" height="64" alt="Paseo logo">
 </p>
 
 <h1 align="center">Paseo</h1>
@@ -97,7 +97,7 @@ docker run -d --name paseo \
   ghcr.io/getpaseo/paseo:latest
 ```
 
-Open `http://localhost:6767` after it starts. Extend the base image with the agent CLIs you use, then provide credentials through environment variables or the persistent `/home/paseo` volume. See the [Docker documentation](docs/docker.md) for full setup details.
+Open `http://localhost:6767` after it starts. Extend the base image with the agent CLIs you use, then provide credentials through environment variables or the persistent `/home/paseo` volume. See the [Docker documentation](docs/docker.mdreadme-assets/docs/docker.md for full setup details.
 
 ## CLI
 

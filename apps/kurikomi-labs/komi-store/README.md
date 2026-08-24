@@ -1,6 +1,6 @@
 <div align="center">
   <br/>
-  <img src="media-resources/app_icon.png" width="200" alt="Komi Store app icon" />
+  <img src="media-resources/app_icon.pngreadme-assets/media-resources/app_icon.png width="200" alt="Komi Store app icon" />
 
 # Komi Store
 
@@ -49,12 +49,12 @@ Komi Store is a cross-platform app store for GitHub releases, designed to simpli
 > Free and Open-Source Android is under threat. Google will turn Android into a locked-down platform, restricting your essential freedom to install apps of your choice. Make your voice heard – [keepandroidopen.org](https://keepandroidopen.org/).
 
 <p align="center">
-  <img src="media-resources/banner.jpeg" width="99%" />
+  <img src="media-resources/banner.jpegreadme-assets/media-resources/banner.jpeg width="99%" />
 </p>
 
 | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- |
-| ![](media-resources/screenshots/mobile/01.jpg) | ![](media-resources/screenshots/mobile/02.jpg) | ![](media-resources/screenshots/mobile/03.jpg) | ![](media-resources/screenshots/mobile/04.jpg) | ![](media-resources/screenshots/mobile/05.jpg) | ![](media-resources/screenshots/mobile/06.jpg) |
+| ![](media-resources/screenshots/mobile/01.jpgreadme-assets/media-resources/screenshots/mobile/01.jpg | ![](media-resources/screenshots/mobile/02.jpgreadme-assets/media-resources/screenshots/mobile/02.jpg | ![](media-resources/screenshots/mobile/03.jpgreadme-assets/media-resources/screenshots/mobile/03.jpg | ![](media-resources/screenshots/mobile/04.jpgreadme-assets/media-resources/screenshots/mobile/04.jpg | ![](media-resources/screenshots/mobile/05.jpgreadme-assets/media-resources/screenshots/mobile/05.jpg | ![](media-resources/screenshots/mobile/06.jpgreadme-assets/media-resources/screenshots/mobile/06.jpg |
 
 ---
 

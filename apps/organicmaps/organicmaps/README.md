@@ -1,22 +1,22 @@
 <div align="center">
-  <img src="qt/res/logo.png" height="100"/>
+  <img src="qt/res/logo.pngreadme-assets/qt/res/logo.png height="100"/>
 </div>
 <h1 align="center">Organic Maps</h1>
 
 **Organic Maps** is a privacy-first offline maps & GPS app for hiking, cycling, biking, and driving. Absolutely free. No ads. No tracking. Created and maintained by MapsWithMe (MAPS.ME) founders, developed with love by the open-source community. Powered by [OpenStreetMap](https://www.openstreetmap.org) data. Installed by [over 6 million users worldwide](https://organicmaps.app/news/2025-12-31/organic-maps-2025-year-in-review/).
 
-[<img src="docs/badges/apple-appstore.png" alt="App Store" width="140">](https://apps.apple.com/app/organic-maps/id1567437057)
-[<img src="docs/badges/google-play.png" alt="Google Play" width="140">](https://play.google.com/store/apps/details?id=app.organicmaps)
-[<img src="docs/badges/huawei-appgallery.png" alt="AppGallery" width="140">](https://appgallery.huawei.com/#/app/C104325611)
-[<img src="docs/badges/obtainium.png" alt="Obtainium" width="140">](https://github.com/organicmaps/organicmaps/wiki/Installing-Organic-Maps-from-GitHub-using-Obtainium)
-[<img src="docs/badges/fdroid.png" alt="F-Droid" width="140">](https://f-droid.org/en/packages/app.organicmaps/)
-[<img src="docs/badges/accrescent.png" alt="Accrescent" width="140">](https://accrescent.app/app/app.organicmaps)
+[<img src="docs/badges/apple-appstore.pngreadme-assets/docs/badges/apple-appstore.png alt="App Store" width="140">](https://apps.apple.com/app/organic-maps/id1567437057)
+[<img src="docs/badges/google-play.pngreadme-assets/docs/badges/google-play.png alt="Google Play" width="140">](https://play.google.com/store/apps/details?id=app.organicmaps)
+[<img src="docs/badges/huawei-appgallery.pngreadme-assets/docs/badges/huawei-appgallery.png alt="AppGallery" width="140">](https://appgallery.huawei.com/#/app/C104325611)
+[<img src="docs/badges/obtainium.pngreadme-assets/docs/badges/obtainium.png alt="Obtainium" width="140">](https://github.com/organicmaps/organicmaps/wiki/Installing-Organic-Maps-from-GitHub-using-Obtainium)
+[<img src="docs/badges/fdroid.pngreadme-assets/docs/badges/fdroid.png alt="F-Droid" width="140">](https://f-droid.org/en/packages/app.organicmaps/)
+[<img src="docs/badges/accrescent.pngreadme-assets/docs/badges/accrescent.png alt="Accrescent" width="140">](https://accrescent.app/app/app.organicmaps)
 
 <p float="left">
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/1.jpg" width="400" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/2.jpg" width="400" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/3.jpg" width="400" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/4.jpg" width="400" />
+  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/1.jpgreadme-assets/android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/1.jpg width="400" />
+  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/2.jpgreadme-assets/android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/2.jpg width="400" />
+  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/3.jpgreadme-assets/android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/3.jpg width="400" />
+  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/4.jpgreadme-assets/android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/4.jpg width="400" />
 </p>
 
 ## Features
@@ -59,18 +59,18 @@ Organic Maps is free from trackers and other bad stuff:
 - ~~No pesticides~~ Purely organic!
 
 The Android application is verified by the <a href="https://reports.exodus-privacy.eu.org/en/reports/app.organicmaps/latest/">Exodus Privacy Project:
-<img src="docs/privacy/exodus.png" width="400"></a>
+<img src="docs/privacy/exodus.pngreadme-assets/docs/privacy/exodus.png width="400"></a>
 
 The iOS application is verified by <a href="https://ios.trackercontrol.org/analysis/app.organicmaps">TrackerControl for iOS:
-<img src="docs/privacy/trackercontrol-ios.png" width="400"></a>
+<img src="docs/privacy/trackercontrol-ios.pngreadme-assets/docs/privacy/trackercontrol-ios.png width="400"></a>
 
 <br/>
 
 Organic Maps doesn't request excessive permissions to spy on you:
 
 <p float="left">
-  <img src="docs/privacy/om.jpg" width="400">
-  <img src="docs/privacy/mm.jpg" width="400">
+  <img src="docs/privacy/om.jpgreadme-assets/docs/privacy/om.jpg width="400">
+  <img src="docs/privacy/mm.jpgreadme-assets/docs/privacy/mm.jpg width="400">
 </p>
 
 At Organic Maps, we believe that privacy is a fundamental human right:
@@ -92,7 +92,7 @@ Beloved institutional sponsors below have provided targeted grants to cover some
 <table>
   <tr>
     <td>
-      <a href="https://nlnet.nl/"><img src="docs/sponsors/nlnet.svg" alt="The NLnet Foundation" width="200px"></a>
+      <a href="https://nlnet.nl/"><img src="docs/sponsors/nlnet.svgreadme-assets/docs/sponsors/nlnet.svg alt="The NLnet Foundation" width="200px"></a>
     </td>
     <td>
       <a href="https://github.com/organicmaps/organicmaps/milestone/7">The Search & Fonts improvement project</a> has been <a href="https://nlnet.nl/project/OrganicMaps/">funded</a> through NGI0 Entrust Fund. <a href="https://nlnet.nl/entrust/">NGI0 Entrust Fund</a> is established by the <a href="https://nlnet.nl/">NLnet Foundation</a> with financial support from the European Commission's <a href="https://www.ngi.eu/">Next Generation Internet programme</a>, under the aegis of DG Communications Networks, Content and Technology under grant agreement No 101069594.
@@ -100,7 +100,7 @@ Beloved institutional sponsors below have provided targeted grants to cover some
   </tr>
   <tr>
     <td>
-      <a href="https://summerofcode.withgoogle.com/"><img src="docs/sponsors/gsoc.svg" alt="Google Summer of Code" width="200px"></a>
+      <a href="https://summerofcode.withgoogle.com/"><img src="docs/sponsors/gsoc.svgreadme-assets/docs/sponsors/gsoc.svg alt="Google Summer of Code" width="200px"></a>
     </td>
     <td>
       <a href="https://summerofcode.withgoogle.com/">Google</a> backed 5 student's projects in the Google Summer of Code program during <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/organic-maps">2022</a> and <a href="https://summerofcode.withgoogle.com/programs/2023/organizations/organic-maps">2023</a> programs. Noteworthy projects included Android Auto and Wikipedia Dump Extractor.
@@ -108,7 +108,7 @@ Beloved institutional sponsors below have provided targeted grants to cover some
   </tr>
   <tr>
     <td>
-      <a href="https://www.mythic-beasts.com/"><img src="docs/sponsors/mythic-beasts.png" alt="Mythic Beasts" width="200px"></a>
+      <a href="https://www.mythic-beasts.com/"><img src="docs/sponsors/mythic-beasts.pngreadme-assets/docs/sponsors/mythic-beasts.png alt="Mythic Beasts" width="200px"></a>
     </td>
     <td>
       <a href="https://www.mythic-beasts.com/">Mythic Beasts</a> ISP <a href="https://www.mythic-beasts.com/blog/2021/10/06/improving-the-world-bit-by-expensive-bit/">provides us</a> two virtual servers with 400 TB/month of free bandwidth to host and serve maps downloads and updates.
@@ -116,7 +116,7 @@ Beloved institutional sponsors below have provided targeted grants to cover some
   </tr>
   <tr>
     <td>
-      <a href="https://44plus.vn"><img src="docs/sponsors/44plus.svg" alt="44+ Technologies" width="200px"></a>
+      <a href="https://44plus.vn"><img src="docs/sponsors/44plus.svgreadme-assets/docs/sponsors/44plus.svg alt="44+ Technologies" width="200px"></a>
     </td>
     <td>
       <a href="https://44plus.vn">44+ Technologies</a> is <a href="https://44plus.vn/organicmaps">providing us </a>with a free dedicated server worth around $12,000/year to serve maps across Vietnam & Southeast Asia.
@@ -124,7 +124,7 @@ Beloved institutional sponsors below have provided targeted grants to cover some
   </tr>
   <tr>
     <td>
-      <a href="https://futo.org"><img src="docs/sponsors/futo.svg" alt="FUTO" width="200px"></a>
+      <a href="https://futo.org"><img src="docs/sponsors/futo.svgreadme-assets/docs/sponsors/futo.svg alt="FUTO" width="200px"></a>
     </td>
     <td>
       <a href="https://futo.org">FUTO</a> has <a href="https://www.youtube.com/watch?v=fJJclgBHrEw">awarded $1000 micro-grant</a> to Organic Maps in February 2023.
@@ -138,14 +138,14 @@ Please consider [donating](https://organicmaps.app/donate/) if you want to see t
 
 ## Governance
 
-See [docs/GOVERNANCE.md](docs/GOVERNANCE.md).
+See [docs/GOVERNANCE.md](docs/GOVERNANCE.mdreadme-assets/docs/GOVERNANCE.md.
 
 <a name="contributing">
 
 ## Contributing
 
-If you want to build the project, check [docs/INSTALL.md](docs/INSTALL.md). If you want to help the project,
-see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). You can [help in many ways](https://organicmaps.app/support-us/), the ability to code is not necessary.
+If you want to build the project, check [docs/INSTALL.md](docs/INSTALL.mdreadme-assets/docs/INSTALL.md. If you want to help the project,
+see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.mdreadme-assets/docs/CONTRIBUTING.md. You can [help in many ways](https://organicmaps.app/support-us/), the ability to code is not necessary.
 
 ## Beta
 
@@ -181,7 +181,7 @@ The Organic Maps community abides by the CNCF [code of conduct](https://github.c
 
 ## License and Copyrights
 
-The code is Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE), [NOTICE](NOTICE),
+The code is Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSEreadme-assets/LICENSE, [NOTICE](NOTICEreadme-assets/NOTICE,
 [data/copyright.html](http://htmlpreview.github.io/?https://github.com/organicmaps/organicmaps/blob/master/data/copyright.html) and [.reuse/dep5](https://github.com/organicmaps/organicmaps/blob/master/.reuse/dep5) for more information.
 
 Binary data files (including, but not limited to `.mwm` map files) are provided under a separate license.

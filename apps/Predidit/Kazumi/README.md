@@ -2,7 +2,7 @@
 
 <h1>Kazumi</h1>
 
-<img src="assets/images/logo/logo_rounded.png" width=200></img>
+<img src="assets/images/logo/logo_rounded.pngreadme-assets/assets/images/logo/logo_rounded.png width=200></img>
 
 <a href="https://t.me/kazumi_app"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></img></a>
 
@@ -28,14 +28,14 @@
 
 <table>
   <tr>
-    <td><img alt="homepage" src="static/screenshot/img_1.png"></td>
-    <td><img alt="timetable" src="static/screenshot/img_2.png"></td>
-    <td><img alt="details" src="static/screenshot/img_3.png"></td>
+    <td><img alt="homepage" src="static/screenshot/img_1.pngreadme-assets/static/screenshot/img_1.png></td>
+    <td><img alt="timetable" src="static/screenshot/img_2.pngreadme-assets/static/screenshot/img_2.png></td>
+    <td><img alt="details" src="static/screenshot/img_3.pngreadme-assets/static/screenshot/img_3.png></td>
   <tr>
   <tr>
-    <td><img alt="selection-page" src="static/screenshot/img_4.png"></td>
-    <td><img alt="rules-mange" src="static/screenshot/img_5.png"></td>
-    <td><img alt="rules-edit" src="static/screenshot/img_6.png"></td>
+    <td><img alt="selection-page" src="static/screenshot/img_4.pngreadme-assets/static/screenshot/img_4.png></td>
+    <td><img alt="rules-mange" src="static/screenshot/img_5.pngreadme-assets/static/screenshot/img_5.png></td>
+    <td><img alt="rules-edit" src="static/screenshot/img_6.pngreadme-assets/static/screenshot/img_6.png></td>
   <tr>
 </table>
 
@@ -72,7 +72,7 @@
 通过本页面 [Releases](https://github.com/Predidit/Kazumi/releases/latest) 选项卡下载：
 
 <a href="https://github.com/Predidit/Kazumi/releases">
-  <img src="static/svg/get_it_on_github.svg" alt="Get it on Github" width="200"/>
+  <img src="static/svg/get_it_on_github.svgreadme-assets/static/svg/get_it_on_github.svg alt="Get it on Github" width="200"/>
 </a>
 
 ### Android
@@ -154,7 +154,7 @@ A: 本项目编译需要良好的网络环境, 除了由 Google 托管的 Flutte
 
 ## 开发
 
-欢迎您提交 PR！在开始之前, 请阅读 [贡献指引](static/doc/CONTRIBUTING.md) 以了解我们对 PR 和 AI 参与辅助开发的规定。
+欢迎您提交 PR！在开始之前, 请阅读 [贡献指引](static/doc/CONTRIBUTING.mdreadme-assets/static/doc/CONTRIBUTING.md 以了解我们对 PR 和 AI 参与辅助开发的规定。
 
 ## 美术资源
 

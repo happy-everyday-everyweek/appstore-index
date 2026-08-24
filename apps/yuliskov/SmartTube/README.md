@@ -1,5 +1,5 @@
-[<img src="images/badge_fdroid.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/app.smarttube.fdroid/)
-[<img src="images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/yuliskov/SmartTube/releases)
+[<img src="images/badge_fdroid.pngreadme-assets/images/badge_fdroid.png alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/app.smarttube.fdroid/)
+[<img src="images/badge_github.pngreadme-assets/images/badge_github.png alt="Get it on GitHub" height="80">](https://github.com/yuliskov/SmartTube/releases)
 
 # Important announcement about the app
 
@@ -54,13 +54,13 @@ Give it a try!
 > [!IMPORTANT]  
 > Starting in October 2025 new Amazon FireTV devices no longer run Android under the hood. SmartTube will **not** be compatible with the Fire Stick 4k Select and newer devices which run Amazon's own VegaOS.
 
-![Device support image](images/new/compatibility.png)
+![Device support image](images/new/compatibility.pngreadme-assets/images/new/compatibility.png
 * **Supported:** all Android TVs and TV boxes (incl. All FireTV devices released before Oct. 2025, NVIDIA Shield & Chromecast with Google TV), even older ones with Android 4.3 (Kitkat).
 * **Not supported:** Smartphones, non-Android platforms like Samsung Tizen, LG webOS, Apple TV, etc.
 
 ## Installation
 
-> [video of the installation](images/new/zPV0imF.mp4) (note: download url changed to `kutt.to/stn_beta` or `kutt.to/stn_stable`)
+> [video of the installation](images/new/zPV0imF.mp4readme-assets/images/new/zPV0imF.mp4 (note: download url changed to `kutt.to/stn_beta` or `kutt.to/stn_stable`)
 
 **Do not** download SmartTube from any **app store**, APK websites or blogs; these were uploaded by other people and may contain malware or ads. SmartTube is not officially published on any app store.
 
@@ -429,7 +429,7 @@ A: SmartTube has a feature called **SponsorBlock**. You can select which categor
 
 A: You can switch between different autoplay-modes using the loop-button 🔁
 
-[![screenshot showing the loop-button](images/new/V3GHGvWprmdE1w.jpg)](https://t.me/SmartTubeEN/24953)
+[![screenshot showing the loop-button](images/new/V3GHGvWprmdE1w.jpgreadme-assets/images/new/V3GHGvWprmdE1w.jpg](https://t.me/SmartTubeEN/24953)
 
 
 ### Q: How to remove recommended videos (e.g. news) that are unrelated to me?

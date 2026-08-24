@@ -1,4 +1,4 @@
-<p align="center"><a href="https://newpipe.net"><img src="assets/new_pipe_icon_5.png" width="150"></a></p> 
+<p align="center"><a href="https://newpipe.net"><img src="assets/new_pipe_icon_5.pngreadme-assets/assets/new_pipe_icon_5.png width="150"></a></p> 
 <h2 align="center"><b>NewPipe</b></h2>
 <h4 align="center">A libre lightweight streaming front-end for Android.</h4>
 
@@ -22,7 +22,7 @@
 <p align="center"><a href="https://newpipe.net">Website</a> &bull; <a href="https://newpipe.net/blog/">Blog</a> &bull; <a href="https://newpipe.net/FAQ/">FAQ</a> &bull; <a href="https://newpipe.net/press/">Press</a></p>
 <hr>
 
-*Read this document in other languages: [Deutsch](doc/README.de.md), [English](README.md), [Español](doc/README.es.md), [Français](doc/README.fr.md), [हिन्दी](doc/README.hi.md), [Italiano](doc/README.it.md), [한국어](doc/README.ko.md), [Português Brasil](doc/README.pt_BR.md), [Polski](doc/README.pl.md), [ਪੰਜਾਬੀ ](doc/README.pa.md), [日本語](doc/README.ja.md), [Română](doc/README.ro.md), [Soomaali](doc/README.so.md), [Türkçe](doc/README.tr.md), [正體中文](doc/README.zh_TW.md), [অসমীয়া](doc/README.asm.md), [Српски](doc/README.sr.md), [العربية](README.ar.md)* 
+*Read this document in other languages: [Deutsch](doc/README.de.mdreadme-assets/doc/README.de.md, [English](README.mdreadme-assets/README.md, [Español](doc/README.es.mdreadme-assets/doc/README.es.md, [Français](doc/README.fr.mdreadme-assets/doc/README.fr.md, [हिन्दी](doc/README.hi.mdreadme-assets/doc/README.hi.md, [Italiano](doc/README.it.mdreadme-assets/doc/README.it.md, [한국어](doc/README.ko.mdreadme-assets/doc/README.ko.md, [Português Brasil](doc/README.pt_BR.mdreadme-assets/doc/README.pt_BR.md, [Polski](doc/README.pl.mdreadme-assets/doc/README.pl.md, [ਪੰਜਾਬੀ ](doc/README.pa.mdreadme-assets/doc/README.pa.md, [日本語](doc/README.ja.mdreadme-assets/doc/README.ja.md, [Română](doc/README.ro.mdreadme-assets/doc/README.ro.md, [Soomaali](doc/README.so.mdreadme-assets/doc/README.so.md, [Türkçe](doc/README.tr.mdreadme-assets/doc/README.tr.md, [正體中文](doc/README.zh_TW.mdreadme-assets/doc/README.zh_TW.md, [অসমীয়া](doc/README.asm.mdreadme-assets/doc/README.asm.md, [Српски](doc/README.sr.mdreadme-assets/doc/README.sr.md, [العربية](README.ar.md)* 
 
 > [!warning]
 > <b>THIS APP IS IN BETA, SO YOU MAY ENCOUNTER BUGS. IF YOU DO, OPEN AN ISSUE IN OUR GITHUB REPOSITORY BY FILLING OUT THE ISSUE TEMPLATE.</b>
@@ -33,18 +33,18 @@
 
 ## Screenshots
 
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/00.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/00.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/01.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/01.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/02.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/02.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/03.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/03.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/04.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/04.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/05.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/05.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/06.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/06.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/07.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/07.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/08.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/08.png)
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/00.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/00.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/00.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/00.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/01.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/01.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/01.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/01.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/02.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/02.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/02.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/02.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/03.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/03.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/03.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/03.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/04.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/04.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/04.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/04.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/05.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/05.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/05.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/05.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/06.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/06.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/06.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/06.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/07.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/07.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/07.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/07.png
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/08.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/08.png width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/08.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/08.png
 <br/><br/>
-[<img src="fastlane/metadata/android/en-US/images/tenInchScreenshots/09.png" width=405>](fastlane/metadata/android/en-US/images/tenInchScreenshots/09.png)
-[<img src="fastlane/metadata/android/en-US/images/tenInchScreenshots/10.png" width=405>](fastlane/metadata/android/en-US/images/tenInchScreenshots/10.png)
+[<img src="fastlane/metadata/android/en-US/images/tenInchScreenshots/09.pngreadme-assets/fastlane/metadata/android/en-US/images/tenInchScreenshots/09.png width=405>](fastlane/metadata/android/en-US/images/tenInchScreenshots/09.pngreadme-assets/fastlane/metadata/android/en-US/images/tenInchScreenshots/09.png
+[<img src="fastlane/metadata/android/en-US/images/tenInchScreenshots/10.pngreadme-assets/fastlane/metadata/android/en-US/images/tenInchScreenshots/10.png width=405>](fastlane/metadata/android/en-US/images/tenInchScreenshots/10.pngreadme-assets/fastlane/metadata/android/en-US/images/tenInchScreenshots/10.png
 
 ### Supported Services
 
@@ -136,8 +136,8 @@ If you like NewPipe, you're welcome to send a donation. We prefer Liberapay, as 
 <table>
   <tr>
     <td><a href="https://liberapay.com/TeamNewPipe/"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Liberapay_logo_v2_white-on-yellow.svg" alt="Liberapay" width="80px" ></a></td>
-    <td><a href="https://liberapay.com/TeamNewPipe/"><img src="assets/liberapay_qr_code.png" alt="Visit NewPipe at liberapay.com" width="100px"></a></td>
-    <td><a href="https://liberapay.com/TeamNewPipe/donate"><img src="assets/liberapay_donate_button.svg" alt="Donate via Liberapay" height="35px"></a></td>
+    <td><a href="https://liberapay.com/TeamNewPipe/"><img src="assets/liberapay_qr_code.pngreadme-assets/assets/liberapay_qr_code.png alt="Visit NewPipe at liberapay.com" width="100px"></a></td>
+    <td><a href="https://liberapay.com/TeamNewPipe/donate"><img src="assets/liberapay_donate_button.svgreadme-assets/assets/liberapay_donate_button.svg alt="Donate via Liberapay" height="35px"></a></td>
   </tr>
 </table>
 

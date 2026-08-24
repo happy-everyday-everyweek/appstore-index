@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="assets/banners/gh-banner.png" width="auto" height="auto" alt="LibreTube">
+  <img src="assets/banners/gh-banner.pngreadme-assets/assets/banners/gh-banner.png width="auto" height="auto" alt="LibreTube">
 
-[![GPL-v3](assets/widgets/license-widget.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![GPL-v3](assets/widgets/license-widget.svgreadme-assets/assets/widgets/license-widget.svg](https://www.gnu.org/licenses/gpl-3.0.en.html)
 </div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
 
-[![Matrix](assets/widgets/mat-widget.svg)](https://matrix.to/#/#LibreTube:matrix.org)
-[![Mastodon](assets/widgets/mast-widget.svg)](https://fosstodon.org/@libretube)
-[![Lemmy](assets/widgets/lemmy-widget.svg)](https://feddit.rocks/c/libretube)
+[![Matrix](assets/widgets/mat-widget.svgreadme-assets/assets/widgets/mat-widget.svg](https://matrix.to/#/#LibreTube:matrix.org)
+[![Mastodon](assets/widgets/mast-widget.svgreadme-assets/assets/widgets/mast-widget.svg](https://fosstodon.org/@libretube)
+[![Lemmy](assets/widgets/lemmy-widget.svgreadme-assets/assets/widgets/lemmy-widget.svg](https://feddit.rocks/c/libretube)
 
 </div>
 
@@ -15,10 +15,10 @@
 
 </div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
 
-[<img src="assets/badges/fdrload.png" alt="Get it on F-Droid" width="30%">](https://f-droid.org/en/packages/com.github.libretube/)
-[<img src="assets/badges/izzyload.png" alt="Get it on IzzyOnDroid" width="30%">](https://apt.izzysoft.de/fdroid/index/apk/com.github.libretube)<br/>
-[<img src="assets/badges/ghload.png" alt="Get it on GitHub" width="30%">](https://github.com/libre-tube/LibreTube/releases/latest)
-[<img src="assets/badges/ghload-nightly.png" alt="Get it on GitHub (Nightly)" width="30%">](https://github.com/libre-tube/NightlyBuilds/raw/main/app-debug-signed.apk)
+[<img src="assets/badges/fdrload.pngreadme-assets/assets/badges/fdrload.png alt="Get it on F-Droid" width="30%">](https://f-droid.org/en/packages/com.github.libretube/)
+[<img src="assets/badges/izzyload.pngreadme-assets/assets/badges/izzyload.png alt="Get it on IzzyOnDroid" width="30%">](https://apt.izzysoft.de/fdroid/index/apk/com.github.libretube)<br/>
+[<img src="assets/badges/ghload.pngreadme-assets/assets/badges/ghload.png alt="Get it on GitHub" width="30%">](https://github.com/libre-tube/LibreTube/releases/latest)
+[<img src="assets/badges/ghload-nightly.pngreadme-assets/assets/badges/ghload-nightly.png alt="Get it on GitHub (Nightly)" width="30%">](https://github.com/libre-tube/NightlyBuilds/raw/main/app-debug-signed.apk)
 
 </div>
 
@@ -41,7 +41,7 @@
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/about.svg"
+<img  src="assets/readme/about.svgreadme-assets/assets/readme/about.svg
       height="30"
       width="30">
 </sub>
@@ -56,7 +56,7 @@ If you have questions or need help, please make sure to read the [FAQ](https://l
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/phone.svg"
+<img  src="assets/readme/phone.svgreadme-assets/assets/readme/phone.svg
       height="30"
       width="30">
 </sub>
@@ -65,11 +65,11 @@ Screenshots
 
 <div style="width:100%; display:flex; justify-content:space-between;">
 
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg" width=19% alt="Home">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg" width=19% alt="Home">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg" width=19% alt="Subscriptions">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpg" width=19% alt="Library">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpg" width=19% alt="Channel Overview">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpg)
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg width=19% alt="Home">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg width=19% alt="Home">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg width=19% alt="Subscriptions">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpg width=19% alt="Library">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpg
+[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpg width=19% alt="Channel Overview">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpgreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpg
 
 * More screenshots can be found [here](https://github.com/libre-tube/LibreTube/blob/master/SCREEN_SHOT.md)
 
@@ -77,7 +77,7 @@ Screenshots
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/feature.svg"
+<img  src="assets/readme/feature.svgreadme-assets/assets/readme/feature.svg
       height="30"
       width="30">
 </sub>
@@ -99,7 +99,7 @@ Features
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/community.svg"
+<img  src="assets/readme/community.svgreadme-assets/assets/readme/community.svg
       height="30"
       width="30">
 </sub>
@@ -121,7 +121,7 @@ For instance, the most common commit types are "feat", "fix", "refactor", "ci" a
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/donate.svg"
+<img  src="assets/readme/donate.svgreadme-assets/assets/readme/donate.svg
       height="30"
       width="30">
 </sub>
@@ -146,7 +146,7 @@ Contributions in any form are welcome!
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/ltvnp.svg"
+<img  src="assets/readme/ltvnp.svgreadme-assets/assets/readme/ltvnp.svg
       height="30"
       width="30">
 </sub>
@@ -161,7 +161,7 @@ Both, LibreTube and NewPipe, are great clients for watching YouTube videos. Ther
 
 <h2 align="left">
 <sub>
-<img  src="assets/readme/privacy.svg"
+<img  src="assets/readme/privacy.svgreadme-assets/assets/readme/privacy.svg
       height="30"
       width="30">
 </sub>

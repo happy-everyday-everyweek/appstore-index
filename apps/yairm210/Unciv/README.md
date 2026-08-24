@@ -129,4 +129,4 @@ Or just use our already built one:
 ```$ docker run -d -p 6901:6901 -p 5901:5901 ghcr.io/yairm210/unciv ```
 
 and then goto http://localhost:6901/vnc.html?password=headless
-## [Credits and 3rd parties](docs/Credits.md)
+## [Credits and 3rd parties](docs/Credits.mdreadme-assets/docs/Credits.md

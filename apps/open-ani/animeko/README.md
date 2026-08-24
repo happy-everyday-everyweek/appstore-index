@@ -132,7 +132,7 @@ Animeko 支持所有主流平台：Android、iOS、Windows、macOS、Linux。
 ### 参与开发
 
 欢迎你提交 PR 参与开发，
-有关项目技术细节请参考 [CONTRIBUTING](docs/contributing/README.md)。
+有关项目技术细节请参考 [CONTRIBUTING](docs/contributing/README.mdreadme-assets/docs/contributing/README.md。
 
 ## FAQ
 

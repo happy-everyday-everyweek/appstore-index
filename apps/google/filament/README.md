@@ -67,12 +67,12 @@ pod 'Filament', '~> 1.75.0'
 
 ## Examples
 
-![Night scene](docs/images/samples/example_bistro1.jpg)
-![Night scene](docs/images/samples/example_bistro2.jpg)
-![Materials](docs/images/samples/example_materials1.jpg)
-![Materials](docs/images/samples/example_materials2.jpg)
-![Helmet](docs/images/samples/example_helmet.jpg)
-![Screen-space refraction](docs/images/samples/example_ssr.jpg)
+![Night scene](docs/images/samples/example_bistro1.jpgreadme-assets/docs/images/samples/example_bistro1.jpg
+![Night scene](docs/images/samples/example_bistro2.jpgreadme-assets/docs/images/samples/example_bistro2.jpg
+![Materials](docs/images/samples/example_materials1.jpgreadme-assets/docs/images/samples/example_materials1.jpg
+![Materials](docs/images/samples/example_materials2.jpgreadme-assets/docs/images/samples/example_materials2.jpg
+![Helmet](docs/images/samples/example_helmet.jpgreadme-assets/docs/images/samples/example_helmet.jpg
+![Screen-space refraction](docs/images/samples/example_ssr.jpgreadme-assets/docs/images/samples/example_ssr.jpg
 
 ## Features
 

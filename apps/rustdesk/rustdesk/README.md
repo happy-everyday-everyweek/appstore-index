@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="res/logo-header.svg" alt="RustDesk - Your remote desktop"><br>
+  <img src="res/logo-header.svgreadme-assets/res/logo-header.svg alt="RustDesk - Your remote desktop"><br>
   <a href="#raw-steps-to-build">Build</a> •
   <a href="#how-to-build-with-docker">Docker</a> •
   <a href="#file-structure">Structure</a> •
@@ -21,7 +21,7 @@ Yet another remote desktop solution, written in Rust. Works out of the box with 
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
-RustDesk welcomes contribution from everyone. See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for help getting started.
+RustDesk welcomes contribution from everyone. See [CONTRIBUTING.md](docs/CONTRIBUTING.mdreadme-assets/docs/CONTRIBUTING.md for help getting started.
 
 [**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 

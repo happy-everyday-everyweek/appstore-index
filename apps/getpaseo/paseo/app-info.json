@@ -38,21 +38,21 @@
     "sh.paseo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
   ],
   "version": {
-    "versionName": "0.5.1",
-    "versionCode": 5001,
-    "releaseTag": "v0.5.1"
+    "versionName": "0.5.2",
+    "versionCode": 5002,
+    "releaseTag": "v0.5.2"
   },
   "source": {
     "repo": "getpaseo/paseo",
     "openSourceVerified": false,
     "license": "NOASSERTION",
-    "apkUrl": "https://github.com/getpaseo/paseo/releases/download/v0.5.1/paseo-v0.5.1-android.apk",
-    "sha256": "8a906f7000ed3383ecebc80c030842a63c83bedfebb7b614510adebb719afe6b",
-    "stars": 14866
+    "apkUrl": "https://github.com/getpaseo/paseo/releases/download/v0.5.2/paseo-v0.5.2-android.apk",
+    "sha256": "753a38c9c7ca85a5614b2e4082bc33be81fa3993df350720f7dc1cc71a690c9a",
+    "stars": 14891
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-08-23T17:39:14Z",
+  "generatedAt": "2026-08-24T12:33:26Z",
   "generatedBy": "workflow-2"
 }

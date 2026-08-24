@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="600" src="assets/branding/spotube_banner.png" alt="Spotube Logo">
+  <img width="600" src="assets/branding/spotube_banner.pngreadme-assets/assets/branding/spotube_banner.png alt="Spotube Logo">
 
 A cross-platform extensible open-source music streaming platform.<br>
 Bring your own music metadata/playlist/audio-source with plugins created by community or by yourself. A small step towards the decentralized music streaming era!
@@ -18,9 +18,9 @@ Btw it's not just another Electron app 😉
 
 ---
 
-![Spotube Desktop](assets/branding/spotube-screenshot.png)
+![Spotube Desktop](assets/branding/spotube-screenshot.pngreadme-assets/assets/branding/spotube-screenshot.png
 
-![Spotube Mobile](assets/branding/mobile-screenshots/combined.jpg)
+![Spotube Mobile](assets/branding/mobile-screenshots/combined.jpgreadme-assets/assets/branding/mobile-screenshots/combined.jpg
 
 </div>
 
@@ -172,7 +172,7 @@ Grab the latest nightly builds of Spotube [from the GitHub Releases](https://git
 
 <a href="https://github.com/KRTirtho/spotube/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/KRTirtho/spotube/spotube-release-binary.yml?+label=Build%20Status"></a>
 
-You can compile Spotube's source code by [following these instructions](CONTRIBUTION.md#your-first-code-contribution).
+You can compile Spotube's source code by [following these instructions](CONTRIBUTION.mdreadme-assets/CONTRIBUTION.md#your-first-code-contribution.
 
 ## 👥 The Spotube team
 

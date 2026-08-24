@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://abdownloadmanager.com" target="_blank">
-    <img width="180" src="assets/logo/app_logo_with_background.svg" alt="AB Download Manager Logo">
+    <img width="180" src="assets/logo/app_logo_with_background.svgreadme-assets/assets/logo/app_logo_with_background.svg alt="AB Download Manager Logo">
   </a>
 </div>
 <h1 align="center">AB Download Manager</h1>
@@ -13,7 +13,7 @@
 </p>
 
 <a href="https://abdownloadmanager.com" target="_blank">
-    <img alt="AB Download Manager Banner" src="assets/banners/app_banner.png"/>
+    <img alt="AB Download Manager Banner" src="assets/banners/app_banner.pngreadme-assets/assets/banners/app_banner.png/>
 </a>
 
 ## Introduction
@@ -173,8 +173,8 @@ so on Crowdin. Here’s how:
 
 ## Contribution
 
-If you want to contribute to this project, please read [Contributing Guide](CONTRIBUTING.md) first.
+If you want to contribute to this project, please read [Contributing Guide](CONTRIBUTING.mdreadme-assets/CONTRIBUTING.md first.
 
 ## Support the Project
 
-If you'd like to support the project, you can find details on how to donate in the [DONATE.md](DONATE.md) file.
+If you'd like to support the project, you can find details on how to donate in the [DONATE.md](DONATE.mdreadme-assets/DONATE.md file.

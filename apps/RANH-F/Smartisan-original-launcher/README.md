@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="clean_launcher/res/drawable/ic_launcher.png" width="108" alt="Smartisan Launcher">
+  <img src="clean_launcher/res/drawable/ic_launcher.pngreadme-assets/clean_launcher/res/drawable/ic_launcher.png width="108" alt="Smartisan Launcher">
 </p>
 
 <h1 align="center">Smartisan Launcher Original Port</h1>
@@ -23,10 +23,10 @@
 </p>
 
 <p align="center">
-  <img src="docs/1.jpg" width="23%" alt="Smartisan Launcher 演示截图 1">
-  <img src="docs/2.jpg" width="23%" alt="Smartisan Launcher 演示截图 2">
-  <img src="docs/3.jpg" width="23%" alt="Smartisan Launcher 演示截图 3">
-  <img src="docs/4.jpg" width="23%" alt="Smartisan Launcher 演示截图 4">
+  <img src="docs/1.jpgreadme-assets/docs/1.jpg width="23%" alt="Smartisan Launcher 演示截图 1">
+  <img src="docs/2.jpgreadme-assets/docs/2.jpg width="23%" alt="Smartisan Launcher 演示截图 2">
+  <img src="docs/3.jpgreadme-assets/docs/3.jpg width="23%" alt="Smartisan Launcher 演示截图 3">
+  <img src="docs/4.jpgreadme-assets/docs/4.jpg width="23%" alt="Smartisan Launcher 演示截图 4">
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@
 
 ## 项目简介
 
-项目文档入口：[docs/INDEX.md](docs/INDEX.md)。
+项目文档入口：[docs/INDEX.md](docs/INDEX.mdreadme-assets/docs/INDEX.md。
 
 **Smartisan Launcher Original Port** 是一个基于原版 Smartisan Launcher 的兼容性移植项目。
 

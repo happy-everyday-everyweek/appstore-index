@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="200" height="200" src="assets/images/logo/logo.png">
+    <img width="200" height="200" src="assets/images/logo/logo.pngreadme-assets/assets/images/logo/logo.png>
 </div>
 
 
@@ -14,11 +14,11 @@
 </div>
     <p>使用Flutter开发的BiliBili第三方客户端</p>
     
-<img src="assets/screenshots/510shots_so.png" width="32%" alt="home" />
-<img src="assets/screenshots/174shots_so.png" width="32%" alt="home" />
-<img src="assets/screenshots/850shots_so.png" width="32%" alt="home" />
+<img src="assets/screenshots/510shots_so.pngreadme-assets/assets/screenshots/510shots_so.png width="32%" alt="home" />
+<img src="assets/screenshots/174shots_so.pngreadme-assets/assets/screenshots/174shots_so.png width="32%" alt="home" />
+<img src="assets/screenshots/850shots_so.pngreadme-assets/assets/screenshots/850shots_so.png width="32%" alt="home" />
 <br/>
-<img src="assets/screenshots/main_screen.png" width="96%" alt="home" />
+<img src="assets/screenshots/main_screen.pngreadme-assets/assets/screenshots/main_screen.png width="96%" alt="home" />
 <br/>
 </div>
 

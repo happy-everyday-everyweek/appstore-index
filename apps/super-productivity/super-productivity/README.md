@@ -1,4 +1,4 @@
-<a href="https://super-productivity.com/"><img alt="Banner" src="docs/screens/banner.png"/></a>
+<a href="https://super-productivity.com/"><img alt="Banner" src="docs/screens/banner.pngreadme-assets/docs/screens/banner.png/></a>
 
 <div style="height:20px;"></div>
 
@@ -56,7 +56,7 @@
   </strong><br/>
   <a href="https://github.com/super-productivity/super-productivity/wiki/2.01-Downloads-and-Install" target="_blank">
     <img
-      src="docs/screens/get-it-on-github.webp"
+      src="docs/screens/get-it-on-github.webpreadme-assets/docs/screens/get-it-on-github.webp
       alt="Get it on GitHub"
       height="120"
     />
@@ -98,7 +98,7 @@
 
 And much more!
 
-<a href="https://youtu.be/_mvMXWLsL-8"><img alt="Work View with global links" src="docs/screens/screen_standard.png" width="100%"></a>
+<a href="https://youtu.be/_mvMXWLsL-8"><img alt="Work View with global links" src="docs/screens/screen_standard.pngreadme-assets/docs/screens/screen_standard.png width="100%"></a>
 
 > [!NOTE]
 > The web version has some limitations: See the **[Web App vs Desktop comparison](https://github.com/super-productivity/super-productivity/wiki/3.05-Web-App-vs-Desktop)** for more details.
@@ -172,7 +172,7 @@ The development of Super Productivity is driven by a wonderful community of user
 
 ### :hearts: Contributing
 
-If you want to get involved, please check out the [CONTRIBUTING.md](CONTRIBUTING.md)
+If you want to get involved, please check out the [CONTRIBUTING.md](CONTRIBUTING.mdreadme-assets/CONTRIBUTING.md
 
 There are several ways to help.
 

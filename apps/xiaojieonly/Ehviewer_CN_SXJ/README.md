@@ -2,7 +2,7 @@
 ## 本APP有且仅在Github更新，所有自诩“官网”的均属虚假信息，请注意甄别
 
 ### [常见问题汇总](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/blob/BiLi_PC_Gamer/feedauthor/EhviewerIssue.md)
-![Icon](fastlane/metadata/android/en-US/images/icon.png)
+![Icon](fastlane/metadata/android/en-US/images/icon.pngreadme-assets/fastlane/metadata/android/en-US/images/icon.png
 
 这是一个 E-Hentai Android 平台的浏览器。
 
@@ -209,17 +209,17 @@ Telegram通知群: https://telegram.me/Ehviewer_xiaojieonly_channel
 
 
 
-- [2024年更新日志-人生的不起落落落落](feedauthor/year2025-life-broken-down.md)  
-- [2024年更新日志-感谢大家的支持](feedauthor/year2024-thanks.md)  
-- [2023年更新日志-时间过的好快](feedauthor/year2023-boom.md)  
-- [2022年更新日志-成长](feedauthor/year2022-growing-up.md)  
-- [2021年更新日志-艰难起步](feedauthor/year2021-step-begin.md)  
-- [2020年更新日志-爱与痛的开始](feedauthor/year2020-love-begin.md)
+- [2024年更新日志-人生的不起落落落落](feedauthor/year2025-life-broken-down.mdreadme-assets/feedauthor/year2025-life-broken-down.md  
+- [2024年更新日志-感谢大家的支持](feedauthor/year2024-thanks.mdreadme-assets/feedauthor/year2024-thanks.md  
+- [2023年更新日志-时间过的好快](feedauthor/year2023-boom.mdreadme-assets/feedauthor/year2023-boom.md  
+- [2022年更新日志-成长](feedauthor/year2022-growing-up.mdreadme-assets/feedauthor/year2022-growing-up.md  
+- [2021年更新日志-艰难起步](feedauthor/year2021-step-begin.mdreadme-assets/feedauthor/year2021-step-begin.md  
+- [2020年更新日志-爱与痛的开始](feedauthor/year2020-love-begin.mdreadme-assets/feedauthor/year2020-love-begin.md
 
 
 # Screenshot
 
-![screenshot-01](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png)
+![screenshot-01](fastlane/metadata/android/en-US/images/phoneScreenshots/1.pngreadme-assets/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png
 
 
 # Build

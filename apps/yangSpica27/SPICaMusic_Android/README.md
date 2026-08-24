@@ -120,7 +120,7 @@ cd SPICaMusic_Android
 
 ## ⚠️ 注意事项
 
-本仓库源码遵循 [MIT 协议](LICENSE)。
+本仓库源码遵循 [MIT 协议](LICENSEreadme-assets/LICENSE。
 
 部分音频格式的软解码依赖 FFmpeg，其许可条款与本项目不同。项目默认使用
 [jellyfin-androidx-media](https://github.com/jellyfin/jellyfin-androidx-media/releases)

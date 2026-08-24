@@ -2,7 +2,7 @@
 
 #### KOReader is a document viewer primarily aimed at e-ink readers.
 
-[![AGPL Licence][badge-license]](COPYING)
+[![AGPL Licence][badge-license]](COPYINGreadme-assets/COPYING
 [![Latest release][badge-release]][link-gh-releases]
 [![Gitter][badge-gitter]][link-gitter]
 [![Mobileread][badge-mobileread]][link-forum]
@@ -56,10 +56,10 @@ Please follow the model specific steps for your device:
 
 ## Development
 
-[Setting up a build environment](doc/Building.md) •
-[Collaborating with Git](doc/Collaborating_with_Git.md) •
-[Building targets](doc/Building_targets.md) •
-[Porting](doc/Porting.md) •
+[Setting up a build environment](doc/Building.mdreadme-assets/doc/Building.md •
+[Collaborating with Git](doc/Collaborating_with_Git.mdreadme-assets/doc/Collaborating_with_Git.md •
+[Building targets](doc/Building_targets.mdreadme-assets/doc/Building_targets.md •
+[Porting](doc/Porting.mdreadme-assets/doc/Porting.md •
 [Developer docs](http://koreader.rocks/doc/)
 
 ## Support

@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="app/src/main/assets/logo.svg" width="48" height="48" align="absmiddle" alt=""> Operit AI
+  <img src="app/src/main/assets/logo.svgreadme-assets/app/src/main/assets/logo.svg width="48" height="48" align="absmiddle" alt=""> Operit AI
 </h1>
 
 <div align="center">
@@ -15,7 +15,7 @@
 </div>
 
 <div align="center">
-  <img src="docs/assets/readme/operit-ai-banner-zh-cn.webp" width="100%" alt="Operit AI - Android 史上最强大、功能最完整、持续迭代最久的开源 AI Agent">
+  <img src="docs/assets/readme/operit-ai-banner-zh-cn.webpreadme-assets/docs/assets/readme/operit-ai-banner-zh-cn.webp width="100%" alt="Operit AI - Android 史上最强大、功能最完整、持续迭代最久的开源 AI Agent">
 </div>
 
 ## 🚀 Operit 2：Operit 的跨平台后续版本
@@ -23,7 +23,7 @@
 本仓库是 Operit 的 Android 版。Operit 2 是独立的第二代实现，以 Rust 共享运行时、Flutter 客户端和 `operit2` CLI/TUI 为核心，目前包含 Android、iOS、Windows、macOS、Linux 与 Web 的实现或构建路径，并持续推进 OpenHarmony 适配。想关注跨平台版本，请访问 [Operit 2](https://github.com/AAswordman/Operit2)。
 
 <a href="https://github.com/AAswordman/Operit2">
-  <img src="docs/assets/readme/operit2-matrix-cards-zh-cn.png" width="100%" alt="Operit 2 跨平台开源 AI Agent">
+  <img src="docs/assets/readme/operit2-matrix-cards-zh-cn.pngreadme-assets/docs/assets/readme/operit2-matrix-cards-zh-cn.png width="100%" alt="Operit 2 跨平台开源 AI Agent">
 </a>
 
 ## 项目简介
@@ -42,20 +42,20 @@
 ## 功能展示
 
 <a href="docs/assets/readme/operit-agent-task-flow-2400x1000-v3.png">
-  <img src="docs/assets/readme/operit-agent-task-flow-2400x1000-v3.png" width="100%" alt="Agent 任务执行：从需求输入、工具执行与 Diff 审查，到实时预览调试和结果交付">
+  <img src="docs/assets/readme/operit-agent-task-flow-2400x1000-v3.pngreadme-assets/docs/assets/readme/operit-agent-task-flow-2400x1000-v3.png width="100%" alt="Agent 任务执行：从需求输入、工具执行与 Diff 审查，到实时预览调试和结果交付">
 </a>
 
 <a href="docs/assets/readme/operit-android-automation-2400x1000-v2.png">
-  <img src="docs/assets/readme/operit-android-automation-2400x1000-v2.png" width="100%" alt="Android 自动化演示">
+  <img src="docs/assets/readme/operit-android-automation-2400x1000-v2.pngreadme-assets/docs/assets/readme/operit-android-automation-2400x1000-v2.png width="100%" alt="Android 自动化演示">
 </a>
 <a href="docs/assets/readme/operit-memory-multicharacter-chat-2400x1000-v2.png">
-  <img src="docs/assets/readme/operit-memory-multicharacter-chat-2400x1000-v2.png" width="100%" alt="记忆与多角色对话演示">
+  <img src="docs/assets/readme/operit-memory-multicharacter-chat-2400x1000-v2.pngreadme-assets/docs/assets/readme/operit-memory-multicharacter-chat-2400x1000-v2.png width="100%" alt="记忆与多角色对话演示">
 </a>
 <a href="docs/assets/readme/operit-workspace-ubuntu-workflow-2400x1000.png">
-  <img src="docs/assets/readme/operit-workspace-ubuntu-workflow-2400x1000.png" width="100%" alt="工作区与 Ubuntu 工作流演示">
+  <img src="docs/assets/readme/operit-workspace-ubuntu-workflow-2400x1000.pngreadme-assets/docs/assets/readme/operit-workspace-ubuntu-workflow-2400x1000.png width="100%" alt="工作区与 Ubuntu 工作流演示">
 </a>
 <a href="docs/assets/readme/operit-plugin-ecosystem-agent-creation-2400x1000-v3.png">
-  <img src="docs/assets/readme/operit-plugin-ecosystem-agent-creation-2400x1000-v3.png" width="100%" alt="插件生态与 Agent 创建演示">
+  <img src="docs/assets/readme/operit-plugin-ecosystem-agent-creation-2400x1000-v3.pngreadme-assets/docs/assets/readme/operit-plugin-ecosystem-agent-creation-2400x1000-v3.png width="100%" alt="插件生态与 Agent 创建演示">
 </a>
 
 ## 主要功能
@@ -194,10 +194,10 @@
 
 欢迎参与 Operit 的脚本、扩展、文档和核心功能开发。
 
-- [贡献指南](docs/doc-src/dev-core/CONTRIBUTING.md)
-- [构建指南](docs/doc-src/dev-core/BUILDING.md)
-- [脚本开发指南](docs/SCRIPT_DEV_GUIDE.md)
-- [ToolPkg 格式指南](docs/TOOLPKG_FORMAT_GUIDE.md)
+- [贡献指南](docs/doc-src/dev-core/CONTRIBUTING.mdreadme-assets/docs/doc-src/dev-core/CONTRIBUTING.md
+- [构建指南](docs/doc-src/dev-core/BUILDING.mdreadme-assets/docs/doc-src/dev-core/BUILDING.md
+- [脚本开发指南](docs/SCRIPT_DEV_GUIDE.mdreadme-assets/docs/SCRIPT_DEV_GUIDE.md
+- [ToolPkg 格式指南](docs/TOOLPKG_FORMAT_GUIDE.mdreadme-assets/docs/TOOLPKG_FORMAT_GUIDE.md
 - 构建项目需准备 `subpack.zip`、`jniLibs.zip` 和 `libs.zip` 三份外部依赖归档，并初始化 `terminal` 子模块；默认本地 STT 模型会按照 `app/config/stt-model-assets.properties` 自动获取并校验
 - 社区讨论：[QQ群](https://qm.qq.com/q/Sa4fKEH7sO) | [Discord](https://discord.gg/YnV9MWurRF)
 
@@ -218,7 +218,7 @@
 
 ## 许可证
 
-仓库主体代码采用 [GNU LGPL v3（LGPL-3.0-only）](https://spdx.org/licenses/LGPL-3.0-only.html)。仓库中的工具、示例、模板和第三方依赖可能采用其他许可证，具体条款以 [LICENSE](LICENSE)、对应目录中的许可证文件和包元数据为准。
+仓库主体代码采用 [GNU LGPL v3（LGPL-3.0-only）](https://spdx.org/licenses/LGPL-3.0-only.html)。仓库中的工具、示例、模板和第三方依赖可能采用其他许可证，具体条款以 [LICENSE](LICENSEreadme-assets/LICENSE、对应目录中的许可证文件和包元数据为准。
 
 ## Star History
 
