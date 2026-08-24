@@ -16,6 +16,7 @@
 聚合包仅含元数据，绝不含 APK。旧 Release 保留不删。
 """
 import argparse
+import datetime
 import hashlib
 import io
 import json
