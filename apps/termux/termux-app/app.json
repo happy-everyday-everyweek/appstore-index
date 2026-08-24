@@ -1,0 +1,5 @@
+{
+  "repo": "termux/termux-app",
+  "openSource": true,
+  "summary": "Termux 终端模拟器：Android 上的 Linux 命令行环境"
+}
