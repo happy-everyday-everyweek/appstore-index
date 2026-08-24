@@ -25,6 +25,9 @@ from common import (
 )
 
 
+def log(msg):
+    print(msg, flush=True)
+
 def collect_existing_infos():
     infos = []
     apps_root = os.path.join(".", APPS_DIR)
