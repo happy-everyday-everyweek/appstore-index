@@ -394,9 +394,6 @@ def main():
             print(f"APP_OK id={info['id']} repo={info['source']['repo']} grade={info['grade']}")
 
 
-if __name__ == "__main__":
-    main()
-
 def get_repo_tree(repo_name):
     import os as _os
     token = _os.environ.get(TOKEN_ENV, "")
@@ -545,4 +542,5 @@ def collect_readme_deps(repo_name, md, max_files=40):
     return md2, deps
 
 
-
+if __name__ == "__main__":
+    main()
