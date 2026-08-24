@@ -1,0 +1,44 @@
+{
+  "id": "1287",
+  "upstream": null,
+  "packageName": "com.looker.droidify",
+  "name": "Droid-ify",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.ENFORCE_UPDATE_OWNERSHIP",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.RUN_USER_INITIATED_JOBS",
+    "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
+    "android.permission.WAKE_LOCK",
+    "com.looker.droidify.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "moe.shizuku.manager.permission.API_V23"
+  ],
+  "version": {
+    "versionName": "0.7.6",
+    "versionCode": 760,
+    "releaseTag": "v0.7.6"
+  },
+  "source": {
+    "repo": "Droid-ify/client",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/Droid-ify/client/releases/download/v0.7.6/app-release.apk",
+    "sha256": "26f063b4c67c5302fa1d7ee2d4726ac4c49eb82257598836b651e7bb8f6fea7b",
+    "stars": 7305
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-22T07:06:34Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "1304",
+  "upstream": null,
+  "packageName": "com.seazon.feedme",
+  "name": "FeedMe",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BROADCAST_STICKY",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.android.launcher.permission.UNINSTALL_SHORTCUT",
+    "com.android.vending.BILLING",
+    "com.seazon.feedme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "4.10.1",
+    "versionCode": 342,
+    "releaseTag": "4.10.1"
+  },
+  "source": {
+    "repo": "seazon/FeedMe",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://github.com/seazon/FeedMe/releases/download/4.10.1/app-release-4.10.1.apk",
+    "sha256": "60ff6bfabb91ba641fd6ff5b009266379935b661d487b49f136e944f20698732",
+    "stars": 328
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-08-21T12:21:09Z",
+  "generatedBy": "workflow-2"
+}

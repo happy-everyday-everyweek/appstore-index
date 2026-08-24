@@ -1,0 +1,35 @@
+{
+  "id": "1296",
+  "upstream": null,
+  "packageName": "org.vita3k.emulator",
+  "name": "Vita3K",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "org.vita3k.emulator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "0.2.0-12",
+    "versionCode": 12,
+    "releaseTag": "v12"
+  },
+  "source": {
+    "repo": "Vita3K/Vita3K-Android",
+    "openSourceVerified": false,
+    "license": "GPL-2.0",
+    "apkUrl": "https://github.com/Vita3K/Vita3K-Android/releases/download/v12/vita3k-android-release-12.apk",
+    "sha256": "59709b929ba2c3d73fc01920827f3bd901bef8db3b4ab653812260befc8914fe",
+    "stars": 1667
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2024-06-06T20:36:09Z",
+  "generatedBy": "workflow-2"
+}

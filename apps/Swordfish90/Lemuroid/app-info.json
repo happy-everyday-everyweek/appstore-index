@@ -1,0 +1,40 @@
+{
+  "id": "1295",
+  "upstream": null,
+  "packageName": "com.swordfish.lemuroid",
+  "name": "Lemuroid",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.providers.tv.permission.READ_EPG_DATA",
+    "com.android.providers.tv.permission.WRITE_EPG_DATA",
+    "com.swordfish.lemuroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.17.0",
+    "versionCode": 252,
+    "releaseTag": "1.17.0"
+  },
+  "source": {
+    "repo": "Swordfish90/Lemuroid",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/Swordfish90/Lemuroid/releases/download/1.17.0/lemuroid-app-free-dynamic-release.apk",
+    "sha256": "d44cfa0cdc3e43fd91df97f625938366ccef9793b06a80b9e6fad97a6cd88e51",
+    "stars": 4222
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-04-21T08:52:05Z",
+  "generatedBy": "workflow-2"
+}

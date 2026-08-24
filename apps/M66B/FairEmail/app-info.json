@@ -47,21 +47,21 @@
     "me.everything.badger.permission.BADGE_COUNT_WRITE"
   ],
   "version": {
-    "versionName": "1.2331",
-    "versionCode": 2331,
-    "releaseTag": "1.2331"
+    "versionName": "1.2332",
+    "versionCode": 2332,
+    "releaseTag": "1.2332"
   },
   "source": {
     "repo": "M66B/FairEmail",
     "openSourceVerified": false,
     "license": "GPL-3.0",
-    "apkUrl": "https://github.com/M66B/FairEmail/releases/download/1.2331/FairEmail-v1.2331a-github-release.apk",
-    "sha256": "92a73f734bdb43baa4ae5199f24b1badef4baf5e1b04fd1c8a5f09fbe7732c27",
+    "apkUrl": "https://github.com/M66B/FairEmail/releases/download/1.2332/FairEmail-v1.2332a-github-release.apk",
+    "sha256": "1ff2bf1a565c6f3cc6450d206e128acef9099597a5e8cef452dbde540c063148",
     "stars": 4578
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "D",
-  "generatedAt": "2026-08-22T12:54:12Z",
+  "generatedAt": "2026-08-24T15:57:29Z",
   "generatedBy": "workflow-2"
 }

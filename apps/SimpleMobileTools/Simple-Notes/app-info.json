@@ -1,0 +1,34 @@
+{
+  "id": "1294",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.notes.pro",
+  "name": "Notes",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_EXACT_ALARM",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "6.17.0",
+    "versionCode": 114,
+    "releaseTag": "6.17.0"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Notes",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Notes/releases/download/6.17.0/notes-fdroid-release.apk",
+    "sha256": "d3064ad405e3488d0b4676dd547d9ea2d337fcc5def2a91dd09974ece50b0575",
+    "stars": 871
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-09-19T17:47:07Z",
+  "generatedBy": "workflow-2"
+}

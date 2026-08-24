@@ -1,0 +1,51 @@
+{
+  "id": "1299",
+  "upstream": null,
+  "packageName": "xyz.jmir.tachiyomi.mi",
+  "name": "Aniyomi",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_APP_SPECIFIC_LOCALES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "moe.shizuku.manager.permission.API_V23",
+    "xyz.jmir.tachiyomi.mi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "0.18.1.2",
+    "versionCode": 131,
+    "releaseTag": "v0.18.1.2"
+  },
+  "source": {
+    "repo": "aniyomiorg/aniyomi",
+    "openSourceVerified": false,
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/aniyomiorg/aniyomi/releases/download/v0.18.1.2/aniyomi-arm64-v8a-v0.18.1.2.apk",
+    "sha256": "a586b7f04d0d535e5dd8471e5c4e51d461cd96398bda1b584dd41c3879520fe4",
+    "stars": 7625
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2025-10-28T22:09:44Z",
+  "generatedBy": "workflow-2"
+}

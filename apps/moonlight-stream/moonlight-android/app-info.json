@@ -1,0 +1,35 @@
+{
+  "id": "1302",
+  "upstream": null,
+  "packageName": "com.limelight",
+  "name": "Moonlight",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.providers.tv.permission.READ_EPG_DATA",
+    "com.android.providers.tv.permission.WRITE_EPG_DATA"
+  ],
+  "version": {
+    "versionName": "12.1",
+    "versionCode": 314,
+    "releaseTag": "v12.1"
+  },
+  "source": {
+    "repo": "moonlight-stream/moonlight-android",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/moonlight-stream/moonlight-android/releases/download/v12.1/app-nonRoot-release.apk",
+    "sha256": "87012ee6949cd51f211d029ee1194d0daa03adc6ed3fc9448afa92b1dc43cd9f",
+    "stars": 6999
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2024-02-28T04:48:39Z",
+  "generatedBy": "workflow-2"
+}

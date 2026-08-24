@@ -1,0 +1,33 @@
+{
+  "id": "1285",
+  "upstream": null,
+  "packageName": "com.menny.android.anysoftkeyboard",
+  "name": "AnySoftKeyboard",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_USER_DICTIONARY",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_USER_DICTIONARY",
+    "com.menny.android.anysoftkeyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.13.547",
+    "versionCode": 9259,
+    "releaseTag": "1.13-r1"
+  },
+  "source": {
+    "repo": "AnySoftKeyboard/AnySoftKeyboard",
+    "openSourceVerified": false,
+    "license": "Apache-2.0",
+    "apkUrl": "https://github.com/AnySoftKeyboard/AnySoftKeyboard/releases/download/1.13-r1/ime_release.apk",
+    "sha256": "f14c455ff92537d7161f91f7fd7e3aef9dc748913f77d387b99339ad95691adf",
+    "stars": 3363
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-02-08T15:13:23Z",
+  "generatedBy": "workflow-2"
+}

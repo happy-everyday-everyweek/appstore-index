@@ -1,0 +1,33 @@
+{
+  "id": "1292",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.filemanager.pro",
+  "name": "File Manager",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "6.16.1",
+    "versionCode": 136,
+    "releaseTag": "6.16.1"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-File-Manager",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-File-Manager/releases/download/6.16.1/file-manager-fdroid-release.apk",
+    "sha256": "388f547cb0fbd6fb5e823757911cfd217239aa2da86290281b3dec71f3d7557c",
+    "stars": 1578
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-09-19T15:27:16Z",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "1291",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.calendar.pro",
+  "name": "Calendar",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_CALENDAR",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_EXACT_ALARM",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_CALENDAR",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "6.23.1",
+    "versionCode": 240,
+    "releaseTag": "6.23.1"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Calendar",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Calendar/releases/download/6.23.1/calendar-fdroid-release.apk",
+    "sha256": "0bdbb72a704bce36737c721ce5b68f3e5b9338eac4988bd6a69403c15a9cff8b",
+    "stars": 3650
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-10-03T06:53:08Z",
+  "generatedBy": "workflow-2"
+}

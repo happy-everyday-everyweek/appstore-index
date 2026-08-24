@@ -1,0 +1,26 @@
+{
+  "id": "1290",
+  "upstream": null,
+  "packageName": "com.simplemobiletools.calculator",
+  "name": "Calculator",
+  "icon": "icon.png",
+  "permissions": [],
+  "version": {
+    "versionName": "5.12.0",
+    "versionCode": 61,
+    "releaseTag": "5.12.0"
+  },
+  "source": {
+    "repo": "SimpleMobileTools/Simple-Calculator",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/SimpleMobileTools/Simple-Calculator/releases/download/5.12.0/calculator-fdroid-release.apk",
+    "sha256": "092629deaeaaea824dbf0cd824989e80b498b1fa07ad5b4c3e744fc64ce5ab2f",
+    "stars": 595
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2023-10-16T09:50:15Z",
+  "generatedBy": "workflow-2"
+}

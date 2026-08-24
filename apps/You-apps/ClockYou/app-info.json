@@ -1,0 +1,38 @@
+{
+  "id": "1297",
+  "upstream": null,
+  "packageName": "com.bnyro.clock",
+  "name": "Clock You",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.DISABLE_KEYGUARD",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.bnyro.clock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "11.0",
+    "versionCode": 23,
+    "releaseTag": "v11.0"
+  },
+  "source": {
+    "repo": "You-apps/ClockYou",
+    "openSourceVerified": false,
+    "license": "GPL-3.0",
+    "apkUrl": "https://github.com/you-apps/ClockYou/releases/download/v11.0/app-release.apk",
+    "sha256": "caaf86f1b09add54599c6dc022c30a15e377a17994c08c49d0377640d0746b75",
+    "stars": 641
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-07-13T16:20:19Z",
+  "generatedBy": "workflow-2"
+}

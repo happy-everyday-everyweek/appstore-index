@@ -1,0 +1,42 @@
+{
+  "id": "1286",
+  "upstream": null,
+  "packageName": "ml.docilealligator.infinityforreddit.plus",
+  "name": "Infinity+",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RUN_USER_INITIATED_JOBS",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "ml.docilealligator.infinityforreddit.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "8.2.5",
+    "versionCode": 222,
+    "releaseTag": "v8.2.5"
+  },
+  "source": {
+    "repo": "Docile-Alligator/Infinity-For-Reddit",
+    "openSourceVerified": false,
+    "license": "AGPL-3.0",
+    "apkUrl": "https://github.com/Docile-Alligator/Infinity-For-Reddit/releases/download/v8.2.5/Infinity%2B-v8.2.5.apk",
+    "sha256": "c94ae708f9b2b99e1bd9db92f8368cd1bb1ce9a699f6c81660bf8709a0e1aa45",
+    "stars": 5428
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "D",
+  "generatedAt": "2026-06-01T22:06:36Z",
+  "generatedBy": "workflow-2"
+}
