@@ -16,6 +16,7 @@
 聚合包仅含元数据，绝不含 APK。旧 Release 保留不删。
 """
 import argparse
+import datetime
 import hashlib
 import io
 import json
@@ -242,7 +243,6 @@ def main():
         log("dry-run：发布物已写入 dist/")
         return
 
-    import datetime
     # tag 已在 patch 段统一生成（同一时间戳），此处复用
     create_release(args.repo, tag, f"聚合包 {ts}", {
         "full.zip": full_zip,
