@@ -1,6 +1,10 @@
 name: WF4 聚合 Release 分发
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/**"
   schedule:
     - cron: "17 */4 * * *"   # 每天 5 次（约每 4 小时）
   workflow_dispatch:
