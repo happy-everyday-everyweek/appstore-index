@@ -263,12 +263,35 @@ def close_pr(repo, pr, reason):
     log("已关闭 PR 并留言")
 
 
+
+def purge_invalid_dirs():
+    """自动清理：apps 下无 app-info.json 的目录视为核验不达标/残缺条目，入库即删除。"""
+    removed = 0
+    apps_root = os.path.join(".", APPS_DIR)
+    if not os.path.isdir(apps_root):
+        return 0
+    for owner in sorted(os.listdir(apps_root)):
+        owner_dir = os.path.join(apps_root, owner)
+        if not os.path.isdir(owner_dir):
+            continue
+        for repo in sorted(os.listdir(owner_dir)):
+            dir_path = os.path.join(owner_dir, repo)
+            if not os.path.isdir(dir_path):
+                continue
+            if not os.path.isfile(os.path.join(dir_path, "app-info.json")):
+                import shutil
+                shutil.rmtree(dir_path)
+                removed += 1
+                log(f"清理残缺条目: apps/{owner}/{repo}（无 app-info.json，拒绝入库）")
+    return removed
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", required=True, help="承载仓库 owner/repo")
     ap.add_argument("--pr", required=True, type=int, help="PR 编号")
     ap.add_argument("--author", required=True, help="PR 作者（uploader）")
-    ap.add_argument("--close", action="store_true", help="核验失败时实际关闭 PR")
+    ap.add_argument("--close", action="store_true", help="核验失败时关闭 PR（默认关闭；--no-close 仅留言）")
+    ap.add_argument("--no-close", action="store_true", help="核验失败时仅留言不关闭（宽松模式）")
     ap.add_argument("--commit", action="store_true", help="核验通过后把 app-info.json/README.md 写入工作区（合并落盘模式）")
     args = ap.parse_args()
 
@@ -312,7 +335,8 @@ def main():
     if failures:
         msg = "核验未通过（已跳过采集，不影响其余应用收录）:\n\n" + "\n".join(f"- {f}" for f in failures) + \
               "\n\n通过的应用将在合并后正常采集落盘；失败应用可在修正后通过新 PR 重新提交。"
-        if args.close:
+        # 规格：核验链任一失败 → 关闭 PR 并留言（拒绝入库）；--no-close 仅宽松演练用
+        if not args.no_close or args.close:
             close_pr(args.repo, args.pr, "\n".join(f"- {f}" for f in failures))
         else:
             gh_api(f"/repos/{args.repo}/issues/{args.pr}/comments", method="POST", body={"body": msg})
@@ -353,6 +377,8 @@ def main():
             infos.append(info)
             by_repo[app_json["repo"]] = info
             log(f"已落盘 {dir_path}（ID={info['id']}，名称={info['name']}，评级 {info['grade']}）")
+    if args.commit:
+        purge_invalid_dirs()
     for info in infos:
         if info.get("uploader") == args.author and info.get("id"):
             print(f"APP_OK id={info['id']} repo={info['source']['repo']} grade={info['grade']}")
