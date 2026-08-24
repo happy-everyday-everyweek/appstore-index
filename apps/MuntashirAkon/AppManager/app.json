@@ -1,0 +1,8 @@
+{
+  "repo": "MuntashirAkon/AppManager",
+  "openSource": true,
+  "summary": "AppManager：应用包管理器，备份/冻结/查看 APK 信息",
+  "specialPermissions": [
+    "adb"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "repo": "termux/termux-api",
+  "openSource": true,
+  "summary": "Termux:API：为 Termux 脚本提供系统功能接口"
+}
