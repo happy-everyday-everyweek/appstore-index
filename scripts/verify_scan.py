@@ -138,11 +138,13 @@ def verify(repo_name, declared_open):
                 f"疑似假开源：发行版源码快照体积（{code_bytes}B）不大于 APK 体积（{apk_size}B），"
                 f"判定为仅有发布产物而无实质源码"
             ), meta
+    md2, deps = collect_readme_deps(repo_name, readme)
     return True, "ok", {
         "meta": meta,
         "apk_asset": apk_asset,
         "release": release,
-        "readme": readme,
+        "readme": md2,
+        "readme_deps": deps,
         "code_bytes": code_bytes,
         "stars": meta.get("stargazers_count", 0),
         "license": (meta.get("license") or {}).get("spdx_id") if isinstance(meta.get("license"), dict) else None,
@@ -370,6 +372,11 @@ def main():
             save_json(os.path.join(dir_path, "app-info.json"), info)
             with open(os.path.join(dir_path, "README.md"), "w", encoding="utf-8") as f:
                 f.write(verified["readme"])
+            for dep_path, dep_bytes in (verified.get("readme_deps") or {}).items():
+                dep_file = os.path.join(dir_path, "readme-assets", dep_path)
+                os.makedirs(os.path.dirname(dep_file), exist_ok=True)
+                with open(dep_file, "wb") as f:
+                    f.write(dep_bytes)
             if apk_meta.get("iconBytes"):
                 ext = apk_meta.get("iconExt", "png")
                 with open(os.path.join(dir_path, f"icon.{ext}"), "wb") as f:
@@ -386,3 +393,153 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def get_repo_tree(repo_name):
+    import os as _os
+    token = _os.environ.get(TOKEN_ENV, "")
+    url = "https://api.github.com/repos/{0}/git/trees/HEAD?recursive=1".format(repo_name)
+    req = urllib.request.Request(url)
+    if token:
+        req.add_header("Authorization", "Bearer " + token)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = json.loads(r.read().decode("utf-8", errors="replace"))
+        if data.get("truncated"):
+            return None
+        return {t.get("path", "") for t in data.get("tree", []) if t.get("type") == "blob"}
+    except Exception:
+        return None
+
+_HTTP_PREFIXES = ("http://", "https://", "mailto:", "tel:", "data:", "javascript:", "#", "ftp://")
+
+def _norm_ref(raw):
+    raw = raw.strip()
+    if raw.startswith(_HTTP_PREFIXES):
+        return None
+    path = raw.split("#", 1)[0].split("?", 1)[0].lstrip("/")
+    if not path or path.startswith((".", "/")):
+        return None
+    if ".." in path.split("/"):
+        return None
+    return path
+
+def parse_readme_refs(md):
+    refs = set()
+    i = 0
+    while True:
+        a = md.find("](", i)
+        if a < 0:
+            break
+        b = md.find(")", a + 2)
+        if b < 0:
+            break
+        raw = md[a + 2:b]
+        i = b + 1
+        path = _norm_ref(raw)
+        if path:
+            refs.add(path)
+    i = 0
+    while True:
+        a = md.lower().find("src=", i)
+        if a < 0:
+            break
+        q = md.find('"', a + 4)
+        if q < 0 or q > a + 14:
+            q = md.find("'", a + 4)
+        if q < 0:
+            break
+        e = md.find('"', q + 1)
+        if e < 0:
+            e = md.find("'", q + 1)
+        if e < 0:
+            break
+        raw = md[q + 1:e]
+        i = e + 1
+        path = _norm_ref(raw)
+        if path:
+            refs.add(path)
+    return refs
+
+def collect_readme_deps(repo_name, md, max_files=40):
+    tree = get_repo_tree(repo_name)
+    if tree is None:
+        return md, {}
+    refs = parse_readme_refs(md)
+    if not refs:
+        return md, {}
+    import os as _os
+    token = _os.environ.get(TOKEN_ENV, "")
+    deps = {}
+    done = {}
+    for path in sorted(refs):
+        if path not in tree:
+            continue
+        if len(deps) >= max_files:
+            break
+        raw_url = "https://raw.githubusercontent.com/{0}/HEAD/{1}".format(repo_name, path)
+        try:
+            req = urllib.request.Request(raw_url)
+            if token:
+                req.add_header("Authorization", "Bearer " + token)
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = r.read()
+            if not data:
+                continue
+            deps[path] = data
+            done[path] = "readme-assets/" + path
+        except Exception as e:
+            log("README 依赖拉取失败 " + path + ": " + str(e))
+    if not done:
+        return md, {}
+    md2 = md
+    for path, newp in done.items():
+        marker = "](" + path
+        out = []
+        pos = 0
+        while True:
+            a = md2.find(marker, pos)
+            if a < 0:
+                out.append(md2[pos:])
+                break
+            end = md2.find(")", a + len(marker))
+            if end < 0:
+                out.append(md2[pos:])
+                break
+            seg = md2[a + len(marker):end]
+            tail = ""
+            for ch in ("#", "?"):
+                idx = seg.find(ch)
+                if idx >= 0:
+                    tail = seg[idx:]
+                    break
+            out.append(md2[pos:a + len(marker)] + newp + tail)
+            pos = end + 1
+        md2 = "".join(out)
+        for qt in ('"', "'"):
+            marker2 = "src=" + qt + path
+            out = []
+            pos = 0
+            while True:
+                a = md2.find(marker2, pos)
+                if a < 0:
+                    out.append(md2[pos:])
+                    break
+                end = md2.find(qt, a + len(marker2))
+                if end < 0:
+                    out.append(md2[pos:])
+                    break
+                seg = md2[a + len(marker2):end]
+                tail = ""
+                for ch in ("#", "?"):
+                    idx = seg.find(ch)
+                    if idx >= 0:
+                        tail = seg[idx:]
+                        break
+                out.append(md2[pos:a + len(marker2)] + newp + tail)
+                pos = end + 1
+            md2 = "".join(out)
+    log("README 依赖采集：" + str(len(deps)) + " 个文件")
+    return md2, deps
+
+
+
