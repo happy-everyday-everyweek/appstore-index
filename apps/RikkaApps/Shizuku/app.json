@@ -1,0 +1,8 @@
+{
+  "repo": "RikkaApps/Shizuku",
+  "openSource": true,
+  "summary": "Shizuku：以 adb 权限授权应用执行系统级操作",
+  "specialPermissions": [
+    "adb"
+  ]
+}
