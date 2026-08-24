@@ -35,12 +35,12 @@
     "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/wikimedia/apps-android-wikipedia/releases/download/latest/app-alpha-universal-release.apk",
-    "sha256": "86c3d015148d29400b379a2cff58b7e049d5af62c4864c19fefa5a3c1be2eaa2",
+    "sha256": "b5435edebb6566213625df765d1ee796b89e7ae7bd09b965325be771d17e0c77",
     "stars": 3010
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "D",
-  "generatedAt": "2026-08-24T14:14:07Z",
+  "generatedAt": "2026-08-24T16:26:40Z",
   "generatedBy": "workflow-2"
 }
