@@ -64,7 +64,17 @@ def build_full_index():
         readme_path = os.path.join(dir_path, "README.md")
         if os.path.isfile(readme_path):
             with open(readme_path, "rb") as f:
-                assets[f"assets/readmes/{aid}.md"] = f.read()
+                md_bytes = f.read()
+            dep_dir = os.path.join(dir_path, "readme-assets")
+            if os.path.isdir(dep_dir):
+                # README 引用前缀 readme-assets/ → <id>_files/（客户端据此定位本地资源）
+                md_bytes = md_bytes.replace(b"readme-assets/", f"{aid}_files/".encode())
+                for root, _dirs, files in os.walk(dep_dir):
+                    for name in files:
+                        rel = os.path.relpath(os.path.join(root, name), dep_dir)
+                        with open(os.path.join(root, name), "rb") as df:
+                            assets[f"assets/readmes/{aid}_files/{rel}"] = df.read()
+            assets[f"assets/readmes/{aid}.md"] = md_bytes
             readme_ref = f"assets/readmes/{aid}.md"
         index[aid] = {
             "id": aid,
