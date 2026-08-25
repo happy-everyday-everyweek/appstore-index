@@ -1,0 +1,22 @@
+name: WF7 图标批量修复
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: android-actions/setup-android@v3
+      - name: 安装 build-tools（aapt2 解包 APK）
+        run: sdkmanager "build-tools;34.0.0"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 批量修复坏图标并提交
+        run: |
+          python3 scripts/fix_icons.py --aapt2 "${{ env.ANDROID_HOME }}/build-tools/34.0.0/aapt2"
