@@ -52,7 +52,7 @@ def build_full_index():
         # 图标资源：apps/<owner>/<repo>/icon.<ext> → assets/icons/<id>.<ext>
         icon_ref = ""
         import glob
-        icon_files = sorted(glob.glob(os.path.join(dir_path, "icon.*")))
+        icon_files = sorted({p for pat in ("icon.*", "Icon.*", "app_icon.*", "App_Icon.*", "appicon.*") for p in glob.glob(os.path.join(dir_path, pat))})
         if icon_files:
             icon_path = icon_files[0]
             ext = icon_path.rsplit(".", 1)[-1].lower()
@@ -91,7 +91,6 @@ def build_full_index():
             "upstream": info.get("upstream"),
             "grade": info.get("grade", "E"),
             "version": info.get("version", {}),
-            "openSource": info.get("source", {}).get("openSourceVerified", True),
             "source": {
                 "repo": info.get("source", {}).get("repo"),
                 "license": info.get("source", {}).get("license"),
