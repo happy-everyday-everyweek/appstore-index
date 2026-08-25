@@ -8,21 +8,21 @@
     "android.permission.INTERNET"
   ],
   "version": {
-    "versionName": "v1.75.0",
+    "versionName": "v1.75.1",
     "versionCode": 0,
-    "releaseTag": "v1.75.0"
+    "releaseTag": "v1.75.1"
   },
   "source": {
     "repo": "google/filament",
     "openSourceVerified": false,
     "license": "Apache-2.0",
-    "apkUrl": "https://github.com/google/filament/releases/download/v1.75.0/filament-gltf-viewer-v1.75.0-android.apk",
-    "sha256": "81d9659d00ff865859cfd9593a7cd4b7f8a119fabb87aeb9e995089897a8d24b",
+    "apkUrl": "https://github.com/google/filament/releases/download/v1.75.1/filament-gltf-viewer-v1.75.1-android.apk",
+    "sha256": "待重采",
     "stars": 20391
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-08-04T04:54:52Z",
-  "generatedBy": "workflow-2"
+  "generatedAt": "2026-08-24T18:19:19Z",
+  "generatedBy": "workflow-5"
 }
