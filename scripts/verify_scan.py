@@ -382,8 +382,20 @@ def main():
                     f.write(dep_bytes)
             if apk_meta.get("iconBytes"):
                 ext = apk_meta.get("iconExt", "png")
-                with open(os.path.join(dir_path, f"icon.{ext}"), "wb") as f:
-                    f.write(apk_meta["iconBytes"])
+                icon_data = apk_meta["iconBytes"]
+                # 魔数校验：仅接受真实位图（PNG/JPEG/WebP）。历史出现过 APK 自适应图标
+                # 引用为编译后 AXML（头 03 00 08 00），被原样落盘为 icon.png 导致客户端
+                # 无法解码，此处一律拒收非图像字节，宁可留空也不入库坏图标。
+                def _is_img(b: bytes) -> bool:
+                    return (b.startswith(b"PNG
+
+") or b.startswith(b"ÿØÿ")
+                            or (b[:4] == b"RIFF" and b[8:12] == b"WEBP"))
+                if _is_img(icon_data):
+                    with open(os.path.join(dir_path, f"icon.{ext}"), "wb") as f:
+                        f.write(icon_data)
+                else:
+                    log(f"跳过图标落盘 {dir_path}：非图像字节（{len(icon_data)}B，头 {icon_data[:8].hex()}）")
             infos.append(info)
             by_repo[app_json["repo"]] = info
             log(f"已落盘 {dir_path}（ID={info['id']}，名称={info['name']}，评级 {info['grade']}）")
