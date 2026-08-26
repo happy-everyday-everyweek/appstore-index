@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/wallzen-minimal-wallpapers-118948",
+  "openSource": false,
+  "name": "WallZEN - Minimal Wallpapers",
+  "packageName": "wallzen.dd.walls",
+  "version": "v1.0.2",
+  "apkUrl": "https://dl.apkvision.org/wallzen-minimal-wallpapers/wallzen-v1-0-2-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download WallZEN - Minimal Wallpapers (Full version) APK free for Android. WallZEN - Minimal Wallpapers – a great source"
+}
