@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/geode-133128",
+  "openSource": false,
+  "name": "Geode",
+  "packageName": "",
+  "version": "v1.8.0",
+  "apkUrl": "https://dl.apkvision.org/geode/geode_v.1.8.0-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Geode APK free for Android. Geode APK for Geometry Dash is a useful mod manager for Geometry Dash that allows p"
+}
