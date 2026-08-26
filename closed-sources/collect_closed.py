@@ -503,19 +503,117 @@ def api_put_state(index_repo):
         raise RuntimeError("state 提交失败: %s %s" % (st, body))
 
 
+# ---------- 自续链与保活 ----------
+# 调度约定：
+#   - 本轮未翻完全库：collect_closed.py 结尾自动 dispatch 下一轮 WF8（自续链）
+#   - 翻完全库：写完成标记 closed-sources/.wf8_done，停止自续
+#   - WF9 保活工作流每天检查：无完成标记且 WF8 不在运行 → 补触发一轮
+DONE_MARKER = ".wf8_done"
+SELF_LIMIT = 30  # 自续/保活触发的每轮上限
+
+
+def scanned_to_end(state):
+    """游标是否已翻完全部 tab（翻完 = tabIdx 超出 tabs 数量）。"""
+    cur = state.get("cursors", {}).get("apkvision", {})
+    tabs = cur.get("tabs") or DEFAULT_TABS
+    return int(cur.get("tabIdx", 0)) >= len(tabs)
+
+
+def put_done_marker(repo):
+    """写入完成标记（幂等：已存在则跳过）。"""
+    token = os.environ.get(TOKEN_ENV, "")
+    path = "closed-sources/%s" % DONE_MARKER
+    st, cur = http_json(
+        "GET", "https://api.github.com/repos/%s/contents/%s" % (repo, path),
+        token=token)
+    if st == 200:
+        log("完成标记已存在，跳过写入")
+        return
+    body = {"message": "chore: 闭源全库扫描完成", "branch": "main",
+            "content": base64.b64encode(
+                json.dumps({"doneAt": now_utc()}, ensure_ascii=False)
+                .encode()).decode()}
+    st, resp = http_json(
+        "PUT", "https://api.github.com/repos/%s/contents/%s" % (repo, path),
+        token=token, body=body)
+    log("完成标记写入: HTTP %s" % st)
+
+
+def remove_done_marker(repo):
+    """删除完成标记（重新全库扫描时使用；不存在则忽略）。"""
+    token = os.environ.get(TOKEN_ENV, "")
+    path = "closed-sources/%s" % DONE_MARKER
+    st, cur = http_json(
+        "GET", "https://api.github.com/repos/%s/contents/%s" % (repo, path),
+        token=token)
+    if st == 200:
+        http_json("DELETE",
+                  "https://api.github.com/repos/%s/contents/%s" % (repo, path),
+                  token=token,
+                  body={"message": "chore: 重新开始闭源扫描",
+                        "sha": cur.get("sha")})
+
+
+def maybe_self_dispatch(repo):
+    """未翻完全库时触发下一轮 WF8；已有运行/排队中的 run 则跳过（防重）。"""
+    token = os.environ.get(TOKEN_ENV, "")
+    wf = "wf8-collect-closed.yml"
+    st, runs = http_json(
+        "GET",
+        "https://api.github.com/repos/%s/actions/workflows/%s/runs?per_page=5"
+        % (repo, wf), token=token)
+    active = False
+    for r in (runs or {}).get("workflow_runs", []):
+        if r.get("status") in ("in_progress", "queued"):
+            active = True
+            break
+    if active:
+        log("检测到 WF8 正在运行，跳过自续触发")
+        return
+    st, body = http_json(
+        "POST",
+        "https://api.github.com/repos/%s/actions/workflows/%s/dispatches"
+        % (repo, wf), token=token,
+        body={"ref": "main",
+              "inputs": {"dry_run": False, "limit": SELF_LIMIT}})
+    log("自续触发下一轮 WF8: HTTP %s %s"
+        % (st, "OK" if st in (200, 201, 204) else body))
+
+
+def finish_round(args, state):
+    """收盘逻辑：全库翻完写完成标记并停止；否则删标记并自续下一轮。"""
+    if args.dry_run:
+        log("DRY-RUN：不写标记、不自续")
+        return
+    if scanned_to_end(state):
+        put_done_marker(args.repo)
+        log("全库扫描完成，本轮结束，不再自续")
+        return
+    remove_done_marker(args.repo)
+    maybe_self_dispatch(args.repo)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", required=True, help="承载仓库 owner/repo")
     ap.add_argument("--dry-run", action="store_true",
-                    help="只巡扫+详情，不下载、不建仓、不开 PR")
-    ap.add_argument("--limit", type=int, default=10, help="本轮新应用上限（默认 10）")
+                    help="只巡扫+详情，不下载、不建仓、不开 PR、不自续")
+    ap.add_argument("--limit", type=int, default=30, help="本轮新应用上限（默认 30）")
     ap.add_argument("--tab", default=None, help="指定起始目录页（覆盖默认 tabs）")
     ap.add_argument("--page", type=int, default=1, help="与 --tab 配套的起始页")
     ap.add_argument("--max-mb", type=float, default=200,
                     help="单个 APK 大小上限（MB）")
+    ap.add_argument("--rescan", action="store_true",
+                    help="重置游标并删除完成标记，重新全库扫描")
     args = ap.parse_args()
 
     state = load_state()
+    if args.rescan:
+        state = {"version": 1, "cursors": {}, "processed": [], "failed": {}}
+        save_state(state)
+        if not args.dry_run:
+            remove_done_marker(args.repo)
+        log("已重置游标，重新全库扫描")
     indexed = indexed_packages()
     log("已收录包名 %d 个，历史处理 %d 条，失败 %d 条"
         % (len(indexed), len(state.get("processed", [])),
@@ -524,7 +622,11 @@ def main():
     entries, advanced = collect_candidates(state, args)
     log("本轮新候选 %d 个" % len(entries))
     if not entries:
-        log("无新候选，结束")
+        if scanned_to_end(state):
+            log("全库已翻完，本轮无新候选")
+            finish_round(args, state)
+        else:
+            log("无新候选且未翻完全库（疑似源站异常），本轮停止，等待保活工作流")
         return
 
     processed_now = []
@@ -596,6 +698,7 @@ def main():
     save_state(state)
     api_put_state(args.repo)
     log("本轮完成：候选 %d，PR 应用 %d" % (len(entries), len(pr_files)))
+    finish_round(args, state)
 
 
 if __name__ == "__main__":
