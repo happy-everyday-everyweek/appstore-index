@@ -1,0 +1,13 @@
+{
+  "repo": "happy-happy-all-the-day/mirror-youtube-revanced",
+  "openSource": false,
+  "name": "YouTube ReVanced",
+  "packageName": "",
+  "icon": "https://raw.githubusercontent.com/happy-happy-all-the-day/mirror-youtube-revanced/main/icon.png",
+  "version": "v20.14.43",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "去广告、支持后台播放与离线缓存的 YouTube 增强客户端（MOD）。"
+}
