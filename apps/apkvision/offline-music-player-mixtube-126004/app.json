@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/offline-music-player-mixtube-126004",
+  "openSource": false,
+  "name": "Offline Music Player - Mixtube",
+  "packageName": "com.toto.jcyj.mvmix",
+  "version": "v4.6.2",
+  "apkUrl": "https://dl.apkvision.org/mixtube/mixtube-v4-6-2-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Offline Music Player - Mixtube (Mod: Premium) APK free for Android. Offline Music Player - Mixtube is a project"
+}
