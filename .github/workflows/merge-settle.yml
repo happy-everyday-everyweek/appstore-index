@@ -45,7 +45,22 @@ jobs:
           # main 分支保护要求 PR + 状态检查：落盘推送必须用 MAIN_PAT（仓库管理员）
           # 豁免保护；GITHUB_TOKEN 会被 GH006 拒绝（历史上落盘因此一直推不回）。
           git remote set-url origin "https://x-access-token:${MAIN_PAT}@github.com/${GITHUB_REPOSITORY}.git"
+          # 关键：actions/checkout 会写 http.https://github.com/.extraheader（GITHUB_TOKEN），
+          # 其 Authorization 优先级高于 URL 内嵌凭据 → 不 unset 的话 push 实际仍用 GITHUB_TOKEN
+          # 被 GH006 拒绝（v1 修复后仍失败的根因，见 run 32967653216）。
+          git config --unset-all http.https://github.com/.extraheader || true
           # 重试推送：远端被并发推进时 pull --rebase 后重推（最多 5 次）
+          pushed=""
           for i in 1 2 3 4 5; do
-            git push origin HEAD:main && break || { git pull --rebase origin main 2>/dev/null || true; sleep 4; }
+            if git push origin HEAD:main; then pushed=1; break; fi
+            git pull --rebase origin main 2>/dev/null || true
+            sleep 4
           done
+          # 无变更时无需推送（本地与远端一致）；有变更却推不上去必须显式失败，
+          # 否则 for 循环最后 sleep 返回 0 会让 run 显示 success 掩盖落盘丢失。
+          if git diff --quiet HEAD origin/main; then
+            echo "落盘无变更，跳过推送"
+          elif [ -z "$pushed" ]; then
+            echo "::error::落盘推送失败（GH006 或网络错误，需人工介入）"
+            exit 1
+          fi
