@@ -582,9 +582,39 @@ def remove_done_marker(repo):
                         "sha": cur.get("sha")})
 
 
+def wait_settle(repo, max_wait=1800):
+    """节流：等待 merge-settle 队列消化（直推速度远超落盘速度，必须限速）。
+    每 90s 查一次运行/排队/等待中的 run 数；返回 True=已消化，False=超时
+    （放弃本轮自续，由 WF9 保活兜底补触发）。"""
+    token = os.environ.get(TOKEN_ENV, "") or state_token()
+    wf = "merge-settle.yml"
+    waited = 0
+    while waited < max_wait:
+        st, runs = http_json(
+            "GET",
+            "https://api.github.com/repos/%s/actions/workflows/%s/runs?per_page=20"
+            % (repo, wf), token=token)
+        if st != 200:
+            return False  # 查询失败保守等待（保活兜底）
+        n = sum(1 for r in (runs or {}).get("workflow_runs", [])
+                if r.get("status") in ("in_progress", "queued",
+                                       "pending", "waiting"))
+        if n == 0:
+            return True
+        log("merge-settle 积压 %d 个 run，等待消化（已等 %ds）..."
+            % (n, waited))
+        time.sleep(90)
+        waited += 90
+    log("等待 merge-settle 超时，本轮不自续（保活工作流兜底）")
+    return False
+
+
 def maybe_self_dispatch(repo):
     """未翻完全库时触发下一轮 WF8；已有其他运行/排队中的 run 则跳过（防重）。
-    注意排除自身（GITHUB_RUN_ID），否则总会以为自己还在运行。"""
+    注意排除自身（GITHUB_RUN_ID），否则总会以为自己还在运行。
+    直链模式下先节流：merge-settle 消化完本批落盘前不推下一批。"""
+    if not wait_settle(repo):
+        return
     token = os.environ.get(TOKEN_ENV, "")
     wf = "wf8-collect-closed.yml"
     self_run = os.environ.get("GITHUB_RUN_ID", "")
