@@ -1,0 +1,41 @@
+{
+  "id": "apkaward",
+  "name": "APKAward",
+  "version": "1.0.0",
+  "homepage": "https://apkaward.com/",
+  "description": "读取 APKAward 公开页面的目录、搜索、详情、截图和下载项。",
+  "permissions": {
+    "network": [
+      "apkaward.com",
+      "*.apkaward.com",
+      "apkawards.com",
+      "*.apkawards.com"
+    ],
+    "browser": false,
+    "download": true,
+    "install": false
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "检查 APKAward 公开分类页中的匹配结果。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 minecraft",
+      "defaultInput": "minecraft"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "读取 APKAward 详情页并解析公开下载链接。",
+      "inputLabel": "应用详情 URL",
+      "placeholder": "粘贴 APKAward 应用 URL",
+      "defaultInput": "https://apkaward.com/dont-starve-pocket-edition"
+    }
+  ]
+}
