@@ -593,6 +593,34 @@ def finish_round(args, state):
     maybe_self_dispatch(args.repo)
 
 
+def maybe_open_pr(args, state):
+    """把待收录队列（state.pending_pr）开成 PR；失败不致命，保留下轮重试。
+    这样即使 Actions 暂无开 PR 权限，自续链也不会中断，镜像仓照常积累。"""
+    if args.dry_run:
+        return
+    pending = state.get("pending_pr") or []
+    if not pending:
+        return
+    branch = "closed-batch-%s" % int(time.time())
+    pr_files = [(p["path"], p["content"]) for p in pending]
+    names = []
+    for p in pending[:10]:
+        try:
+            names.append(json.loads(p["content"]).get("name", ""))
+        except Exception:
+            pass
+    body = ("闭源采集管道自动收录 %d 个应用：%s\n\n"
+            "均为 APKVision 源站闭源应用，镜像仓库由机器人账号统一持有，"
+            "APK 已上传对应 Releases。" % (len(pr_files), "、".join(names)))
+    title = "闭源收录：%s 等 %d 个应用" % (names[0] if names else "新应用", len(pr_files))
+    try:
+        api_create_pr(args.repo, branch, pr_files, title, body)
+        state["pending_pr"] = []
+        log("PR 已创建并清空待收录队列（%d 条）" % len(pr_files))
+    except Exception as e:
+        log("开 PR 失败（待收录 %d 条保留，下轮重试）: %s" % (len(pending), e))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", required=True, help="承载仓库 owner/repo")
@@ -627,6 +655,11 @@ def main():
             finish_round(args, state)
         else:
             log("无新候选且未翻完全库（疑似源站异常），本轮停止，等待保活工作流")
+        # 有积压待收录时仍尝试开 PR（如 PR 权限恢复后的补收录）
+        if not args.dry_run and (state.get("pending_pr") or []):
+            maybe_open_pr(args, state)
+            save_state(state)
+            api_put_state(args.repo)
         return
 
     processed_now = []
@@ -666,38 +699,26 @@ def main():
             % (len(processed_now), len(state.get("failed", {}))))
         return
 
-    # 批次 PR（PR 文件在 TMP_DIR/pr_files/）
+    # 本轮的 app.json 追加进待收录队列（持久化在 state.json，PR 失败保留下轮重试）
+    pending = state.setdefault("pending_pr", [])
     pr_dir = os.path.join(TMP_DIR, "pr_files")
-    files = []
+    added = 0
     if os.path.isdir(pr_dir):
-        files = [(fn, open(os.path.join(pr_dir, fn), encoding="utf-8").read())
-                 for fn in sorted(os.listdir(pr_dir))]
-        for fn in os.listdir(pr_dir):
-            os.remove(os.path.join(pr_dir, fn))
-    if files:
-        branch = "closed-batch-%s" % int(time.time())
-        pr_files = []
-        names = []
-        for fn, content in files:
+        for fn in sorted(os.listdir(pr_dir)):
             parts = fn.split("__")
             if len(parts) >= 3:
-                pr_files.append(
-                    ("apps/%s/%s/app.json" % (parts[0], parts[1]),
-                     content + "\n"))
-            try:
-                names.append(json.loads(content).get("name", ""))
-            except Exception:
-                pass
-        body = ("闭源采集管道自动收录 %d 个应用：%s\n\n"
-                "均为 APKVision 源站闭源应用，镜像仓库由机器人账号统一持有，"
-                "APK 已上传对应 Releases。" % (len(pr_files), "、".join(names[:10])))
-        api_create_pr(args.repo, branch, pr_files,
-                      "闭源收录：%s 等 %d 个应用"
-                      % (names[0] if names else "新应用", len(pr_files)),
-                      body)
+                with open(os.path.join(pr_dir, fn), encoding="utf-8") as f:
+                    content = f.read()
+                pending.append(
+                    {"path": "apps/%s/%s/app.json" % (parts[0], parts[1]),
+                     "content": content + "\n"})
+                added += 1
+            os.remove(os.path.join(pr_dir, fn))
+    log("本轮新增待收录 %d 条（累计 %d）" % (added, len(pending)))
+    maybe_open_pr(args, state)
     save_state(state)
     api_put_state(args.repo)
-    log("本轮完成：候选 %d，PR 应用 %d" % (len(entries), len(pr_files)))
+    log("本轮完成：候选 %d，待收录 %d 条" % (len(entries), len(state.get("pending_pr", []))))
     finish_round(args, state)
 
 
