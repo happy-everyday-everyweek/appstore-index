@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/vpn-japan-premium-112984",
+  "openSource": false,
+  "name": "VPN Japan Premium",
+  "packageName": "vpn.japan",
+  "version": "v1.100",
+  "apkUrl": "https://dl.apkvision.org/vpn-japan/vpn-japan-v1.100-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download VPN Japan Premium (Mod: Premium) APK free for Android. VPN Japan - get Japanese IP – the application is focused"
+}

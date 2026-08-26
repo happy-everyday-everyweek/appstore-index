@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/bluetooth-keyboard-mouse-pro-116049",
+  "openSource": false,
+  "name": "Bluetooth Keyboard & Mouse Pro",
+  "packageName": "io.appground.blekpremium",
+  "version": "v6.1.0",
+  "apkUrl": "https://dl.apkvision.org/bluetooth-keyboard-mouse-pro/bluetooth-keyboard-v6-1-0-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Bluetooth Keyboard & Mouse Pro APK free for Android. Bluetooth Keyboard & Mouse Pro – a premium version of the "
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/skyline-emulator-113029",
+  "openSource": false,
+  "name": "Skyline Emulator",
+  "packageName": "",
+  "version": "v0.0.3",
+  "apkUrl": "https://dl.apkvision.org/skyline-emulator/skyline-emulator-v0.0.3-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Skyline Emulator APK free for Android. Skyline Emulator – there are many fans of game consoles among smartphone"
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/control-center-for-samsung-116170",
+  "openSource": false,
+  "name": "Control Center for Samsung",
+  "packageName": "com.edgepro.controlcenter",
+  "version": "v2.5.8",
+  "apkUrl": "https://dl.apkvision.org/control-center-for-samsung/control-center-for-samsung-v2-5-8-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Control Center for Samsung APK free for Android. Control Center for Samsung – the Dash application is a tool th"
+}

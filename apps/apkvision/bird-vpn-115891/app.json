@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/bird-vpn-115891",
+  "openSource": false,
+  "name": "Bird VPN",
+  "packageName": "com.fast.vpn.v2ray.birdsvpn",
+  "version": "v35.0",
+  "apkUrl": "https://dl.apkvision.org/bird-vpn/bird-vpn-v35-0-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Bird VPN (Mod: No ads) APK free for Android. Bird VPN – the application replenishes a selection of projects des"
+}
