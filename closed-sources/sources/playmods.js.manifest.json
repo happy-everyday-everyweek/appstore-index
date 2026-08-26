@@ -1,0 +1,44 @@
+{
+  "id": "playmods",
+  "name": "PlayMods",
+  "version": "1.0.0",
+  "homepage": "https://playmods.net/",
+  "description": "读取 PlayMods 公开搜索、分类、详情和下载页；下载会跳转到站点动态 CDN。",
+  "permissions": {
+    "network": ["*"],
+    "browser": false,
+    "download": true,
+    "install": false
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "读取 PlayMods 搜索结果及分页。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 minecraft",
+      "defaultInput": "minecraft"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "读取元数据、截图并解析公开下载页。",
+      "inputLabel": "详情 URL",
+      "placeholder": "粘贴 PlayMods 应用或游戏 URL",
+      "defaultInput": "https://playmods.net/game/minecraft(invincible)/com.mojang.minecraftpe"
+    },
+    {
+      "id": "catalog",
+      "name": "检查目录",
+      "description": "读取游戏和应用分类首页。",
+      "inputLabel": "标签数量上限",
+      "placeholder": "0 表示全部",
+      "defaultInput": "0"
+    }
+  ]
+}
