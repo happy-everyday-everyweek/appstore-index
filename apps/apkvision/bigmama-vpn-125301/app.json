@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/bigmama-vpn-125301",
+  "openSource": false,
+  "name": "BigMama VPN",
+  "packageName": "network.bigmama",
+  "version": "v1.7.0",
+  "apkUrl": "https://dl.apkvision.org/bigmama-vpn/bigmama-vpn-v1-7-0-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download BigMama VPN (Mod: Premium) APK free for Android. BigMama VPN – the project has gathered a large number of tradi"
+}
