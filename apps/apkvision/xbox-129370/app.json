@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/xbox-129370",
+  "openSource": false,
+  "name": "Xbox",
+  "packageName": "com.microsoft.xboxone.smartglass",
+  "version": "v2608.1.3",
+  "apkUrl": "https://dl.apkvision.org/xbox/XBOX_2608.1.3_apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Xbox APK free for Android. Xbox enhances your gaming experience by keeping you connected with friends through v"
+}
