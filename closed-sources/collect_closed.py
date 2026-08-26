@@ -173,35 +173,81 @@ def create_mirror_repo(owner, slug, desc, token):
 
 
 def upload_content(owner, slug, path, content, message, token, branch="main"):
+    """PUT 文件（幂等）：先取现有 sha，存在则更新，不存在则新建。"""
     b64 = base64.b64encode(content).decode()
+    st, cur = http_json(
+        "GET", "https://api.github.com/repos/%s/%s/contents/%s?ref=%s"
+        % (owner, slug, path, branch), token=token)
+    sha = cur.get("sha") if st == 200 else None
     st, body = http_json(
         "PUT",
-        f"https://api.github.com/repos/{owner}/{slug}/contents/{path}",
+        "https://api.github.com/repos/%s/%s/contents/%s" % (owner, slug, path),
         token=token,
-        body={"message": message, "content": b64, "branch": branch})
+        body={"message": message, "content": b64, "branch": branch,
+              "sha": sha})
     if st not in (200, 201):
         raise RuntimeError("upload content failed: %s %s %s" % (st, path, body))
 
 
 def create_release(owner, slug, tag, name, body, token):
+    """创建 Release；tag 已存在时改为更新同名 Release（幂等）。"""
     st, rel = http_json(
-        "POST", f"https://api.github.com/repos/{owner}/{slug}/releases",
-        token=token,
+        "POST", "https://api.github.com/repos/%s/%s/releases"
+        % (owner, slug), token=token,
         body={"tag_name": tag, "name": name[:80], "body": body})
-    if st not in (200, 201):
-        raise RuntimeError("create release failed: %s %s" % (st, rel))
-    return rel
+    if st in (200, 201):
+        return rel
+    if st == 422:
+        tq = urllib.parse.quote(tag, safe="")
+        st2, existing = http_json(
+            "GET", "https://api.github.com/repos/%s/%s/releases/tags/%s"
+            % (owner, slug, tq), token=token)
+        if st2 == 200:
+            st3, _ = http_json(
+                "PATCH", "https://api.github.com/repos/%s/%s/releases/%s"
+                % (owner, slug, existing["id"]), token=token,
+                body={"name": name[:80], "body": body})
+            if st3 in (200, 201):
+                return existing
+    raise RuntimeError("create release failed: %s %s" % (st, rel))
 
 
 def upload_asset(owner, slug, release_id, asset_name, data, token):
+    """上传 Release 资产；同名资产先删后传（幂等）。"""
     url = ("https://uploads.github.com/repos/%s/%s/releases/%s/assets?name=%s"
            % (owner, slug, release_id, urllib.parse.quote(asset_name)))
     st, body = http_json(
         "POST", url, token=token, body=data, timeout=900,
         headers={"Content-Type": "application/octet-stream"})
-    if st not in (200, 201):
-        raise RuntimeError("upload asset failed: %s %s" % (st, body))
-    return body
+    if st in (200, 201):
+        return body
+    if st == 422 and "already_exists" in str(body):
+        st2, assets = http_json(
+            "GET", "https://api.github.com/repos/%s/%s/releases/%s/assets"
+            % (owner, slug, release_id), token=token)
+        for a in (assets or []):
+            if a.get("name") == asset_name:
+                http_json("DELETE",
+                          "https://api.github.com/repos/%s/%s/releases/assets/%s"
+                          % (owner, slug, a["id"]), token=token)
+        st, body = http_json(
+            "POST", url, token=token, body=data, timeout=900,
+            headers={"Content-Type": "application/octet-stream"})
+        if st in (200, 201):
+            return body
+    raise RuntimeError("upload asset failed: %s %s" % (st, body))
+
+
+def mirror_ready(owner, slug, token):
+    """镜像是否就绪：最新 Release 含 APK 即为可用（WF2 同标准）。"""
+    st, rel = http_json(
+        "GET", "https://api.github.com/repos/%s/%s/releases/latest"
+        % (owner, slug), token=token)
+    if st == 200:
+        for a in rel.get("assets", []):
+            if a.get("name", "").lower().endswith(".apk"):
+                return True
+    return False
 
 
 def make_readme(meta):
@@ -261,9 +307,9 @@ def process_candidate(entry, detail, state, args, indexed):
         raise RuntimeError("MIRROR_OWNER / MIRROR_TOKEN 未配置")
 
     slug = slug_for(pkg, meta.get("name"))
-    if mirror_exists(owner, slug, token):
-        # 镜像已存在（历史遗留/半途失败）：直接复用，走 PR 收录
-        log("镜像已存在，复用: %s/%s" % (owner, slug))
+    if mirror_ready(owner, slug, token):
+        # 镜像已就绪（Release 含 APK）：直接复用，走 PR 收录
+        log("镜像已就绪，复用: %s/%s" % (owner, slug))
         return make_app_json(meta, owner, slug)
 
     downloads = meta.get("downloads") or []
@@ -281,8 +327,14 @@ def process_candidate(entry, detail, state, args, indexed):
         raise RuntimeError("APK 超出大小上限 %.0fMB（实际 %.1fMB）"
                            % (args.max_mb, size / 1048576))
     try:
-        log("创建镜像仓库: %s/%s" % (owner, slug))
-        create_mirror_repo(owner, slug, meta.get("summary", ""), token)
+        st, repo = http_json(
+            "GET", "https://api.github.com/repos/%s/%s" % (owner, slug),
+            token=token)
+        if st != 200:
+            log("创建镜像仓库: %s/%s" % (owner, slug))
+            create_mirror_repo(owner, slug, meta.get("summary", ""), token)
+        else:
+            log("镜像仓库已存在，补齐内容: %s/%s" % (owner, slug))
         readme = make_readme(meta).encode("utf-8")
         upload_content(owner, slug, "README.md", readme,
                        "chore: 自动生成应用简介", token)
@@ -301,7 +353,6 @@ def process_candidate(entry, detail, state, args, indexed):
             owner, slug, tag, "%s %s" % (meta.get("name", ""), tag),
             "版本 %s\n包名 `%s`\n来源 APKVision\nSHA-256 `%s`"
             % (meta.get("version", ""), pkg, sha), token)
-        import urllib.parse
         upload_asset(owner, slug, rel["id"], os.path.basename(apk_path),
                      open(apk_path, "rb").read(), token)
         meta["sha256"] = sha
@@ -448,7 +499,7 @@ def api_put_state(index_repo):
         body={"message": "chore: 闭源采集状态推进", "branch": "main",
               "content": base64.b64encode(data).decode(),
               "sha": cur.get("sha") if st == 200 else None})
-    if st != 200:
+    if st not in (200, 201):
         raise RuntimeError("state 提交失败: %s %s" % (st, body))
 
 
