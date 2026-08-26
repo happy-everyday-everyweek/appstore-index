@@ -1,0 +1,13 @@
+{
+  "repo": "happy-happy-all-the-day/mirror-wp.wattpad",
+  "openSource": false,
+  "name": "Wattpad - Read & Write Stories",
+  "packageName": "wp.wattpad",
+  "icon": "https://raw.githubusercontent.com/happy-happy-all-the-day/mirror-wp.wattpad/main/icon.png",
+  "version": "v11.15.1",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "汇集数百万读者与写作者的社交故事平台，支持免费阅读、创作与分享。"
+}
