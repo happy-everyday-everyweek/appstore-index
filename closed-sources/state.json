@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "cursors": {
+    "apkvision": {
+      "tabs": [
+        "https://apkvision.org/app/",
+        "https://apkvision.org/games/",
+        "https://apkvision.org/updated/",
+        "https://apkvision.org/best-new-releases/"
+      ],
+      "tabIdx": 0,
+      "page": 1
+    }
+  },
+  "processed": [],
+  "failed": {
+    "https://apkvision.org/app/social/tiktok-133712/": "详情 404 或不可解析",
+    "https://apkvision.org/app/apkvision-store-131787/": "upload content failed: 422 README.md {'message': 'Invalid request.\\n\\n\"sha\" wasn\\'t supplied.', 'documentation_url': 'https://docs.github.com/rest/repos/contents#create-or-update-file-contents', 'status': '422'}"
+  }
+}
