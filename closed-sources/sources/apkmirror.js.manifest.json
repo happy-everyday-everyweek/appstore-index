@@ -1,0 +1,36 @@
+{
+  "id": "apkmirror",
+  "name": "APKMirror",
+  "version": "1.1.0",
+  "homepage": "https://www.apkmirror.com/",
+  "description": "APKMirror 版本搜索、详情、变体和下载源。",
+  "permissions": {
+    "network": ["*"],
+    "browser": true,
+    "download": true,
+    "install": true
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "Search APKMirror",
+      "description": "Search APKMirror and inspect parsed release rows.",
+      "inputLabel": "Keyword",
+      "placeholder": "For example hello",
+      "defaultInput": "hello"
+    },
+    {
+      "id": "app-details",
+      "name": "Read release details",
+      "description": "Read release metadata, variants, and resolved download URLs.",
+      "inputLabel": "Detail URL",
+      "placeholder": "Paste an APKMirror release URL",
+      "defaultInput": "https://www.apkmirror.com/apk/hello-heart/hello-heart-for-heart-health/hello-heart-for-heart-health-5-6-3-release/"
+    }
+  ]
+}
