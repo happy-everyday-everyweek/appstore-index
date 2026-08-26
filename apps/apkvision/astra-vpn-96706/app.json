@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/astra-vpn-96706",
+  "openSource": false,
+  "name": "Astra VPN",
+  "packageName": "com.astravpn.vpnproxy",
+  "version": "v12.9",
+  "apkUrl": "https://dl.apkvision.org/astra-vpn/astra-vpn-v12-9-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Astra VPN (Full version) APK free for Android. Astra VPN - Fast & Secure VPN – the Dash application is a tool t"
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/launcher-ios15-ilauncher-97762",
+  "openSource": false,
+  "name": "Launcher iOS15 - iLauncher",
+  "packageName": "com.launcheros15.ilauncher",
+  "version": "v1.6.6",
+  "apkUrl": "https://dl.apkvision.org/launcher-ios15-ilauncher/iLauncher-v1.6.6.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Launcher iOS15 - iLauncher APK free for Android. Launcher iOS15 - iLauncher – go to the latest iOS version with"
+}
