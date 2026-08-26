@@ -387,9 +387,8 @@ def main():
                 # 引用为编译后 AXML（头 03 00 08 00），被原样落盘为 icon.png 导致客户端
                 # 无法解码，此处一律拒收非图像字节，宁可留空也不入库坏图标。
                 def _is_img(b: bytes) -> bool:
-                    return (b.startswith(b"PNG
-
-") or b.startswith(b"ÿØÿ")
+                    return (b.startswith(b"\x89PNG\r\n\x1a\n")
+                            or b.startswith(b"\xff\xd8\xff")
                             or (b[:4] == b"RIFF" and b[8:12] == b"WEBP"))
                 if _is_img(icon_data):
                     with open(os.path.join(dir_path, f"icon.{ext}"), "wb") as f:
