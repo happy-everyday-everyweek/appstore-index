@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/mixpad-master-s-edition-118584",
+  "openSource": false,
+  "name": "MixPad Master's Edition",
+  "packageName": "com.nchsoftware.mixpad",
+  "version": "v12.14",
+  "apkUrl": "https://dl.apkvision.org/mixpad-masters-edition/mixpad-masters-edition-v12-14-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download MixPad Master's Edition (Full version) APK free for Android. MixPad Master's Edition – the application has a su"
+}
