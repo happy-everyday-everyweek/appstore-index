@@ -1,0 +1,44 @@
+{
+  "id": "apktodo",
+  "name": "APKTodo",
+  "version": "1.2.1",
+  "homepage": "https://apktodo.io/",
+  "description": "读取 APKTodo 应用元数据、截图、详情和下载项。",
+  "permissions": {
+    "network": ["*"],
+    "browser": true,
+    "download": true,
+    "install": true
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "读取 APKTodo 搜索结果并检查子域名详情地址。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 hello",
+      "defaultInput": "hello"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "打开 APKTodo 子域名详情页，读取元数据、截图和下载页地址。",
+      "inputLabel": "应用详情 URL",
+      "placeholder": "粘贴源详情页 URL",
+      "defaultInput": "https://grok.apktodo.io/"
+    },
+    {
+      "id": "catalog",
+      "name": "检查目录标签",
+      "description": "调用源目录接口，汇总每个标签返回的应用数量。",
+      "inputLabel": "标签数量上限",
+      "placeholder": "0 表示全部",
+      "defaultInput": "0"
+    }
+  ]
+}
