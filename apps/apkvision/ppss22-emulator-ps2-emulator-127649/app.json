@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/ppss22-emulator-ps2-emulator-127649",
+  "openSource": false,
+  "name": "PPSS22 Emulator - PS2 Emulator",
+  "packageName": "com.ppss22.emulator",
+  "version": "v409",
+  "apkUrl": "https://dl.apkvision.org/ppss22-emulator-ps2-emulator/PPSS22-Emulator-v409-full-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download PPSS22 Emulator - PS2 Emulator (ARM64 Plugins) APK free for Android. PPSS22 Emulator - PS2 Emulator offers exce"
+}
