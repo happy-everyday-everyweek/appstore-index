@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-"""WF7 图标批量修复 v2：把 apps/*/*/ 下非图像（AXML/损坏/采集失败）icon 文件替换为真实位图。
+"""WF7 图标批量修复 v3：把 apps/*/*/ 下非图像 icon 文件替换为真实位图。
 
-存量判定：icon.* 文件 < 2000 字节或魔数非 PNG/JPEG/WebP 即视为坏。
-修复路径（v2 重写）：app-info.json 的 apkUrl 直连下载 APK → aapt2 dump badging 取图标资源
-→ 若指向 XML（混淆 APK 的 adaptive-icon 定义如 res/BW.xml），用 aapt2 dump xmltree 解析
-foreground/background/monochrome 引用 ID → 用 aapt2 dump resources 建立 资源ID→密度→文件路径
-映射，选最高密度真实位图字节（魔数校验）→ 落盘覆盖旧 icon.* → git commit/push。
-
-v1 教训：混淆 APK 的位图全在 res/ 根下（res/-B.png 乱名），原 fallback 只遍历
-res/mipmap|res/drawable 子目录导致 88/100 失败；v2 通过 resources.arsc 的资源 ID 映射
-精确找到图标位图，无需依赖目录命名。
+v2 基础：badging -> xmltree(adaptive) -> resources 资源ID映射 -> 最高密度位图。
+v3 新增：当 adaptive-icon 的 fg/bg 引用是 XML（vector/gradient 而非位图）时，
+用 androguard 解析 AXML + cairosvg 渲染为 SVG 再转 PNG，Pillow 合成 bg+fg。
 """
 import argparse
 import glob
@@ -19,6 +13,9 @@ import re
 import subprocess
 import sys
 import zipfile
+import io
+
+A = '{http://schemas.android.com/apk/res/android}'
 
 
 def is_image(b: bytes) -> bool:
@@ -39,12 +36,9 @@ def run(cmd, timeout=300):
 
 
 def parse_resources(out: str):
-    """解析 aapt2 dump resources：返回 (资源名映射, 文件路径映射)。
-    资源行：  resource 0x7f0f0014 mipmap/ic_launcher_foreground
-    文件行：  (xxxhdpi) (file) res/as.png type=PNG
-    """
-    res_name = {}   # res_id(lower) -> (type, name)
-    files = {}      # res_id(lower) -> {density: path}
+    res_name = {}
+    files = {}
+    colors = {}
     cur = None
     for line in out.splitlines():
         m = re.match(r"\s*resource (0x[0-9a-f]+) ([\w.]+)/([\w.]+)", line)
@@ -53,11 +47,15 @@ def parse_resources(out: str):
             res_name[cur] = (m.group(2), m.group(3))
             files.setdefault(cur, {})
             continue
+        m = re.match(r"\s*\(([^)]*)\) #([0-9a-fA-F]{8})", line)
+        if m and cur:
+            colors[cur] = '#' + m.group(2)
+            continue
         m = re.match(r"\s*\(([^)]*)\) \(file\) (res/[\w./-]+) type=(\w+)", line)
         if m and cur:
             dens = m.group(1) or "default"
             files[cur][dens] = m.group(2)
-    return res_name, files
+    return res_name, files, colors
 
 
 DENSITY_RANK = {
@@ -67,7 +65,6 @@ DENSITY_RANK = {
 
 
 def best_path(files, res_id):
-    """资源 ID 对应的最高密度位图路径（跳过 XML 类目录 anydpi）"""
     cands = files.get(res_id, {})
     if not cands:
         return None
@@ -82,7 +79,6 @@ def best_path(files, res_id):
 
 
 def xmltree_refs(aapt2, apk, xmlpath):
-    """解析 adaptive-icon XML，返回 (foreground_id, background_id, monochrome_id) 均不带 @"""
     out, err, rc = run([aapt2, "dump", "xmltree", "--file", xmlpath, apk])
     fg = bg = mono = None
     section = None
@@ -111,14 +107,201 @@ def xmltree_refs(aapt2, apk, xmlpath):
     return fg, bg, mono
 
 
+# ---------- vector/gradient 渲染（v3）----------
+
+def read_xml_root(apk, xmlpath):
+    """读取 AXML 并返回 ElementTree 根节点"""
+    from androguard.core.axml import AXMLPrinter
+    try:
+        import xml.etree.ElementTree as ET
+        with zipfile.ZipFile(apk) as z:
+            data = z.read(xmlpath)
+        if data[:4] == b'\x03\x00\x08\x00':
+            et = AXMLPrinter(data).get_xml()
+            if hasattr(et, 'getroot'):
+                return et.getroot()
+            return ET.fromstring(et.decode('utf-8', 'replace'))
+        return ET.fromstring(data)  # 普通文本 XML
+    except Exception:
+        return None
+
+
+def svg_color(c):
+    c = c.strip()
+    if c.startswith('#'):
+        h = c[1:]
+        if len(h) == 8:
+            return '#' + h[2:] + h[0:2]
+        return '#' + h
+    return c
+
+
+def render_gradient(apk, xmlpath, cmap, gid):
+    g = read_xml_root(apk, xmlpath)
+    if g is None or g.tag.split('}')[-1] != 'gradient':
+        return '', ''
+    ga = g.attrib
+    gtype = ga.get(A + 'type', '0')
+    stops = []
+    for ch in g:
+        if ch.tag.split('}')[-1] == 'item':
+            col = ch.attrib.get(A + 'color', '#000000')
+            if col.startswith('@'):
+                v = cmap.get(col[1:].lower())
+                col = v if v else '#000000'
+            off = ch.attrib.get(A + 'offset', '0')
+            try:
+                stops.append((float(off), svg_color(col)))
+            except Exception:
+                pass
+    stops.sort()
+    if not stops:
+        return '', ''
+    stop_svg = ''.join('<stop offset="%s" stop-color="%s"/>' % (o, c) for o, c in stops)
+    gname = 'g%d' % gid
+    if gtype == '0':
+        defs = '<linearGradient id="%s" x1="%s" y1="%s" x2="%s" y2="%s">%s</linearGradient>' % (
+            gname, ga.get(A + 'startX', '0'), ga.get(A + 'startY', '0'),
+            ga.get(A + 'endX', '100'), ga.get(A + 'endY', '100'), stop_svg)
+    else:
+        defs = '<radialGradient id="%s" cx="%s" cy="%s" r="%s">%s</radialGradient>' % (
+            gname, ga.get(A + 'centerX', '0'), ga.get(A + 'centerY', '0'),
+            ga.get(A + 'gradientRadius', '100'), stop_svg)
+    return defs, 'url(#%s)' % gname
+
+
+def resolve_fill(apk, val, cmap, gid):
+    if val.startswith('@'):
+        v = cmap.get(val[1:].lower())
+        if v:
+            defs, url = render_gradient(apk, v, cmap, gid)
+            if url:
+                return url, defs, gid + 1
+            if v.startswith('#'):
+                return svg_color(v), '', gid
+    return svg_color(val), '', gid
+
+
+def build_svg_node(apk, node, cmap, gid):
+    parts, defs = [], ''
+    for ch in node:
+        ctag = ch.tag.split('}')[-1]
+        if ctag == 'group':
+            ca = ch.attrib
+            tf = []
+            if A + 'translateX' in ca or A + 'translateY' in ca:
+                tf.append('translate(%s,%s)' % (ca.get(A + 'translateX', 0), ca.get(A + 'translateY', 0)))
+            if A + 'rotation' in ca:
+                px, py = ca.get(A + 'pivotX', 0), ca.get(A + 'pivotY', 0)
+                tf.append('rotate(%s,%s,%s)' % (ca[A + 'rotation'], px, py))
+            if A + 'scaleX' in ca or A + 'scaleY' in ca:
+                sx, sy = ca.get(A + 'scaleX', 1), ca.get(A + 'scaleY', 1)
+                px, py = ca.get(A + 'pivotX', 0), ca.get(A + 'pivotY', 0)
+                tf.append('translate(%s,%s)' % (px, py))
+                tf.append('scale(%s,%s)' % (sx, sy))
+                tf.append('translate(%s,%s)' % (-px, -py))
+            inner, d2, gid = build_svg_node(apk, ch, cmap, gid)
+            defs += d2
+            if inner.strip():
+                parts.append('<g transform="%s">%s</g>' % (' '.join(tf), inner) if tf else inner)
+        elif ctag == 'path':
+            ca = ch.attrib
+            d = ca.get(A + 'pathData', '').strip()
+            if not d:
+                continue
+            attrs = ['d="%s"' % d]
+            fc = ca.get(A + 'fillColor', 'none')
+            fill, d2, gid = resolve_fill(apk, fc, cmap, gid)
+            defs += d2
+            attrs.append('fill="%s"' % fill)
+            if A + 'fillAlpha' in ca:
+                attrs.append('fill-opacity="%s"' % ca[A + 'fillAlpha'])
+            if A + 'strokeColor' in ca:
+                scol, d3, gid = resolve_fill(apk, ca[A + 'strokeColor'], cmap, gid)
+                defs += d3
+                attrs.append('stroke="%s"' % scol)
+            if A + 'strokeWidth' in ca:
+                attrs.append('stroke-width="%s"' % ca[A + 'strokeWidth'])
+            parts.append('<path ' + ' '.join(attrs) + '/>')
+    return '\n'.join(parts), defs, gid
+
+
+def render_vector_png(aapt2, apk, xmlpath, cmap, size=512):
+    """渲染 vector XML 为 PNG bytes；失败返回 None"""
+    try:
+        root = read_xml_root(apk, xmlpath)
+        if root is None:
+            return None
+        vec = None
+        for node in root.iter():
+            if node.tag.split('}')[-1] == 'vector':
+                vec = node
+                break
+        if vec is None:
+            return None
+        a = vec.attrib
+        def fnum(v, default):
+            try:
+                return float(str(v).replace('dp', ''))
+            except Exception:
+                return default
+        w = fnum(a.get(A + 'width', '108'), 108)
+        h = fnum(a.get(A + 'height', '108'), 108)
+        vw = fnum(a.get(A + 'viewportWidth', '108'), 108)
+        vh = fnum(a.get(A + 'viewportHeight', '108'), 108)
+        body, defs, _ = build_svg_node(apk, vec, cmap, 0)
+        if not body.strip():
+            return None
+        svg = '<svg xmlns="http://www.w3.org/2000/svg" width="%s" height="%s" viewBox="0 0 %s %s"><defs>%s</defs>%s</svg>' % (w, h, vw, vh, defs, body)
+        import cairosvg
+        png = cairosvg.svg2png(bytestring=svg.encode('utf-8'), output_width=size, output_height=size)
+        return png if is_image(png) else None
+    except Exception as e:
+        log(f"    渲染异常: {e}")
+        return None
+
+
+def composite_png(layers):
+    """layers: list[bytes PNG] 从上到下叠加；返回合成 PNG bytes"""
+    try:
+        from PIL import Image
+        base = None
+        for lb in layers:
+            im = Image.open(io.BytesIO(lb)).convert('RGBA')
+            if base is None:
+                base = im
+            else:
+                base = Image.alpha_composite(base, im)
+        if base is None:
+            return None
+        buf = io.BytesIO()
+        base.save(buf, 'PNG')
+        return buf.getvalue()
+    except Exception:
+        return None
+
+
+def solid_color_png(color_hex, size=512):
+    """纯色背景层"""
+    try:
+        from PIL import Image
+        im = Image.new('RGBA', (size, size), color_hex)
+        buf = io.BytesIO()
+        im.save(buf, 'PNG')
+        return buf.getvalue()
+    except Exception:
+        return None
+
+
+# ---------- 主提取 ----------
+
 def extract_bitmap(aapt2: str, apk: str):
-    """从 APK 提取应用图标位图。返回 (bytes, ext, 来源描述) 或 (None, None, 原因)。"""
     out, err, rc = run([aapt2, "dump", "badging", apk])
     if rc != 0:
         return None, None, "badging失败: " + (err or out)[:200]
     m = re.search(r"icon='([^']*)'", out)
     icon = m.group(1) if m else ""
-    res_name, files = parse_resources(run([aapt2, "dump", "resources", apk])[0])
+    res_name, files, colors = parse_resources(run([aapt2, "dump", "resources", apk])[0])
 
     with zipfile.ZipFile(apk) as z:
         names = z.namelist()
@@ -133,13 +316,13 @@ def extract_bitmap(aapt2: str, apk: str):
                     return data, ext
             return None, None
 
-        # 情况1：icon 直接是位图文件路径 res/xxx.png
+        # 情况1：icon 直接是位图路径
         if icon and icon.startswith("res/") and not icon.endswith(".xml"):
             data, ext = read_if_image(icon)
             if data:
                 return data, ext, icon
 
-        # 情况2：icon 是 @type/name 资源引用
+        # 情况2：icon 是 @type/name 引用
         if icon and icon.startswith("@"):
             key = icon.lstrip("@")
             for rid, (t, n) in res_name.items():
@@ -150,9 +333,10 @@ def extract_bitmap(aapt2: str, apk: str):
                         if data:
                             return data, ext, f"{icon}->{p}"
 
-        # 情况3：icon 指向 adaptive-icon XML（混淆 APK 常见）
+        # 情况3：adaptive-icon XML（位图优先，渲染兜底）
         if icon and icon.endswith(".xml"):
             fg, bg, mono = xmltree_refs(aapt2, apk, icon)
+            # 3a. 先试位图层
             for rid, tag in ((fg, "foreground"), (bg, "background"), (mono, "monochrome")):
                 if not rid:
                     continue
@@ -162,9 +346,56 @@ def extract_bitmap(aapt2: str, apk: str):
                 data, ext = read_if_image(p)
                 if data:
                     return data, ext, f"{icon}[{tag}]->{p}"
+            # 3b. 渲染合成（bg + fg）
+            cmap = dict(colors)
+            for rid, fn in files.items():
+                for d, p in fn.items():
+                    cmap.setdefault(rid, p)
+            layers = []
+            descs = []
+            # 背景层：优先 vector/gradient 渲染，其次纯色
+            bg_png = None
+            if bg:
+                p = best_path(files, bg)
+                if p and p.endswith('.xml'):
+                    bg_png = render_vector_png(aapt2, apk, p, cmap)
+                    if bg_png:
+                        descs.append(f"bg渲染:{p}")
+                elif colors.get(bg):
+                    bg_png = solid_color_png(colors[bg])
+                    descs.append(f"bg纯色:{colors[bg]}")
+                elif p:
+                    d0, _ = read_if_image(p)
+                    if d0:
+                        bg_png = d0
+                        descs.append(f"bg位图:{p}")
+            if bg_png:
+                layers.append(bg_png)
+            # 前景层
+            fg_png = None
+            if fg:
+                p = best_path(files, fg)
+                if p:
+                    d0, _ = read_if_image(p)
+                    if d0:
+                        fg_png = d0
+                        descs.append(f"fg位图:{p}")
+                    elif p.endswith('.xml'):
+                        fg_png = render_vector_png(aapt2, apk, p, cmap)
+                        if fg_png:
+                            descs.append(f"fg渲染:{p}")
+                elif colors.get(fg):
+                    fg_png = solid_color_png(colors[fg])
+                    descs.append("fg纯色")
+            if fg_png:
+                layers.append(fg_png)
+            if layers:
+                out_png = composite_png(layers) if len(layers) > 1 else layers[0]
+                if out_png:
+                    return out_png, "png", f"{icon} 合成({' + '.join(descs)})"
 
-        # 情况4：兜底遍历 mipmap/drawable 找最大位图（老式未混淆 APK）
-        best = None  # (score, data, ext, src)
+        # 情况4：兜底遍历 mipmap/drawable
+        best = None
         for n in names:
             low = n.lower()
             if not (low.startswith("res/mipmap") or low.startswith("res/drawable")):
@@ -173,8 +404,8 @@ def extract_bitmap(aapt2: str, apk: str):
                 continue
             if ".9." in low or "foreground" in low or "background" in low:
                 continue
-            m = re.search(r"(?:mipmap|drawable)-([a-z0-9-]+)", low)
-            rk = DENSITY_RANK.get(m.group(1) if m else "hdpi", 1)
+            mm = re.search(r"(?:mipmap|drawable)-([a-z0-9-]+)", low)
+            rk = DENSITY_RANK.get(mm.group(1) if mm else "hdpi", 1)
             if "round" in low:
                 rk -= 1
             if "ic_launcher" in low:
@@ -185,7 +416,8 @@ def extract_bitmap(aapt2: str, apk: str):
                 continue
             if is_image(data) and 2_000 <= len(data) <= 800_000:
                 if best is None or rk > best[0]:
-                    best = (rk, data, n.rsplit(".", 1)[-1].lower() if n.rsplit(".", 1)[-1].lower() in ("png", "webp", "jpg", "jpeg") else "png", n)
+                    ext = n.rsplit(".", 1)[-1].lower()
+                    best = (rk, data, ext if ext in ("png", "webp", "jpg", "jpeg") else "png", n)
         if best:
             return best[1], best[2], best[3]
 
@@ -194,7 +426,7 @@ def extract_bitmap(aapt2: str, apk: str):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--aapt2", required=True, help="aapt2 可执行文件路径")
+    ap.add_argument("--aapt2", required=True)
     ap.add_argument("--workdir", default="/tmp/wf7")
     args = ap.parse_args()
     os.makedirs(args.workdir, exist_ok=True)
@@ -257,7 +489,7 @@ def main():
             subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
             subprocess.run(["git", "config", "user.email", "actions@users.noreply.github.com"], check=True)
             subprocess.run(["git", "add", "-A"], check=True)
-            subprocess.run(["git", "commit", "-m", "wf7-v2: 批量修复历史坏图标（AXML→位图，资源ID映射）"], check=True)
+            subprocess.run(["git", "commit", "-m", "wf7-v3: 批量修复历史坏图标（位图+vector渲染合成）"], check=True)
             subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
             log("已推送修复")
 
