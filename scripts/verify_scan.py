@@ -408,6 +408,11 @@ def main():
             if not ok:
                 continue
             existing = by_repo.get(app_json["repo"])
+            # 直链增量快检：apkUrl 与已落盘一致 → 跳过重下载/重解包（幂等收敛）
+            if (existing and app_json.get("apkUrl")
+                    and existing.get("source", {}).get("apkUrl") == app_json["apkUrl"]):
+                log(f"直链未变，跳过重采集: {app_json['repo']}")
+                continue
             apk_path = os.path.join(".apk_tmp", f"{owner}__{repo}.apk")
             apk_meta = extract_apk(
                 verified["apk_asset"].get("browser_download_url", ""), apk_path
