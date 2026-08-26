@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/telebox-118367",
+  "openSource": false,
+  "name": "Telebox",
+  "packageName": "com.linkbox.plus.android",
+  "version": "v1.40.01",
+  "apkUrl": "https://dl.apkvision.org/telebox/telebox-v1-40-01-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Telebox (Mod: Premium) APK free for Android. Telebox: Linkbox Cloud Storage – a revised and re-released project"
+}
