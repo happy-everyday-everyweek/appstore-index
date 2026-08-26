@@ -1,0 +1,36 @@
+{
+  "id": "apkvision-demo",
+  "name": "APKVision",
+  "version": "1.2.0",
+  "homepage": "https://apkvision.org/",
+  "description": "读取 APKVision 应用与游戏的搜索、目录、详情、截图和下载项。",
+  "permissions": {
+    "network": ["apkvision.org", "*.apkvision.org"],
+    "browser": true,
+    "download": true,
+    "install": true
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "调用源搜索接口，观察请求、状态码和返回内容。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 minecraft",
+      "defaultInput": "minecraft"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "打开详情页并通过 WebView 读取应用信息和下载链接。",
+      "inputLabel": "应用详情 URL",
+      "placeholder": "粘贴源详情页 URL",
+      "defaultInput": "https://apkvision.org/games/arcade/minecraft-pe-apk-55409/"
+    }
+  ]
+}
