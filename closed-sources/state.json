@@ -12,9 +12,28 @@
       "page": 1
     }
   },
-  "processed": [],
+  "processed": [
+    "https://apkvision.org/app/books-reference/wattpad-read-write-stories-131113/",
+    "https://apkvision.org/app/media-video/youtube-revanced-131002/",
+    "https://apkvision.org/app/other/888starz-129346/"
+  ],
   "failed": {
     "https://apkvision.org/app/social/tiktok-133712/": "详情 404 或不可解析",
-    "https://apkvision.org/app/apkvision-store-131787/": "upload content failed: 422 README.md {'message': 'Invalid request.\\n\\n\"sha\" wasn\\'t supplied.', 'documentation_url': 'https://docs.github.com/rest/repos/contents#create-or-update-file-contents', 'status': '422'}"
-  }
+    "https://apkvision.org/app/apkvision-store-131787/": "upload content failed: 422 README.md {'message': 'Invalid request.\\n\\n\"sha\" wasn\\'t supplied.', 'documentation_url': 'https://docs.github.com/rest/repos/contents#create-or-update-file-contents', 'status': '422'}",
+    "https://apkvision.org/app/tools/mojolauncher-130598/": "create release failed: 422 {'message': 'Validation Failed', 'errors': [{'resource': 'Release', 'code': 'custom', 'field': 'tag_name', 'message': 'tag_name is not a valid tag'}, {'resource': 'Release', 'code': 'custom', 'field': 'tag_name', 'message': 'tag_name is not well-formed'}, {'resource': 'Rel"
+  },
+  "pending_pr": [
+    {
+      "path": "apps/happy-happy-all-the-day/mirror-888starz/app.json",
+      "content": "{\n  \"repo\": \"happy-happy-all-the-day/mirror-888starz\",\n  \"openSource\": false,\n  \"name\": \"888Starz\",\n  \"packageName\": \"\",\n  \"icon\": \"https://raw.githubusercontent.com/happy-happy-all-the-day/mirror-888starz/main/icon.png\",\n  \"version\": \"v26\",\n  \"homepage\": \"https://apkvision.org/\",\n  \"specialPermissions\": [\n    \"none\"\n  ],\n  \"summary\": \"Download 888Starz APK free for Android. 888Starz – Official Betting & Casino App 🚀 Want to download 888Starz on Android?\"\n}\n"
+    },
+    {
+      "path": "apps/happy-happy-all-the-day/mirror-wp.wattpad/app.json",
+      "content": "{\n  \"repo\": \"happy-happy-all-the-day/mirror-wp.wattpad\",\n  \"openSource\": false,\n  \"name\": \"Wattpad - Read & Write Stories\",\n  \"packageName\": \"wp.wattpad\",\n  \"icon\": \"https://raw.githubusercontent.com/happy-happy-all-the-day/mirror-wp.wattpad/main/icon.png\",\n  \"version\": \"v11.15.1\",\n  \"homepage\": \"https://apkvision.org/\",\n  \"specialPermissions\": [\n    \"none\"\n  ],\n  \"summary\": \"Download Wattpad - Read & Write Stories (MOD: Premium) APK free for Android. Wattpad - Read & Write Stories is a vibrant\"\n}\n"
+    },
+    {
+      "path": "apps/happy-happy-all-the-day/mirror-youtube-revanced/app.json",
+      "content": "{\n  \"repo\": \"happy-happy-all-the-day/mirror-youtube-revanced\",\n  \"openSource\": false,\n  \"name\": \"YouTube ReVanced\",\n  \"packageName\": \"\",\n  \"icon\": \"https://raw.githubusercontent.com/happy-happy-all-the-day/mirror-youtube-revanced/main/icon.png\",\n  \"version\": \"v20.14.43\",\n  \"homepage\": \"https://apkvision.org/\",\n  \"specialPermissions\": [\n    \"none\"\n  ],\n  \"summary\": \"Download YouTube ReVanced (MOD: Premium/No ADS) APK free for Android. YouTube ReVanced – a feature-rich alternative to t\"\n}\n"
+    }
+  ]
 }
