@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/weplay-117375",
+  "openSource": false,
+  "name": "WePlay",
+  "packageName": "com.wejoy.weplay.ru",
+  "version": "v4.1.3",
+  "apkUrl": "https://dl.apkvision.org/weplay/WePlay-v4.1.3-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download WePlay APK free for Android. WePlay – your perfect companion for unforgettable parties. This innovative app off"
+}
