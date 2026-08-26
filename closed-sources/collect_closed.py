@@ -250,8 +250,10 @@ def process_candidate(entry, detail, state, args, indexed):
         meta["iconUrl"] = entry["iconUrl"]
     pkg = meta.get("packageName") or ""
     if not pkg:
-        raise RuntimeError("详情无 packageName（可能非正式应用页）")
-    if pkg in indexed or pkg in state.get("processed_pkgs", []):
+        # MOD 类详情页常无 Package name 行（JSON-LD 同样缺失）：
+        # 镜像 slug 回退到应用名；WF2 落盘时 aapt2 会从 Release APK 提取真实包名
+        log("无 packageName，用应用名生成 slug: %s" % meta.get("name"))
+    elif pkg in indexed or pkg in state.get("processed_pkgs", []):
         return None  # 已收录，跳过（静默）
     owner = os.environ.get(MOWNER_ENV, "")
     token = os.environ.get(MTOKEN_ENV, "")
