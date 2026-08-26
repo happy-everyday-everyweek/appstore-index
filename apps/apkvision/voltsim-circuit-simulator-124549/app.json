@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/voltsim-circuit-simulator-124549",
+  "openSource": false,
+  "name": "VoltSim - circuit simulator",
+  "packageName": "com.fallenbug.circuitsimulator",
+  "version": "v0.2.16",
+  "apkUrl": "https://dl.apkvision.org/voltsim-circuit-simulator/voltsim-v0-2-16-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download VoltSim - circuit simulator (Mod: Unlocked) APK free for Android. VoltSim is a realtime electronic circuit simu"
+}
