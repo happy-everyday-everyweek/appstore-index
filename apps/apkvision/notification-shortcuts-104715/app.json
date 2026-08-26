@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/notification-shortcuts-104715",
+  "openSource": false,
+  "name": "Notification Shortcuts",
+  "packageName": "rk.android.app.notificationshortcuts",
+  "version": "v1.6",
+  "apkUrl": "https://dl.apkvision.org/notification-shortcuts/notification-shortcuts-v1-6-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Notification Shortcuts (Full version) APK free for Android. Notification Shortcuts – an application that will b"
+}

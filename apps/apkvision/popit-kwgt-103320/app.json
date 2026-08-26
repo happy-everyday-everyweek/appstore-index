@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/popit-kwgt-103320",
+  "openSource": false,
+  "name": "PopIt KWGT",
+  "packageName": "popit.kustom.pack",
+  "version": "v1.0.1",
+  "apkUrl": "https://dl.apkvision.org/popit-kwgt/popit-kwgt-v1-0-1-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download PopIt KWGT (Full version) APK free for Android. PopIt KWGT – a great project for all fans of personalization wh"
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/atom-iconpack-105796",
+  "openSource": false,
+  "name": "Atom IconPack",
+  "packageName": "com.asn360.atom.iconpack",
+  "version": "v1.4",
+  "apkUrl": "https://dl.apkvision.org/atom-iconpack/atom-iconpack-v1-4-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Atom IconPack (Full version) APK free for Android. Atom IconPack – another personalization project that is defi"
+}

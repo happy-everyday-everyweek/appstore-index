@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/neutron-audio-recorder-102702",
+  "openSource": false,
+  "name": "Neutron Audio Recorder",
+  "packageName": "com.neutroncode.rc",
+  "version": "v1.06.2",
+  "apkUrl": "https://dl.apkvision.org/neutron-audio-recorder/neutron-audio-recorder-v1-06-2-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Neutron Audio Recorder (Full version) APK free for Android. Neutron Audio Recorder – an application that is def"
+}

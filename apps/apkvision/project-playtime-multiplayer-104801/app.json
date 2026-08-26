@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/project-playtime-multiplayer-104801",
+  "openSource": false,
+  "name": "Project Playtime Multiplayer",
+  "packageName": "com.boxyboo.project.play.time.ProjectPlaytimeMultiplayer",
+  "version": "v1.1.1",
+  "apkUrl": "https://dl.apkvision.org/project-playtime-multiplayer/project-playtime-multiplayer-v1.1.1.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Project Playtime Multiplayer APK free for Android. Project Playtime Multiplayer – a multiplayer project for sev"
+}

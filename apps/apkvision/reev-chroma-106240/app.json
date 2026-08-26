@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/reev-chroma-106240",
+  "openSource": false,
+  "name": "Reev Chroma",
+  "packageName": "com.reevchroma.grabsterstudios",
+  "version": "v1.0.3",
+  "apkUrl": "https://dl.apkvision.org/reev-chroma/reev-chroma-v1-0-3-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Reev Chroma (Full version) APK free for Android. Reev Chroma – convenient management and installation of a pack"
+}

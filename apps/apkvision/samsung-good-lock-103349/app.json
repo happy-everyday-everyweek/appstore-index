@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/samsung-good-lock-103349",
+  "openSource": false,
+  "name": "Samsung Good Lock",
+  "packageName": "com.samsung.android.goodlock",
+  "version": "v2.2.04.46",
+  "apkUrl": "https://dl.apkvision.org/samsung-good-lock/samsung-good-lock-v2-2-04-46-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Samsung Good Lock (Mod: Region off) APK free for Android. Samsung Good Lock – a personalization application tha"
+}

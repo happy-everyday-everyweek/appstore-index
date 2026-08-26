@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/skoove-premium-103759",
+  "openSource": false,
+  "name": "Skoove Premium",
+  "packageName": "com.skoove.piano",
+  "version": "v2.3.16",
+  "apkUrl": "https://dl.apkvision.org/skoove-premium/skoove-premium-v2.3.16.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Skoove Premium APK free for Android. Skoove: Learn to Play Piano – an educational application that provides use"
+}

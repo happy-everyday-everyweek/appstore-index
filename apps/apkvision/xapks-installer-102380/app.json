@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/xapks-installer-102380",
+  "openSource": false,
+  "name": "XAPKS Installer",
+  "packageName": "io.apkmody.sai",
+  "version": "v2.2.4",
+  "apkUrl": "https://dl.apkvision.org/xapks-installer/xapks-installer-v2-2-4-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download XAPKS Installer (Mod: Pro) APK free for Android. XAPKS Installer – an extremely attractive dash project is a to"
+}
