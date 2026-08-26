@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/yuzu-emulator-109965",
+  "openSource": false,
+  "name": "yuzu Emulator",
+  "packageName": "org.yuzu.yuzu_emu",
+  "version": "d590cfb9d",
+  "apkUrl": "https://dl.apkvision.org/yuzu-emulator/yuzu-emulator_d590cfb9d.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download yuzu Emulator APK free for Android. yuzu Emulator – the Nintendo Switch emulator has received a mobile version."
+}

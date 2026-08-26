@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/smart-timetable-pro-109299",
+  "openSource": false,
+  "name": "Smart Timetable Pro",
+  "packageName": "app.smart.timetable",
+  "version": "v2.5.1",
+  "apkUrl": "https://dl.apkvision.org/smart-timetable/smart-timetable-2.5.1.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Smart Timetable Pro APK free for Android. Smart Timetable – an easy-to-manage, visual and extremely useful appl"
+}

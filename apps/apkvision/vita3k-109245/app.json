@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/vita3k-109245",
+  "openSource": false,
+  "name": "Vita3K",
+  "packageName": "",
+  "version": "v8",
+  "apkUrl": "https://dl.apkvision.org/vita3k/Vita3K-v8-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Vita3K APK free for Android. Vita3K – this is the world's first, working experimental open source PlayStation V"
+}

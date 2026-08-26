@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/alive-kwgt-107033",
+  "openSource": false,
+  "name": "Alive KWGT",
+  "packageName": "com.alive.kwgt.app",
+  "version": "v1.0.3",
+  "apkUrl": "https://dl.apkvision.org/alive-kwgt/alive-kwgt-v1-0-3-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Alive KWGT (Full version) APK free for Android. Alive KWGT – another project that will require a whole series o"
+}

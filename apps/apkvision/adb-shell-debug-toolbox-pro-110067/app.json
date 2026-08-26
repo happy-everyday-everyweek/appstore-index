@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/adb-shell-debug-toolbox-pro-110067",
+  "openSource": false,
+  "name": "ADB Shell - Debug Toolbox Pro",
+  "packageName": "com.github.superadb",
+  "version": "v3.4.6",
+  "apkUrl": "https://dl.apkvision.org/adb-shell-pro/adb-shell-debug-toolbox-pro-v3-4-6-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download ADB Shell - Debug Toolbox Pro (Full version) APK free for Android. ADB Shell - Debug Toolbox Pro – the applicat"
+}

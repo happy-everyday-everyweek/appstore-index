@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/dims-premium-106704",
+  "openSource": false,
+  "name": "DIMS Premium",
+  "packageName": "com.twgbd.dims",
+  "version": "v2.1.4",
+  "apkUrl": "https://dl.apkvision.org/dims/dims-v2.1.4.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download DIMS Premium APK free for Android. DIMS – another application designed to relieve users of doubts in terms of c"
+}

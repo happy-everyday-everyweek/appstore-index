@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/alpha-v2ray-108955",
+  "openSource": false,
+  "name": "Alpha V2ray",
+  "packageName": "com.sdev.alphav2ray",
+  "version": "v3.4.3",
+  "apkUrl": "https://dl.apkvision.org/alpha-v2ray/alpha-v2ray-v3.4.3.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Alpha V2ray APK free for Android. Alpha V2ray - Tunnel VPN – a project that has quickly gained popularity, whic"
+}
