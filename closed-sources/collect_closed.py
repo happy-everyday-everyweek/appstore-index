@@ -486,28 +486,49 @@ def api_put_state(index_repo):
         raise RuntimeError("state 提交失败: %s %s" % (st, body))
 
 
-def put_app_json_main(index_repo, app_json):
-    """直链条目直推 main（不走 PR）：幂等 PUT apps/<owner>/<repo>/app.json。
-    触发 merge-settle 落盘 app-info/README（Trigger: push apps/**/app.json）。"""
+def batch_push_app_json_main(index_repo, app_jsons):
+    """直链条目批量直推 main（不走 PR）：一轮一个 commit，只触发一次
+    merge-settle。用 Git Data API（blob→tree→commit→ref）原子提交，
+    MAIN_PAT（admin）豁免 main 分支保护。"""
+    if not app_jsons:
+        return 0
     token = state_token()
-    path = "apps/%s/%s/app.json" % (app_json["repo"].split("/")[0],
-                                    app_json["repo"].split("/")[1])
-    b64 = base64.b64encode(
-        json.dumps(app_json, ensure_ascii=False, indent=2).encode()).decode()
-    st, cur = http_json(
-        "GET", "https://api.github.com/repos/%s/contents/%s?ref=main"
-        % (index_repo, path), token=token)
-    st, body = http_json(
-        "PUT",
-        "https://api.github.com/repos/%s/contents/%s" % (index_repo, path),
-        token=token,
-        body={"message": "chore: 闭源直链收录 %s" % path,
-              "branch": "main", "content": b64,
-              "sha": cur.get("sha") if st == 200 else None})
-    if st not in (200, 201):
-        raise RuntimeError("直推 %s 失败: %s %s" % (path, st, body))
-    return "apps/%s/%s" % (app_json["repo"].split("/")[0],
-                           app_json["repo"].split("/")[1])
+    base = "https://api.github.com/repos/%s" % index_repo
+    st, head = http_json("GET", "%s/git/ref/heads/main" % base, token=token)
+    if st != 200:
+        raise RuntimeError("获取 main ref 失败: %s %s" % (st, head))
+    head_sha = head["object"]["sha"]
+    st, hc = http_json("GET", "%s/git/commits/%s" % (base, head_sha), token=token)
+    if st != 200:
+        raise RuntimeError("获取 HEAD commit 失败: %s %s" % (st, hc))
+    base_tree = hc["tree"]["sha"]
+    tree_items = []
+    for app_json in app_jsons:
+        path = "apps/%s/%s/app.json" % (app_json["repo"].split("/")[0],
+                                        app_json["repo"].split("/")[1])
+        data = json.dumps(app_json, ensure_ascii=False, indent=2).encode()
+        st, blob = http_json("POST", "%s/git/blobs" % base, token=token,
+                             body={"content": base64.b64encode(data).decode(),
+                                   "encoding": "base64"})
+        if st != 201:
+            raise RuntimeError("创建 blob 失败(%s): %s %s" % (path, st, blob))
+        tree_items.append({"path": path, "mode": "100644", "type": "blob",
+                           "sha": blob["sha"]})
+    st, tree = http_json("POST", "%s/git/trees" % base, token=token,
+                         body={"base_tree": base_tree, "tree": tree_items})
+    if st != 201:
+        raise RuntimeError("创建 tree 失败: %s %s" % (st, tree))
+    st, commit = http_json("POST", "%s/git/commits" % base, token=token,
+                           body={"message": "chore: 闭源直链收录 %d 条"
+                                 % len(app_jsons),
+                                 "tree": tree["sha"], "parents": [head_sha]})
+    if st != 201:
+        raise RuntimeError("创建 commit 失败: %s %s" % (st, commit))
+    st, ref = http_json("PATCH", "%s/git/refs/heads/main" % base, token=token,
+                        body={"sha": commit["sha"], "force": False})
+    if st != 200:
+        raise RuntimeError("更新 main ref 失败: %s %s" % (st, ref))
+    return len(app_jsons)
 
 
 # ---------- 自续链与保活 ----------
@@ -699,15 +720,15 @@ def main():
             % (len(processed_now), len(state.get("failed", {}))))
         return
 
-    # 直推 main（不走 PR）：merge-settle 会自动落盘 app-info/README
+    # 直推 main（不走 PR，批量一个 commit）：merge-settle 自动落盘 app-info/README
     pushed = 0
-    for app_json in direct_apps:
+    if direct_apps:
         try:
-            put_app_json_main(args.repo, app_json)
-            pushed += 1
+            pushed = batch_push_app_json_main(args.repo, direct_apps)
         except Exception as e:
-            log("直推失败: %s -> %s" % (app_json["repo"], e))
-            state["failed"][app_json["repo"]] = str(e)[:300]
+            log("批量直推失败: %s" % e)
+            for app_json in direct_apps:
+                state["failed"][app_json["repo"]] = str(e)[:300]
     log("本轮直推 %d/%d 条 app.json 到 main" % (pushed, len(direct_apps)))
     save_state(state)
     api_put_state(args.repo)
