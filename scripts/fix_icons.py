@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""WF7 图标批量修复 v4：v3 基础上修复 anydpi-v26 XML 图层漏检。
+"""WF7 图标批量修复 v5：v4 基础上支持无扩展名/无 type 标注的资源。
 
-v3 的 best_path 跳过 anydpi 密度，导致 bg/fg 声明在 anydpi-v26 的 vector XML 拿不到路径；
-v4 增加 any_xml_path 兜底：渲染分支从该资源的全部密度配置中直接找 .xml。
+Brave/Cromite 系：foreground = mipmap/layered_app_icon，aapt2 dump resources 输出
+`(mdpi) (file) res/QtC`（无 type= 段、文件名无扩展名），v4 正则只匹配带 type= 的行
+导致 files 映射为空、提取失败；v5 放宽正则 + 按魔数判定扩展名。
 """
 import argparse
 import glob
@@ -23,6 +24,17 @@ def is_image(b: bytes) -> bool:
         or b.startswith(b"\xff\xd8\xff")
         or (b[:4] == b"RIFF" and b[8:12] == b"WEBP")
     )
+
+
+def ext_by_magic(b: bytes, fallback: str = "png") -> str:
+    """按魔数判定扩展名（无扩展名文件适用）"""
+    if b.startswith(b"\x89PNG\r\n\x1a\n"):
+        return "png"
+    if b.startswith(b"\xff\xd8\xff"):
+        return "jpg"
+    if b[:4] == b"RIFF" and b[8:12] == b"WEBP":
+        return "webp"
+    return fallback
 
 
 def log(msg: str) -> None:
@@ -50,7 +62,8 @@ def parse_resources(out: str):
         if m and cur:
             colors[cur] = '#' + m.group(2)
             continue
-        m = re.match(r"\s*\(([^)]*)\) \(file\) (res/[\w./-]+) type=(\w+)", line)
+        # (dpi) (file) res/xxx[ type=PNG] —— type 段与扩展名均可缺失（混淆/去扩展名）
+        m = re.match(r"\s*\(([^)]*)\) \(file\) (res/[\w./-]+)(?:\s+type=(\w+))?", line)
         if m and cur:
             dens = m.group(1) or "default"
             files[cur][dens] = m.group(2)
@@ -64,7 +77,6 @@ DENSITY_RANK = {
 
 
 def best_path(files, res_id):
-    """最高密度位图路径（跳过 anydpi/XML 目录）"""
     cands = files.get(res_id, {})
     if not cands:
         return None
@@ -79,7 +91,6 @@ def best_path(files, res_id):
 
 
 def any_xml_path(files, res_id):
-    """该资源任意密度下的 .xml 文件路径（anydpi-v26 等）"""
     cands = files.get(res_id, {})
     for p in cands.values():
         if p.endswith('.xml'):
@@ -316,10 +327,7 @@ def extract_bitmap(aapt2: str, apk: str):
             if path in names:
                 data = z.read(path)
                 if is_image(data):
-                    ext = path.rsplit(".", 1)[-1].lower()
-                    if ext not in ("png", "webp", "jpg", "jpeg"):
-                        ext = "png"
-                    return data, ext
+                    return data, ext_by_magic(data, path.rsplit(".", 1)[-1].lower() if "." in path else "png")
             return None, None
 
         # 情况1：icon 直接是位图路径
@@ -344,7 +352,7 @@ def extract_bitmap(aapt2: str, apk: str):
         # 情况3：adaptive-icon XML（位图优先，渲染兜底）
         if icon and icon.endswith(".xml"):
             fg, bg, mono = xmltree_refs(aapt2, apk, icon)
-            # 3a. 先试位图层（含 anydpi 下的直接位图）
+            # 3a. 先试位图层（含 anydpi 下位图与无扩展名位图）
             for rid, tag in ((fg, "foreground"), (bg, "background"), (mono, "monochrome")):
                 if not rid:
                     continue
@@ -406,7 +414,7 @@ def extract_bitmap(aapt2: str, apk: str):
             if layers:
                 out_png = composite_png(layers) if len(layers) > 1 else layers[0]
                 if out_png:
-                    return out_png, "png", f"{icon} 合成({' + '.join(descs)})"
+                    return out_png, ext_by_magic(out_png, "png"), f"{icon} 合成({' + '.join(descs)})"
 
         # 情况4：兜底遍历 mipmap/drawable
         best = None
@@ -414,7 +422,7 @@ def extract_bitmap(aapt2: str, apk: str):
             low = n.lower()
             if not (low.startswith("res/mipmap") or low.startswith("res/drawable")):
                 continue
-            if not (low.endswith(".png") or low.endswith(".webp") or low.endswith(".jpg")):
+            if not (low.endswith(".png") or low.endswith(".webp") or low.endswith(".jpg") or low.endswith(".jpeg")):
                 continue
             if ".9." in low or "foreground" in low or "background" in low:
                 continue
@@ -430,8 +438,7 @@ def extract_bitmap(aapt2: str, apk: str):
                 continue
             if is_image(data) and 2_000 <= len(data) <= 800_000:
                 if best is None or rk > best[0]:
-                    ext = n.rsplit(".", 1)[-1].lower()
-                    best = (rk, data, ext if ext in ("png", "webp", "jpg", "jpeg") else "png", n)
+                    best = (rk, data, ext_by_magic(data, "png"), n)
         if best:
             return best[1], best[2], best[3]
 
@@ -503,7 +510,7 @@ def main():
             subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
             subprocess.run(["git", "config", "user.email", "actions@users.noreply.github.com"], check=True)
             subprocess.run(["git", "add", "-A"], check=True)
-            subprocess.run(["git", "commit", "-m", "wf7-v4: 修复 anydpi-v26 XML 图层漏检"], check=True)
+            subprocess.run(["git", "commit", "-m", "wf7-v5: 修复无扩展名位图资源提取"], check=True)
             subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
             log("已推送修复")
 
