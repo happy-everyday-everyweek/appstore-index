@@ -111,13 +111,61 @@ def download_source_size(release):
         return None
 
 
-def verify(repo_name, declared_open):
+def verify_direct(app_json):
+    """直链模式核验（WF8 采集管道）：app.json 带 apkUrl 时跳过 GitHub 仓库检查。
+    落盘阶段仍会下载 APK 用 aapt2 提取真实元数据；README 用自动生成模板。"""
+    apk_url = (app_json.get("apkUrl") or "").strip()
+    if not (apk_url.startswith("https://") or apk_url.startswith("http://")):
+        return False, "apkUrl 不是合法直链", {}
+    from urllib.parse import urlsplit
+    host = urlsplit(apk_url).netloc.lower()
+    if not (host == "dl.apkvision.org" or host.endswith(".apkvision.org")):
+        return False, "apkUrl 域名不在白名单内: %s" % host, {}
+    # 可达性快检（HEAD），不下载全文
+    size_hint = 0
+    try:
+        req = urllib.request.Request(apk_url, method="HEAD")
+        req.add_header("User-Agent", "appstore-ci/1.0")
+        with urllib.request.urlopen(req, timeout=60) as r:
+            size_hint = int(r.headers.get("Content-Length") or 0)
+    except Exception as e:
+        return False, "apkUrl 不可达: %s" % e, {}
+    if not apk_url.rsplit("/", 1)[-1].lower().endswith(".apk"):
+        return False, "apkUrl 不是 .apk 文件（xapk 等打包格式不支持）", {}
+    name = app_json.get("name") or app_json["repo"].split("/")[-1]
+    readme = (
+        "# %s\n\n"
+        "- 包名: `%s`\n"
+        "- 版本: %s\n"
+        "- 来源: [APKVision](https://apkvision.org/)\n"
+        "- 下载直链: %s\n\n"
+        "收录自 APKVision 的闭源应用索引条目（客户端直连源站下载）。"
+        % (name, app_json.get("packageName", ""),
+           app_json.get("version", ""), apk_url)
+    )
+    return True, "ok", {
+        "meta": {},
+        "apk_asset": {"browser_download_url": apk_url,
+                      "name": apk_url.rsplit("/", 1)[-1], "size": size_hint},
+        "release": {"tag_name": app_json.get("version") or "v1.0.0",
+                    "published_at": "now"},
+        "readme": readme,
+        "readme_deps": {},
+        "code_bytes": None,
+        "stars": 0,
+        "license": None,
+    }
+
+
+def verify(repo_name, declared_open, app_json=None):
     """核验链，返回 (ok, reason, repo_meta)。
 
     真开源判定（用户定稿的最简方案）：
     - 许可证检查作废（假开源可伪装 LICENSE）
     - 改比「发行版源码快照体积」与「APK 体积」：源码快照 ≤ APK 体积 → 疑似假开源
     """
+    if app_json and app_json.get("apkUrl"):
+        return verify_direct(app_json)
     status, meta = get_repo_info(repo_name)
     if status != 200:
         return False, f"应用仓库不存在或不可访问（HTTP {status}）: {repo_name}", {}
@@ -323,7 +371,7 @@ def main():
     failures = []
     infos = collect_existing_infos()
     for app_json_path, owner, repo, app_json in targets:
-        ok, reason, verified = verify(app_json["repo"], app_json["openSource"])
+        ok, reason, verified = verify(app_json["repo"], app_json["openSource"], app_json)
         if not ok:
             failures.append(f"{app_json['repo']}: {reason}")
             continue
@@ -356,7 +404,7 @@ def main():
         by_repo = {i.get("source", {}).get("repo"): i for i in disk_infos if i.get("id")}
         os.makedirs(".apk_tmp", exist_ok=True)
         for i, (app_json_path, owner, repo, app_json) in enumerate(targets):
-            ok, reason, verified = verify(app_json["repo"], app_json["openSource"])
+            ok, reason, verified = verify(app_json["repo"], app_json["openSource"], app_json)
             if not ok:
                 continue
             existing = by_repo.get(app_json["repo"])
