@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/accu-battery-132085",
+  "openSource": false,
+  "name": "Accu​Battery",
+  "packageName": "com.digibites.accubattery",
+  "version": "v2.1.8",
+  "apkUrl": "https://dl.apkvision.org/accubattery/accubattery-2.1.8-pro-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Accu​Battery APK free for Android. AccuBattery provides comprehensive battery usage insights, measuring actual "
+}
