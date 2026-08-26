@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/stack-the-countries-124373",
+  "openSource": false,
+  "name": "Stack the Countries®",
+  "packageName": "com.freecloud.StackTheCountries",
+  "version": "v3.4",
+  "apkUrl": "https://dl.apkvision.org/stack-the-countries/Stack-the-Countries-v3.4-full-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Stack the Countries® (Full) APK free for Android. Stack the Countries® is an engaging educational app that brin"
+}
