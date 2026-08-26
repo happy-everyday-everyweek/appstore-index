@@ -47,6 +47,6 @@ jobs:
           ST=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
-            -d '{"ref":"main","inputs":{"dry_run":false,"limit":30}}' \
+            -d '{"ref":"main","inputs":{"dry_run":"false","limit":"30"}}' \
             "https://api.github.com/repos/$REPO/actions/workflows/wf8-collect-closed.yml/dispatches")
           echo "已补触发 WF8: HTTP $ST"
