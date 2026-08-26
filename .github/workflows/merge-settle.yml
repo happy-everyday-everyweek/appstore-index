@@ -6,10 +6,10 @@ on:
       - "apps/**/app.json"
   workflow_dispatch:
 concurrency:
-  # 同一时间只保留一个 merge-settle：新 push 自动取消排队中的旧 run，
-  # 防 WF8 直推频率高时堆积。被取消 run 对应的 app.json 由新 run 全量覆盖。
+  # 同一时间只跑一个 merge-settle；新 push 的 run 排队等待（不取消旧 run，
+  # 避免落盘中途被打断丢失）。直链增量快检保证排队 run 只处理新增 apkUrl，快速收敛。
   group: settle-main
-  cancel-in-progress: true
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
