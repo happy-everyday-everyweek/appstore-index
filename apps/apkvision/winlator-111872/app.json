@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/winlator-111872",
+  "openSource": false,
+  "name": "Winlator",
+  "packageName": "",
+  "version": "v11.0",
+  "apkUrl": "https://dl.apkvision.org/winlator/Winlator-v11.0-full-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Winlator (Full) APK free for Android. Winlator – a very promising version of emulators for Android with which y"
+}

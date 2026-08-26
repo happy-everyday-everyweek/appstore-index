@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/nethersx2-112876",
+  "openSource": false,
+  "name": "NetherSX2",
+  "packageName": "com.aethersx2.ps22",
+  "version": "v1.5-4248",
+  "apkUrl": "https://dl.apkvision.org/nethersx2/NetherSX2-v1.5-4248-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download NetherSX2 APK free for Android. NetherSX2 – a new version of AetherSX2 and a PlayStation 2 emulator available o"
+}

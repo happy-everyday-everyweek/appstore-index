@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/console-launcher-pro-110629",
+  "openSource": false,
+  "name": "Console Launcher Pro",
+  "packageName": "com.k2.consolelauncher",
+  "version": "vRoentgenum",
+  "apkUrl": "https://dl.apkvision.org/console-launcher-bohrium/console-launcher-bohrium-vRoentgenum.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Console Launcher Pro APK free for Android. Console Launcher Bohrium – the launcher is original in execution and"
+}

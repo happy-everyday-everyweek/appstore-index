@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/placid-kwgt-110827",
+  "openSource": false,
+  "name": "Placid KWGT",
+  "packageName": "placid.dd.kwgt",
+  "version": "v2.1",
+  "apkUrl": "https://dl.apkvision.org/placid-kwgt/placid-kwgt-v2-1-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Placid KWGT (Full version) APK free for Android. Placid KWGT – the application, which is traditionally very dem"
+}

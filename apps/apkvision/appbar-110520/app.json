@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/appbar-110520",
+  "openSource": false,
+  "name": "AppBar",
+  "packageName": "rk.android.app.appbar",
+  "version": "v1.4.1",
+  "apkUrl": "https://dl.apkvision.org/appbar/appbar-v1-4-1-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download AppBar (Full version) APK free for Android. AppBar – the application is in the &quot;personalization&quot; cate"
+}

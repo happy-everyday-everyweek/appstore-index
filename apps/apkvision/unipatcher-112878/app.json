@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/unipatcher-112878",
+  "openSource": false,
+  "name": "UniPatcher",
+  "packageName": "org.emunix.unipatcher",
+  "version": "v0.17.2",
+  "apkUrl": "https://dl.apkvision.org/unipatcher/unipatcher-v0.17.2-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download UniPatcher APK free for Android. UniPatcher – ROMs patcher for Android smartphones. The program supports many p"
+}
