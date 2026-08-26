@@ -28,6 +28,7 @@ jobs:
       - name: 采集落盘并提交（含 README 依赖资源）
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAIN_PAT: ${{ secrets.MAIN_PAT }}
           AAPT2: ${{ env.ANDROID_HOME }}/build-tools/34.0.0/aapt2
         run: |
           git fetch origin main
@@ -41,6 +42,9 @@ jobs:
           git config user.email "appstore-ci@users.noreply.github.com"
           git add apps/
           git commit -m "chore: 采集落盘 app-info.json 与 README.md（merge-settle）" || echo "无变更"
+          # main 分支保护要求 PR + 状态检查：落盘推送必须用 MAIN_PAT（仓库管理员）
+          # 豁免保护；GITHUB_TOKEN 会被 GH006 拒绝（历史上落盘因此一直推不回）。
+          git remote set-url origin "https://x-access-token:${MAIN_PAT}@github.com/${GITHUB_REPOSITORY}.git"
           # 重试推送：远端被并发推进时 pull --rebase 后重推（最多 5 次）
           for i in 1 2 3 4 5; do
             git push origin HEAD:main && break || { git pull --rebase origin main 2>/dev/null || true; sleep 4; }
