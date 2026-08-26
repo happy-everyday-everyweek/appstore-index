@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/vpn-satoshi-119267",
+  "openSource": false,
+  "name": "VPN Satoshi",
+  "packageName": "com.satoshi.vpns",
+  "version": "v2.2.162",
+  "apkUrl": "https://dl.apkvision.org/vpn-satoshi/vpn-satoshi-v2-2-162-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download VPN Satoshi APK free for Android. VPN Satoshi – the product is worth trying for users who want to go beyond the"
+}
