@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/kuaishou-129651",
+  "openSource": false,
+  "name": "Kuaishou",
+  "packageName": "",
+  "version": "v14.3.40.47619",
+  "apkUrl": "https://dl.apkvision.org/kuaishou/Kuaishou_14.3.40.47619_apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Kuaishou APK free for Android. Kuaishou is a dynamic short-video and livestreaming platform that lets users cre"
+}
