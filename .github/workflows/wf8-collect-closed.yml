@@ -1,0 +1,58 @@
+name: WF8 闭源应用持续采集
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "干跑（只巡扫+详情，不建仓、不开 PR）"
+        type: boolean
+        default: true
+      limit:
+        description: "本轮新应用上限"
+        type: number
+        default: 10
+      tab:
+        description: "指定起始目录页（可选，覆盖默认巡扫目录）"
+        type: string
+        default: ""
+      page:
+        description: "与 tab 配套的起始页"
+        type: number
+        default: 1
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 闭源采集主控（APKVision HTTP 引擎）
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+          MIRROR_OWNER: ${{ secrets.MIRROR_OWNER }}
+        run: |
+          ARGS="--repo ${{ github.repository }}"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 closed-sources/collect_closed.py $ARGS --limit 10
+          else
+            DRY="${{ github.event.inputs.dry_run }}"
+            LIMIT="${{ github.event.inputs.limit }}"
+            TAB="${{ github.event.inputs.tab }}"
+            PAGE="${{ github.event.inputs.page }}"
+            if [ "$DRY" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+            ARGS="$ARGS --limit ${LIMIT:-10}"
+            if [ -n "$TAB" ]; then ARGS="$ARGS --tab $TAB --page ${PAGE:-1}"; fi
+            python3 closed-sources/collect_closed.py $ARGS
+          fi
