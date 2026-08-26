@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: 安装渲染依赖（AXML 解析 + SVG 渲染 + 合成）
+        run: pip install androguard cairosvg pillow
       - name: 批量修复坏图标并提交
         run: |
           python3 scripts/fix_icons.py --aapt2 "${{ env.ANDROID_HOME }}/build-tools/34.0.0/aapt2"
