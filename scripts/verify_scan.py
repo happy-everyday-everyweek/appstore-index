@@ -121,17 +121,10 @@ def verify_direct(app_json):
     host = urlsplit(apk_url).netloc.lower()
     if not (host == "dl.apkvision.org" or host.endswith(".apkvision.org")):
         return False, "apkUrl 域名不在白名单内: %s" % host, {}
-    # 可达性快检（HEAD），不下载全文
-    size_hint = 0
-    try:
-        req = urllib.request.Request(apk_url, method="HEAD")
-        req.add_header("User-Agent", "appstore-ci/1.0")
-        with urllib.request.urlopen(req, timeout=60) as r:
-            size_hint = int(r.headers.get("Content-Length") or 0)
-    except Exception as e:
-        return False, "apkUrl 不可达: %s" % e, {}
     if not apk_url.rsplit("/", 1)[-1].lower().endswith(".apk"):
         return False, "apkUrl 不是 .apk 文件（xapk 等打包格式不支持）", {}
+    # 不做网络快检（HEAD）：批量收录时逐条 HEAD 会触发源站限流导致大面积误判。
+    # 可达性由落盘阶段 extract_apk 真实下载把关（失败仅跳过该应用，不阻塞批次）。
     name = app_json.get("name") or app_json["repo"].split("/")[-1]
     readme = (
         "# %s\n\n"
@@ -146,7 +139,7 @@ def verify_direct(app_json):
     return True, "ok", {
         "meta": {},
         "apk_asset": {"browser_download_url": apk_url,
-                      "name": apk_url.rsplit("/", 1)[-1], "size": size_hint},
+                      "name": apk_url.rsplit("/", 1)[-1], "size": 0},
         "release": {"tag_name": app_json.get("version") or "v1.0.0",
                     "published_at": "now"},
         "readme": readme,
