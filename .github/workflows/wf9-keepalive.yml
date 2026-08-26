@@ -1,0 +1,52 @@
+name: WF9 闭源采集保活
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: wf8-collect
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 保活检查与补触发
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          REPO="${{ github.repository }}"
+          # 1) 完成标记存在 = 全库已扫完，无需保活
+          CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/contents/closed-sources/.wf8_done")
+          if [ "$CODE" = "200" ]; then
+            echo "全库扫描已完成（存在完成标记），保活退出"
+            exit 0
+          fi
+          # 2) WF8 正在运行/排队中则跳过
+          RUNS=$(curl -s \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/actions/workflows/wf8-collect-closed.yml/runs?per_page=5")
+          ACTIVE=$(echo "$RUNS" | grep -c '"status": "in_progress"\|"status": "queued"')
+          if [ "$(echo $ACTIVE | tr -d ' ')" != "0" ]; then
+            echo "WF8 正在运行（active=$ACTIVE），保活跳过"
+            exit 0
+          fi
+          # 3) 不在运行 → 补触发一轮（真实模式，limit 30）
+          ST=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -d '{"ref":"main","inputs":{"dry_run":false,"limit":30}}' \
+            "https://api.github.com/repos/$REPO/actions/workflows/wf8-collect-closed.yml/dispatches")
+          echo "已补触发 WF8: HTTP $ST"
