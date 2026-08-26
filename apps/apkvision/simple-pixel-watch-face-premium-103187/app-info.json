@@ -1,0 +1,46 @@
+{
+  "id": "2070",
+  "upstream": null,
+  "packageName": "fr.thema.wear.watch.minimalistpixel",
+  "name": "Simple Pixel",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACTIVITY_RECOGNITION",
+    "android.permission.BODY_SENSORS",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.INTERNET",
+    "android.permission.READ_CONTACTS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gm.permission.READ_CONTENT_PROVIDER",
+    "com.google.android.gms.permission.AD_ID",
+    "com.google.android.permission.PROVIDE_BACKGROUND"
+  ],
+  "version": {
+    "versionName": "1.22.10.1622",
+    "versionCode": 122101622,
+    "releaseTag": "v1.22.10.1622"
+  },
+  "source": {
+    "repo": "apkvision/simple-pixel-watch-face-premium-103187",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/simple-pixel-watch-face/simple-pixel-v1-22-10-1622-mod.apk",
+    "sha256": "df00e26e31d17df2f2e7f875c4560f91244e93add6b9dccc77a8a58cbe1fa1bd",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

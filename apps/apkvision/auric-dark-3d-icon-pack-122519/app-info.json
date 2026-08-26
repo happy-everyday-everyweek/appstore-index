@@ -1,0 +1,43 @@
+{
+  "id": "1891",
+  "upstream": null,
+  "packageName": "com.creativepixels.auric.iconpack.app",
+  "name": "Auric Icon Pack",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.creativepixels.auric.iconpack.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.0.9",
+    "versionCode": 209,
+    "releaseTag": "v2.0.9"
+  },
+  "source": {
+    "repo": "apkvision/auric-dark-3d-icon-pack-122519",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/auric-dark-3d-icon-pack/auric-dark-3d-icon-pack-v2-0-9-mod-apkvision.apk",
+    "sha256": "6268f518ee44d43388c592d7e2b4e112529aa65ec4bbe39e19320362e94b2d37",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

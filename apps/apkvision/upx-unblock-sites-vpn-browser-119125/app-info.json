@@ -1,0 +1,50 @@
+{
+  "id": "2098",
+  "upstream": null,
+  "packageName": "net.upx.proxy.browser",
+  "name": "UPX",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.android.vending.BILLING",
+    "com.chrome.permission.DEVICE_EXTRAS",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "net.upx.proxy.browser.TOS_ACKED",
+    "net.upx.proxy.browser.permission.C2D_MESSAGE",
+    "net.upx.proxy.browser.permission.READ_WRITE_BOOKMARK_FOLDERS"
+  ],
+  "version": {
+    "versionName": "98.0.4758.101",
+    "versionCode": 187,
+    "releaseTag": "v98.0.4758.101"
+  },
+  "source": {
+    "repo": "apkvision/upx-unblock-sites-vpn-browser-119125",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/upx/upx-vpn-browser-v98-0-4758-101-mod-apkvision.apk",
+    "sha256": "bb9f12e92f5d57fe2c84725537fcfbb681d044c2d21e35d556ae83822950c3f0",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

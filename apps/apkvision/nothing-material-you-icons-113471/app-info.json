@@ -1,0 +1,43 @@
+{
+  "id": "2010",
+  "upstream": null,
+  "packageName": "dev.narikdesign.nothingmaterialyou",
+  "name": "Nothing Material You",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "dev.narikdesign.nothingmaterialyou.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.3",
+    "versionCode": 13,
+    "releaseTag": "v1.3"
+  },
+  "source": {
+    "repo": "apkvision/nothing-material-you-icons-113471",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/nothing-material-you-icons/nothing-material-you-icons-v1-3-mod-apkvision.apk",
+    "sha256": "786148ea230ee8375ffc47166a15bda2648db8750d76a10ad3cc3eca541d92db",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

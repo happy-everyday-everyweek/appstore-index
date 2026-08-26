@@ -1,0 +1,51 @@
+{
+  "id": "2007",
+  "upstream": null,
+  "packageName": "com.fluidtouch.noteshelf3",
+  "name": "Noteshelf 3",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ASSISTED_GPS",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_GPS",
+    "android.permission.ACCESS_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERACT_ACROSS_USERS",
+    "android.permission.INTERACT_ACROSS_USERS_FULL",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.fluidtouch.noteshelf3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE"
+  ],
+  "version": {
+    "versionName": "1.0.8",
+    "versionCode": 63,
+    "releaseTag": "v1.0.8"
+  },
+  "source": {
+    "repo": "apkvision/noteshelf-3-digital-notes-124909",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/noteshelf-3-digital-notes/noteshelf-3-digital-notes-v1-0-8-mod-apkvision.apk",
+    "sha256": "c9d39454244cec0d3169e408b26ce6c356b34e08b8d866c0057e854555989cbe",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "1908",
+  "upstream": null,
+  "packageName": "io.appground.blekpremium",
+  "name": "Bluetooth Keyboard & Mouse",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_ADVERTISE",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.BLUETOOTH_SCAN",
+    "android.permission.EXPAND_STATUS_BAR",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "io.appground.blekpremium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "6.1.0",
+    "versionCode": 207,
+    "releaseTag": "v6.1.0"
+  },
+  "source": {
+    "repo": "apkvision/bluetooth-keyboard-mouse-pro-116049",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/bluetooth-keyboard-mouse-pro/bluetooth-keyboard-v6-1-0-apkvision.apk",
+    "sha256": "a9587b3a72de193188cfbe6dda838973428aa2b903e7837d98562ee436193a93",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

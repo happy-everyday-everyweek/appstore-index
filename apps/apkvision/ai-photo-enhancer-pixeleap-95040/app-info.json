@@ -1,0 +1,43 @@
+{
+  "id": "1875",
+  "upstream": null,
+  "packageName": "com.photoscan.enhancer.remini.photomyne.colorize.scanner",
+  "name": "PixeLeap",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.0.9.2",
+    "versionCode": 25,
+    "releaseTag": "v1.0.9.2"
+  },
+  "source": {
+    "repo": "apkvision/ai-photo-enhancer-pixeleap-95040",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ai-photo-enhancer-pixeleap/ai-photo-enhancer-pixeleap-v1.0.9.2.apk",
+    "sha256": "f32a3a6f6ea16cd687f8ed96740be253f0694062e69c9f81da79ddcf71e871ea",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1865",
+  "upstream": null,
+  "packageName": "com.anu.developers3k.rootcheckerpro",
+  "name": "Advanced Root Checker Pro",
+  "icon": "icon.png",
+  "permissions": [],
+  "version": {
+    "versionName": "1.6.0",
+    "versionCode": 9,
+    "releaseTag": "v1.6.0"
+  },
+  "source": {
+    "repo": "apkvision/advanced-root-checker-pro-95725",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/advanced-root-checker-pro/advanced-root-checker-pro-v1-6-0-mod.apk",
+    "sha256": "9f871df04075747d90e81948d16f94a597fdf12de7af68a5f97fa649ba176e96",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

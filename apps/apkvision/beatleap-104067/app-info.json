@@ -1,0 +1,31 @@
+{
+  "id": "1900",
+  "upstream": null,
+  "packageName": "com.BeatleapPhoto.Videtips.byLightricks",
+  "name": "BeatleapAPP",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK"
+  ],
+  "version": {
+    "versionName": "1.0.31",
+    "versionCode": 1,
+    "releaseTag": "v1.0.31"
+  },
+  "source": {
+    "repo": "apkvision/beatleap-104067",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/beatleap/beatleap-v1-0-31-mod.apk",
+    "sha256": "ef38921674a37a46474800130f706a44e336d2294c7ec0dfb1d5649428c83ec4",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

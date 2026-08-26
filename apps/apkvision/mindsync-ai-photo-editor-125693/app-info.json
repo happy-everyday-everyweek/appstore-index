@@ -1,0 +1,51 @@
+{
+  "id": "1986",
+  "upstream": null,
+  "packageName": "com.mindsync.aiphoto.aiart.photoeditor",
+  "name": "MindSync",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.mindsync.aiphoto.aiart.photoeditor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.6.0",
+    "versionCode": 1016,
+    "releaseTag": "v1.6.0"
+  },
+  "source": {
+    "repo": "apkvision/mindsync-ai-photo-editor-125693",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/mindsync/mindsync-ai-photo-editor-v1-6-0-mod-apkvision.apk",
+    "sha256": "2ba53b20c45fbac7b547b2580b89e65fea86cc5a6915075cabbddee6309b3a91",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "2082",
+  "upstream": null,
+  "packageName": "com.scheler.superproxy",
+  "name": "Super Proxy",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.scheler.superproxy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.4.3",
+    "versionCode": 660,
+    "releaseTag": "v2.4.3"
+  },
+  "source": {
+    "repo": "apkvision/super-proxy-119643",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/super-proxy/super-proxy-v2-4-3-mod-apkvision.apk",
+    "sha256": "a4104780da6780909c46e00add435502c5117dba9de5b1eb7f49754d7950574c",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

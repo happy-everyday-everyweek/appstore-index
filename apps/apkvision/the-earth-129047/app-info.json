@@ -1,0 +1,36 @@
+{
+  "id": "2087",
+  "upstream": null,
+  "packageName": "com.tinybop.Earth.paid",
+  "name": "Earth",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.CAMERA",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.3.0",
+    "versionCode": 1192,
+    "releaseTag": "v1.3.0"
+  },
+  "source": {
+    "repo": "apkvision/the-earth-129047",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/the-earth/Earth-v1.3.0-full-apkvision.apk",
+    "sha256": "35fd615136012d7ae3a1a8319ece372e8eafdca08df17e82f167db68c48a7d97",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

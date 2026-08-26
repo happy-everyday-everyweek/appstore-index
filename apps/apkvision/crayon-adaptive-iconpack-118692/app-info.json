@@ -1,0 +1,43 @@
+{
+  "id": "1931",
+  "upstream": null,
+  "packageName": "com.adaptive.cartoon.crayon.iconpack",
+  "name": "Crayon Adaptive",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.adaptive.cartoon.crayon.iconpack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.4",
+    "versionCode": 4,
+    "releaseTag": "v1.4"
+  },
+  "source": {
+    "repo": "apkvision/crayon-adaptive-iconpack-118692",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/crayon-adaptive-iconpack/crayon-adaptive-iconpack-v1-4-mod-apkvision.apk",
+    "sha256": "5418d070824a815d20860b4cacdce00576287ef9dbf8f961073bdb95b353e276",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

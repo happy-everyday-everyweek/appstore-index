@@ -1,0 +1,42 @@
+{
+  "id": "2034",
+  "upstream": null,
+  "packageName": "com.vyroai.photoeditorone",
+  "name": "PhotoShot",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_NETWORK",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.vyroai.photoeditorone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.15.0",
+    "versionCode": 254,
+    "releaseTag": "v2.15.0"
+  },
+  "source": {
+    "repo": "apkvision/photoshot-photo-editor-premium-99364",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/photoshot-photo-editor/PhotoShot-v2.15.0.apk",
+    "sha256": "8bde4d62f3f6ececf9cb1e1b95380bda6ef3f0a0cd757bfc44cbe250674c5231",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

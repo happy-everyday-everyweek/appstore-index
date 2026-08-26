@@ -1,0 +1,40 @@
+{
+  "id": "1988",
+  "upstream": null,
+  "packageName": "com.cris87.mios_3d",
+  "name": "MiOS 3D",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.2",
+    "versionCode": 2,
+    "releaseTag": "v1.2"
+  },
+  "source": {
+    "repo": "apkvision/mios-3d-icon-pack-122127",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/mios-3d-icon-pack/mios-3d-v1-2-mod-apkvision.apk",
+    "sha256": "41e60b34afbe723fb537d80abdaba43cc13e8ff0f3a6944a1198bf4414f749f1",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

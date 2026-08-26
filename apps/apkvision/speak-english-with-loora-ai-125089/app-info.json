@@ -1,0 +1,44 @@
+{
+  "id": "2076",
+  "upstream": null,
+  "packageName": "com.loora.app",
+  "name": "Loora",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.google.android.providers.gsf.permission.READ_GSERVICES",
+    "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+    "com.loora.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.samsung.android.mapsagent.permission.READ_APP_INFO"
+  ],
+  "version": {
+    "versionName": "1.7.0",
+    "versionCode": 28,
+    "releaseTag": "v1.7.0"
+  },
+  "source": {
+    "repo": "apkvision/speak-english-with-loora-ai-125089",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/speak-english-with-loora-ai/speak-english-with-loora-ai-v1-7-0-mod-apkvision.apk",
+    "sha256": "65fa7ed1be8ff03a3595da68bfa13dc2e355ba1cee8bcbaeae9ad865f015cfc7",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

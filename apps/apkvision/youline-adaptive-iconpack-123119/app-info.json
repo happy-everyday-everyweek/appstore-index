@@ -1,0 +1,43 @@
+{
+  "id": "2132",
+  "upstream": null,
+  "packageName": "com.asn360.youline.iconpack",
+  "name": "YouLine",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.asn360.youline.iconpack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.8",
+    "versionCode": 10,
+    "releaseTag": "v1.8"
+  },
+  "source": {
+    "repo": "apkvision/youline-adaptive-iconpack-123119",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/youline-adaptive-iconpack/youline-v1-8-mod-apkvision.apk",
+    "sha256": "22e1a459d4ba676756cbefe1a417d0005b2e0dca3016b9f87b23d59257531dc7",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

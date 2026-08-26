@@ -1,0 +1,39 @@
+{
+  "id": "2101",
+  "upstream": null,
+  "packageName": "com.vion.vionapp",
+  "name": "ViON App - Cartoons Animes",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.vion.vionapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "61.0",
+    "versionCode": 61,
+    "releaseTag": "v61.0"
+  },
+  "source": {
+    "repo": "apkvision/vion-116645",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vion/vion-v61-0-mod-apkvision.apk",
+    "sha256": "4081885bef90adea034125fa24e36273c7f55dec71813dbeb01efd58b44fddce",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

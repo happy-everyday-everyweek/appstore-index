@@ -1,0 +1,35 @@
+{
+  "id": "2102",
+  "upstream": null,
+  "packageName": "org.vita3k.emulator",
+  "name": "Vita3K",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "org.vita3k.emulator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "0.1.9-8",
+    "versionCode": 8,
+    "releaseTag": "v8"
+  },
+  "source": {
+    "repo": "apkvision/vita3k-109245",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vita3k/Vita3K-v8-apkvision.apk",
+    "sha256": "d3c90e59b20192585f8dd613485467490ad920a6bb7298bb27317ed329efd744",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "2126",
+  "upstream": null,
+  "packageName": "com.browndroid.win11",
+  "name": "Win 11 for KLWP",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "Os Build 2.0",
+    "versionCode": 3,
+    "releaseTag": "Os Build 2.0"
+  },
+  "source": {
+    "repo": "apkvision/win-11-for-klwp-119312",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/win-11-for-klwp/win-11-for-klwp-vos-build-2-0-mod-apkvision.apk",
+    "sha256": "d528ea7de7e29e3e6c6ccb59abf12111e704b158e1a3d7a941d0474a9e268814",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

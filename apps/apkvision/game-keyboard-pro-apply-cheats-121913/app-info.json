@@ -1,0 +1,40 @@
+{
+  "id": "1945",
+  "upstream": null,
+  "packageName": "com.infinityplus.igamekeyboardpro",
+  "name": "iGame Keyboard Pro",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.infinityplus.igamekeyboardpro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "4.4",
+    "versionCode": 38,
+    "releaseTag": "v4.4"
+  },
+  "source": {
+    "repo": "apkvision/game-keyboard-pro-apply-cheats-121913",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/game-keyboard-pro-apply-cheats/game-keyboard-pro-apply-cheats-4.4-full-apkvision.apk",
+    "sha256": "9741ca156460698d3e9aa4c530c4c33e0dd81a6f68935105b140518f8e9b49ba",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

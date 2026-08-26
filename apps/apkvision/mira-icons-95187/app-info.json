@@ -1,0 +1,41 @@
+{
+  "id": "1990",
+  "upstream": null,
+  "packageName": "dev.narikdesign.mira",
+  "name": "MIRA",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.0",
+    "versionCode": 10,
+    "releaseTag": "v1.0"
+  },
+  "source": {
+    "repo": "apkvision/mira-icons-95187",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/mira-icons/mira-icons-v1-0-mod.apk",
+    "sha256": "e033a3db48cbb17b84ec9aae83fbb229b028fd6e3afda1aab1b62f0274c1360b",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

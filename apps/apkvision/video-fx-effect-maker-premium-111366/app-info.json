@@ -1,0 +1,43 @@
+{
+  "id": "2100",
+  "upstream": null,
+  "packageName": "com.cpr.videoeffect.pro",
+  "name": "Video FX Effect Maker",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.cpr.videoeffect.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.5.3",
+    "versionCode": 53,
+    "releaseTag": "v1.5.3"
+  },
+  "source": {
+    "repo": "apkvision/video-fx-effect-maker-premium-111366",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/video-fx-effect-maker/video-fx-effect-maker-v1-5-3-mod.apk",
+    "sha256": "ffe51e3bb3ff19871b3d66084137b22c61f35a0e249d79524e7208b35881409f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

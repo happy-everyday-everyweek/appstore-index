@@ -1,0 +1,37 @@
+{
+  "id": "2081",
+  "upstream": null,
+  "packageName": "com.pomodoro.studytimer.studytimer",
+  "name": "StudyTimeWithRain",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.pomodoro.studytimer.studytimer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.0.0",
+    "versionCode": 61,
+    "releaseTag": "v2.0.0"
+  },
+  "source": {
+    "repo": "apkvision/study-time-with-rain-pomodoro-124639",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/study-time-with-rain-pomodoro/study-time-with-rain-pomodoro-v2-0-0-mod-apkvision.apk",
+    "sha256": "8d047a5a3de7a02f50f80deaa0e27fc0c1e9e46b54b8ac1defd270c9abb4a7bd",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

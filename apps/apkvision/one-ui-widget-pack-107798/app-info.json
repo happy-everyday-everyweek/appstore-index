@@ -1,0 +1,41 @@
+{
+  "id": "2017",
+  "upstream": null,
+  "packageName": "oneui.rad.kwgt",
+  "name": "One UI Widget Pack",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.0.0",
+    "versionCode": 100,
+    "releaseTag": "v1.0.0"
+  },
+  "source": {
+    "repo": "apkvision/one-ui-widget-pack-107798",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/one-ui-widget-pack/one-ui-widget-pack-v1-0-0-mod.apk",
+    "sha256": "05c8cdcb9e0769d014c02a31b91932afc0704d091d9d50f3930aba4233ed4898",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

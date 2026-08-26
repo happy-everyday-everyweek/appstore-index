@@ -1,0 +1,43 @@
+{
+  "id": "1975",
+  "upstream": null,
+  "packageName": "lucentkwgt.kustom.pack",
+  "name": "Lucent",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "lucentkwgt.kustom.pack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "6.0.2",
+    "versionCode": 2108134,
+    "releaseTag": "v6.0.2"
+  },
+  "source": {
+    "repo": "apkvision/lucent-kwgt-lucent-widgets-123711",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/lucent-kwgt-lucent-widgets/lucent-kwgt-lucent-widgets-v6-0-2-mod-apkvision.apk",
+    "sha256": "852b95d90da58e4f47414210b763511e566c0000a3bfad71d3993c6827230915",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

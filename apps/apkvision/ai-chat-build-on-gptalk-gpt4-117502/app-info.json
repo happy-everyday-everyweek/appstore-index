@@ -1,0 +1,48 @@
+{
+  "id": "1868",
+  "upstream": null,
+  "packageName": "com.facebook.videodownload.videodownloaderforfacebook",
+  "name": "AI Chat",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "3.0.5.6",
+    "versionCode": 71,
+    "releaseTag": "v3.0.5.6"
+  },
+  "source": {
+    "repo": "apkvision/ai-chat-build-on-gptalk-gpt4-117502",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ai-chatbot-ai-friend-generator/ai-chatbot-ai-friend-generator-v3-0-5-6-mod-apkvision.apk",
+    "sha256": "e5cec9139cf8daabb233662b4e19620b7b770300155efdcad3569b6ab0481575",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

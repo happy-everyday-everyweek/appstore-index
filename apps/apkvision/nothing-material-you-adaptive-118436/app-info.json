@@ -1,0 +1,43 @@
+{
+  "id": "2009",
+  "upstream": null,
+  "packageName": "dev.narikdesign.nam",
+  "name": "Nothing Material You Adaptive",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "dev.narikdesign.nam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.3",
+    "versionCode": 13,
+    "releaseTag": "v1.3"
+  },
+  "source": {
+    "repo": "apkvision/nothing-material-you-adaptive-118436",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/nothing-material-you-adaptive/nothing-material-you-adaptive-v1-3-mod-apkvision.apk",
+    "sha256": "2c1d9f259910b91d5af56f07b009aae4ff22c347bce56f3c7ca6244668248416",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "2016",
+  "upstream": null,
+  "packageName": "com.fahrezone.one.optimizer",
+  "name": "One Optimizer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.KILL_BACKGROUND_PROCESSES",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "2.24",
+    "versionCode": 224,
+    "releaseTag": "v2.24"
+  },
+  "source": {
+    "repo": "apkvision/one-optimizer-fast-boost-99004",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/one-optimizer-fast-boost/one-optimizer-fast-boost-v2-24-mod.apk",
+    "sha256": "12021e1598a43b6b706e758bf6a0ff42361e99808424a6f2ad824ab13fb7e958",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

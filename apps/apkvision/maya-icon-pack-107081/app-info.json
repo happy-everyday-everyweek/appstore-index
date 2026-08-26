@@ -1,0 +1,41 @@
+{
+  "id": "1981",
+  "upstream": null,
+  "packageName": "com.mayaicons.app",
+  "name": "Maya Icons",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.3.6",
+    "versionCode": 136,
+    "releaseTag": "v1.3.6"
+  },
+  "source": {
+    "repo": "apkvision/maya-icon-pack-107081",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/maya-icon-pack/maya-icon-pack-v1-3-6-mod.apk",
+    "sha256": "8d0e3f192e0eebfe54568be5da7cf9d52cca5585b50d23f6a2736add5c2d9196",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

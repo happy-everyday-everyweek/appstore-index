@@ -1,0 +1,42 @@
+{
+  "id": "2065",
+  "upstream": null,
+  "packageName": "com.samsung.android.goodlock",
+  "name": "Good Lock",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+    "android.permission.INTERNET",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WRITE_SECURE_SETTINGS",
+    "com.samsung.android.goodlock.INSTALLER_CALLBACK",
+    "com.samsung.android.iap.permission.BILLING",
+    "com.samsung.android.launcher.permission.READ_SETTINGS",
+    "com.samsung.android.scs.ai.search.permission.READ",
+    "com.samsung.android.scs.ai.search.permission.UPDATE_INDEX",
+    "com.samsung.android.scs.ai.search.permission.WRITE",
+    "com.samsung.systemui.permission.SPLUGIN",
+    "com.sec.spp.permission.TOKEN_2c815a762c1223ad42b3c9ff69d3774648ec362ceb7ab4baf4845f7e1819e680b862cf88719072bf82e2716dde58bd9312a85c664fa484ab173c6fc01aaa8841a5c7ad0b48576a4331fa4c4601a26ab4d7ffff09db4f8292002fc89fc17523d93b10c11daf0a50209508866e8dd03e75f22f0c3387a79cf75f6e455ec9799236"
+  ],
+  "version": {
+    "versionName": "2.2.04.46",
+    "versionCode": 220446000,
+    "releaseTag": "v2.2.04.46"
+  },
+  "source": {
+    "repo": "apkvision/samsung-good-lock-103349",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/samsung-good-lock/samsung-good-lock-v2-2-04-46-mod.apk",
+    "sha256": "5708e0954982f7f3ea1954e26e36e583cdd4e5ae8c00304f13cfb8af32531d6f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

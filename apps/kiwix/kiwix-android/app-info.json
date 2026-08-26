@@ -31,7 +31,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/kiwix/kiwix-android/releases/download/v3.14.1/v3.14.1-arm64-v8a-standalone.apk",
     "sha256": "62a9910be260030e642465c17d642537e6ee4ee5f2d4596c248267c2766a88b8",
-    "stars": 1451
+    "stars": 1452
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",

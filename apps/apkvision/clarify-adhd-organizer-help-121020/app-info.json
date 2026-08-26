@@ -1,0 +1,46 @@
+{
+  "id": "1920",
+  "upstream": null,
+  "packageName": "co.thefab.tm",
+  "name": "Clarify ADHD",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.AUTHENTICATE_ACCOUNTS",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.USE_EXACT_ALARM",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "co.thefab.tm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.android.vending.BILLING",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "3.80",
+    "versionCode": 38002,
+    "releaseTag": "v3.80"
+  },
+  "source": {
+    "repo": "apkvision/clarify-adhd-organizer-help-121020",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/clarify/clarify-v3-80-mod-apkvision.apk",
+    "sha256": "4c1cb57c0b898da69c2d2e7dab2f2818864a059e9b4870e74e8993e1b8ddcc81",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

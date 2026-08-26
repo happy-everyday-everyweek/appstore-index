@@ -1,0 +1,42 @@
+{
+  "id": "1861",
+  "upstream": null,
+  "packageName": "com.digibites.accubattery",
+  "name": "AccuBattery",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.DUMP",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.digibites.accubattery.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE"
+  ],
+  "version": {
+    "versionName": "2.1.8",
+    "versionCode": 201008,
+    "releaseTag": "v2.1.8"
+  },
+  "source": {
+    "repo": "apkvision/accu-battery-132085",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/accubattery/accubattery-2.1.8-pro-apkvision.apk",
+    "sha256": "80adbc11842a45533f8187ed12bf2c70767ff4721c521f351ca7cd6507402162",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

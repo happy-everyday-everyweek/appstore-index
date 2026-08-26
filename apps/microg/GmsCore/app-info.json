@@ -28,8 +28,8 @@
     "org.microg.gms.permission.WRITE_SETTINGS"
   ],
   "version": {
-    "versionName": "v0.3.16.252432",
-    "versionCode": 0,
+    "versionName": "0.3.16.40226-hw",
+    "versionCode": 84022632,
     "releaseTag": "v0.3.16.252432"
   },
   "source": {
@@ -37,12 +37,12 @@
     "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/microg/GmsCore/releases/download/v0.3.16.252432/com.android.vending-84022632-hw.apk",
-    "sha256": "待重采",
-    "stars": 14334
+    "sha256": "c1aa0c8854fcdac31d23d54e1ea62daedff6b7a6405a2f5ff5351c2dde8f113d",
+    "stars": 14358
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-07-14T14:11:55Z",
-  "generatedBy": "workflow-5"
+  "generatedBy": "workflow-2"
 }

@@ -1,0 +1,50 @@
+{
+  "id": "1906",
+  "upstream": null,
+  "packageName": "de.blitzer.plus",
+  "name": "Blitzer.de PRO",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.BLUETOOTH_SCAN",
+    "android.permission.DISABLE_KEYGUARD",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_LOCATION",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "de.blitzer.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "oppo.permission.OPPO_COMPONENT_SAFE"
+  ],
+  "version": {
+    "versionName": "4.2.65",
+    "versionCode": 372,
+    "releaseTag": "v4.2.65 b372"
+  },
+  "source": {
+    "repo": "apkvision/blitzer-de-pro-119435",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/blitzer-de-pro/blitzer-de-pro-v4-2-65-b372-mod-apkvision.apk",
+    "sha256": "9c7490feaf0c786be7c46c484df5d9559009b9d34afbfe96473c961f298db077",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

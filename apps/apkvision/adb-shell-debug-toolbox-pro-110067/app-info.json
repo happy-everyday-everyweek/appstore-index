@@ -1,0 +1,43 @@
+{
+  "id": "1864",
+  "upstream": null,
+  "packageName": "com.github.superadb",
+  "name": "ADB",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.github.superadb.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "V3.4.6",
+    "versionCode": 66,
+    "releaseTag": "v3.4.6"
+  },
+  "source": {
+    "repo": "apkvision/adb-shell-debug-toolbox-pro-110067",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/adb-shell-pro/adb-shell-debug-toolbox-pro-v3-4-6-mod.apk",
+    "sha256": "30820876e8cc113a5d97b62a2a3751ff04fe2e8f555c112f9192d365a4563283",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

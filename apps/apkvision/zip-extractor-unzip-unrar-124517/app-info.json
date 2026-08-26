@@ -1,0 +1,42 @@
+{
+  "id": "2136",
+  "upstream": null,
+  "packageName": "hn.zip.unzip.compressfile.extractfile.compressfolder",
+  "name": "Zip Extractor",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "hn.zip.unzip.compressfile.extractfile.compressfolder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "3.3.2",
+    "versionCode": 112,
+    "releaseTag": "v3.3.2"
+  },
+  "source": {
+    "repo": "apkvision/zip-extractor-unzip-unrar-124517",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/zip-extractor-unzip-unrar/zip-extractor-v3-3-2-mod-apkvision.apk",
+    "sha256": "c3ba26ded8a4236cb376f6b353c6d632763b2d40a8decfcb07d4d4a39384f223",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

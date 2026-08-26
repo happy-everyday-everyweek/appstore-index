@@ -1,0 +1,35 @@
+{
+  "id": "1899",
+  "upstream": null,
+  "packageName": "simple.battery.alarm",
+  "name": "Battery Alarm PRO",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "74",
+    "versionCode": 74,
+    "releaseTag": "v74"
+  },
+  "source": {
+    "repo": "apkvision/battery-alarm-pro-119597",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/battery-alarm-pro/battery-alarm-pro-v74-mod-apkvision.apk",
+    "sha256": "94b884d2a903df40583a476e1f27f4591e18ab3f00c8eb5c4246ccd04ae7a854",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

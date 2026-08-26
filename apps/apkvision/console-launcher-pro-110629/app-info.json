@@ -1,0 +1,41 @@
+{
+  "id": "1929",
+  "upstream": null,
+  "packageName": "com.k2.consolelauncher",
+  "name": "Console Launcher",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.EXPAND_STATUS_BAR",
+    "android.permission.INTERNET",
+    "android.permission.KILL_BACKGROUND_PROCESSES",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.alarm.permission.SET_ALARM",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.k2.consolelauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "Roentgenium",
+    "versionCode": 111,
+    "releaseTag": "vRoentgenum"
+  },
+  "source": {
+    "repo": "apkvision/console-launcher-pro-110629",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/console-launcher-bohrium/console-launcher-bohrium-vRoentgenum.apk",
+    "sha256": "d477d52246bd60efabf3da9cd883a4b29f159c77ef6820ad8ddc53d2528020e0",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

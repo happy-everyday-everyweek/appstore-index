@@ -1,0 +1,40 @@
+{
+  "id": "2038",
+  "upstream": null,
+  "packageName": "com.ciaostudio.pixeliconpack",
+  "name": "Pixelful",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "9.0.1",
+    "versionCode": 76,
+    "releaseTag": "v9.0.1"
+  },
+  "source": {
+    "repo": "apkvision/pixelful-icon-pack-97207",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/pixelful-icon-pack/pixelful-icon-pack-v9-0-1-mod.apk",
+    "sha256": "d7a756ce922b5961cdc16ef394533a489b67f7ff5580a16d3c177f2a7a3f8876",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

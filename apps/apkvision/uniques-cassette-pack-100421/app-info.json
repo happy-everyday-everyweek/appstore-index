@@ -1,0 +1,26 @@
+{
+  "id": "2097",
+  "upstream": null,
+  "packageName": "com.hornwerk.casseoplayer.pack.uniques",
+  "name": "Uniques Cassette Pack",
+  "icon": "icon.png",
+  "permissions": [],
+  "version": {
+    "versionName": "1.0.10",
+    "versionCode": 10,
+    "releaseTag": "v1.0.10"
+  },
+  "source": {
+    "repo": "apkvision/uniques-cassette-pack-100421",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/uniques-cassette-pack/uniques-cassette-pack-v1-0-10-mod.apk",
+    "sha256": "2aeee7e46c400403ae8839d4ba9c035e76866c86e490b65abbc88318042f7bcc",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

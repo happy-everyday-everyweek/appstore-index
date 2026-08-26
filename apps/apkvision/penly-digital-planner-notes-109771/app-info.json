@@ -1,0 +1,38 @@
+{
+  "id": "2031",
+  "upstream": null,
+  "packageName": "com.penly.penly",
+  "name": "Penly",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.penly.penly.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.samsung.android.providers.media.READ"
+  ],
+  "version": {
+    "versionName": "1.20.2",
+    "versionCode": 79,
+    "releaseTag": "v1.20.2"
+  },
+  "source": {
+    "repo": "apkvision/penly-digital-planner-notes-109771",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/penly-digital-planner-notes/penly-v1-20-2-mod.apk",
+    "sha256": "557c58d4b73072c890584ae32033470df7b0346fbfe46c54ca6a2c3bc54aedef",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "1913",
+  "upstream": null,
+  "packageName": "com.min.car",
+  "name": "Carmin",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "4.0.7",
+    "versionCode": 71,
+    "releaseTag": "v4.0.7"
+  },
+  "source": {
+    "repo": "apkvision/carmin-std-98349",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/carmin-std/carmin-std-v4-0-7-mod.apk",
+    "sha256": "bc83cffc7e09064bd60e4f816985dcb47f9227dda4c8762557c05e274cdcd20e",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

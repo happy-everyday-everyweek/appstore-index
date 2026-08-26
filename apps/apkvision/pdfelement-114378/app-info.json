@@ -1,0 +1,47 @@
+{
+  "id": "2029",
+  "upstream": null,
+  "packageName": "com.wondershare.pdfelement",
+  "name": "PDFelement",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.AUTHENTICATE_ACCOUNTS",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_ACCOUNTS",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.USE_CREDENTIALS",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "4.6.7",
+    "versionCode": 406070,
+    "releaseTag": "v4.6.7"
+  },
+  "source": {
+    "repo": "apkvision/pdfelement-114378",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/pdfelement/pdfelement-v4-6-7-mod-apkvision.apk",
+    "sha256": "5fe4321dfbcdb74461bb2e804cc67127dab7039125c7e533e2d9ae031fb6ec26",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

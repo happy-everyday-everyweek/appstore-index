@@ -1,0 +1,42 @@
+{
+  "id": "1901",
+  "upstream": null,
+  "packageName": "network.bigmama",
+  "name": "BigMama",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.WAKE_LOCK",
+    "com.android.alarm.permission.SET_ALARM",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "network.bigmama.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.7.0",
+    "versionCode": 172493940,
+    "releaseTag": "v1.7.0"
+  },
+  "source": {
+    "repo": "apkvision/bigmama-vpn-125301",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/bigmama-vpn/bigmama-vpn-v1-7-0-mod-apkvision.apk",
+    "sha256": "2361622204736b5d134e4a12a4511425554fbdbe771cc15b307d2decd023be6f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

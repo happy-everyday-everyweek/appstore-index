@@ -1,0 +1,40 @@
+{
+  "id": "2041",
+  "upstream": null,
+  "packageName": "com.polygon.videoplayer",
+  "name": "Polygon Player",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INSTALL_PACKAGES",
+    "android.permission.INTERNET",
+    "android.permission.MEDIA_CONTENT_CONTROL",
+    "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.USB_PERMISSION",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "1.1.7r",
+    "versionCode": 20,
+    "releaseTag": "v1.1.7r"
+  },
+  "source": {
+    "repo": "apkvision/polygon-video-player-99356",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/polygon-video-player/polygon-video-player-v1-1-7r-mod.apk",
+    "sha256": "692073980793c1d6c44eb02c720e2b6462a592a87d8e575d67d163a1dadfca48",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "2104",
+  "upstream": null,
+  "packageName": "com.fallenbug.circuitsimulator",
+  "name": "VoltSim",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.fallenbug.circuitsimulator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "0.2.16",
+    "versionCode": 55,
+    "releaseTag": "v0.2.16"
+  },
+  "source": {
+    "repo": "apkvision/voltsim-circuit-simulator-124549",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/voltsim-circuit-simulator/voltsim-v0-2-16-mod-apkvision.apk",
+    "sha256": "77e02bdcdde01850225bf6b2c5c06e98da7f418be895d700c426f29ed24f6ad2",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

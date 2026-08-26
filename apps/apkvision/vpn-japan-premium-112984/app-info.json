@@ -1,0 +1,41 @@
+{
+  "id": "2109",
+  "upstream": null,
+  "packageName": "vpn.japan",
+  "name": "VPN Japan",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "vpn.japan.SERVICE"
+  ],
+  "version": {
+    "versionName": "1.100",
+    "versionCode": 100,
+    "releaseTag": "v1.100"
+  },
+  "source": {
+    "repo": "apkvision/vpn-japan-premium-112984",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vpn-japan/vpn-japan-v1.100-mod-apkvision.apk",
+    "sha256": "a9dfb52e7084a0e35b24c3a3c9ca6629d3160a318c8853b1dc0cc6ead6bf931e",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "1968",
+  "upstream": null,
+  "packageName": "one4studio.iconpack.lenaadaptive",
+  "name": "Lena Adaptive",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.4.5",
+    "versionCode": 104050,
+    "releaseTag": "v1.4.5"
+  },
+  "source": {
+    "repo": "apkvision/lena-adaptive-icon-pack-113125",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/lena-adaptive-icon-pack/lena-adaptive-icon-pack-v1.4.5-full-apkvision.apk",
+    "sha256": "5a50a1ab05a43c40e4325d1fbcc9efcc64562f38262e97ca802ead5f53b73a50",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

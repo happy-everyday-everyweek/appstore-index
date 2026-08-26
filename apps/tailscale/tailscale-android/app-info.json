@@ -30,7 +30,7 @@
     "license": "BSD-3-Clause",
     "apkUrl": "https://github.com/tailscale/tailscale-android/releases/download/1.102.3-t9329c3677-gf19372863/tailscale-android-universal-1.102.3.apk",
     "sha256": "ce01f538379768144d7e3f31706a8eb6038fcaae6aa3c410a83bc56113ac0763",
-    "stars": 2448
+    "stars": 2463
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",

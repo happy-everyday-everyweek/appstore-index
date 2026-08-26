@@ -1,0 +1,50 @@
+{
+  "id": "1958",
+  "upstream": null,
+  "packageName": "com.dci.dev.ioswidgets",
+  "name": "iOS Widgets",
+  "icon": "icon.png",
+  "permissions": [
+    "android.Manifest.permission.MEDIA_CONTENT_CONTROL",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.ACTION_MANAGE_OVERLAY_PERMISSION",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FLASHLIGHT",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_CALENDAR",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.alarm.permission.SET_ALARM",
+    "com.dci.dev.ioswidgets.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.gms.permission.ACTIVITY_RECOGNITION"
+  ],
+  "version": {
+    "versionName": "2.698",
+    "versionCode": 698,
+    "releaseTag": "v2.698"
+  },
+  "source": {
+    "repo": "apkvision/ios-widgets-premium-98678",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ios-widgets/ios-widgets-v2-698-mod.apk",
+    "sha256": "577298a4eeb56473aa887b234ac4bc441b3300ac20f2697906ca48b293f27536",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

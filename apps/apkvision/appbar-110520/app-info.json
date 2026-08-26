@@ -1,0 +1,28 @@
+{
+  "id": "1885",
+  "upstream": null,
+  "packageName": "rk.android.app.appbar",
+  "name": "AppBar",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.QUERY_ALL_PACKAGES"
+  ],
+  "version": {
+    "versionName": "1.4.1",
+    "versionCode": 7,
+    "releaseTag": "v1.4.1"
+  },
+  "source": {
+    "repo": "apkvision/appbar-110520",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/appbar/appbar-v1-4-1-mod.apk",
+    "sha256": "c63b0e1a3ed2916c806513a0a3502548f4791f9054cd241118412077248a83ea",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

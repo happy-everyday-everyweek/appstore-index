@@ -1,0 +1,40 @@
+{
+  "id": "1949",
+  "upstream": null,
+  "packageName": "com.jetkite.gemmy",
+  "name": "Gemmy AI",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.jetkite.gemmy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.2.9",
+    "versionCode": 27,
+    "releaseTag": "v1.2.9"
+  },
+  "source": {
+    "repo": "apkvision/gemmy-ai-chat-assistant-124798",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/gemmy-ai/gemmy-ai-v1-2-9-mod-apkvision.apk",
+    "sha256": "66e74d6d58ff7e8905e2de598020c08bc68eeae62a12de259d95443319688d13",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

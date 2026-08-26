@@ -1,0 +1,43 @@
+{
+  "id": "1898",
+  "upstream": null,
+  "packageName": "com.eatos.anux.black",
+  "name": "Bastis Black",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.eatos.anux.black.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "6.7",
+    "versionCode": 67,
+    "releaseTag": "v6.7"
+  },
+  "source": {
+    "repo": "apkvision/bastis-black-icon-pack-120691",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/bastis-black-icon-pack/bastis-black-v6-7-mod-apkvision.apk",
+    "sha256": "f61f90ce3f4f02b3f9e8714a0f6c5590f740091c7b3cc567771136fc6001f235",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

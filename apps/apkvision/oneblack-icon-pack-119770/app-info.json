@@ -1,0 +1,43 @@
+{
+  "id": "2018",
+  "upstream": null,
+  "packageName": "com.eatos.sxux.black.colors",
+  "name": "OneBlack",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.eatos.sxux.black.colors.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "6.6",
+    "versionCode": 60,
+    "releaseTag": "v6.6"
+  },
+  "source": {
+    "repo": "apkvision/oneblack-icon-pack-119770",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/oneblack-icon-pack/oneblack-icon-pack-6-6-mod-apkvision.apk",
+    "sha256": "20b41c8895b02180ddaefc142d5fc8a985dcfcea9d049d281fcc35c5d8ef0afd",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

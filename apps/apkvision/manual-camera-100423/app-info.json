@@ -1,0 +1,33 @@
+{
+  "id": "1978",
+  "upstream": null,
+  "packageName": "pl.vipek.camera2",
+  "name": "Manual Camera",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.CAMERA",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "3.8",
+    "versionCode": 33,
+    "releaseTag": "v3.8"
+  },
+  "source": {
+    "repo": "apkvision/manual-camera-100423",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/manual-camera/manual-camera-v3-8-mod.apk",
+    "sha256": "63ebd4321e95c7ff02dfb168b9d8ffc7d407baddd1d9506551d5c43a948d8732",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

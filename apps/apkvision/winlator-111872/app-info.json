@@ -1,0 +1,34 @@
+{
+  "id": "2127",
+  "upstream": null,
+  "packageName": "com.winlator",
+  "name": "Winlator",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "11.0",
+    "versionCode": 26,
+    "releaseTag": "v11.0"
+  },
+  "source": {
+    "repo": "apkvision/winlator-111872",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/winlator/Winlator-v11.0-full-apkvision.apk",
+    "sha256": "970cf2710e4771e8589f0ce66974cf16ffd741b6381707fd3dccccbb1f3d061b",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

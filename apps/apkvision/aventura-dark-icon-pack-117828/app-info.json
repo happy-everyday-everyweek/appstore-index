@@ -1,0 +1,41 @@
+{
+  "id": "1892",
+  "upstream": null,
+  "packageName": "com.themesonfire.iconpack.aventura_dark.paid",
+  "name": "Aventura Dark",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.themesonfire.iconpack.aventura_dark.paid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.0.4",
+    "versionCode": 1040,
+    "releaseTag": "v1.0.4"
+  },
+  "source": {
+    "repo": "apkvision/aventura-dark-icon-pack-117828",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/aventura-dark-icon-pack/aventura-dark-icon-pack-v1-0-4-mod-apkvision.apk",
+    "sha256": "d421c1d1cc9e80039091bb1150af54f2fd7e42b048bf3e05e370978a8a9ba641",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "1888",
+  "upstream": null,
+  "packageName": "com.arrowkwgt.pack",
+  "name": "Arrow KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.0.2",
+    "versionCode": 102,
+    "releaseTag": "v1.0.2"
+  },
+  "source": {
+    "repo": "apkvision/arrow-kwgt-111539",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/arrow-kwgt/arrow-kwgt-v1-0-2-mod.apk",
+    "sha256": "a1eb066f0aa083f821c94111bf3ed13c3c19c48653df7cb6d7d58d9d17ffb90b",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

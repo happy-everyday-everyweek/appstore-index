@@ -1,0 +1,26 @@
+{
+  "id": "2048",
+  "upstream": null,
+  "packageName": "com.poweramp.v3.proxima",
+  "name": "Proxima",
+  "icon": "icon.png",
+  "permissions": [],
+  "version": {
+    "versionName": "1.3",
+    "versionCode": 4,
+    "releaseTag": "v1.3"
+  },
+  "source": {
+    "repo": "apkvision/proxima-poweramp-skin-120009",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/proxima-poweramp-skin/proxima-poweramp-skin-v1-3-mod-apkvision.apk",
+    "sha256": "fa591571fd403417e9a2a1e54037725c4b8898b1aa8ee02a7b2c1f5ce1d5089d",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

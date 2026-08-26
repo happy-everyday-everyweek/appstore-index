@@ -1,0 +1,41 @@
+{
+  "id": "1905",
+  "upstream": null,
+  "packageName": "com.creativepixels.blaze.backless.iconpack.app",
+  "name": "Blaze Backless",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "2.0.1",
+    "versionCode": 201,
+    "releaseTag": "v2.0.1"
+  },
+  "source": {
+    "repo": "apkvision/blaze-backless-icon-pack-104845",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/blaze-backless-icon-pack/blaze-backless-icon-pack-v2-0-1-mod.apk",
+    "sha256": "22a77e06a9198899f5d18c1a0017602676deb9bc987e98712d14dcabf2307d18",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1934",
+  "upstream": null,
+  "packageName": "com.damonsx2.playstation2",
+  "name": "DamonSX2 Premium",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.VIBRATE"
+  ],
+  "version": {
+    "versionName": "114",
+    "versionCode": 114,
+    "releaseTag": "v114"
+  },
+  "source": {
+    "repo": "apkvision/damonsx2-emulator-premium-127652",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/damonsx2-emulator-premium/DamonSX2-Premium-v114-full-apkvision.apk",
+    "sha256": "dc1a2935c58a2ac435ebca2a209bbf7981d75cd44e32d851258f35fa72705c5f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

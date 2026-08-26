@@ -1,0 +1,43 @@
+{
+  "id": "1971",
+  "upstream": null,
+  "packageName": "com.natewren.linesdark",
+  "name": "Lines Dark Pro",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BATTERY_STATS",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.natewren.linesdark.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.natewren.linesdark.GI3_E97F0800__FE8AC018_D1FA_4683_98C9_02D777CD118B__INTERNAL_BROADCAST"
+  ],
+  "version": {
+    "versionName": "3.6.1",
+    "versionCode": 361,
+    "releaseTag": "v3.6.1"
+  },
+  "source": {
+    "repo": "apkvision/lines-dark-pro-icon-pack-124983",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/lines-dark-pro-icon-pack/lines-dark-pro-v3-6-1-mod-apkvision.apk",
+    "sha256": "a110cf1a6b2fed18a7db14282d6cfc43d14b67fc7b3b88a556cdb4f94f820d8e",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

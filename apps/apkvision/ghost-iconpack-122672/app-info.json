@@ -1,0 +1,43 @@
+{
+  "id": "1951",
+  "upstream": null,
+  "packageName": "com.jndapp.ghost.glyph.iconpack",
+  "name": "Ghost",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.jndapp.ghost.glyph.iconpack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "3.8",
+    "versionCode": 29,
+    "releaseTag": "v3.8"
+  },
+  "source": {
+    "repo": "apkvision/ghost-iconpack-122672",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ghost-iconpack/ghost-iconpack-v3-8-mod-apkvision.apk",
+    "sha256": "e55cab5bd06ba510d3e2041fd931ee43b62560772dbda445b0b4f959d085b371",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

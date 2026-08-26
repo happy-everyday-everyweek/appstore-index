@@ -1,0 +1,29 @@
+{
+  "id": "2005",
+  "upstream": null,
+  "packageName": "xyz.aethersx2.android",
+  "name": "NetherSX2",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE"
+  ],
+  "version": {
+    "versionName": "v1.5-4248",
+    "versionCode": 15210,
+    "releaseTag": "v1.5-4248"
+  },
+  "source": {
+    "repo": "apkvision/nethersx2-112876",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/nethersx2/NetherSX2-v1.5-4248-apkvision.apk",
+    "sha256": "cffe4bc962bdb87ebc74ec5dd6cf058c8e5c364cee93909c2943d12799e69ccf",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

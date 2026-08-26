@@ -1,0 +1,39 @@
+{
+  "id": "1946",
+  "upstream": null,
+  "packageName": "com.realplaystudio.gamepadcenter",
+  "name": "GAMEPAD CENTER",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.google.android.providers.gsf.permission.READ_GSERVICES",
+    "com.realplaystudio.gamepadcenter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "4.0",
+    "versionCode": 40,
+    "releaseTag": "v4.0"
+  },
+  "source": {
+    "repo": "apkvision/gamepad-center-123353",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/gamepad-center/gamepad-center-v4-0-mod-apkvision.apk",
+    "sha256": "38326f97288963f274383a31bbf287a8107664173958734a616b9769f7954b69",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

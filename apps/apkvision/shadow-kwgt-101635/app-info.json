@@ -1,0 +1,41 @@
+{
+  "id": "2067",
+  "upstream": null,
+  "packageName": "shadowkwgt.kustom.pack",
+  "name": "Shadow Kwgt",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "4.0",
+    "versionCode": 2109033,
+    "releaseTag": "v4.0"
+  },
+  "source": {
+    "repo": "apkvision/shadow-kwgt-101635",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/shadow-kwgt/shadow-kwgt-v4-0-mod.apk",
+    "sha256": "7a65a9f79483a4ebb09d2eefca173095b6052f21333f975abfaf727c314942d4",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

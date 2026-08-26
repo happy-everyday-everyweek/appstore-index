@@ -1,0 +1,31 @@
+{
+  "id": "2047",
+  "upstream": null,
+  "packageName": "com.drsants.eggproject",
+  "name": "Themer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_SUPERUSER",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "com.android.SYSTEM_ALERT_WINDOW"
+  ],
+  "version": {
+    "versionName": "1.1",
+    "versionCode": 142,
+    "releaseTag": "v1.1"
+  },
+  "source": {
+    "repo": "apkvision/project-themer-98598",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/project-themer/project-themer-v1-1-mod.apk",
+    "sha256": "d1977f41d8a275b41de03ea7698c17cb010b813fe99a426380fa3398b800be63",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

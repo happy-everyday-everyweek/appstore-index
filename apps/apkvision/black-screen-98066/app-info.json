@@ -1,0 +1,34 @@
+{
+  "id": "1904",
+  "upstream": null,
+  "packageName": "io.japp.blackscreen",
+  "name": "Black Screen",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.2.5",
+    "versionCode": 17,
+    "releaseTag": "v1.2.5"
+  },
+  "source": {
+    "repo": "apkvision/black-screen-98066",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/black-screen/black-screen-v1-2-5-mod.apk",
+    "sha256": "71768b72625f90e2a1bf332698a973f05669021c3cd771a4bb7b873687720f7d",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

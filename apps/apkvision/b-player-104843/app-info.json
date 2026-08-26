@@ -1,0 +1,37 @@
+{
+  "id": "1895",
+  "upstream": null,
+  "packageName": "com.ae.video.bplayer",
+  "name": "BPlayer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "1.1.9",
+    "versionCode": 20,
+    "releaseTag": "v1.1.9"
+  },
+  "source": {
+    "repo": "apkvision/b-player-104843",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/b-player/b-player-v1-1-9-mod.apk",
+    "sha256": "b7a23c87617ce3cb2e673c3723b61a7086fb7e35e5d24702cca6e890719416eb",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

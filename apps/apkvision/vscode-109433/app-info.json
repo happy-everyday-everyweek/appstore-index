@@ -1,0 +1,36 @@
+{
+  "id": "2115",
+  "upstream": null,
+  "packageName": "dev.environment.VScode_Paid",
+  "name": "VScode",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "1.0.4",
+    "versionCode": 12268326,
+    "releaseTag": "v1.0.4"
+  },
+  "source": {
+    "repo": "apkvision/vscode-109433",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vscode/vscode-v1-0-4-mod.apk",
+    "sha256": "5bafe846ccd7731535af1649f446d5ed8029d8c9498007be99cb1eeb2b1d952b",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "1948",
+  "upstream": null,
+  "packageName": "com.geacron",
+  "name": "GeaCron",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.geacron.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "55.0",
+    "versionCode": 55,
+    "releaseTag": "v55.0"
+  },
+  "source": {
+    "repo": "apkvision/geacron-history-maps-118576",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/geacron-history-maps/geacron-history-maps-v55-0-mod-apkvision.apk",
+    "sha256": "33a960da1a04aa2623570b6552f5844b6000911fc5af0ed0d30dd64f18fec91a",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

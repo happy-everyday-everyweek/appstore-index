@@ -1,0 +1,41 @@
+{
+  "id": "2125",
+  "upstream": null,
+  "packageName": "niagarawidgetsforkwgt.asdlor.app",
+  "name": "Niagara Widgets For KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.0.4",
+    "versionCode": 104,
+    "releaseTag": "v1.0.4"
+  },
+  "source": {
+    "repo": "apkvision/widgets-for-niagara-launcher-95719",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/widgets-for-niagara-launcher/widgets-for-niagara-launcher-v1-0-4-mod.apk",
+    "sha256": "2113734203a656393a2bfe8220d1c31b6ce84745351a12c709b78cec8e4bf3e7",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

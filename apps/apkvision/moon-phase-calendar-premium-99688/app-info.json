@@ -1,0 +1,39 @@
+{
+  "id": "1995",
+  "upstream": null,
+  "packageName": "by.olion.Moon",
+  "name": "MoonX",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "2.2.5",
+    "versionCode": 78,
+    "releaseTag": "v2.2.5"
+  },
+  "source": {
+    "repo": "apkvision/moon-phase-calendar-premium-99688",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/moon-phase-calendar-moonx/moon-phase-calendar-moonx-v2-2-5-mod.apk",
+    "sha256": "15e83896abaf3e6d65e3e13b70a8d32e7846559d23cbf298d96f2d01236d06e2",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

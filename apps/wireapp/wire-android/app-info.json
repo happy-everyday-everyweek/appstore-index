@@ -45,7 +45,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/wireapp/wire-android/releases/download/v4.32.0/com.wire.android-v4.32.0-26765-prod-compatrelease.apk",
     "sha256": "be280c52bb920ebf566d6929ae99faf8870e6c53ff9f7d1cd2116297c4c5a625",
-    "stars": 254
+    "stars": 253
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",

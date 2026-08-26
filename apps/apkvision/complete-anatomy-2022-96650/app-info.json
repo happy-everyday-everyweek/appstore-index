@@ -1,0 +1,39 @@
+{
+  "id": "1925",
+  "upstream": null,
+  "packageName": "com.a3d4medical.completeanatomy",
+  "name": "Complete Anatomy 2022",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "8.5.0",
+    "versionCode": 15177,
+    "releaseTag": "v8.5.0"
+  },
+  "source": {
+    "repo": "apkvision/complete-anatomy-2022-96650",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/complete-anatomy-2022/complete-anatomy-2022-v8-5-0-mod.apk",
+    "sha256": "9e767c66b3d27e531e44b650fe279e2c8cc7bd397968303ca663c8fb4bbac738",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

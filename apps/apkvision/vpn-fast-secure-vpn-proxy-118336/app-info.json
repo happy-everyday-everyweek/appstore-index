@@ -1,0 +1,48 @@
+{
+  "id": "2106",
+  "upstream": null,
+  "packageName": "com.optimizer.booster.fast.speedy.phone.smooth",
+  "name": "Super VPN",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REORDER_TASKS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.huawei.permission.external_app_settings.USE_COMPONENT",
+    "com.optimizer.booster.fast.speedy.phone.smooth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "oppo.permission.OPPO_COMPONENT_SAFE"
+  ],
+  "version": {
+    "versionName": "3.0.3",
+    "versionCode": 303,
+    "releaseTag": "v3.0.3"
+  },
+  "source": {
+    "repo": "apkvision/vpn-fast-secure-vpn-proxy-118336",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vpn-fast/vpn-fast-secure-vpn-proxy-v3-0-3-mod-apkvision.apk",
+    "sha256": "2ad46344a55e4c73f70db4a709b65d5699b0df6397c43afc6f5acf61bdb63c20",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

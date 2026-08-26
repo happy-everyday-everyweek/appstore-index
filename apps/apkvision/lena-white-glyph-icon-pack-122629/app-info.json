@@ -1,0 +1,38 @@
+{
+  "id": "1969",
+  "upstream": null,
+  "packageName": "one4studio.iconpack.lenawhite",
+  "name": "Lena White",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS"
+  ],
+  "version": {
+    "versionName": "1.6.9",
+    "versionCode": 106090,
+    "releaseTag": "v1.6.9"
+  },
+  "source": {
+    "repo": "apkvision/lena-white-glyph-icon-pack-122629",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/lena-white-glyph-icon-pack/lena-white-v1-6-9-mod-apkvision.apk",
+    "sha256": "154590013d2fa12f60365175ba1d29c48a6cf8428ae58902889e17c5993cc350",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

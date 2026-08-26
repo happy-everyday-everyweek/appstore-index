@@ -1,0 +1,39 @@
+{
+  "id": "2066",
+  "upstream": null,
+  "packageName": "com.soomapps.screenmirroring",
+  "name": "Castto - Screen Mirroring",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.soomapps.screenmirroring.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "disabled_android.permission.RECEIVE_BOOT_COMPLETED",
+    "disabled_com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "2.7.0",
+    "versionCode": 92,
+    "releaseTag": "v2.7.0"
+  },
+  "source": {
+    "repo": "apkvision/screen-mirroring-castto-125453",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/screen-mirroring-castto/screen-mirroring-castto-v2-7-0-mod-apkvision.apk",
+    "sha256": "a3a2a8b9b91fdb4de1cb3848ea99e928710860166262e478899f7668c81e83b6",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "2080",
+  "upstream": null,
+  "packageName": "com.freecloud.StackTheStates",
+  "name": "Stack the States",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "version": {
+    "versionName": "3.1",
+    "versionCode": 310,
+    "releaseTag": "v3.1"
+  },
+  "source": {
+    "repo": "apkvision/stack-the-states-124378",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/stack-the-states/Stack-the-States-v3.1-full-apkvision.apk",
+    "sha256": "1ac7f43360409f8fd6400f439a5ee06e96770a18645b4d7d93b6a70f071126fb",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

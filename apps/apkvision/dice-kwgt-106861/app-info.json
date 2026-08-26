@@ -1,0 +1,41 @@
+{
+  "id": "1937",
+  "upstream": null,
+  "packageName": "com.dicekwgt.pack",
+  "name": "Dice KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.1.3",
+    "versionCode": 113,
+    "releaseTag": "v1.1.3"
+  },
+  "source": {
+    "repo": "apkvision/dice-kwgt-106861",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/dice-kwgt/dice-kwgt-v1-1-3-mod.apk",
+    "sha256": "47755476d18ee1700f9c31e51c694cd4ef38e471ab8a99e12e2ca221553891e9",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "1961",
+  "upstream": null,
+  "packageName": "com.starii.kapkap",
+  "name": "KapKap",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.AUTHENTICATE_ACCOUNTS",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_PACKAGE_SIZE",
+    "android.permission.INTERNET",
+    "android.permission.PERMISSIONS_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.asus.msa.SupplementaryDID.ACCESS",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.starii.kapkap.MT_ACCOUNT_LOGIN"
+  ],
+  "version": {
+    "versionName": "1.15.0",
+    "versionCode": 1015000,
+    "releaseTag": "v1.15.0"
+  },
+  "source": {
+    "repo": "apkvision/kapkap-ai-captions-125699",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/kapkap-ai-captions/kapkap-ai-captions-v1-15-0-mod-apkvision.apk",
+    "sha256": "a6b4769a8907768edb1ece287f36cf41176a4a51bc2e5401a0602deb487e7970",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

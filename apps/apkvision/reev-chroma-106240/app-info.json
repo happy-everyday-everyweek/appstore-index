@@ -1,0 +1,41 @@
+{
+  "id": "2053",
+  "upstream": null,
+  "packageName": "com.reevchroma.grabsterstudios",
+  "name": "Reev Chroma",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.0.3",
+    "versionCode": 103,
+    "releaseTag": "v1.0.3"
+  },
+  "source": {
+    "repo": "apkvision/reev-chroma-106240",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/reev-chroma/reev-chroma-v1-0-3-mod.apk",
+    "sha256": "b1da8ce7c6ee193d3403256be8a9ad62ce34f83c67a614e752a886ac60eadd05",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

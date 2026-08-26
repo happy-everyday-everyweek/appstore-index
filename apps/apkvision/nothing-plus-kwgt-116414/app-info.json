@@ -1,0 +1,41 @@
+{
+  "id": "2011",
+  "upstream": null,
+  "packageName": "com.nothingpluskwgt.pack",
+  "name": "Nothing Plus KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.1.0",
+    "versionCode": 110,
+    "releaseTag": "v1.1.0"
+  },
+  "source": {
+    "repo": "apkvision/nothing-plus-kwgt-116414",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/nothing-plus-kwgt/nothing-plus-kwgt-v1-1-0-mod-apkvision.apk",
+    "sha256": "ac4a23060e5856a712f68c6f7f44c0fd9c1d3b564e4b47a28d3cb7be0cd25086",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

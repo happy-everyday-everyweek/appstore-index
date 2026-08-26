@@ -1,0 +1,35 @@
+{
+  "id": "2037",
+  "upstream": null,
+  "packageName": "pixelinspired.wigebox.kwgt",
+  "name": "PixDots KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "pixelinspired.wigebox.kwgt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "11.0.1",
+    "versionCode": 1101,
+    "releaseTag": "v11.0.1"
+  },
+  "source": {
+    "repo": "apkvision/pixdots-kwgt-118134",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/pixdots-kwgt/pixdots-kwgt-v11-0-1-mod-apkvision.apk",
+    "sha256": "c48a26b954bad65e44feb62e778dd7bc1b508f427abeed383a854eb28de0ab40",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

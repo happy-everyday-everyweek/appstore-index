@@ -1,0 +1,39 @@
+{
+  "id": "1962",
+  "upstream": null,
+  "packageName": "secure.unblock.unlimited.proxy.snap.hotspot.shield",
+  "name": "Kiwi VPN",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "56.20.12",
+    "versionCode": 56,
+    "releaseTag": "v56.20.12"
+  },
+  "source": {
+    "repo": "apkvision/kiwi-vpn-proxy-123344",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/kiwi-vpn-proxy/kiwi-vpn-proxy-v56-20-12-mod-apkvision.apk",
+    "sha256": "ce5f2173695547a634c71440960f956c6d60520183e17afa8c64fcbc48a666dc",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

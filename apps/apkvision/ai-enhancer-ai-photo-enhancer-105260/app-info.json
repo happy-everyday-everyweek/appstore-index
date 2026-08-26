@@ -1,0 +1,37 @@
+{
+  "id": "1871",
+  "upstream": null,
+  "packageName": "ai.photo.enhancer.photoclear",
+  "name": "AI Photo Enhancer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.0.9.25",
+    "versionCode": 25,
+    "releaseTag": "v1.0.9.25"
+  },
+  "source": {
+    "repo": "apkvision/ai-enhancer-ai-photo-enhancer-105260",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ai-enhancer-ai-photo-enhancer/ai-enhancer-ai-photo-enhancer-v1-0-9-25-mod.apk",
+    "sha256": "428e6bb408ce14c7a13ce0ba09c6cbfe665ffc12eca2490e9c17ab85b08899f7",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

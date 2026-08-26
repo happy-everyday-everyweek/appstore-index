@@ -1,0 +1,40 @@
+{
+  "id": "1976",
+  "upstream": null,
+  "packageName": "com.lumina.wallpapers",
+  "name": "Lumina Walls",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.providers.gsf.permission.READ_GSERVICES",
+    "com.lumina.wallpapers.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.0.0.7",
+    "versionCode": 1007,
+    "releaseTag": "v1.0.0.7"
+  },
+  "source": {
+    "repo": "apkvision/lumina-walls-120305",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/lumina-walls/lumina-walls-v1-0-0-7-mod-apkvision.apk",
+    "sha256": "dc6f38fc885d29e83dabe85396cc4ac4afc48cf1b9a109ac32ed83e58bc40d2a",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

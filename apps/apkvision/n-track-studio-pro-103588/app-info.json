@@ -1,0 +1,44 @@
+{
+  "id": "2003",
+  "upstream": null,
+  "packageName": "com.ntrack.studio.demo",
+  "name": "n-Track Studio",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.ntrack.songtree.permission.C2D_MESSAGE"
+  ],
+  "version": {
+    "versionName": "9.7.96",
+    "versionCode": 900706448,
+    "releaseTag": "v9.7.96"
+  },
+  "source": {
+    "repo": "apkvision/n-track-studio-pro-103588",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/n-track-studio-pro/n-track-studio-pro-v9-7-96-mod.apk",
+    "sha256": "94ff10319a6b5f43a805eda6f33961971b7261dd5e948fa7be79ec6fe96b5691",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

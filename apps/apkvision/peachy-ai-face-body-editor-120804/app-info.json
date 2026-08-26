@@ -1,0 +1,44 @@
+{
+  "id": "2030",
+  "upstream": null,
+  "packageName": "peachy.bodyeditor.faceapp",
+  "name": "Peachy",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.apps.photos.permission.GOOGLE_PHOTOS",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.google.android.providers.gsf.permission.READ_GSERVICES",
+    "peachy.bodyeditor.faceapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.060.20",
+    "versionCode": 20,
+    "releaseTag": "v1.060.20"
+  },
+  "source": {
+    "repo": "apkvision/peachy-ai-face-body-editor-120804",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/peachy/peachy-v1-060-20-mod-apkvision.apk",
+    "sha256": "7e19359a65c8bd43bff6322634e0cab179a696bd483613ec8fa757c5cfa8da82",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

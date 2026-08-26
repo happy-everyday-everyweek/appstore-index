@@ -1,0 +1,39 @@
+{
+  "id": "2013",
+  "upstream": null,
+  "packageName": "com.acb.nvplayer",
+  "name": "NV Player",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_MEDIA_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.acb.nvplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "1.0.7",
+    "versionCode": 8,
+    "releaseTag": "v1.0.7"
+  },
+  "source": {
+    "repo": "apkvision/nv-player-113581",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/nv-player/nv-player-v1.0.7-mod-apkvision.apk",
+    "sha256": "333e7fc9c63834fbaf3b2d269e07dc63ff318ec144c885b3c81468d165e04694",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

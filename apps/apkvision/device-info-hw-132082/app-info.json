@@ -1,0 +1,37 @@
+{
+  "id": "1936",
+  "upstream": null,
+  "packageName": "ru.andr7e.deviceinfohw.pro",
+  "name": "Device Info HW+",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.CAMERA",
+    "android.permission.HIGH_SAMPLING_RATE_SENSORS",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.providers.gsf.permission.READ_GSERVICES",
+    "ru.andr7e.deviceinfohw.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "5.26.0",
+    "versionCode": 237,
+    "releaseTag": "v5.26.0"
+  },
+  "source": {
+    "repo": "apkvision/device-info-hw-132082",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/device-info-hw/device-info-hw-5.26.0-unlocked-apkvision.apk",
+    "sha256": "62daccb9ffb0f7ce1bdb587be4796bf2e6765999becc5ee1f8da9b5b7155837f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

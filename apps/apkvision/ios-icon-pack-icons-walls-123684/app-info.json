@@ -1,0 +1,43 @@
+{
+  "id": "1956",
+  "upstream": null,
+  "packageName": "dragon.kimono.iosicons",
+  "name": "IOS Icons",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "dragon.kimono.iosicons.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.4.5",
+    "versionCode": 245,
+    "releaseTag": "v2.4.5"
+  },
+  "source": {
+    "repo": "apkvision/ios-icon-pack-icons-walls-123684",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ios-icon-pack-icons-walls/ios-icon-pack-v2-4-5-apkvision.apk",
+    "sha256": "968b992f19267b38117c424a9c8998bb82cd9746e2ddafdcd35cef81825d37bd",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

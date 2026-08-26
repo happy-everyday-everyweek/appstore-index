@@ -1,0 +1,28 @@
+{
+  "id": "2096",
+  "upstream": null,
+  "packageName": "org.emunix.unipatcher",
+  "name": "UniPatcher",
+  "icon": "icon.png",
+  "permissions": [
+    "com.android.vending.BILLING"
+  ],
+  "version": {
+    "versionName": "0.17.2",
+    "versionCode": 170201,
+    "releaseTag": "v0.17.2"
+  },
+  "source": {
+    "repo": "apkvision/unipatcher-112878",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/unipatcher/unipatcher-v0.17.2-apkvision.apk",
+    "sha256": "664bd47bb2eeee32bde3c2b5a3c2b3a19c58406389066672b79e75dc97d1b1f4",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

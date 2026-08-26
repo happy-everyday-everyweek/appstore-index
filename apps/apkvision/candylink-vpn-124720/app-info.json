@@ -1,0 +1,45 @@
+{
+  "id": "1911",
+  "upstream": null,
+  "packageName": "com.candylink.openvpn",
+  "name": "CandyLink VPN",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.candylink.openvpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "disabled_android.permission.ACCESS_ADSERVICES_AD_ID",
+    "disabled_android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "disabled_android.permission.ACCESS_ADSERVICES_TOPICS",
+    "disabled_android.permission.RECEIVE_BOOT_COMPLETED",
+    "disabled_com.android.vending.BILLING",
+    "disabled_com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "4.0.2",
+    "versionCode": 289,
+    "releaseTag": "v4.0.2"
+  },
+  "source": {
+    "repo": "apkvision/candylink-vpn-124720",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/candylink-vpn/candylink-vpn-v4-0-2-mod-apkvision.apk",
+    "sha256": "0039d92adaa744bea5f0247feb3ec58d8efb8a20eb5a6c4cc6a2a49315eeac3b",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

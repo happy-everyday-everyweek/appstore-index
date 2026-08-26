@@ -1,0 +1,31 @@
+{
+  "id": "2094",
+  "upstream": null,
+  "packageName": "vladyslavpohrebniakov.txtpadplus",
+  "name": "txtpad+",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "3.2.7 plus",
+    "versionCode": 3207,
+    "releaseTag": "v3.2.7 plus"
+  },
+  "source": {
+    "repo": "apkvision/txtpad-110504",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/txtpad/txtpad-v3-2-7-plus-mod.apk",
+    "sha256": "a5686e09549411e6fbc81a70050fc5e020dac37de0cad9df5b0e19d31c1d66ed",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

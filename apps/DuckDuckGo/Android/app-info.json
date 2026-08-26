@@ -33,7 +33,7 @@
   ],
   "version": {
     "versionName": "5.294.0",
-    "versionCode": 0,
+    "versionCode": 52940000,
     "releaseTag": "5.294.0"
   },
   "source": {
@@ -41,12 +41,12 @@
     "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/duckduckgo/Android/releases/download/5.294.0/duckduckgo-5.294.0-play-release.apk",
-    "sha256": "待重采",
-    "stars": 4796
+    "sha256": "2f403acaee41c78ac8c08b562e318181492eba32c6b0456fb6f357145cbe84b2",
+    "stars": 4800
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "D",
   "generatedAt": "2026-08-25T21:22:26Z",
-  "generatedBy": "workflow-5"
+  "generatedBy": "workflow-2"
 }

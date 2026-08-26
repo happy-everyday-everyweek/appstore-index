@@ -1,0 +1,41 @@
+{
+  "id": "2057",
+  "upstream": null,
+  "packageName": "com.retricon.iconpack",
+  "name": "Retricon",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.retricon.iconpack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.5",
+    "versionCode": 6,
+    "releaseTag": "v1.5"
+  },
+  "source": {
+    "repo": "apkvision/retricon-icon-pack-126013",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/retricon-icon-pack/retricon-icon-pack-v1-5-mod-apkvision.apk",
+    "sha256": "6274377be430173960e7b195ac2e532c226e909c10b75bf0b567741073009c38",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "1987",
+  "upstream": null,
+  "packageName": "com.minma.red",
+  "name": "MinmaRed Icon Pack",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.minma.red.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.0",
+    "versionCode": 5,
+    "releaseTag": "v1.0"
+  },
+  "source": {
+    "repo": "apkvision/minmared-icon-pack-117269",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/minmared-icon-pack/minmared-icon-pack-v1.0-apkvision.apk",
+    "sha256": "859a7f6f74b7aecaa3148147d67b3cd6957dd0d68afca34070d7412867333f3c",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

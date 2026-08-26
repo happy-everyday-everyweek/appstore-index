@@ -1,0 +1,41 @@
+{
+  "id": "2069",
+  "upstream": null,
+  "packageName": "sheerkwgt.kustom.pack",
+  "name": "Sheer KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "15.0",
+    "versionCode": 2288402,
+    "releaseTag": "v15.0"
+  },
+  "source": {
+    "repo": "apkvision/sheer-kwgt-112208",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/sheer-kwgt/sheer-kwgt-v15-0-mod-apkvision.org.apk",
+    "sha256": "77af516d8d4d53b418773f40547ccb136d3d8783855c7d21f25db077c961b2ef",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

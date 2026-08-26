@@ -1,0 +1,44 @@
+{
+  "id": "1859",
+  "upstream": null,
+  "packageName": "com.nutuvam.gfxngamebooster",
+  "name": "500X Game Booster Pro",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.ACTION_MANAGE_OVERLAY_PERMISSION",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.KILL_BACKGROUND_PROCESSES",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "1.1",
+    "versionCode": 4,
+    "releaseTag": "v1.1"
+  },
+  "source": {
+    "repo": "apkvision/500x-game-booster-and-gfx-pro-107859",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/500x-game-booster-and-gfx-pro/500x-v1-1-mod.apk",
+    "sha256": "50a26d27c1d2e9f556f038336b47b7898fc36ba4a94bd7fc6c99ee3bb058fe31",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

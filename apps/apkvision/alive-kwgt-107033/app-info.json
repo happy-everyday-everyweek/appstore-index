@@ -1,0 +1,41 @@
+{
+  "id": "1880",
+  "upstream": null,
+  "packageName": "com.alive.kwgt.app",
+  "name": "Alive KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.0.3",
+    "versionCode": 103,
+    "releaseTag": "v1.0.3"
+  },
+  "source": {
+    "repo": "apkvision/alive-kwgt-107033",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/alive-kwgt/alive-kwgt-v1-0-3-mod.apk",
+    "sha256": "361153a33dd29ca42db478de6fb97f65efbcc27d8a4b0368722e6b84da32a963",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

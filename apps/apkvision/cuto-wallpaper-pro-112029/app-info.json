@@ -1,0 +1,39 @@
+{
+  "id": "1933",
+  "upstream": null,
+  "packageName": "com.sspai.cuto.android",
+  "name": "Cuto",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.sspai.cuto.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.4.6",
+    "versionCode": 1651230717,
+    "releaseTag": "v2.4.6"
+  },
+  "source": {
+    "repo": "apkvision/cuto-wallpaper-pro-112029",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/cuto-wallpaper/cuto-wallpaper-v2-4-6-mod-apkvision.org.apk",
+    "sha256": "0fc4251afd308df32651a29426d4f8bf78c5a92f184d99911b690bb07e3830be",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

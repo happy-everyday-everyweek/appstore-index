@@ -1,0 +1,28 @@
+{
+  "id": "2079",
+  "upstream": null,
+  "packageName": "com.freecloud.StackTheCountries",
+  "name": "Stack the Countries",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "version": {
+    "versionName": "3.4",
+    "versionCode": 340,
+    "releaseTag": "v3.4"
+  },
+  "source": {
+    "repo": "apkvision/stack-the-countries-124373",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/stack-the-countries/Stack-the-Countries-v3.4-full-apkvision.apk",
+    "sha256": "aab8d08364eb7bce96c9949a002fa44a6b8050787158f26ff82d6fc7ea761315",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

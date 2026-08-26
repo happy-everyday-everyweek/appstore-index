@@ -1,0 +1,30 @@
+{
+  "id": "2061",
+  "upstream": null,
+  "packageName": "radonsoft.net.rtapro",
+  "name": "RTA Pro",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "1.7",
+    "versionCode": 14,
+    "releaseTag": "v1.7"
+  },
+  "source": {
+    "repo": "apkvision/rta-pro-analyzer-95153",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/rta-pro-analyzer/rta-pro-analyzer-v1-7-mod.apk",
+    "sha256": "89ad1e1b72ce690a20928683f8a6c6cedbc5b86d691637bf98176bc26ec63924",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "2035",
+  "upstream": null,
+  "packageName": "com.pashapuma.pix.material.you.dark",
+  "name": "Pix Material You Light/Dark",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_CALENDAR",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_CALENDAR",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "app.lawnchair.lawnicons.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.pashapuma.pix.material.you.dark.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.2.Build",
+    "versionCode": 8,
+    "releaseTag": "v2.2"
+  },
+  "source": {
+    "repo": "apkvision/pix-material-you-light-dark-104532",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/pix-material-you-light-dark/pix-material-you-light-dark-v2-2-mod.apk",
+    "sha256": "2c9c28770533861bab90021916e26b3d4d04ea022c5a6b4c1d694ee162fb716a",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

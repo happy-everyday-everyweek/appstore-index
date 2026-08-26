@@ -1,0 +1,36 @@
+{
+  "id": "2044",
+  "upstream": null,
+  "packageName": "com.ppss22.emulator",
+  "name": "PPSS22 Emulator",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.gms.permission.AD_ID",
+    "com.ppss22.emulator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "409",
+    "versionCode": 409,
+    "releaseTag": "v409"
+  },
+  "source": {
+    "repo": "apkvision/ppss22-emulator-ps2-emulator-127649",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ppss22-emulator-ps2-emulator/PPSS22-Emulator-v409-full-apkvision.apk",
+    "sha256": "b04c39708820d1eb81bef996f28aaeed397be77b77d1e76f551b7a55e521e0b8",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

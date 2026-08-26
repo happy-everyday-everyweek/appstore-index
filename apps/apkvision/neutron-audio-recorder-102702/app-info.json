@@ -1,0 +1,39 @@
+{
+  "id": "2006",
+  "upstream": null,
+  "packageName": "com.neutroncode.rc",
+  "name": "Neutron Recorder",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.BLUETOOTH",
+    "android.permission.BROADCAST_STICKY",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.06.2",
+    "versionCode": 14,
+    "releaseTag": "v1.06.2"
+  },
+  "source": {
+    "repo": "apkvision/neutron-audio-recorder-102702",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/neutron-audio-recorder/neutron-audio-recorder-v1-06-2-mod.apk",
+    "sha256": "dc30a8b23fbcf18dcd514e26b5193b710d43aff30550fc7469b2d68e248c4604",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

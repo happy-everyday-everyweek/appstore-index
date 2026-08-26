@@ -1,0 +1,39 @@
+{
+  "id": "1960",
+  "upstream": null,
+  "packageName": "com.ishark.freevpn",
+  "name": "iShark",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "2.0.0",
+    "versionCode": 20000,
+    "releaseTag": "v2.0.0"
+  },
+  "source": {
+    "repo": "apkvision/isharkvpn-117879",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/isharkvpn/isharkvpn-v2-0-0-mod-apkvision.apk",
+    "sha256": "8b09eebc2b60dccbd5dad47651bc1570ce6212c202bdcc3c9e72b9e8fb30a9c6",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

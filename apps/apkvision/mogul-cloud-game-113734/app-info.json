@@ -1,0 +1,52 @@
+{
+  "id": "1992",
+  "upstream": null,
+  "packageName": "com.mogul.flutte",
+  "name": "MogulCloudGame",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.CAMERA",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FLASHLIGHT",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_TASKS",
+    "android.permission.INTERNET",
+    "android.permission.KILL_BACKGROUND_PROCESSES",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REORDER_TASKS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.mogul.flutte.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.7.6",
+    "versionCode": 120,
+    "releaseTag": "v1.7.6"
+  },
+  "source": {
+    "repo": "apkvision/mogul-cloud-game-113734",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/mogul-cloud-game/mogul-cloud-game-v1-7-6-apkvision.apk",
+    "sha256": "62aeb62834d443b9161cde522cbcb50035addbfb45f0fb819ea4744dcd95901d",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

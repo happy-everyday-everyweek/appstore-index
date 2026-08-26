@@ -1,0 +1,47 @@
+{
+  "id": "1999",
+  "upstream": null,
+  "packageName": "com.tamalbasak.musicplayer3d",
+  "name": "Music 3D",
+  "icon": "icon.png",
+  "permissions": [
+    "android.gms.permission.ACTIVITY_RECOGNITION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.NFC",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "2.0.91",
+    "versionCode": 2091,
+    "releaseTag": "v2.0.91"
+  },
+  "source": {
+    "repo": "apkvision/music-player-3d-surround-7-1-102336",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/music-player-3d-surround-7-1/music-player-3d-v2-0-91-mod.apk",
+    "sha256": "60fdade2c99ecf75de31b4dbb4175fdd5acf0be4781109dc5d38f9c728a83f2f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

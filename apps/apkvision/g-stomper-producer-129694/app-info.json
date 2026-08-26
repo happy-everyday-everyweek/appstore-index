@@ -1,0 +1,36 @@
+{
+  "id": "1944",
+  "upstream": null,
+  "packageName": "com.planeth.gstomperproducer",
+  "name": "G-Stomper Producer",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.BLUETOOTH_SCAN",
+    "android.permission.INTERNET",
+    "android.permission.RECORD_AUDIO",
+    "com.planeth.gstomperproducer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "5.9.4.7",
+    "versionCode": 723,
+    "releaseTag": "v5.9.4.7 build 723"
+  },
+  "source": {
+    "repo": "apkvision/g-stomper-producer-129694",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/g-stomper-producer/G-Stomper-Producer-v5-9-4-7.apk",
+    "sha256": "5807eadb9354ae86e6556c69276bc00591357672b37da89e7586a8e4390ebf36",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "1952",
+  "upstream": null,
+  "packageName": "com.goblintools",
+  "name": "Goblin Tools",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "version": {
+    "versionName": "1.2.0",
+    "versionCode": 10,
+    "releaseTag": "v1.2.0"
+  },
+  "source": {
+    "repo": "apkvision/goblin-tools-119889",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/goblin-tools/goblin-tools-v1-2-0-mod-apkvision.apk",
+    "sha256": "bed5ea9aef8204b5fe5c7a6ae875d062a99de4aa2214d31090d7ea2349b6ba54",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "2134",
+  "upstream": null,
+  "packageName": "com.redsoft.zerocleaner",
+  "name": "Zero Cleaner",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "com.redsoft.zerocleaner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "3.0.2",
+    "versionCode": 14,
+    "releaseTag": "v3.0.2"
+  },
+  "source": {
+    "repo": "apkvision/zero-cleaner-clear-cache-119892",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/zero-cleaner-clear-cache/zero-cleaner-v3-0-2-mod-apkvision.apk",
+    "sha256": "f11fdf1a6d3bdb401ca6f34d2089c972e1d75590c06bb13a06e3d6762b835213",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

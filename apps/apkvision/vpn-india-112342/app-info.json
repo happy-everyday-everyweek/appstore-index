@@ -1,0 +1,41 @@
+{
+  "id": "2107",
+  "upstream": null,
+  "packageName": "india.vpn_tap2free",
+  "name": "VPN India",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.android.vending.BILLING",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "india.vpn_tap2free.SERVICE"
+  ],
+  "version": {
+    "versionName": "1.111",
+    "versionCode": 111,
+    "releaseTag": "v1.111"
+  },
+  "source": {
+    "repo": "apkvision/vpn-india-112342",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vpn-india/vpn-india-v1-111-mod-apkvision.org.apk",
+    "sha256": "e9c77d1163b45cd40a59627679d6c1529ec21881fae8e0f90bd537437951f4ae",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

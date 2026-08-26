@@ -1,0 +1,37 @@
+{
+  "id": "2135",
+  "upstream": null,
+  "packageName": "com.dp.cachemaster",
+  "name": "Zero Cleaner",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_PACKAGE_SIZE",
+    "android.permission.INTERNET",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "2.2",
+    "versionCode": 9,
+    "releaseTag": "v2.2"
+  },
+  "source": {
+    "repo": "apkvision/zero-cleaner-premium-101629",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/zero-cleaner/zero-cleaner-v2-2-mod.apk",
+    "sha256": "d4987a930fc44b3988ea9081c8b3a570ff1bd5b6150baf2fa85f7236ada43bf8",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

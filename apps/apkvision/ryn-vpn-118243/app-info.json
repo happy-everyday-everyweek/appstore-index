@@ -1,0 +1,46 @@
+{
+  "id": "2062",
+  "upstream": null,
+  "packageName": "com.secure.cryptovpn",
+  "name": "RYN VPN",
+  "icon": "icon.png",
+  "permissions": [
+    "BIND_GET_INSTALL_REFERRER_SERVICE",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.secure.cryptovpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "disabled_android.permission.READ_EXTERNAL_STORAGE",
+    "disabled_android.permission.READ_PHONE_STATE",
+    "disabled_android.permission.READ_PRIVILEGED_PHONE_STATE",
+    "disabled_android.permission.WRITE_EXTERNAL_STORAGE",
+    "disabled_com.android.vending.BILLING",
+    "disabled_com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "55.4.3",
+    "versionCode": 5490,
+    "releaseTag": "v55.4.3"
+  },
+  "source": {
+    "repo": "apkvision/ryn-vpn-118243",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ryn-vpn/ryn-vpn-v55-4-3-mod-apkvision.apk",
+    "sha256": "b9fbd1ab229691313fcfd404a250a7b5f6fa2f065bf24afc76a7c184d46e14a9",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "2012",
+  "upstream": null,
+  "packageName": "rk.android.app.notificationshortcuts",
+  "name": "Notification Shortcuts",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED"
+  ],
+  "version": {
+    "versionName": "1.6",
+    "versionCode": 9,
+    "releaseTag": "v1.6"
+  },
+  "source": {
+    "repo": "apkvision/notification-shortcuts-104715",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/notification-shortcuts/notification-shortcuts-v1-6-mod.apk",
+    "sha256": "0fab5a7d320f79e17a8c8f0914028fae335c4faef4a8352425ce805d0da51862",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

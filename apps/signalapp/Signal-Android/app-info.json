@@ -91,7 +91,7 @@
     "license": "AGPL-3.0",
     "apkUrl": "https://github.com/signalapp/Signal-Android/releases/download/v8.23.3/Signal-Android-github-prod-universal-release-8.23.3.apk",
     "sha256": "0f7cc90532281c5d68730e60944c88a8f0659aee9462cc38336153428578b04c",
-    "stars": 29250
+    "stars": 29258
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",

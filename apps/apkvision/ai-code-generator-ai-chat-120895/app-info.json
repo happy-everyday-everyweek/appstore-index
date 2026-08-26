@@ -1,0 +1,44 @@
+{
+  "id": "1869",
+  "upstream": null,
+  "packageName": "com.itechgemini.code_ai",
+  "name": "Code AI",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.itechgemini.code_ai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "3.3.2",
+    "versionCode": 46,
+    "releaseTag": "v3.3.2"
+  },
+  "source": {
+    "repo": "apkvision/ai-code-generator-ai-chat-120895",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/ai-code-generator-ai-chat/ai-code-generator-v3-3-2-mod-apkvision.apk",
+    "sha256": "072d402cffcae1bffc40bfd4eb45042637d3a8a582847480b09675f9ef18adb6",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

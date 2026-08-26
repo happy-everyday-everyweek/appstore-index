@@ -1,0 +1,43 @@
+{
+  "id": "2004",
+  "upstream": null,
+  "packageName": "com.jndapp.nothing.neon.dots.iconpack",
+  "name": "Nothing Neon",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.jndapp.nothing.neon.dots.iconpack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.5.9",
+    "versionCode": 18,
+    "releaseTag": "v2.5.9"
+  },
+  "source": {
+    "repo": "apkvision/neon-nothing-iconpack-119868",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/neon-nothing-iconpack/neon-nothing-iconpack-v2-5-9-mod-apkvision.apk",
+    "sha256": "7d201439b9ccd20dc6e0faf01d5c13c91cf6721ff7d7eda9df11525893e4a69a",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

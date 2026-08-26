@@ -1,0 +1,40 @@
+{
+  "id": "2045",
+  "upstream": null,
+  "packageName": "com.fulldive.extension.fullroid.pro",
+  "name": "FullRoid X",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.providers.tv.permission.READ_EPG_DATA",
+    "com.android.providers.tv.permission.WRITE_EPG_DATA",
+    "com.fulldive.extension.fullroid.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "1.4.0",
+    "versionCode": 10400,
+    "releaseTag": "v1.4.0"
+  },
+  "source": {
+    "repo": "apkvision/pro-emulator-for-game-consoles-107746",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/pro-emulator-for-game-consoles/pro-emulator-for-game-consoles-v1.4.0-mod-apkvision.apk",
+    "sha256": "90fc4aa0524465c582c679508b720ca29ff8d081aba6a3b3d5c4ed4febebd119",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

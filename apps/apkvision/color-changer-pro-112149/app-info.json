@@ -1,0 +1,29 @@
+{
+  "id": "1921",
+  "upstream": null,
+  "packageName": "mobi.omegacentauri.red_pro",
+  "name": "Color Changer Pro",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_SUPERUSER",
+    "android.permission.RECEIVE_BOOT_COMPLETED"
+  ],
+  "version": {
+    "versionName": "1.33",
+    "versionCode": 13300,
+    "releaseTag": "v1.33"
+  },
+  "source": {
+    "repo": "apkvision/color-changer-pro-112149",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/color-changer-pro/color-changer-pro-v1-33-mod-apkvision.org.apk",
+    "sha256": "61ca184f9611489b0c72d485233ab4ca931fd57fad7d1c4f45f51a580fd6ce06",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

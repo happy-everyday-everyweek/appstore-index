@@ -1,0 +1,41 @@
+{
+  "id": "1912",
+  "upstream": null,
+  "packageName": "caramelkwgt.kustom.pack",
+  "name": "Caramel KWGT",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "7.0",
+    "versionCode": 2200070,
+    "releaseTag": "v7.0"
+  },
+  "source": {
+    "repo": "apkvision/caramel-kwgt-112340",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/caramel-kwgt/caramel-kwgt-v7.0-mod-apkvision.org.apk",
+    "sha256": "7accfc13a3423f1985215818c261f4099d5e63c51302e497148b628beb57e184",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

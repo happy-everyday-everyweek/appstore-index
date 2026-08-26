@@ -1,0 +1,43 @@
+{
+  "id": "2113",
+  "upstream": null,
+  "packageName": "com.free.vpn.turbo.fast.secure.govpn",
+  "name": "GOVPN",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.AD_ID",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.free.vpn.turbo.fast.secure.govpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.9.7.3",
+    "versionCode": 197300,
+    "releaseTag": "v1.9.7.3"
+  },
+  "source": {
+    "repo": "apkvision/vpn-secure-fast-proxy-by-govpn-119438",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vpn-secure-fast-proxy-by-govpn/vpn-secure-fast-proxy-by-govpn-v1-9-7-3-mod-apkvision.apk",
+    "sha256": "47980e2e4da6a9fa9aa940aa34f78caf889da96b3540c09ad64e012bd0ccf60c",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

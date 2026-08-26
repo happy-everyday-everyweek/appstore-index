@@ -15,7 +15,7 @@
   ],
   "version": {
     "versionName": "4.21.12",
-    "versionCode": 0,
+    "versionCode": 1253,
     "releaseTag": "4.21.12"
   },
   "source": {
@@ -23,12 +23,12 @@
     "openSourceVerified": false,
     "license": "MPL-2.0",
     "apkUrl": "https://github.com/yairm210/Unciv/releases/download/4.21.12/Unciv-signed.apk",
-    "sha256": "待重采",
-    "stars": 11126
+    "sha256": "39ef903a1f5a4029df7b06a5db74d5831998de9d3935050b2c4b52a5751a65a8",
+    "stars": 11137
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-25T07:39:30Z",
-  "generatedBy": "workflow-5"
+  "generatedBy": "workflow-2"
 }

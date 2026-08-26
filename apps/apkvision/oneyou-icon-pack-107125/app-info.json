@@ -1,0 +1,43 @@
+{
+  "id": "2020",
+  "upstream": null,
+  "packageName": "com.pashapuma.oneyou.icons",
+  "name": "OneYou Icons",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_CALENDAR",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_CALENDAR",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.5.2.Beta",
+    "versionCode": 8,
+    "releaseTag": "v1.5.2"
+  },
+  "source": {
+    "repo": "apkvision/oneyou-icon-pack-107125",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/oneyou-icon-pack/oneyou-icon-pack-v1-5-2-mod.apk",
+    "sha256": "149a9d5fc63b21613b247c2939dbb6b571bf00a8dd38d2659f45796f1b3edd21",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

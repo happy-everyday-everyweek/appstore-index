@@ -1,0 +1,40 @@
+{
+  "id": "2060",
+  "upstream": null,
+  "packageName": "com.romanticai.romanticai",
+  "name": "Romantic AI",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.20",
+    "versionCode": 89004,
+    "releaseTag": "v1.20"
+  },
+  "source": {
+    "repo": "apkvision/romantic-ai-105712",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/romantic-ai/romantic-ai-v1-20-mod.apk",
+    "sha256": "32d6b1a8e6d5337e3f9400e2312ca733b60fd5a0f28603fe074151e866daea71",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

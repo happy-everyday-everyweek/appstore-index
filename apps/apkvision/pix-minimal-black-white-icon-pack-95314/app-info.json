@@ -1,0 +1,40 @@
+{
+  "id": "2036",
+  "upstream": null,
+  "packageName": "com.pashapuma.pixminimal.iconpack",
+  "name": "Pix Minimal Black/White",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "8.stableBuild",
+    "versionCode": 58,
+    "releaseTag": "v8.stableBuild"
+  },
+  "source": {
+    "repo": "apkvision/pix-minimal-black-white-icon-pack-95314",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/pix-minimal-black-white-icon-pack/pix-v8-stablebuild-mod.apk",
+    "sha256": "7268cd24845b7cf8ad149094983024fb65fc33dc25227b14b04586027b4b3efa",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "1922",
+  "upstream": null,
+  "packageName": "design.vek.color_gear",
+  "name": "Color Gear",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_INTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "3.1.0",
+    "versionCode": 46,
+    "releaseTag": "v1.0"
+  },
+  "source": {
+    "repo": "apkvision/color-gear-color-wheel-99929",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/color-gear-color-wheel/color-gear-v3-1-0-mod.apk",
+    "sha256": "b992ace2e7f8eb9bcb8550cb6940f094061d09aa3e0dadf153a69d2058567894",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

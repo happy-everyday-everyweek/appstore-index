@@ -1,0 +1,30 @@
+{
+  "id": "2063",
+  "upstream": null,
+  "packageName": "com.swautoma.wallpaper.infinity",
+  "name": "Infinity Wallpaper",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.SET_WALLPAPER",
+    "android.permission.WAKE_LOCK",
+    "com.swautoma.wallpaper.infinity.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "2.7",
+    "versionCode": 12,
+    "releaseTag": "v2.7"
+  },
+  "source": {
+    "repo": "apkvision/s9-infinity-wallpaper-117032",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/s9-infinity-wallpaper/s9-infinity-wallpaper-v2-7-apkvision.apk",
+    "sha256": "2e6066479ef46d6e8af0cfd05703f0df16732e356dfe41ca114af3b59f642b26",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

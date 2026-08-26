@@ -1,0 +1,42 @@
+{
+  "id": "1881",
+  "upstream": null,
+  "packageName": "com.sdev.alphav2ray",
+  "name": "Alpha V2ray",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.sdev.alphav2ray.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "3.4.3",
+    "versionCode": 37,
+    "releaseTag": "v3.4.3"
+  },
+  "source": {
+    "repo": "apkvision/alpha-v2ray-108955",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/alpha-v2ray/alpha-v2ray-v3.4.3.apk",
+    "sha256": "8c703da58c6ceac7149e466e347fa6f693184fc1e969f40bb7ba534da48969ac",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

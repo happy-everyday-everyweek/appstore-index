@@ -1,0 +1,38 @@
+{
+  "id": "2088",
+  "upstream": null,
+  "packageName": "xyz.thefor.habits.habits",
+  "name": "TheFor",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.providers.gsf.permission.READ_GSERVICES",
+    "xyz.thefor.habits.habits.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.3.5",
+    "versionCode": 56,
+    "releaseTag": "v1.3.5"
+  },
+  "source": {
+    "repo": "apkvision/thefor-habit-tracker-121223",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/thefor-habit-tracker/thefor-habit-tracker-v1-3-5-mod-apkvision.apk",
+    "sha256": "f54bb526431d53c38e32c8dff95a374ecbc77e6318d21de5b591e548ea50a472",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

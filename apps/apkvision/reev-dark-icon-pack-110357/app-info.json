@@ -1,0 +1,41 @@
+{
+  "id": "2054",
+  "upstream": null,
+  "packageName": "com.reevdark.grabsterstudios",
+  "name": "Reev Dark",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "2.3.3",
+    "versionCode": 233,
+    "releaseTag": "v2.3.3"
+  },
+  "source": {
+    "repo": "apkvision/reev-dark-icon-pack-110357",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/reev-dark-icon-pack/reev-dark-v2-3-3-mod.apk",
+    "sha256": "d7f68b0ca9e2d93a03a06120bd9f2d9b2dae9e565dd6dc0e70691fa46d41f05f",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

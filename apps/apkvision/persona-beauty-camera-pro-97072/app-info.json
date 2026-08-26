@@ -1,0 +1,42 @@
+{
+  "id": "2032",
+  "upstream": null,
+  "packageName": "com.tickettothemoon.persona",
+  "name": "Persona",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.5.40",
+    "versionCode": 105400,
+    "releaseTag": "v1.5.40"
+  },
+  "source": {
+    "repo": "apkvision/persona-beauty-camera-pro-97072",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/persona-beauty-camera-pro/persona-beauty-camera-pro-v1.5.40.apk",
+    "sha256": "bd2dc6cb93e5e5716a0ca6b179553906d18a0cb217efd37e9f0896d6f2ef3a83",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

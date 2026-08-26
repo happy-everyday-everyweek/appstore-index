@@ -1,0 +1,52 @@
+{
+  "id": "2001",
+  "upstream": null,
+  "packageName": "music.videomaker.slideshow",
+  "name": "Mvideo",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "music.videomaker.slideshow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "music.videomaker.slideshow.backtrace.warmed_up",
+    "music.videomaker.slideshow.manual.dump",
+    "music.videomaker.slideshow.matrix.permission.PROCESS_SUPERVISOR"
+  ],
+  "version": {
+    "versionName": "1.0.11430",
+    "versionCode": 11430,
+    "releaseTag": "v1.0.11430"
+  },
+  "source": {
+    "repo": "apkvision/mvideo-music-video-maker-119786",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/mvideo/mvideo-v1-0-11430-mod-apkvision.apk",
+    "sha256": "ee0783e14ba4064b9d353f2b026297dfbf066c6310430b706b86df6d370c4b2d",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

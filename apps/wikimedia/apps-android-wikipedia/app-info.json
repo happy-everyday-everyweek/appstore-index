@@ -26,8 +26,8 @@
     "org.wikipedia.alpha.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
   ],
   "version": {
-    "versionName": "50602-alpha-2026-08-24",
-    "versionCode": 50602,
+    "versionName": "50603-alpha-2026-08-25",
+    "versionCode": 50603,
     "releaseTag": "latest"
   },
   "source": {
@@ -35,12 +35,12 @@
     "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/wikimedia/apps-android-wikipedia/releases/download/latest/app-alpha-universal-release.apk",
-    "sha256": "b5435edebb6566213625df765d1ee796b89e7ae7bd09b965325be771d17e0c77",
-    "stars": 3010
+    "sha256": "a9558215ace998eed15fe444674e39dd7e942eed8acd4157b7f5e5229d108272",
+    "stars": 3011
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "D",
-  "generatedAt": "2026-08-24T16:26:40Z",
+  "generatedAt": "2026-08-25T20:04:26Z",
   "generatedBy": "workflow-2"
 }

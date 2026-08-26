@@ -1,0 +1,26 @@
+{
+  "id": "1983",
+  "upstream": null,
+  "packageName": "com.poweramp.v3.melodi",
+  "name": "Melodi",
+  "icon": "icon.png",
+  "permissions": [],
+  "version": {
+    "versionName": "1.0.3",
+    "versionCode": 3,
+    "releaseTag": "v1.0.3"
+  },
+  "source": {
+    "repo": "apkvision/melodi-poweramp-v3-skin-108581",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/melodi-poweramp-v3-skin/melodi-poweramp-v3-skin-v1-0-3-mod.apk",
+    "sha256": "f2c686514cd266c000de6952fcbe00681e1de4a71bddd9a36da6ff6fd4677568",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

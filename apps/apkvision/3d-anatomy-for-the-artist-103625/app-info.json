@@ -1,0 +1,31 @@
+{
+  "id": "1858",
+  "upstream": null,
+  "packageName": "com.catfishanimationstudio.AnatomyForTheArtistLite",
+  "name": "3D Anatomy for the Artist",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "com.android.vending.BILLING"
+  ],
+  "version": {
+    "versionName": "4.1.5",
+    "versionCode": 415,
+    "releaseTag": "v4.1.5"
+  },
+  "source": {
+    "repo": "apkvision/3d-anatomy-for-the-artist-103625",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/3d-anatomy-for-the-artist/3D-Anatomy-for-the-Artist-v4-1-5-Mod.apk",
+    "sha256": "489352b5dc4b4819f720f472c4c9bcf2b708d4550a42782d7168d3dfed54a734",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

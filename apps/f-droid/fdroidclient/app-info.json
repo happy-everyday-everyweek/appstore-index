@@ -42,7 +42,7 @@
     "license": "GPL-3.0",
     "apkUrl": "https://github.com/f-droid/fdroidclient/releases/download/1.18.0/org.fdroid.fdroid_1018050.apk",
     "sha256": "605479594b0b372427ca624840f35de3d65fadfbc9d14acf4904191fa83a0ab5",
-    "stars": 3006
+    "stars": 3010
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",

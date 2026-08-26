@@ -1,0 +1,43 @@
+{
+  "id": "2008",
+  "upstream": null,
+  "packageName": "dev.narikdesign.nothingadaptive",
+  "name": "Nothing Adaptive",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "dev.narikdesign.nothingadaptive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.5",
+    "versionCode": 150,
+    "releaseTag": "v1.5"
+  },
+  "source": {
+    "repo": "apkvision/nothing-adaptive-icons-108966",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/nothing-adaptive-icons/nothing-adaptive-icons-v1-5-mod.apk",
+    "sha256": "fefadae5a65edf4e27b586eb0345c518ef73beab6f9f3a256ef427889a1b0349",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

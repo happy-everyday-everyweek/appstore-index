@@ -1,0 +1,32 @@
+{
+  "id": "2000",
+  "upstream": null,
+  "packageName": "com.lstapps.musicwidgetandroid12",
+  "name": "Music Widget",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WAKE_LOCK",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.1.1",
+    "versionCode": 26,
+    "releaseTag": "v1.1.1"
+  },
+  "source": {
+    "repo": "apkvision/music-widget-android-12-98588",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/music-widget-android-12/music-widget-android-12-v1-1-1-mod.apk",
+    "sha256": "5d8b34d0b018fb7716795648eb43845980629e3f01e0ce97611a8f4e78a34fcf",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

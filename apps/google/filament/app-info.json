@@ -17,12 +17,12 @@
     "openSourceVerified": false,
     "license": "Apache-2.0",
     "apkUrl": "https://github.com/google/filament/releases/download/v1.75.1/filament-gltf-viewer-v1.75.1-android.apk",
-    "sha256": "待重采",
-    "stars": 20391
+    "sha256": "1d64504e2b93978204f2285d66f2c5dd43792a1ec30bba4b2144adb352e0fb52",
+    "stars": 20400
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
   "generatedAt": "2026-08-24T18:19:19Z",
-  "generatedBy": "workflow-5"
+  "generatedBy": "workflow-2"
 }

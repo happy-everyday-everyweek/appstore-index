@@ -1,0 +1,30 @@
+{
+  "id": "2073",
+  "upstream": null,
+  "packageName": "skyline.emu",
+  "name": "Skyline",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "skyline.emu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "0.0.3",
+    "versionCode": 3,
+    "releaseTag": "v0.0.3"
+  },
+  "source": {
+    "repo": "apkvision/skyline-emulator-113029",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/skyline-emulator/skyline-emulator-v0.0.3-apkvision.apk",
+    "sha256": "8fb707990066283b5754769154d8769e649bf37068f1fdfe6e561c23f448c218",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

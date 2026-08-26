@@ -1,0 +1,32 @@
+{
+  "id": "2046",
+  "upstream": null,
+  "packageName": "com.boxyboo.project.play.time.ProjectPlaytimeMultiplayer",
+  "name": "project playtime",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET",
+    "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "version": {
+    "versionName": "1.1.1",
+    "versionCode": 2,
+    "releaseTag": "v1.1.1"
+  },
+  "source": {
+    "repo": "apkvision/project-playtime-multiplayer-104801",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/project-playtime-multiplayer/project-playtime-multiplayer-v1.1.1.apk",
+    "sha256": "226041dd27150f1a6d67ba871a1d96ef9d90d046948b7ff6aafe4ad732d4bc35",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

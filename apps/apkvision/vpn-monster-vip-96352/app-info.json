@@ -1,0 +1,38 @@
+{
+  "id": "2110",
+  "upstream": null,
+  "packageName": "free.vpn.unblock.proxy.vpnmonster",
+  "name": "VPN Monster",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "version": {
+    "versionName": "1.9.5",
+    "versionCode": 2022040201,
+    "releaseTag": "v1.9.5"
+  },
+  "source": {
+    "repo": "apkvision/vpn-monster-vip-96352",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/vpn-monster/vpn-monster-v1-9-5-mod.apk",
+    "sha256": "6fa22e21a54962daa9a9c1b3340e96f42c419f6472ae42a88b7558541bd4a10d",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "1916",
+  "upstream": null,
+  "packageName": "chamaleon.klwp.app",
+  "name": "Chamaleon Project",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "version": {
+    "versionName": "1.2",
+    "versionCode": 12,
+    "releaseTag": "v1.2"
+  },
+  "source": {
+    "repo": "apkvision/chamaleon-project-for-klwp-99996",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/chamaleon-project-for-klwp/chamaleon-project-for-klwp-v1-2-mod.apk",
+    "sha256": "ea3368d229db04e70ce29f0a69bb3a7ac3cc4bacb186b055762c8e6646e985b8",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

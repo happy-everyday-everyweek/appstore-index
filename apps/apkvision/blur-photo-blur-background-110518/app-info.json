@@ -1,0 +1,38 @@
+{
+  "id": "1909",
+  "upstream": null,
+  "packageName": "com.tapuniverse.blurphoto",
+  "name": "Blur Photo",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID",
+    "com.tapuniverse.blurphoto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "1.2.2",
+    "versionCode": 12,
+    "releaseTag": "v1.2.2"
+  },
+  "source": {
+    "repo": "apkvision/blur-photo-blur-background-110518",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/blur-photo-blur-background/blur-photo-blur-background-v1-2-2-mod.apk",
+    "sha256": "b9b4a9856f63fb7536acdb51bd1d6bb8dadedba0f99b484917a1a27b3a2dd905",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "2056",
+  "upstream": null,
+  "packageName": "dev.kdrag0n.dyntheme",
+  "name": "Repainter",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.DUMP",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_SECURE_SETTINGS",
+    "com.android.vending.BILLING",
+    "com.android.vending.CHECK_LICENSE",
+    "dev.kdrag0n.dyntheme.BIND_PRIVILEGED_SYSTEM_SERVICE",
+    "dev.kdrag0n.dyntheme.SELF",
+    "moe.shizuku.manager.permission.API_V23"
+  ],
+  "version": {
+    "versionName": "2.0.8-patreon",
+    "versionCode": 2000800,
+    "releaseTag": "v2.0.8"
+  },
+  "source": {
+    "repo": "apkvision/repainter-dynamic-themes-110813",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/repainter-dynamic-themes/repainter-dynamic-themes-v2.0.8.apk",
+    "sha256": "34463db88f6650cc3a0f00e05ce12f159c512386f59cb8e90c3aadb4915065db",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}

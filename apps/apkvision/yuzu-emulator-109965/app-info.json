@@ -1,0 +1,33 @@
+{
+  "id": "2133",
+  "upstream": null,
+  "packageName": "org.yuzu.yuzu_emu",
+  "name": "yuzu",
+  "icon": "icon.png",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.NFC",
+    "android.permission.POST_NOTIFICATIONS",
+    "org.yuzu.yuzu_emu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "version": {
+    "versionName": "d590cfb9d",
+    "versionCode": 25082497,
+    "releaseTag": "d590cfb9d"
+  },
+  "source": {
+    "repo": "apkvision/yuzu-emulator-109965",
+    "openSourceVerified": false,
+    "license": null,
+    "apkUrl": "https://dl.apkvision.org/yuzu-emulator/yuzu-emulator_d590cfb9d.apk",
+    "sha256": "1083e78316fc4de8591ca1eb8407d2e852e5b7dd2cb174b0bfdc5a4113da4fb9",
+    "stars": 0
+  },
+  "readme": "included",
+  "uploader": "happy-everyday-everyweek",
+  "grade": "E",
+  "generatedAt": "now",
+  "generatedBy": "workflow-2"
+}
