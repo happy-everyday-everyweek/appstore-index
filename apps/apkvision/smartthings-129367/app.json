@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/smartthings-129367",
+  "openSource": false,
+  "name": "SmartThings",
+  "packageName": "com.samsung.android.oneconnect",
+  "version": "v1.8.47.24",
+  "apkUrl": "https://dl.apkvision.org/smartthings/SmartThings_1.8.47.24_apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download SmartThings APK free for Android. SmartThings enables seamless connectivity and control of smart home devices f"
+}
