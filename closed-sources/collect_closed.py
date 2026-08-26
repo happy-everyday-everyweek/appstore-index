@@ -575,7 +575,7 @@ def maybe_self_dispatch(repo):
         "https://api.github.com/repos/%s/actions/workflows/%s/dispatches"
         % (repo, wf), token=token,
         body={"ref": "main",
-              "inputs": {"dry_run": False, "limit": SELF_LIMIT}})
+              "inputs": {"dry_run": "false", "limit": str(SELF_LIMIT)}})
     log("自续触发下一轮 WF8: HTTP %s %s"
         % (st, "OK" if st in (200, 201, 204) else body))
 
