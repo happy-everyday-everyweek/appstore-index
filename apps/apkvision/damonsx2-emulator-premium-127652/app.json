@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/damonsx2-emulator-premium-127652",
+  "openSource": false,
+  "name": "DamonSX2 Emulator - Premium",
+  "packageName": "com.damonsx2.playstation2",
+  "version": "v114",
+  "apkUrl": "https://dl.apkvision.org/damonsx2-emulator-premium/DamonSX2-Premium-v114-full-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download DamonSX2 Emulator - Premium (Full) APK free for Android. DamonSX2 Emulator - Premium is an open-source PS2 emul"
+}
