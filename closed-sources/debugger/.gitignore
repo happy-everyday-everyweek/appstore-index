@@ -1,0 +1,9 @@
+# The debugger owns its environment and generated artifacts.
+.venv/
+__pycache__/
+.pytest_cache/
+traces/
+downloads/
+
+# All source-specific test code, fixtures, and notes are local-only.
+/tests/sources/
