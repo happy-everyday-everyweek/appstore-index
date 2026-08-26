@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/linkedin-129358",
+  "openSource": false,
+  "name": "LinkedIn",
+  "packageName": "com.linkedin.android",
+  "version": "v6.1.1",
+  "apkUrl": "https://dl.apkvision.org/linkedin/LinkedIn_6.1.1_apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download LinkedIn APK free for Android. LinkedIn: Jobs & Business News empowers professionals to kickstart their career "
+}
