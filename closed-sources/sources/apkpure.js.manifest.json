@@ -1,0 +1,36 @@
+{
+  "id": "apkpure",
+  "name": "APKPure",
+  "version": "1.0.0",
+  "homepage": "https://apkpure.net/",
+  "description": "使用 APKPure 官方 Lite 站点读取搜索、详情、截图和下载项。",
+  "permissions": {
+    "network": ["apkpure.net", "d.apkpure.net"],
+    "browser": false,
+    "download": true,
+    "install": false
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": true
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "通过 APKPure Lite 搜索 Android 应用。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 minecraft",
+      "defaultInput": "minecraft"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "读取 APKPure Lite 详情、截图和下载链接。",
+      "inputLabel": "详情 URL",
+      "placeholder": "粘贴 apkpure.net 详情 URL",
+      "defaultInput": "https://apkpure.net/minecraft-trial-game/com.mojang.minecrafttrialpe"
+    }
+  ]
+}
