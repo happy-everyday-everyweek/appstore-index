@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/the-earth-129047",
+  "openSource": false,
+  "name": "The Earth",
+  "packageName": "com.tinybop.Earth.paid",
+  "version": "v1.3.0",
+  "apkUrl": "https://dl.apkvision.org/the-earth/Earth-v1.3.0-full-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download The Earth (Full) APK free for Android. The Earth invites users to explore the geological forces that shape our "
+}
