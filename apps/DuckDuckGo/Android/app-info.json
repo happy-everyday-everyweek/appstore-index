@@ -32,21 +32,21 @@
     "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
   ],
   "version": {
-    "versionName": "5.292.1",
-    "versionCode": 52921000,
-    "releaseTag": "5.292.1"
+    "versionName": "5.294.0",
+    "versionCode": 0,
+    "releaseTag": "5.294.0"
   },
   "source": {
     "repo": "DuckDuckGo/Android",
     "openSourceVerified": false,
     "license": "Apache-2.0",
-    "apkUrl": "https://github.com/duckduckgo/Android/releases/download/5.292.1/duckduckgo-5.292.1-play-release.apk",
-    "sha256": "ce771c2de08b63bd8bab93b8a3ca4bc4e2203b777ddfa32a15551fcbf8406b35",
+    "apkUrl": "https://github.com/duckduckgo/Android/releases/download/5.294.0/duckduckgo-5.294.0-play-release.apk",
+    "sha256": "待重采",
     "stars": 4796
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "D",
-  "generatedAt": "2026-08-18T16:13:19Z",
-  "generatedBy": "workflow-2"
+  "generatedAt": "2026-08-25T21:22:26Z",
+  "generatedBy": "workflow-5"
 }

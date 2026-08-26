@@ -21,21 +21,21 @@
     "com.example.piliplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
   ],
   "version": {
-    "versionName": "2.1.2-17e92c470",
-    "versionCode": 5241,
-    "releaseTag": "2.1.2"
+    "versionName": "2.1.2.1",
+    "versionCode": 0,
+    "releaseTag": "2.1.2.1"
   },
   "source": {
     "repo": "bggRGjQaUbCoE/PiliPlus",
     "openSourceVerified": false,
     "license": "GPL-3.0",
-    "apkUrl": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.2/PiliPlus_android_2.1.2-17e92c470%2B5241_arm64-v8a.apk",
-    "sha256": "a67cbaa519b5812f386e179c24a39438297733da96ba4d1f8e0140bc023aa9d9",
+    "apkUrl": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.2.1/PiliPlus_android_2.1.2-35e5454a4%2B5255_arm64-v8a.apk",
+    "sha256": "待重采",
     "stars": 17584
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-08-24T03:06:40Z",
-  "generatedBy": "workflow-2"
+  "generatedAt": "2026-08-26T03:10:08Z",
+  "generatedBy": "workflow-5"
 }

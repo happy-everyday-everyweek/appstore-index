@@ -14,21 +14,21 @@
     "com.unciv.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
   ],
   "version": {
-    "versionName": "4.21.11",
-    "versionCode": 1252,
-    "releaseTag": "4.21.11"
+    "versionName": "4.21.12",
+    "versionCode": 0,
+    "releaseTag": "4.21.12"
   },
   "source": {
     "repo": "yairm210/Unciv",
     "openSourceVerified": false,
     "license": "MPL-2.0",
-    "apkUrl": "https://github.com/yairm210/Unciv/releases/download/4.21.11/Unciv-signed.apk",
-    "sha256": "4cbfd1197cd86edc0a015fd27ab113db89e7e73548ca8e2642dfcaa619b2157f",
+    "apkUrl": "https://github.com/yairm210/Unciv/releases/download/4.21.12/Unciv-signed.apk",
+    "sha256": "待重采",
     "stars": 11126
   },
   "readme": "included",
   "uploader": "happy-everyday-everyweek",
   "grade": "C",
-  "generatedAt": "2026-08-22T21:11:23Z",
-  "generatedBy": "workflow-2"
+  "generatedAt": "2026-08-25T07:39:30Z",
+  "generatedBy": "workflow-5"
 }
