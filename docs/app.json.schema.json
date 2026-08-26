@@ -33,6 +33,30 @@
     "upstream": {
       "type": "integer",
       "description": "可选：上游应用系统 ID（当本应用是某个已收录开源项目的分支/Fork 时填写）"
+    },
+    "name": {
+      "type": "string",
+      "description": "应用显示名（采集管道直链条目由详情页自动解析）"
+    },
+    "packageName": {
+      "type": "string",
+      "description": "Android 包名（直链条目可留空，工作流 2 落盘时从 APK 提取补全）"
+    },
+    "version": {
+      "type": "string",
+      "description": "版本号（直链条目为源站详情页版本）"
+    },
+    "apkUrl": {
+      "type": "string",
+      "description": "可选：APK 直链。存在时工作流 2 跳过 GitHub 仓库核验，直接核验直链可达性并下载解包采集元数据（仅限采集管道白名单域名）"
+    },
+    "icon": {
+      "type": "string",
+      "description": "可选：图标 URL（直链条目省略，工作流 2 从 APK 提取图标）"
+    },
+    "homepage": {
+      "type": "string",
+      "description": "可选：应用主页"
     }
   },
   "additionalProperties": false,
