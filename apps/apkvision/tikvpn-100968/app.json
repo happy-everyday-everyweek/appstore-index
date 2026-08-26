@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/tikvpn-100968",
+  "openSource": false,
+  "name": "TikVPN",
+  "packageName": "com.speed.svpn",
+  "version": "v2.21.1",
+  "apkUrl": "https://dl.apkvision.org/tikvpn/tikvpn_2.21.1_apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download TikVPN APK free for Android. TikVPN - Fast & Safe Proxy – an excellent VPN with a stable connection that protec"
+}

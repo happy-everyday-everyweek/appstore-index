@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/vpn-china-premium-101812",
+  "openSource": false,
+  "name": "VPN China Premium",
+  "packageName": "china.vpn_tap2free",
+  "version": "v1.103",
+  "apkUrl": "https://dl.apkvision.org/vpn-china/vpn-china-v1.103 .apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download VPN China Premium APK free for Android. VPN China - get chinese ip – an application that offers users not just "
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/facejoy-99727",
+  "openSource": false,
+  "name": "FaceJoy",
+  "packageName": "com.video.reface.app.faceplay.deepface.photo",
+  "version": "v1.0.5.2",
+  "apkUrl": "https://dl.apkvision.org/facejoy/facejoy-v1.0.5.2.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download FaceJoy APK free for Android. FaceJoy Face Play Face Swap – another entertaining application that is designed s"
+}

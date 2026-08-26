@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/revive-face-photo-animator-100910",
+  "openSource": false,
+  "name": "Revive: Face Photo Animator",
+  "packageName": "revive.app",
+  "version": "v7.62.0",
+  "apkUrl": "https://dl.apkvision.org/revive-face-photo-animator/revive-face-photo-animator-v7.62.0.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Revive: Face Photo Animator APK free for Android. Revive: AI Face Animator App – mainly an entertainment applic"
+}

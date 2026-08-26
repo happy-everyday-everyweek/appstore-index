@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/gaminik-102039",
+  "openSource": false,
+  "name": "Gaminik",
+  "packageName": "com.gaminik.i18n",
+  "version": "v2.7.5",
+  "apkUrl": "https://dl.apkvision.org/Gaminik/Gaminik-v2.7.5.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Gaminik APK free for Android. Gaminik: Game Screen Translate – an application that will be useful for users wit"
+}

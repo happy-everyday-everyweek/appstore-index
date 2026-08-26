@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/photoshot-photo-editor-premium-99364",
+  "openSource": false,
+  "name": "PhotoShot - Photo Editor Premium",
+  "packageName": "com.vyroai.photoeditorone",
+  "version": "v2.15.0",
+  "apkUrl": "https://dl.apkvision.org/photoshot-photo-editor/PhotoShot-v2.15.0.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download PhotoShot - Photo Editor Premium APK free for Android. PhotoShot - Photo Editor – a project that replenishes th"
+}

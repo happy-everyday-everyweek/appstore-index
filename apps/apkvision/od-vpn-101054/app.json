@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/od-vpn-101054",
+  "openSource": false,
+  "name": "OD VPN",
+  "packageName": "com.overdreams.odvpn",
+  "version": "v3.7.1",
+  "apkUrl": "https://dl.apkvision.org/OD VPN/OD VPN-v3.7.1.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download OD VPN APK free for Android. OD VPN – a very fast VPN that will easily provide you with a disguise on the Inter"
+}

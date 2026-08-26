@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/manual-camera-100423",
+  "openSource": false,
+  "name": "Manual Camera",
+  "packageName": "pl.vipek.camera2",
+  "version": "v3.8",
+  "apkUrl": "https://dl.apkvision.org/manual-camera/manual-camera-v3-8-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Manual Camera (Full version) APK free for Android. Manual Camera – another software option that, by its qualiti"
+}

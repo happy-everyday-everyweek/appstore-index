@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/swing-vpn-100912",
+  "openSource": false,
+  "name": "Swing VPN",
+  "packageName": "com.switchvpn.app",
+  "version": "v1.3.8",
+  "apkUrl": "https://dl.apkvision.org/swing-vpn/swing-vpn-v1-3-8-mod.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Swing VPN APK free for Android. Swing VPN - Reliable VPN proxy – another great way to leave everyone who arrang"
+}

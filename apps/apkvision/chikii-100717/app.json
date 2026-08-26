@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/chikii-100717",
+  "openSource": false,
+  "name": "Chikii",
+  "packageName": "com.dianyun.chikii",
+  "version": "v3.17.3",
+  "apkUrl": "https://dl.apkvision.org/chikii/chikii-v3.17.3.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Chikii APK free for Android. Chikii – this is the perfect app for those who love good video games, but unfortun"
+}
