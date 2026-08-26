@@ -1,0 +1,36 @@
+{
+  "id": "uptodown",
+  "name": "Uptodown",
+  "version": "1.0.0",
+  "homepage": "https://en.uptodown.com/",
+  "description": "读取 Uptodown 公开页面的 Android 搜索、目录、详情和 APK 下载项。",
+  "permissions": {
+    "network": ["en.uptodown.com", "*.en.uptodown.com", "dw.uptodown.com"],
+    "browser": false,
+    "download": true,
+    "install": false
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "检查 Uptodown 搜索与分页结果。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 minecraft",
+      "defaultInput": "minecraft"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "读取元数据、截图和公开 APK 下载链接。",
+      "inputLabel": "详情 URL",
+      "placeholder": "粘贴 *.en.uptodown.com/android URL",
+      "defaultInput": "https://f-droid.en.uptodown.com/android"
+    }
+  ]
+}
