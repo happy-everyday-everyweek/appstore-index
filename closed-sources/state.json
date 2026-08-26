@@ -9,20 +9,49 @@
         "https://apkvision.org/best-new-releases/"
       ],
       "tabIdx": 0,
-      "page": 1
+      "page": 2
     }
   },
   "processed": [
+    "https://apkvision.org/app/art-design/monet-ai-image-generator-127046/",
+    "https://apkvision.org/app/art-design/postart-126394/",
+    "https://apkvision.org/app/art-design/remover-bg-126190/",
     "https://apkvision.org/app/books-reference/wattpad-read-write-stories-131113/",
+    "https://apkvision.org/app/education/the-earth-129047/",
+    "https://apkvision.org/app/libraries-demo/ppss22-emulator-ps2-emulator-127649/",
     "https://apkvision.org/app/media-video/youtube-revanced-131002/",
+    "https://apkvision.org/app/music-audio/ai-music-cover-song-creator-126397/",
+    "https://apkvision.org/app/music-audio/mixtube-126004/",
+    "https://apkvision.org/app/music-audio/youtube-music-revanced-132090/",
     "https://apkvision.org/app/other/888starz-129346/",
+    "https://apkvision.org/app/personalization/always-on-display-xpath-126341/",
+    "https://apkvision.org/app/personalization/day-and-night-clock-129106/",
+    "https://apkvision.org/app/personalization/ergon-icon-pack-126372/",
+    "https://apkvision.org/app/personalization/retricon-icon-pack-126013/",
+    "https://apkvision.org/app/photography/conota-126390/",
     "https://apkvision.org/app/photography/photo-editor-132076/",
-    "https://apkvision.org/app/tools/geode-133128/"
+    "https://apkvision.org/app/productivity/damonsx2-emulator-premium-127652/",
+    "https://apkvision.org/app/social/likee-126199/",
+    "https://apkvision.org/app/tools/accubattery-132085/",
+    "https://apkvision.org/app/tools/device-info-hw-132082/",
+    "https://apkvision.org/app/tools/geode-133128/",
+    "https://apkvision.org/app/tools/x8-sandbox-129182/",
+    "https://apkvision.org/app/video-players-editors/kuaishou-129651/"
   ],
   "failed": {
     "https://apkvision.org/app/social/tiktok-133712/": "详情 404 或不可解析",
     "https://apkvision.org/app/apkvision-store-131787/": "upload content failed: 422 README.md {'message': 'Invalid request.\\n\\n\"sha\" wasn\\'t supplied.', 'documentation_url': 'https://docs.github.com/rest/repos/contents#create-or-update-file-contents', 'status': '422'}",
-    "https://apkvision.org/app/tools/mojolauncher-130598/": "create release failed: 422 {'message': 'Validation Failed', 'errors': [{'resource': 'Release', 'code': 'custom', 'field': 'tag_name', 'message': 'tag_name is not a valid tag'}, {'resource': 'Release', 'code': 'custom', 'field': 'tag_name', 'message': 'tag_name is not well-formed'}, {'resource': 'Rel"
+    "https://apkvision.org/app/tools/mojolauncher-130598/": "create release failed: 422 {'message': 'Validation Failed', 'errors': [{'resource': 'Release', 'code': 'custom', 'field': 'tag_name', 'message': 'tag_name is not a valid tag'}, {'resource': 'Release', 'code': 'custom', 'field': 'tag_name', 'message': 'tag_name is not well-formed'}, {'resource': 'Rel",
+    "https://apkvision.org/app/tools/apk-info-133235/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/tools/vphoneos-android-emulator-129557/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/tools/airdroid-file-remote-access-132197/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/entertainment/character-ai-129629/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/education/question-ai-chatbotmath-ai-129364/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/lifestyle/life360-stay-connected-safe-129309/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/productivity/deepseek-ai-assistant-128129/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/education/wagotabi-learn-japanese-126216/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/lifestyle/aiuta-ai-stylist-126196/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）",
+    "https://apkvision.org/app/tools/singapore-vpn-126037/": "无可用源站 .apk 直链（xapk/站外链接已被过滤）"
   },
   "pending_pr": [
     {
