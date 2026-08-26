@@ -43,6 +43,7 @@ jobs:
       - name: 闭源采集主控（APKVision HTTP 引擎）
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAIN_PAT: ${{ secrets.MAIN_PAT }}
           MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
           MIRROR_OWNER: ${{ secrets.MIRROR_OWNER }}
         run: |
