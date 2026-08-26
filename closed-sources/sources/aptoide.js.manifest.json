@@ -1,0 +1,36 @@
+{
+  "id": "aptoide",
+  "name": "Aptoide",
+  "version": "1.1.0",
+  "homepage": "https://en.aptoide.com/",
+  "description": "Reads Aptoide search results and app detail pages, including APK downloads.",
+  "permissions": {
+    "network": ["*.aptoide.com"],
+    "browser": true,
+    "download": true,
+    "install": true
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "Search by keyword",
+      "description": "Search Aptoide apps through its public web API.",
+      "inputLabel": "Keyword",
+      "placeholder": "For example bombsquad",
+      "defaultInput": "bombsquad"
+    },
+    {
+      "id": "app-details",
+      "name": "Read app details",
+      "description": "Read metadata, screenshots, reviews and the APK download link.",
+      "inputLabel": "App detail URL",
+      "placeholder": "Paste an Aptoide app URL",
+      "defaultInput": "https://micro-battles-3.en.aptoide.com/app"
+    }
+  ]
+}
