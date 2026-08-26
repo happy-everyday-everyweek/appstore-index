@@ -1,0 +1,36 @@
+{
+  "id": "sbenny",
+  "name": "Sbenny",
+  "version": "1.0.0",
+  "homepage": "https://sbenny.com/",
+  "description": "通过受隔离的浏览器读取 Sbenny 公开目录、搜索、详情和匿名可用下载项；不处理论坛账号登录。",
+  "permissions": {
+    "network": ["sbenny.com", "*.sbenny.com", "challenges.cloudflare.com", "*.challenges.cloudflare.com"],
+    "browser": true,
+    "download": true,
+    "install": false
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": false
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "在 Sbenny 公开搜索页检查应用和游戏结果。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 bubble shoot",
+      "defaultInput": "bubble shoot"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "读取 Sbenny 详情页元数据、截图和公开下载入口。",
+      "inputLabel": "应用详情 URL",
+      "placeholder": "粘贴 Sbenny 应用或游戏详情 URL",
+      "defaultInput": "https://sbenny.com/games/puzzle/bubble-shoot.html"
+    }
+  ]
+}
