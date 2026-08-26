@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/device-info-hw-132082",
+  "openSource": false,
+  "name": "Device Info HW+",
+  "packageName": "ru.andr7e.deviceinfohw.pro",
+  "version": "v5.26.0",
+  "apkUrl": "https://dl.apkvision.org/device-info-hw/device-info-hw-5.26.0-unlocked-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Device Info HW+ APK free for Android. Device Info HW+ is a comprehensive app designed for Android users to acce"
+}
