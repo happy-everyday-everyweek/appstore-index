@@ -1,0 +1,36 @@
+{
+  "id": "apkcombo",
+  "name": "APKCombo",
+  "version": "1.0.0",
+  "homepage": "https://apkcombo.com/",
+  "description": "读取 APKCombo 公开搜索、榜单、详情、截图和 APK/XAPK 变体。",
+  "permissions": {
+    "network": ["*"],
+    "browser": false,
+    "download": true,
+    "install": false
+  },
+  "capabilities": {
+    "catalog": true,
+    "detailProgress": true,
+    "packageLookup": true
+  },
+  "debugProjects": [
+    {
+      "id": "search-keyword",
+      "name": "搜索关键词",
+      "description": "检查 APKCombo 搜索与分页结果。",
+      "inputLabel": "关键词",
+      "placeholder": "例如 minecraft",
+      "defaultInput": "minecraft"
+    },
+    {
+      "id": "app-details",
+      "name": "获取应用详情",
+      "description": "读取元数据、截图和公开 APK/XAPK 变体。",
+      "inputLabel": "详情 URL",
+      "placeholder": "粘贴 apkcombo.com 详情 URL",
+      "defaultInput": "https://apkcombo.com/minecraft-education-preview/com.mojang.minecraftedu_preview/"
+    }
+  ]
+}
