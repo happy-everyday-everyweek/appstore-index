@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/candylink-vpn-124720",
+  "openSource": false,
+  "name": "CandyLink VPN",
+  "packageName": "com.candylink.openvpn",
+  "version": "v4.0.2",
+  "apkUrl": "https://dl.apkvision.org/candylink-vpn/candylink-vpn-v4-0-2-mod-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download CandyLink VPN (Mod: Premium) APK free for Android. CandyLink VPN – the application is for users of mobile devic"
+}
