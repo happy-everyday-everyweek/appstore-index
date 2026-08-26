@@ -1,0 +1,13 @@
+{
+  "repo": "apkvision/stack-the-states-124378",
+  "openSource": false,
+  "name": "Stack the States®",
+  "packageName": "com.freecloud.StackTheStates",
+  "version": "v3.1",
+  "apkUrl": "https://dl.apkvision.org/stack-the-states/Stack-the-States-v3.1-full-apkvision.apk",
+  "homepage": "https://apkvision.org/",
+  "specialPermissions": [
+    "none"
+  ],
+  "summary": "Download Stack the States® (Full) APK free for Android. Stack the States® transforms learning about the 50 states into a"
+}
