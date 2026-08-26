@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""WF7 图标批量修复 v3：把 apps/*/*/ 下非图像 icon 文件替换为真实位图。
+"""WF7 图标批量修复 v4：v3 基础上修复 anydpi-v26 XML 图层漏检。
 
-v2 基础：badging -> xmltree(adaptive) -> resources 资源ID映射 -> 最高密度位图。
-v3 新增：当 adaptive-icon 的 fg/bg 引用是 XML（vector/gradient 而非位图）时，
-用 androguard 解析 AXML + cairosvg 渲染为 SVG 再转 PNG，Pillow 合成 bg+fg。
+v3 的 best_path 跳过 anydpi 密度，导致 bg/fg 声明在 anydpi-v26 的 vector XML 拿不到路径；
+v4 增加 any_xml_path 兜底：渲染分支从该资源的全部密度配置中直接找 .xml。
 """
 import argparse
 import glob
@@ -65,6 +64,7 @@ DENSITY_RANK = {
 
 
 def best_path(files, res_id):
+    """最高密度位图路径（跳过 anydpi/XML 目录）"""
     cands = files.get(res_id, {})
     if not cands:
         return None
@@ -76,6 +76,16 @@ def best_path(files, res_id):
         if r > brank:
             best, brank = p, r
     return best
+
+
+def any_xml_path(files, res_id):
+    """该资源任意密度下的 .xml 文件路径（anydpi-v26 等）"""
+    cands = files.get(res_id, {})
+    for p in cands.values():
+        if p.endswith('.xml'):
+            return p
+    return None
+
 
 
 def xmltree_refs(aapt2, apk, xmlpath):
@@ -107,10 +117,9 @@ def xmltree_refs(aapt2, apk, xmlpath):
     return fg, bg, mono
 
 
-# ---------- vector/gradient 渲染（v3）----------
+# ---------- vector/gradient 渲染 ----------
 
 def read_xml_root(apk, xmlpath):
-    """读取 AXML 并返回 ElementTree 根节点"""
     from androguard.core.axml import AXMLPrinter
     try:
         import xml.etree.ElementTree as ET
@@ -121,7 +130,7 @@ def read_xml_root(apk, xmlpath):
             if hasattr(et, 'getroot'):
                 return et.getroot()
             return ET.fromstring(et.decode('utf-8', 'replace'))
-        return ET.fromstring(data)  # 普通文本 XML
+        return ET.fromstring(data)
     except Exception:
         return None
 
@@ -227,7 +236,6 @@ def build_svg_node(apk, node, cmap, gid):
 
 
 def render_vector_png(aapt2, apk, xmlpath, cmap, size=512):
-    """渲染 vector XML 为 PNG bytes；失败返回 None"""
     try:
         root = read_xml_root(apk, xmlpath)
         if root is None:
@@ -262,7 +270,6 @@ def render_vector_png(aapt2, apk, xmlpath, cmap, size=512):
 
 
 def composite_png(layers):
-    """layers: list[bytes PNG] 从上到下叠加；返回合成 PNG bytes"""
     try:
         from PIL import Image
         base = None
@@ -282,7 +289,6 @@ def composite_png(layers):
 
 
 def solid_color_png(color_hex, size=512):
-    """纯色背景层"""
     try:
         from PIL import Image
         im = Image.new('RGBA', (size, size), color_hex)
@@ -328,6 +334,8 @@ def extract_bitmap(aapt2: str, apk: str):
             for rid, (t, n) in res_name.items():
                 if f"{t}/{n}" == key:
                     p = best_path(files, rid)
+                    if not p:
+                        p = any_xml_path(files, rid)
                     if p:
                         data, ext = read_if_image(p)
                         if data:
@@ -336,27 +344,32 @@ def extract_bitmap(aapt2: str, apk: str):
         # 情况3：adaptive-icon XML（位图优先，渲染兜底）
         if icon and icon.endswith(".xml"):
             fg, bg, mono = xmltree_refs(aapt2, apk, icon)
-            # 3a. 先试位图层
+            # 3a. 先试位图层（含 anydpi 下的直接位图）
             for rid, tag in ((fg, "foreground"), (bg, "background"), (mono, "monochrome")):
                 if not rid:
                     continue
                 p = best_path(files, rid)
+                if not p:
+                    p = any_xml_path(files, rid)
                 if not p:
                     continue
                 data, ext = read_if_image(p)
                 if data:
                     return data, ext, f"{icon}[{tag}]->{p}"
             # 3b. 渲染合成（bg + fg）
-            cmap = dict(colors)
+            cmap = {}
+            for rid, v in colors.items():
+                cmap[rid] = v
             for rid, fn in files.items():
                 for d, p in fn.items():
                     cmap.setdefault(rid, p)
             layers = []
             descs = []
-            # 背景层：优先 vector/gradient 渲染，其次纯色
             bg_png = None
             if bg:
                 p = best_path(files, bg)
+                if not p:
+                    p = any_xml_path(files, bg)
                 if p and p.endswith('.xml'):
                     bg_png = render_vector_png(aapt2, apk, p, cmap)
                     if bg_png:
@@ -371,10 +384,11 @@ def extract_bitmap(aapt2: str, apk: str):
                         descs.append(f"bg位图:{p}")
             if bg_png:
                 layers.append(bg_png)
-            # 前景层
             fg_png = None
             if fg:
                 p = best_path(files, fg)
+                if not p:
+                    p = any_xml_path(files, fg)
                 if p:
                     d0, _ = read_if_image(p)
                     if d0:
@@ -489,7 +503,7 @@ def main():
             subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
             subprocess.run(["git", "config", "user.email", "actions@users.noreply.github.com"], check=True)
             subprocess.run(["git", "add", "-A"], check=True)
-            subprocess.run(["git", "commit", "-m", "wf7-v3: 批量修复历史坏图标（位图+vector渲染合成）"], check=True)
+            subprocess.run(["git", "commit", "-m", "wf7-v4: 修复 anydpi-v26 XML 图层漏检"], check=True)
             subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
             log("已推送修复")
 
