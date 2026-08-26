@@ -40,6 +40,7 @@ from common import gh_api, log  # noqa: E402
 TOKEN_ENV = "GH_TOKEN"
 MTOKEN_ENV = "MIRROR_TOKEN"
 MOWNER_ENV = "MIRROR_OWNER"
+STATE_TOKEN_ENV = "MAIN_PAT"  # 主账号 PAT：main 受保护后直推状态文件用
 STATE_PATH = os.path.join(HERE, "state.json")
 TMP_DIR = os.path.join(HERE, ".tmp")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36"
@@ -139,6 +140,8 @@ def slug_for(package_name, name):
 
 def tag_for(version):
     v = re.sub(r"[^A-Za-z0-9.+-]", "-", (version or "").strip())
+    v = re.sub(r"\.\.+", ".", v)      # git ref 不允许连续点
+    v = re.sub(r"^[-.]+", "", v)      # 不允许以 -/. 开头
     if v and re.match(r"^[A-Za-z0-9]", v):
         return "v" + v if not v.startswith("v") else v
     return "v1.0.0"
@@ -482,9 +485,15 @@ def api_create_pr(index_repo, branch, files, title, body):
     log("PR 已创建: #%s %s" % (pr.get("number"), pr.get("html_url")))
 
 
+def state_token():
+    """main 受保护后，状态文件直推需要主账号 PAT（MAIN_PAT）；本地回退 GH_TOKEN。"""
+    return (os.environ.get(STATE_TOKEN_ENV, "")
+            or os.environ.get(TOKEN_ENV, ""))
+
+
 def api_put_state(index_repo):
-    """把本地 state.json 提交回 main（Contents API）。"""
-    token = os.environ.get(TOKEN_ENV, "")
+    """把本地 state.json 提交回 main（Contents API，用 MAIN_PAT 豁免保护）。"""
+    token = state_token()
     path = "closed-sources/state.json"
     with open(STATE_PATH, "rb") as f:
         data = f.read()
@@ -521,7 +530,7 @@ def scanned_to_end(state):
 
 def put_done_marker(repo):
     """写入完成标记（幂等：已存在则跳过）。"""
-    token = os.environ.get(TOKEN_ENV, "")
+    token = state_token()
     path = "closed-sources/%s" % DONE_MARKER
     st, cur = http_json(
         "GET", "https://api.github.com/repos/%s/contents/%s" % (repo, path),
@@ -541,7 +550,7 @@ def put_done_marker(repo):
 
 def remove_done_marker(repo):
     """删除完成标记（重新全库扫描时使用；不存在则忽略）。"""
-    token = os.environ.get(TOKEN_ENV, "")
+    token = state_token()
     path = "closed-sources/%s" % DONE_MARKER
     st, cur = http_json(
         "GET", "https://api.github.com/repos/%s/contents/%s" % (repo, path),
@@ -555,20 +564,23 @@ def remove_done_marker(repo):
 
 
 def maybe_self_dispatch(repo):
-    """未翻完全库时触发下一轮 WF8；已有运行/排队中的 run 则跳过（防重）。"""
+    """未翻完全库时触发下一轮 WF8；已有其他运行/排队中的 run 则跳过（防重）。
+    注意排除自身（GITHUB_RUN_ID），否则总会以为自己还在运行。"""
     token = os.environ.get(TOKEN_ENV, "")
     wf = "wf8-collect-closed.yml"
+    self_run = os.environ.get("GITHUB_RUN_ID", "")
     st, runs = http_json(
         "GET",
         "https://api.github.com/repos/%s/actions/workflows/%s/runs?per_page=5"
         % (repo, wf), token=token)
     active = False
     for r in (runs or {}).get("workflow_runs", []):
-        if r.get("status") in ("in_progress", "queued"):
+        if (r.get("status") in ("in_progress", "queued")
+                and str(r.get("id")) != str(self_run)):
             active = True
             break
     if active:
-        log("检测到 WF8 正在运行，跳过自续触发")
+        log("检测到其他 WF8 运行，跳过自续触发")
         return
     st, body = http_json(
         "POST",
