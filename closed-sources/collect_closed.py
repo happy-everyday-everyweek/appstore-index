@@ -291,81 +291,55 @@ def make_app_json(meta, owner, slug):
     }
 
 
-def process_candidate(entry, detail, state, args, indexed):
-    """单个候选：下载 APK、建镜像仓库、传 Release、生成 app.json。
-    返回 app.json dict 或 None（失败记入 state.failed）。"""
-    meta = dict(detail)
-    if entry.get("iconUrl") and not meta.get("iconUrl"):
-        meta["iconUrl"] = entry["iconUrl"]
-    pkg = meta.get("packageName") or ""
-    if not pkg:
-        # MOD 类详情页常无 Package name 行（JSON-LD 同样缺失）：
-        # 镜像 slug 回退到应用名；WF2 落盘时 aapt2 会从 Release APK 提取真实包名
-        log("无 packageName，用应用名生成 slug: %s" % meta.get("name"))
-    elif pkg in indexed or pkg in state.get("processed_pkgs", []):
-        return None  # 已收录，跳过（静默）
-    owner = os.environ.get(MOWNER_ENV, "")
-    token = os.environ.get(MTOKEN_ENV, "")
-    if not owner or not token:
-        raise RuntimeError("MIRROR_OWNER / MIRROR_TOKEN 未配置")
-
-    slug = slug_for(pkg, meta.get("name"))
-    if mirror_ready(owner, slug, token):
-        # 镜像已就绪（Release 含 APK）：直接复用，走 PR 收录
-        log("镜像已就绪，复用: %s/%s" % (owner, slug))
-        return make_app_json(meta, owner, slug)
-
-    downloads = meta.get("downloads") or []
-    if not downloads:
-        raise RuntimeError("无可用下载直链")
-    direct = downloads[0]["url"]
-    os.makedirs(TMP_DIR, exist_ok=True)
-    apk_path = os.path.join(TMP_DIR, slug + ".apk")
-    log("下载 APK: %s (%s)" % (direct, meta.get("name")))
-    size, sha = apv.download_apk(direct, apk_path,
-                                 headers={"Referer": "https://apkvision.org/"})
-    max_bytes = int(args.max_mb) * 1024 * 1024
-    if size > max_bytes:
-        os.remove(apk_path)
-        raise RuntimeError("APK 超出大小上限 %.0fMB（实际 %.1fMB）"
-                           % (args.max_mb, size / 1048576))
-    try:
-        st, repo = http_json(
-            "GET", "https://api.github.com/repos/%s/%s" % (owner, slug),
-            token=token)
-        if st != 200:
-            log("创建镜像仓库: %s/%s" % (owner, slug))
-            create_mirror_repo(owner, slug, meta.get("summary", ""), token)
-        else:
-            log("镜像仓库已存在，补齐内容: %s/%s" % (owner, slug))
-        readme = make_readme(meta).encode("utf-8")
-        upload_content(owner, slug, "README.md", readme,
-                       "chore: 自动生成应用简介", token)
-        icon_bytes = None
-        if meta.get("iconUrl"):
-            try:
-                icon_bytes = fetch_binary(meta["iconUrl"], 2 * 1024 * 1024,
-                                          referer="https://apkvision.org/")
-            except Exception as e:
-                log("图标下载失败（忽略）: %s" % e)
-        if icon_bytes:
-            upload_content(owner, slug, "icon.png", icon_bytes,
-                           "chore: 自动收录应用图标", token)
-        tag = tag_for(meta.get("version"))
-        rel = create_release(
-            owner, slug, tag, "%s %s" % (meta.get("name", ""), tag),
-            "版本 %s\n包名 `%s`\n来源 APKVision\nSHA-256 `%s`"
-            % (meta.get("version", ""), pkg, sha), token)
-        upload_asset(owner, slug, rel["id"], os.path.basename(apk_path),
-                     open(apk_path, "rb").read(), token)
-        meta["sha256"] = sha
-        return make_app_json(meta, owner, slug)
-    finally:
-        # 无论建仓成功与否，APK 落盘清理
+def direct_apk_url(detail):
+    """从详情下载列表选源站 .apk 直链（xapk/站外链接跳过）。"""
+    for d in detail.get("downloads") or []:
+        u = (d.get("url") or "").strip()
+        if not u.lower().endswith(".apk"):
+            continue
         try:
-            os.remove(apk_path)
-        except OSError:
-            pass
+            host = urllib.parse.urlsplit(u).netloc.lower()
+        except Exception:
+            continue
+        if host == "dl.apkvision.org" or host.endswith(".apkvision.org"):
+            return u
+    return None
+
+
+def app_slug(name, entry_id):
+    """应用 slug：名称清洗后拼上详情 URL 尾部数字 id（天然唯一且可读）。"""
+    base = re.sub(r"[^A-Za-z0-9-]+", "-", (name or "app").strip().lower()).strip("-")
+    base = re.sub(r"-{2,}", "-", base)
+    m = re.search(r"[-/](\d+)/?$", (entry_id or "").strip().rstrip("/"))
+    suffix = ("-" + m.group(1)) if m else ""
+    return (base + suffix) or "app"
+
+
+def process_candidate(entry, detail, state, args, indexed):
+    """直链模式：解析源站 APK 直链，生成标准 app.json（不下载、不建镜像仓）。
+    返回 app.json dict 或 None（失败时由调用方记入 state.failed）。"""
+    meta = dict(detail)
+    pkg = meta.get("packageName") or ""
+    if pkg and (pkg in indexed or pkg in state.get("processed_pkgs", [])):
+        return None  # 已收录，跳过（静默）
+    apk_url = direct_apk_url(meta)
+    if not apk_url:
+        raise RuntimeError("无可用源站 .apk 直链（xapk/站外链接已被过滤）")
+    slug = app_slug(meta.get("name") or pkg, entry.get("id", ""))
+    summary = (meta.get("summary") or "").replace("\n", " ").strip()
+    if len(summary) < 4:
+        summary = "源自 APKVision 的闭源应用：" + meta.get("name", "")
+    return {
+        "repo": "apkvision/%s" % slug,
+        "openSource": False,
+        "name": meta.get("name", ""),
+        "packageName": pkg,
+        "version": meta.get("version", ""),
+        "apkUrl": apk_url,
+        "homepage": "https://apkvision.org/",
+        "specialPermissions": ["none"],
+        "summary": summary[:120],
+    }
 
 
 def collect_candidates(state, args):
@@ -510,6 +484,30 @@ def api_put_state(index_repo):
               "sha": cur.get("sha") if st == 200 else None})
     if st not in (200, 201):
         raise RuntimeError("state 提交失败: %s %s" % (st, body))
+
+
+def put_app_json_main(index_repo, app_json):
+    """直链条目直推 main（不走 PR）：幂等 PUT apps/<owner>/<repo>/app.json。
+    触发 merge-settle 落盘 app-info/README（Trigger: push apps/**/app.json）。"""
+    token = state_token()
+    path = "apps/%s/%s/app.json" % (app_json["repo"].split("/")[0],
+                                    app_json["repo"].split("/")[1])
+    b64 = base64.b64encode(
+        json.dumps(app_json, ensure_ascii=False, indent=2).encode()).decode()
+    st, cur = http_json(
+        "GET", "https://api.github.com/repos/%s/contents/%s?ref=main"
+        % (index_repo, path), token=token)
+    st, body = http_json(
+        "PUT",
+        "https://api.github.com/repos/%s/contents/%s" % (index_repo, path),
+        token=token,
+        body={"message": "chore: 闭源直链收录 %s" % path,
+              "branch": "main", "content": b64,
+              "sha": cur.get("sha") if st == 200 else None})
+    if st not in (200, 201):
+        raise RuntimeError("直推 %s 失败: %s %s" % (path, st, body))
+    return "apps/%s/%s" % (app_json["repo"].split("/")[0],
+                           app_json["repo"].split("/")[1])
 
 
 # ---------- 自续链与保活 ----------
@@ -667,14 +665,10 @@ def main():
             finish_round(args, state)
         else:
             log("无新候选且未翻完全库（疑似源站异常），本轮停止，等待保活工作流")
-        # 有积压待收录时仍尝试开 PR（如 PR 权限恢复后的补收录）
-        if not args.dry_run and (state.get("pending_pr") or []):
-            maybe_open_pr(args, state)
-            save_state(state)
-            api_put_state(args.repo)
         return
 
     processed_now = []
+    direct_apps = []
     for i, entry in enumerate(entries[:args.limit], 1):
         log("[%d/%d] 详情: %s" % (i, len(entries), entry["id"]))
         try:
@@ -691,13 +685,7 @@ def main():
                 continue
             app_json = process_candidate(entry, detail, state, args, indexed)
             if app_json:
-                out = os.path.join(TMP_DIR, "pr_files",
-                                   "%s__%s__app.json"
-                                   % (app_json["repo"].split("/")[0],
-                                      app_json["repo"].split("/")[1]))
-                os.makedirs(os.path.dirname(out), exist_ok=True)
-                with open(out, "w", encoding="utf-8") as f:
-                    json.dump(app_json, f, ensure_ascii=False, indent=2)
+                direct_apps.append(app_json)
                 processed_now.append(entry)
         except Exception as e:
             state["failed"][entry["id"]] = str(e)[:300]
@@ -711,26 +699,19 @@ def main():
             % (len(processed_now), len(state.get("failed", {}))))
         return
 
-    # 本轮的 app.json 追加进待收录队列（持久化在 state.json，PR 失败保留下轮重试）
-    pending = state.setdefault("pending_pr", [])
-    pr_dir = os.path.join(TMP_DIR, "pr_files")
-    added = 0
-    if os.path.isdir(pr_dir):
-        for fn in sorted(os.listdir(pr_dir)):
-            parts = fn.split("__")
-            if len(parts) >= 3:
-                with open(os.path.join(pr_dir, fn), encoding="utf-8") as f:
-                    content = f.read()
-                pending.append(
-                    {"path": "apps/%s/%s/app.json" % (parts[0], parts[1]),
-                     "content": content + "\n"})
-                added += 1
-            os.remove(os.path.join(pr_dir, fn))
-    log("本轮新增待收录 %d 条（累计 %d）" % (added, len(pending)))
-    maybe_open_pr(args, state)
+    # 直推 main（不走 PR）：merge-settle 会自动落盘 app-info/README
+    pushed = 0
+    for app_json in direct_apps:
+        try:
+            put_app_json_main(args.repo, app_json)
+            pushed += 1
+        except Exception as e:
+            log("直推失败: %s -> %s" % (app_json["repo"], e))
+            state["failed"][app_json["repo"]] = str(e)[:300]
+    log("本轮直推 %d/%d 条 app.json 到 main" % (pushed, len(direct_apps)))
     save_state(state)
     api_put_state(args.repo)
-    log("本轮完成：候选 %d，待收录 %d 条" % (len(entries), len(state.get("pending_pr", []))))
+    log("本轮完成：候选 %d，直推应用 %d" % (len(entries), pushed))
     finish_round(args, state)
 
 
