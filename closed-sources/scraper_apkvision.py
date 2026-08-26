@@ -115,10 +115,11 @@ def _humanize(value):
 
 
 def _strip_apk(title):
-    return (_clean(title)
-            .replace(ORIGIN, "")
-            .replace(" - Download Free for Android", "")
-            .strip())
+    v = (_clean(title)
+         .replace(ORIGIN, "")
+         .replace(" - Download Free for Android", ""))
+    v = re.sub(r"(?i)\s+[-–]?\s*apk\s*$", "", v)
+    return v.strip()
 
 
 def _extract_version(value):
