@@ -1,0 +1,4 @@
+# §3.2：bundle 实体不进仓库（Release 资产），本地构建产物忽略
+dist/bundles/
+# Python 缓存
+scripts/__pycache__/
