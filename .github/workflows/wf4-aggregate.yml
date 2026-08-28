@@ -24,7 +24,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 变更判定并发布三件套
+      - name: 安装 v2 资产生成依赖（图标 blurhash 占位，§4.2）
+        run: pip install blurhash pillow numpy
+      - name: 变更判定并发布三件套（v1 双轨，§5.1）
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -32,3 +34,10 @@ jobs:
           python3 scripts/aggregate.py \
             --repo "${{ github.repository }}" \
             --run-index "$INDEX"
+      - name: 清单驱动资产生成与发布（v2 双轨，§5.1）
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAIN_PAT: ${{ secrets.MAIN_PAT }}
+        run: |
+          python3 scripts/aggregate_v2.py \
+            --repo "${{ github.repository }}"
