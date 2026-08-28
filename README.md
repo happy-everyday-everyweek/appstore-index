@@ -1,6 +1,6 @@
-# AppStore Index · 承载仓库
+# Only Index · 承载仓库
 
-GitHub 驱动的开源应用市场——唯一的应用分发索引源头。
+Only 的唯一应用分发索引源头 —— GitHub 驱动的开源 Android 应用市场。
 
 本仓库按 `apps/<owner>/<repo>/` 两级目录收录 Android 开源（及优质闭源）应用，每个应用独占一个文件夹，内含三个文件：
 
