@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""工作流 4（v2 通道）：清单驱动同步资产生成与发布（AppStore 同步机制 v2 规格 §5.1）。
+"""工作流 4（v2 通道）：清单驱动同步资产生成与发布（Only 同步机制 v2 规格 §5.1）。
 
 P0 双轨：与 v1（aggregate.py 全量/增量 zip 发布）并行，本脚本产出 v2 资产：
 - dist/index.v2.json      列表层索引（含图标 blurhash 占位，§4.2；重资产移至 bundle）

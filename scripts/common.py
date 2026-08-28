@@ -1,4 +1,4 @@
-"""AppStore 承载仓库 CLI 共享工具。
+"""Only 承载仓库 CLI 共享工具。
 
 约定：
 - 应用目录：apps/<owner>/<repo>/

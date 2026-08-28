@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "app.json.schema.json",
-  "title": "AppStore app.json",
+  "title": "Only app.json",
   "description": "开发者提交的应用收录申请文件。id 由系统自动分配，切勿填写。",
   "type": "object",
   "required": ["repo", "openSource", "summary"],
