@@ -386,9 +386,17 @@ def main():
     # 2. 读取上期已发布 manifest
     prev = read_prev_manifest()
 
-    # 3. 无任何变化 → 结束（不提交、不发 Release，§5.1 step 4）
-    if prev is not None and manifest_unchanged(index_v2, icons, bundles, prev):
-        log("无变更（index/icons/bundles 与上期一致），不提交、不发 Release")
+    # 2.5 现有 release tag（供「无变更」闸门与 bundle 复用校验）
+    live_tags = existing_release_tags(args.repo)
+
+    # 3. 无任何变化（且上期 bundle 引用的 release tag 都真实存在）→ 结束（§5.1 step 4）
+    prev_bundles_live = prev is not None and all(
+        (b.get("url", "").split("/", 1)[0] in live_tags)
+        for b in prev.get("bundles", [])
+        if b.get("url")
+    )
+    if prev is not None and prev_bundles_live and manifest_unchanged(index_v2, icons, bundles, prev):
+        log("无变更（index/icons/bundles 与上期一致，且引用 release 均存在），不提交、不发 Release")
         sys.exit(0)
 
     # 4. 有变化：决定 tag 并解析 bundle URL（未变化复用上期 tag URL，§5.1）
@@ -396,7 +404,6 @@ def main():
     tag = f"dist-{ts}"
     # 仅当「上期 bundle URL 所属 release tag 真实存在」才复用，否则强制在新 tag 下重传，
     # 杜绝复用到指向不存在 Release 的历史 URL（此前伪造清单 → 整表 bundle 404 的根因）。
-    live_tags = existing_release_tags(args.repo)
     prev_bundle_sha = {b.get("id"): b.get("sha256") for b in (prev or {}).get("bundles", [])}
     prev_bundle_url = {b.get("id"): b.get("url") for b in (prev or {}).get("bundles", [])}
     changed_ids = []
