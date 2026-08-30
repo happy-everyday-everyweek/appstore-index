@@ -355,6 +355,21 @@ def cleanup_releases(repo, token, keep_days=7, referenced_tags=frozenset()):
         page += 1
 
 
+def existing_release_tags(repo):
+    """分页收集仓库现有 release 的 tag_name 集合；失败返回空集（则不走上期复用，宁重传不引用坏链）。"""
+    tags = set()
+    page = 1
+    while True:
+        status, releases = gh_api(f"/repos/{repo}/releases?per_page=100&page={page}")
+        if status != 200 or not releases:
+            break
+        tags.update(r.get("tag_name", "") for r in releases)
+        if len(releases) < 100:
+            break
+        page += 1
+    return tags
+
+
 def main():
     ap = argparse.ArgumentParser(description="v2 清单驱动同步资产生成与发布（§5.1）")
     ap.add_argument("--repo", required=True)
@@ -379,12 +394,22 @@ def main():
     # 4. 有变化：决定 tag 并解析 bundle URL（未变化复用上期 tag URL，§5.1）
     ts = datetime.datetime.utcnow().strftime("%Y%m%d%H%M%S")
     tag = f"dist-{ts}"
+    # 仅当「上期 bundle URL 所属 release tag 真实存在」才复用，否则强制在新 tag 下重传，
+    # 杜绝复用到指向不存在 Release 的历史 URL（此前伪造清单 → 整表 bundle 404 的根因）。
+    live_tags = existing_release_tags(args.repo)
     prev_bundle_sha = {b.get("id"): b.get("sha256") for b in (prev or {}).get("bundles", [])}
     prev_bundle_url = {b.get("id"): b.get("url") for b in (prev or {}).get("bundles", [])}
     changed_ids = []
     for b in bundles:
-        if b["id"] in prev_bundle_sha and prev_bundle_sha[b["id"]] == b["sha256"] and b["id"] in prev_bundle_url:
-            b["url"] = prev_bundle_url[b["id"]]  # 未变化：复用上期 URL（历史 URL 永久有效）
+        prev_url = prev_bundle_url.get(b["id"])
+        reusable = (
+            b["id"] in prev_bundle_sha
+            and prev_bundle_sha[b["id"]] == b["sha256"]
+            and prev_url
+            and prev_url.split("/", 1)[0] in live_tags
+        )
+        if reusable:
+            b["url"] = prev_url  # 未变化且上期 tag 真实存在：复用它
         else:
             b["url"] = f"{tag}/bundles/{b['id']}{BUNDLE_EXT}"
             changed_ids.append(b["id"])
