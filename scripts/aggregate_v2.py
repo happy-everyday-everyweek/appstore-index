@@ -391,7 +391,7 @@ def main():
 
     # 3. 无任何变化（且上期 bundle 引用的 release tag 都真实存在）→ 结束（§5.1 step 4）
     prev_bundles_live = prev is not None and all(
-        (b.get("url", "").split("/", 1)[0] in live_tags)
+        (b.get("url", "").split("/", 1)[0] in live_tags and "/bundles/" not in b.get("url", ""))
         for b in prev.get("bundles", [])
         if b.get("url")
     )
@@ -413,12 +413,13 @@ def main():
             b["id"] in prev_bundle_sha
             and prev_bundle_sha[b["id"]] == b["sha256"]
             and prev_url
+            and "/bundles/" not in prev_url  # 旧斜杠名会 404，不复用、强制按扁平名重传
             and prev_url.split("/", 1)[0] in live_tags
         )
         if reusable:
             b["url"] = prev_url  # 未变化且上期 tag 真实存在：复用它
         else:
-            b["url"] = f"{tag}/bundles/{b['id']}{BUNDLE_EXT}"
+            b["url"] = f"{tag}/{b['id']}{BUNDLE_EXT}"  # 扁平名，避免 GitHub 把 bundles/ 的斜杠转点致 URL 不符
             changed_ids.append(b["id"])
 
     # 5. 生成 manifest.v2.json + index.v2.json（SHA 以实际写入字节为准）
@@ -457,7 +458,7 @@ def main():
     #    「清单指向不存在 Release 资产」的半发布态（此前顺序相反，是本次事故根因）。
     assets = {"manifest.v2.json": manifest_bytes, "index.v2.json": index_bytes}
     for aid in changed_ids:
-        assets[f"bundles/{aid}{BUNDLE_EXT}"] = bundle_blobs[aid]
+        assets[f"{aid}{BUNDLE_EXT}"] = bundle_blobs[aid]
     create_release(args.repo, tag, f"v2 清单驱动同步 {ts}", assets, token)
     log(f"已发布 Release {tag}（bundle 变化 {len(changed_ids)} 个），资产就绪")
 
