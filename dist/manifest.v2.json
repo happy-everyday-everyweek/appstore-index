@@ -1,12 +1,12 @@
 {
   "version": 2,
   "channel": "app-index",
-  "generatedAt": "2026-08-28T03:58:18Z",
-  "commit": "1901400463ff0fd74deb24e9053fb1ccdb5167e5",
-  "releaseTag": "dist-20260828035818",
+  "generatedAt": "2026-08-30T03:12:16Z",
+  "commit": "ab1f1717887b67418f59695379360a74165da4da",
+  "releaseTag": "dist-20260830031216",
   "index": {
-    "sha256": "60aba4d62e038a7ba8ce19f98c8bc3b9e4c63020f60ff100514a2195ad85c223",
-    "size": 164013,
+    "sha256": "ea7273ae79597dcb212421c2fd3014bfed4e9196c745db6120fb6fcaee3341b3",
+    "size": 1597819,
     "count": 385
   },
   "icons": [
