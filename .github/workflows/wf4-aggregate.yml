@@ -16,6 +16,11 @@ on:
 permissions:
   contents: write
 
+# 串行化：push 与 schedule 并发触发时共用同一份上期 manifest，会重复上传 bundle 并产生 rebase 冲突
+concurrency:
+  group: wf4-aggregate
+  cancel-in-progress: false
+
 jobs:
   aggregate:
     runs-on: ubuntu-latest
