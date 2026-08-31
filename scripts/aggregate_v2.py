@@ -194,7 +194,39 @@ def build_v2_assets():
         bundle_bytes = build_assets_bundle(aid, asset_files, info, readme_text)
         bundle_blobs[aid] = bundle_bytes
         bundles.append({"id": aid, "url": "", "sha256": hashlib.sha256(bundle_bytes).hexdigest(), "size": len(bundle_bytes)})
+    drop = drop_package_duplicates(index_v2)
+    if drop:
+        for aid in drop:
+            index_v2.pop(aid, None)
+            bundle_blobs.pop(aid, None)
+        kept = lambda ref: ref["id"] not in drop
+        icons[:] = [r for r in icons if kept(r)]
+        bundles[:] = [r for r in bundles if kept(r)]
     return index_v2, icons, bundles, bundle_blobs
+
+
+def drop_package_duplicates(index_v2):
+    """同一 packageName 只留一条：包名是客户端判定「已安装/有更新/未收录」的唯一键。
+
+    采集器的 indexed_packages() 只拦新增候选，历史批量收录进来的重复条目不会被清掉，
+    所以这道闸门放在发布侧兜底。保留优先级：开源上游 > 非抓取目录 > id 升序（确定性）。
+    """
+    by_pkg = {}
+    for aid, meta in index_v2.items():
+        pkg = (meta.get("packageName") or "").strip()
+        if pkg:
+            by_pkg.setdefault(pkg, []).append(aid)
+    drop = set()
+    for pkg, aids in sorted(by_pkg.items()):
+        if len(aids) < 2:
+            continue
+        aids.sort(key=lambda a: (not index_v2[a]["openSource"],
+                                 index_v2[a]["repo"].startswith("apkvision/"), a))
+        keep = aids[0]
+        drop.update(aids[1:])
+        log("包名冲突 %s：%s 条同名，保留 %s（repo=%s），丢弃 %s"
+            % (pkg, len(aids), keep, index_v2[keep]["repo"], ",".join(aids[1:])))
+    return drop
 
 
 def serialize_json(obj, pretty=False):
