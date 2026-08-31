@@ -1,13 +1,13 @@
 {
   "version": 2,
   "channel": "app-index",
-  "generatedAt": "2026-08-30T05:23:07Z",
-  "commit": "c8b8ae0002d41bdf3786b5a8171b08908893602e",
-  "releaseTag": "dist-20260830052307",
+  "generatedAt": "2026-08-31T05:31:12Z",
+  "commit": "ecef26d51b133876b5c0864ab4e5a603fe9222f8",
+  "releaseTag": "dist-20260831053111",
   "index": {
-    "sha256": "ea7273ae79597dcb212421c2fd3014bfed4e9196c745db6120fb6fcaee3341b3",
-    "size": 1597819,
-    "count": 385
+    "sha256": "29fed1d24c023696bd85a9de515adad480dc4598a8bb64c668ac2515eb84ca23",
+    "size": 1596574,
+    "count": 384
   },
   "icons": [
     {
@@ -795,12 +795,6 @@
       "path": "apps/apkvision/vion-116645/icon.png",
       "sha256": "ee9fee40607da708f5e14cd38447c2a9b69256c66d77bdff2a2ecaec94556296",
       "size": 1624
-    },
-    {
-      "id": "2102",
-      "path": "apps/apkvision/vita3k-109245/icon.png",
-      "sha256": "02a9a47153f6957268411b475573f6c5baa893a9bc618eba9ed12f38d2ca676c",
-      "size": 119971
     },
     {
       "id": "2103",
@@ -2957,12 +2951,6 @@
       "url": "dist-20260830052307/2101.bundle.zip",
       "sha256": "06ccf580c59c9e187ed4ee0b2d3929c10952508609fc27ce2905395224e062c7",
       "size": 864
-    },
-    {
-      "id": "2102",
-      "url": "dist-20260830052307/2102.bundle.zip",
-      "sha256": "65c9721823f9b7098426f89beb7991aeda5aa4b3896884f6d4581c36a4c05265",
-      "size": 760
     },
     {
       "id": "2103",
